@@ -8,11 +8,11 @@
 
 ### Universidad Peruana de Ciencias Aplicadas ♨️
 
-🧑‍💻 Ingeniería de software - 2025-02
+🧑‍💻 Ingeniería de software - 2026-01
 
-**Sección:** 7414
+**Sección:** 3690
 
-**Docente:** Alex Humberto Sánchez Ponce
+**Docente:** Jorge Luis Mayta Guillermo
 
 **StartUp:** F1nTrack
 
@@ -23,10 +23,10 @@
 ~~~C#
 static string[] Integrantes() {
     return new string[] {
-        "🧑‍💻 Taquiri Calderon, Jhunior Giussepe - u20221C576",
+        "🧑‍💻 ",
         "👩‍💻 Tasayco Osorio, Raul Hiroshi - U202319415",
-        "👩‍💻 Ruiz Huisa, Daniel Elias - U202210764",
-        "👩‍💻 Salcedo Champi, Matias Rodolfo - u202319698 ",
+        "👩‍💻 ",
+        "👩‍💻 ",
         "👩‍💻 Quiroz Zambrano, Fabrizio Javier - u202213406", 
     };
 }
