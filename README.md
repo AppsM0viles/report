@@ -4,7 +4,7 @@
 
 # Informe Trabajo Final 📙
 
-<img src="./resources/Cap-1/Banner-UPC.png" alt="Banner UPC">
+<img src="./resources/cap-1/Banner-UPC.png" alt="Banner UPC">
 
 ### Universidad Peruana de Ciencias Aplicadas ♨️
 
