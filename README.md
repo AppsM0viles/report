@@ -587,8 +587,186 @@ El análisis competitivo de **KapakID** permite entender el panorama actual de b
 
 ### 2.2. Entrevistas
 #### 2.2.1. Diseño de entrevistas
+
+**Segmentos objetivo:**
+- **Estudiantes universitarios (18–29)** que usan transporte público.
+- **Padres/madres o tutores (25–45)** que gestionan documentos de hijos.
+
+**Objetivo:** Validar confianza, fricciones en trámites y pagos, valor de alertas y perfiles múltiples para **KapakID**.
+
+---
+
+#### Preguntas:
+
+1. **¿Qué documentos y tarjetas llevas contigo a diario?** (DNI, carné universitario, tarjetas de transporte, bancarias). De todos ellos, ¿cuáles preferirías tener a la mano en tu celular para no tener que sacar tu billetera física?
+
+2. **¿Has perdido u olvidado algún documento importante en el último año?** Si hubieras tenido una copia de respaldo segura y accesible desde tu teléfono en ese momento, ¿cómo habría cambiado la situación?
+
+3. **¿Cómo recargas actualmente tu tarjeta del Metropolitano o Línea 1?** ¿Te resultaría útil recargar tu saldo acercando tu tarjeta al celular (mediante tecnología NFC) o pagando con un par de toques desde la app?
+
+4. **¿Qué parte de renovar documentos (DNI, carné universitario, CONADIS) te genera más estrés?** ¿Crees que poder escanear los requisitos con la cámara de tu celular o subir fotos directamente desde tu galería agilizaría estos trámites?
+
+5. **Si la app te avisara del vencimiento de un documento o de un saldo bajo,** ¿cómo preferirías enterarte a través de tu celular? (¿Notificación *push*, un *widget* en tu pantalla de inicio, un mensaje de WhatsApp?) ¿Con cuánta anticipación?
+
+6. **¿Confiarías en una app móvil para guardar copias digitales de tus documentos más importantes?** ¿Qué medidas de seguridad propias del celular te darían más tranquilidad (huella dactilar, reconocimiento facial, un PIN exclusivo, almacenamiento cifrado sin internet)?
+
+7. **Si pudieras administrar los documentos de tus hijos o familiares desde tu celular,** ¿qué funciones serían imprescindibles para ti? (¿Acceso sin conexión a internet, cambiar ágilmente entre perfiles, compartir documentos rápidamente por apps de mensajería?)
+
+8. **¿Qué tan útil sería tener un asistente en tu bolsillo con un *checklist* interactivo para trámites?** ¿Te gustaría que las fechas límite y los pasos se sincronicen automáticamente con la app de calendario de tu teléfono?
+
+9. **Pensando en una experiencia móvil rápida y fluida, ¿qué funciones priorizarías en la app?** (Acceso biométrico, *widgets* para ver el saldo rápido, alertas *push*, recargas directas, modo *offline* para cuando no hay señal).
+
+10. **¿Estarías dispuesto a pagar una suscripción (a través de la Play Store o App Store) por funciones premium?** ¿Qué características exclusivas harían que valga la pena el pago para ti?
+
+
 #### 2.2.2. Registro de entrevistas
+
+#### Entrevistas a estudiantes universitarios
+
+| Campo         | Información |
+|---------------|-------------|
+| Entrevistado 1| (nombre 1)  |
+| Edad          | (edad 1)    |
+| Distrito      | (distrito)  |
+| Foto          | ![Foto entrevistado 1](resources/Cap-2/) |
+| Timing        | [Ver grabación]() |
+---
+
+
+| Campo         | Información |
+|---------------|-------------|
+| Entrevistado 2| (nombre 2)  |
+| Edad          | (edad 2)    |
+| Distrito      | (distrito)  |
+| Foto          | ![Foto entrevistado 2](resources/Cap-2/) |
+| Timing        | [Ver grabación]() |
+
+---
+
+| Campo         | Información |
+|---------------|-------------|
+| Entrevistado 3| (nombre 3)  |
+| Edad          | (edad 3)    |
+| Distrito      | (distrito)  |
+| Foto          | ![Foto entrevistado 3](resources/Cap-2/) |
+| Timing        | [Ver grabación]() |
+
+---
+
+#### Entrevistas a padres/madres o tutores
+
+| Campo         | Información |
+|---------------|-------------|
+| Entrevistado 4| (nombre 4)  |
+| Edad          | (edad 4)    |
+| Distrito      | (distrito)  |
+| Foto          | ![Foto entrevistado 4](resources/Cap-2/) |
+| Timing        | [Ver grabación]() |
+
+---
+
+| Campo         | Información |
+|---------------|-------------|
+| Entrevistado 5| (nombre 5)  |
+| Edad          | (edad 5)    |
+| Distrito      | (distrito)  |
+| Foto          | ![Foto entrevistado 5](resources/Cap-2/) |
+| Timing        | [Ver grabación]() |
+
+
+---
+
+| Campo         | Información |
+|---------------|-------------|
+| Entrevistado 6| (nombre 6)  |
+| Edad          | (edad 6)    |
+| Distrito      | (distrito)  |
+| Foto          | ![Foto entrevistado 6](resources/Cap-2/) |
+| Timing        | [Ver grabación]() |
+
+---
+
 #### 2.2.3. Análisis de entrevistas
+**Segmento 1: Jóvenes universitarios usuarios de transporte y documentos digitales (Hany Pareja Berocal)**
+
+  * **Perfil**
+    *  
+
+  * **Insights clave**
+    *  
+    * 
+    *   
+
+  * **Problemas y frustraciones**
+    *  
+    * 
+    * 
+
+  * **Necesidades**
+   
+    * 
+  
+    * 
+   
+    * 
+    
+    * 
+  
+    * 
+   
+
+  * **Oportunidades para KapakID**
+    
+    * 
+    
+    * 
+    
+    * 
+    
+    * 
+    
+    * 
+
+**Segmento 2: Padres/Madres o Tutores**
+
+  * **Perfil**
+    *  
+
+  * **Insights clave**
+    *  
+    * 
+    *   
+
+  * **Problemas y frustraciones**
+    *  
+    * 
+    * 
+
+  * **Necesidades**
+   
+    * 
+  
+    * 
+   
+    * 
+    
+    * 
+  
+    * 
+   
+
+  * **Oportunidades para KapakID**
+    
+    * 
+    
+    * 
+    
+    * 
+    
+    * 
+    
+    * 
+    
 
 ### 2.3. Needfinding
 #### 2.3.1. User Personas
