@@ -23,10 +23,10 @@
 ~~~C#
 static string[] Integrantes() {
     return new string[] {
-        "🧑‍💻 ",
+        "🧑‍💻 Villanueva Andrade, Ysaac Ligorio - U20231C168",
         "👩‍💻 Tasayco Osorio, Raul Hiroshi - U202319415",
-        "👩‍💻 ",
-        "👩‍💻 ",
+        "👩‍💻 Vega Coronado, Fabricio Samir - U202317000",
+        "👩‍💻 Tasayco Almonacid, Rafael Augusto - U20231F226",
         "👩‍💻 Quiroz Zambrano, Fabrizio Javier - u202213406", 
     };
 }
@@ -768,11 +768,54 @@ El análisis competitivo de **KapakID** permite entender el panorama actual de b
     * 
     
 
-### 2.3. Needfinding
-#### 2.3.1. User Personas
-#### 2.3.2. User Task Matrix
-#### 2.3.3. User Journey Mapping
-#### 2.3.4. Empathy Mapping
+## 2.3. Needfinding
+### 2.3.1. User Personas
+
+- **Estudiante universitario**  
+<td><img src="resources/Cap-2/Needfinding/User Personas.png" alt="imagen Luis Alberto Ramírez" ></td>
+
+- **Madre de familia**  
+<td><img src="resources/Cap-2/Needfinding/User Personas2.png"></td>
+
+### 2.3.2. User Task Matrix
+### Task Matrix
+
+| **Task** | **Estudiante universitario (Luis, 21 años)** | | **Madre de familia (Patricia, 39 años)** | |
+|----------|---------------------------------------------|-------------------------------------------|------------------------------------------|------------------------------------------|
+|          | Frequency                                   | Importance                                | Frequency                                | Importance                               |
+| Centralizar documentos digitales | Often | High | Always | High |
+| Recargar tarjeta de transporte | Always | High | Often | Medium |
+| Recibir alertas de saldo bajo / vencimiento | Always | High | Always | High |
+| Configurar y gestionar perfiles múltiples | Rarely | Medium | Often | High |
+| Acceso offline a documentos | Sometimes | Medium | Often | High |
+| Asistente para trámites (checklist, pasos guiados) | Sometimes | Medium | Often | High |
+| Historial de transacciones (pagos, recargas, trámites) | Sometimes | Medium | Often | Medium |
+| Seguridad y validación biométrica | Often | High | Always | High |
+| Vincular billeteras digitales (Yape, Plin, Google Wallet) | Often | High | Sometimes | Medium |
+| Compartir documentos verificados (ej. envío digital de DNI) | Sometimes | Medium | Often | High |
+| Configurar notificaciones personalizadas (push, correo, WhatsApp) | Often | Medium | Often | High |
+| Renovar documentos en línea (DNI, carné universitario, CONADIS) | Rarely | High | Sometimes | High |
+| Gestionar pagos de servicios (teléfono, agua, luz, internet) | Rarely | Medium | Often | High |
+| Monitorear gastos y generar reportes | Rarely | Medium | Often | Medium |
+
+El análisis de las tareas de estudiantes universitarios y madres de familia muestra enfoques distintos en el uso de KapakID. Los estudiantes se orientan a actividades operativas y cotidianas, como recargar la tarjeta de transporte, recibir alertas de saldo bajo, centralizar documentos y acceder en modo offline. Su prioridad es evitar olvidos, ahorrar tiempo y simplificar la movilidad diaria, con alto valor en funciones de seguridad biométrica y vinculación con billeteras digitales. Sin embargo, relegan a un segundo plano tareas menos frecuentes como renovación de documentos o generación de reportes. Las madres de familia, en contraste, priorizan la gestión integral y el control familiar, enfocándose en administrar múltiples perfiles, recibir alertas de vencimientos, acceder a documentos de manera segura y simplificar trámites repetitivos. Además, otorgan gran importancia al seguimiento financiero, utilizando historial de transacciones, pagos de servicios y reportes como parte de su rol en la organización del hogar. Mientras ambos segmentos coinciden en valorar la centralización documental, las alertas inteligentes y la seguridad, difieren en su enfoque: el estudiante busca rapidez y autonomía personal, mientras que la madre necesita organización, control y previsión familiar, consolidando a KapakID como una solución versátil para ambos perfiles.
+
+### 2.3.3. User Journey Mapping
+- **Empathy Map Estudiante Universitario**
+
+<td><img src="resources/Cap-2/Needfinding/Empathy Map Estudiante Universitario.png" alt="Empathy map Luis" ></td>
+
+- **Empathy Map Madre de Familia**
+<td><img src="resources/Cap-2/Needfinding/Empathy Map Madre de Familia.png" alt="Empathy map Madre de Familia" ></td>
+
+### 2.3.4. Empathy Mapping
+**User Journey Mapping Estudiante Universitario** 
+ <td><img src="resources/Cap-2/Needfinding/User Journey Mapping Estudiante Universitario.png" alt="User Journey Mapping Estudiante universitario"></td>
+ 
+**User Journey Mapping Madre de Familia**  
+
+<td><img src="resources/Cap-2/Needfinding/User Journey Mapping Madre de Familia.png" ></td>
+
 #### 2.3.5. Big Picture EventStorming
 #### 2.3.6. Ubiquitous Language
 
