@@ -81,27 +81,509 @@ static string[] Integrantes() {
 
 ## Capítulo I: Presentación
 
-### 1.1. Startup Profile
-#### 1.1.1. Descripción de la Startup
-#### 1.1.2. Perfiles de integrantes del equipo
+<section id="startup-profile">
+  <h2>1.1 Startup Profile</h2>
 
-### 1.2. Solution Profile
-#### 1.2.1. Antecedentes y problemática
-#### 1.2.2. Lean UX Process
-- **1.2.2.1. Lean UX Problem Statements**
-- **1.2.2.2. Lean UX Assumptions**
-- **1.2.2.3. Lean UX Hypothesis Statements**
-- **1.2.2.4. Lean UX Canvas**
+  <!-- 1.1.1 Descripción de la Startup -->
+ <article id="descripcion-startup" aria-labelledby="descripcion-startup-title">
+  <h3 id="descripcion-startup-title">1.1.1 Descripción de la Startup</h3>
+
+  <p>
+    <strong>KapakID</strong> es una startup enfocada en desarrollar soluciones
+    tecnológicas para la <strong>gestión personal de documentos e identidad digital</strong>. 
+    Nuestro objetivo es ayudar a los usuarios a centralizar, proteger y acceder de forma segura 
+    a sus documentos esenciales desde cualquier dispositivo conectado a internet.
+  </p>
+
+  <h4>Propuesta de valor</h4>
+  <ul>
+    <li><strong>Seguridad:</strong> reducción del riesgo de pérdida o robo de documentos físicos.</li>
+    <li><strong>Ahorro de tiempo:</strong> búsqueda rápida y consolidación de información en un solo lugar.</li>
+    <li><strong>Acceso inmediato:</strong> disponibilidad de documentos en situaciones de emergencia.</li>
+    <li><strong>Gestión eficiente:</strong> recordatorios automáticos para fechas de vencimiento.</li>
+    <li><strong>Integración:</strong> conexión con sistemas de pago y recarga de servicios.</li>
+  </ul>
+
+  <h4>Misión</h4>
+  <p>
+    Proporcionar soluciones digitales accesibles e innovadoras que permitan a estudiantes, 
+    profesionales y familias <strong>gestionar de forma centralizada y segura sus documentos personales</strong>, 
+    facilitando el acceso, la organización y la protección de su identidad digital.
+  </p>
+
+  <h4>Visión</h4>
+  <p>
+    Convertirnos en la <strong>plataforma líder en gestión de documentos e identidad digital en Latinoamérica</strong>, 
+    reconocida por brindar seguridad, confianza y accesibilidad, contribuyendo al bienestar 
+    de las personas y al avance hacia sociedades más digitales y organizadas.
+  </p>
+</article>
+
+</div>
+<div align='left'>
+<h3>1.1.2. Perfiles de los integrantes del grupo</h3>
+<div align='center'>
+   <!--TODO: integrante 1 -->
+  > 🧑‍💻 <strong>INTEGRANTE 1</strong> 
+   
+
+   <div align='center'>
+     
+   <img src="" alt="imagen integrante 1" width="100" align='right'>
+
+   ~~~txt
+   
+   ~~~
+
+   </div>
+  
+   <!--TODO: integrante 2 -->
+**> 🧑‍💻 <strong>Raul Hiroshi Tasayco Osorio**</strong>
+   <div align='center'>
+
+   <img src="resources/Cap-1/Members/Image_raul_tasayco.jpeg" alt="imagen Raul" width="100" align='right'>
+
+   ~~~txt
+   Soy un estudiante de Ingeniería de Software de la Universidad Peruana de Ciencias Aplicadas (UPC),
+   actualmente me encuentro cursando el 7mo ciclo de la carrera.
+    
+    A lo largo del tiempo que me encuentro en la carrera pude aprender diferentes tecnologías, tanto lenguajes de programación, buenas prácticas de desarrollo, estructuras de datos, finalmente Frameworks como mi Angular en el cual me desempeño en el Frontend:
+      1️⃣ C++     
+      2️⃣ Python  
+      3️⃣ SQL     
+      4️⃣ Angular & Vue   
+      5️⃣ HTML,CSS & TS     
+    Me considero una persona responsable, listo para trabajar en equipo brindando mi apoyo y con un fuerte compromiso con todos mis deberes. 
+    
+    Mis expectativas para el curso de Aplicaciones Móviles son muy altas, puesto que es un curso en el cual aprenderé diferentes habilidades tanto frontend como backend 📱
+   ~~~
+
+   </div>
+
+   <!--TODO: integrante 3 -->
+**> 🧑‍💻 <strong>INTEGRANTE 3**</strong>
+   <div align='center'>
+
+   <img src="" alt="imagen integrante 3" width="100" align='right'>
+
+   ~~~txt
+   
+
+   ~~~
+
+   </div>
+
+   <!--TODO: integrante 4 -->
+**> 🧑‍💻<strong>INTEGRANTE 4**</strong>
+   <div align='center'>
+
+   <img src="" alt="imagen integrante 4" width="100" align='right'>
+  
+
+   ~~~txt
+  
+   ~~~
+
+   </div>
+   <!--TODO: integrante 5 -->
+
+**> 🧑‍💻 Fabrizio Javier Quiroz Zambrano (U202213406)**
+   <div align='center'>
+
+   <img src="resources/Cap-1/Members/Fabrizio1.jpg" alt="imagen Raul" width="100" align='right'>
+
+   ~~~txt
+    Actualmente curso el sexto ciclo de Ingeniería de Software en la Universidad Peruana de Ciencias Aplicadas (UPC), donde he venido desarrollando una sólida base técnica y una visión crítica
+    sobre el desarrollo de soluciones digitales. Mi formación me ha permitido explorar distintos lenguajes y herramientas, desde la lógica estructurada de C++ hasta el dinamismo de frameworks
+    modernos como Angular, con los que he trabajado principalmente en el frontend. También tengo experiencia en Python y SQL, lo que me ha ayudado a comprender mejor la gestión de datos y la
+    construcción de aplicaciones más completas.
+
+    Más allá de lo técnico, me considero una persona comprometida con el aprendizaje constante, con facilidad para adaptarme a nuevos entornos y colaborar en equipo. Me gusta enfrentar desafíos
+    que me obliguen a pensar fuera de lo convencional y a buscar soluciones eficientes y sostenibles.
+
+    Tengo grandes expectativas para el curso de Aplicaciones Web, ya que representa una oportunidad para fortalecer mis habilidades en el desarrollo fullstack y familiarizarme con nuevas tecnologías
+    como Vue. Estoy convencido de que este tipo de experiencias me acercan cada vez más al perfil profesional que quiero construir: uno capaz de crear software útil, escalable y centrado en las personas.
+   ~~~
+
+   </div>
+   
+<!-- 1.2.1 Antecedentes y problemática -->
+<div align='left'>
+<article id="solution-profile">
+
+<h2>1.2. Solution profile</h2>
+<article id="antecedentes-problematica">
+  <h3>1.2.1 Antecedentes y problemática</h3>
+  <p>
+    En la actualidad, muchas personas y pequeñas empresas enfrentan dificultades al momento de 
+    <strong>gestionar, proteger y acceder a sus documentos importantes</strong>. 
+    La dependencia de formatos físicos, el desorden en el almacenamiento digital y la ausencia de 
+    herramientas tecnológicas accesibles generan pérdida de tiempo, riesgo de extravío y 
+    complicaciones en trámites que requieren información inmediata. 
+  </p>
+  <p>
+    Frente a esta problemática surge la necesidad de contar con soluciones digitales prácticas que 
+    permitan a los usuarios centralizar, resguardar y disponer de sus documentos en cualquier momento 
+    y lugar, de forma segura y confiable.
+  </p>
+
+  <h4>5“W”s + 2"H"</h4>
+  <ul>
+    <li>
+      <strong>WHAT (QUÉ):</strong>  
+      El problema principal es la <strong>dificultad para gestionar documentos personales y empresariales</strong>.  
+      Muchos usuarios no tienen un sistema ordenado para guardar DNI, contratos, certificados o 
+      recibos, lo que ocasiona pérdidas de información, duplicidad de archivos y retrasos en 
+      procesos administrativos.
+    </li>
+    <br>
+    <li>
+      <strong>WHEN (CUÁNDO):</strong>  
+      Este problema ocurre <strong>de manera frecuente</strong>, especialmente en situaciones críticas:  
+      - Renovación de documentos o trámites legales.  
+      - Acceso a información en emergencias.  
+      - Fechas de vencimiento de contratos, pólizas o servicios.  
+      La falta de organización se hace evidente justo cuando más se necesita la información.
+    </li>
+    <br>
+    <li>
+      <strong>WHERE (DÓNDE):</strong>  
+      El problema se da en distintos <strong>ámbitos</strong>:  
+      - En el <em>personal</em>, cuando alguien requiere documentos médicos, escolares o financieros.  
+      - En el <em>profesional</em>, entre estudiantes y trabajadores que deben presentar certificados o 
+        contratos.  
+      - En el <em>empresarial</em>, en micro y pequeñas empresas que no cuentan con sistemas digitales 
+        para organizar facturas, permisos o documentación interna.
+    </li>
+    <br>
+    <li>
+      <strong>WHO (QUIÉN):</strong>  
+      Los principales afectados son:  
+      - <strong>Personas naturales</strong> que dependen de trámites frecuentes.  
+      - <strong>Estudiantes y profesionales</strong> que requieren tener certificados y documentos al día.  
+      - <strong>Emprendedores y pequeñas empresas</strong> que no pueden costear soluciones corporativas 
+        avanzadas de gestión documental.
+    </li>
+    <br>
+    <li>
+      <strong>WHY (POR QUÉ):</strong>  
+      Porque actualmente <strong>no existen herramientas accesibles, seguras y fáciles de usar</strong> 
+      que permitan gestionar documentos de manera integral.  
+      Las soluciones disponibles suelen ser:  
+      - Limitadas a almacenamiento básico en la nube sin organización avanzada.  
+      - Costosas para usuarios comunes o pequeñas empresas.  
+      - Poco personalizables para distintos tipos de documentos y recordatorios de vencimiento.
+    </li>
+    <br>
+    <li>
+      <strong>HOW (CÓMO):</strong>  
+      La solución se plantea mediante el desarrollo de una <strong>plataforma web</strong> que:  
+      - Centralice el almacenamiento digital de documentos.  
+      - Brinde recordatorios automáticos para fechas de vencimiento.  
+      - Permita acceso inmediato y seguro desde cualquier dispositivo.  
+      - Ofrezca integración con pagos y recargas de servicios relacionados a la documentación.
+    </li>
+    <br>
+    <li>
+      <strong>HOW MUCH (CUÁNTO):</strong>  
+      Actualmente, contratar un gestor documental empresarial o servicios especializados supone un 
+      <strong>costo elevado</strong>, inaccesible para la mayoría.  
+      KapakID busca ofrecer una solución <strong>económica, accesible y escalable</strong>, con planes 
+      gratuitos para funciones básicas y opciones premium de bajo costo para usuarios con mayores 
+      necesidades.
+    </li>
+  </ul>
+</article>
+
+___
+
+### 1.2.2 Lean Ux Process
+#### 1.2.2.1. Lean UX Problem Statements
+ 
+Actualmente, las personas enfrentan grandes dificultades para gestionar y llevar consigo sus documentos personales y tarjetas, como DNI, pasaporte, tarjetas bancarias, licencias de conducir, carnés universitarios, entre otros, debido a la incomodidad de portar documentos físicos, el riesgo de pérdida o robo, y la falta de una solución digital integrada que facilite su uso y administración. Esto se debe a varios factores, como la ausencia de una plataforma centralizada para almacenar y verificar documentos, la complejidad de realizar trámites digitales como renovaciones o pagos, y la falta de acceso offline a información crítica, lo que resulta en inconvenientes, pérdida de tiempo y dificultades para gestionar trámites y pagos de manera eficiente.
+
+Nosotros consideramos que estos usuarios necesitan una solución integral y segura que les permita centralizar, gestionar y utilizar sus documentos y tarjetas desde su celular, sin depender de llevar documentos físicos o acceder a múltiples plataformas para realizar trámites. Por ello, KapakID resuelve este problema mediante una aplicación web intuitiva desarrollada en Vue, que permite registrar y verificar documentos como DNI, pasaporte, tarjetas bancarias, licencias, carnés, certificados de vacunas, y más. Ofrece funcionalidades como recarga de tarjetas de transporte, pago de deudas, recarga de teléfono, renovación de documentos, consulta de saldos, historial de trámites y pagos, notificaciones de saldo bajo o vencimiento de documentos, modo offline para acceso limitado a documentos verificados, y una opción premium para gestionar múltiples perfiles (por ejemplo, documentos de hijos). Sabremos que hemos tenido éxito cuando los usuarios reporten una reducción significativa en el uso de documentos físicos, un aumento en la eficiencia al realizar trámites digitales, y una mejora en la satisfacción con la gestión de sus documentos y pagos dentro de los primeros tres meses de uso.
+
+#### 1.2.2.2. Lean UX Assumptions
+
+#### Business Outcomes :
+
+
+* **🔵 Crecimiento de la Base de Usuarios** <br>
+
+
+     KapakID busca atraer a personas que desean gestionar sus documentos y tarjetas de manera digital con campañas de marketing que resalten la facilidad de uso de la plataforma. Su diseño intuitivo y herramientas como el registro de DNI, pasaporte, tarjetas bancarias y notificaciones fomentarán una adopción amplia y sostenida.
+
+
+
+* **🔵 Alta Retención de Usuarios** <br>
+
+
+     Buscamos retener a los usuarios comprometidos con una experiencia fluida y funcionalidades valiosas como consulta de saldos, historial de trámites y notificaciones de vencimiento. El dashboard principal, claro y accesible, asegurará que los usuarios integren KapakID en su rutina diaria.
+
+
+
+* **🔵 Ingresos por Suscripciones Premium** <br>
+
+
+     Generaremos ingresos a través de suscripciones premium, con funciones avanzadas como soporte para múltiples perfiles (por ejemplo, para gestionar documentos de hijos). Estas herramientas motivarán a los usuarios a optar por planes pagos para una mayor comodidad en la gestión de documentos.
+
+
+
+* **🔵 Minimización del Churn Rate** <br>
+
+
+     Reducir la pérdida de usuarios es clave para KapakID. Con un dashboard principal útil y herramientas como modo offline y notificaciones de vencimiento, la plataforma ofrecerá valor continuo, manteniendo a los usuarios leales y comprometidos a largo plazo.
+
+
+
+* **🔵 Satisfacción del Usuario (NPS)** <br>
+
+
+     KapakID maximizará la satisfacción con una interfaz intuitiva y funciones prácticas como recarga de tarjetas, renovación de documentos y modo offline. La retroalimentación constante permitirá ajustar la plataforma para superar las expectativas de los usuarios.
+
+
+
+* **🔵 Adopción de Funciones de Gestión de Documentos** <br>
+
+
+     Fomentaremos el uso de herramientas para registrar y verificar documentos como DNI, pasaporte, licencias y carnés, accesibles desde el dashboard principal. Estas funcionalidades serán clave para que los usuarios reemplacen documentos físicos por la app.
+
+
+
+* **🔵 Establecimiento de Hábitos de Gestión Digital** <br>
+
+
+     Buscaremos motivar a los usuarios a gestionar trámites y pagos, como recargas de teléfono o renovación de documentos, con una interfaz sencilla y notificaciones motivadoras en el dashboard principal. Esto convertirá a KapakID en un aliado para la organización personal.
+
+
+
+* **🔵 Optimización de Trámites Digitales** <br>
+
+
+     KapakID ayudará a los usuarios a optimizar trámites con herramientas de renovación de documentos, consulta de saldos y historial de pagos, accesibles desde el dashboard principal. Notificaciones personalizadas apoyarán la eficiencia y la organización.
+
+
+
+* **🔵 Precisión en Notificaciones de Vencimiento** <br>
+
+
+     KapakID mejorará la experiencia con notificaciones precisas sobre vencimientos de documentos o saldos bajos, integradas en el dashboard principal. Esto permitirá a los usuarios planificar y actuar con anticipación.
+
+
+
+* **🔵 Usuarios Activos en Familias** <br>
+
+
+     KapakID atraerá a familias con la opción premium para gestionar múltiples perfiles, como documentos de hijos, desde un dashboard principal intuitivo. Su enfoque práctico y escalable lo convertirá en la opción ideal para la gestión documental familiar.
+
+
+
+* **🔵 Uso de Funciones de Pago y Recarga** <br>
+
+
+     KapakID promoverá el uso de herramientas para recargar tarjetas de transporte, pagar deudas y recargar teléfonos desde el dashboard principal. Esto facilitará una gestión financiera responsable y aumentará la confianza en la plataforma.
+
+
+
+* **🔵 Asociaciones con Entidades Gubernamentales y Financieras** <br>
+
+
+     KapakID establecerá alianzas con entidades gubernamentales y financieras para integrar servicios como renovación de documentos y pagos de tarjetas. Estas colaboraciones, accesibles desde el dashboard principal, enriquecerán la experiencia y el valor para los usuarios.
+
+
+
+* **🔵 Frecuencia de Uso del Dashboard Principal** <br>
+
+
+     KapakID incentivará el uso frecuente del dashboard principal, que muestra documentos, saldos, historial de trámites y notificaciones de forma clara. Su diseño atractivo asegurará que los usuarios lo consulten regularmente para gestionar sus documentos y pagos.
+
+
+
+* **🔵 Precisión en Notificaciones de Saldo Bajo**<br>
+
+     KapakID fortalecerá la confianza con notificaciones precisas de saldos bajos en tarjetas, integradas en el dashboard principal. Estas alertas ayudarán a los usuarios a identificar necesidades de recarga y tomar medidas rápidas.
+
+
+
+* **🔵 Reducción de Costos de Soporte**<br>
+
+     KapakID minimizará los costos de soporte con tutoriales interactivos y FAQs integrados en la plataforma. Esto permitirá a los usuarios resolver dudas de forma autónoma, mejorando la experiencia general.
+
+### User Outcomes 
+
+* **🟢 Control Documental Personal Mejorado**<br>
+
+     Los usuarios de KapakID lograrán un mayor control sobre sus documentos personales y tarjetas, como DNI, pasaporte, licencias y carnés, al utilizar herramientas de registro y verificación digital. El dashboard principal les proporcionará una visión clara de sus documentos, saldos y trámites, permitiéndoles gestionar todo desde su celular y reducir la dependencia de documentos físicos.
+
+* **🟢 Organización Eficiente para Familias**<br>
+
+     Los usuarios, especialmente familias, usarán KapakID para organizar documentos de múltiples perfiles (como los de sus hijos) con la opción premium. El dashboard principal les ofrecerá una vista consolidada de documentos y trámites, ayudándoles a anticipar vencimientos y gestionar renovaciones de manera eficiente.
+
+* **🟢 Optimización de Trámites Digitales**<br>
+
+     Los usuarios optimizarán sus trámites con KapakID, utilizando herramientas para renovar documentos, recargar tarjetas de transporte y pagar deudas desde el dashboard principal. Esto les permitirá ahorrar tiempo, reducir la necesidad de acudir a oficinas físicas y mantener un historial organizado de sus gestiones.
+
+* **🟢 Confianza en la Gestión de Pagos**<br>
+
+     Los usuarios que realizan pagos encontrarán en KapakID una herramienta confiable para recargar tarjetas, pagar deudas o recargar teléfonos. Desde el dashboard principal, podrán consultar saldos y revisar el historial de pagos, tomando decisiones informadas sin comprometer su organización financiera.
+
+* **🟢 Adopción de Gestión Documental Digital**<br>
+
+     KapakID empoderará a los usuarios para gestionar documentos digitalmente, como DNI, pasaporte o certificados, con una interfaz sencilla y notificaciones de vencimiento en el dashboard principal. Esto les ayudará a mantenerse organizados y reducir el uso de documentos físicos con facilidad.
+
+* **🟢 Reducción del Estrés Documental**<br>
+
+     Los usuarios experimentarán menos estrés al gestionar documentos gracias a la claridad que ofrece el dashboard principal y las notificaciones de vencimiento o saldo bajo. Estas funcionalidades les permitirán monitorear sus documentos en tiempo real, reaccionar ante alertas y mantener el control sin esfuerzo.
+
+* **🟢 Mayor Confianza en la Seguridad de Documentos**<br>
+
+     KapakID aumentará la confianza de los usuarios al proporcionar un entorno seguro para almacenar y verificar documentos, con acceso offline a documentos verificados desde el dashboard principal. Esto permitirá a los usuarios sentirse protegidos y acceder a su información incluso sin conexión.
+
+* **🟢 Experiencia de Uso Intuitiva**<br>
+
+     Los usuarios disfrutarán de una experiencia fluida y accesible con KapakID, gracias a su interfaz intuitiva y al dashboard principal que centraliza documentos, saldos y trámites. Esto facilitará la adopción de la plataforma, incluso para aquellos con poca experiencia digital, integrándola en su rutina diaria.
+
+* **🟢 Gestión Colaborativa de Documentos Familiares**<br>
+
+     Las familias se beneficiarán de la opción premium de KapakID, que permite gestionar documentos de varios miembros desde el dashboard principal. Esto fomentará una organización coordinada, asegurando que todos los documentos estén centralizados y accesibles.
+
+* **🟢 Acceso a Servicios de Trámites Externos**<br>
+
+     A través de asociaciones con entidades gubernamentales y financieras, los usuarios de KapakID accederán a servicios como renovación de documentos o pagos directamente desde la plataforma. Esto, integrado en el dashboard principal, enriquecerá su experiencia y les proporcionará recursos adicionales para gestionar sus documentos.
+
+* **🟢 Monitoreo Frecuente de Documentos y Pagos**<br>
+
+     KapakID incentivará a los usuarios a monitorear sus documentos y pagos regularmente a través del dashboard principal, que presenta documentos, saldos, historial de trámites y notificaciones de forma clara. Este hábito les permitirá mantenerse informados y tomar medidas rápidas para mantener todo en orden.
+
+* **🟢 Resolución Autónoma de Dudas**<br>
+
+     Los usuarios resolverán dudas de manera autónoma con los tutoriales interactivos y FAQs integrados en KapakID. Esta funcionalidad reducirá la necesidad de soporte externo, permitiéndoles aprovechar al máximo la plataforma con confianza y facilidad.
+
+* **🟢 Mayor Claridad en Trámites y Pagos**<br>
+
+     KapakID ayudará a los usuarios a comprender mejor sus trámites y pagos mediante reportes claros en el dashboard principal. Esta claridad les permitirá ajustar sus hábitos de gestión y alinear sus decisiones con sus necesidades personales o familiares.
+
+* **🟢 Motivación para Mantener Documentos Actualizados**<br>
+
+     Los usuarios se sentirán motivados para mantener sus documentos actualizados con las notificaciones de vencimiento y recordatorios de KapakID, integrados en el dashboard principal. Esta funcionalidad les ayudará a mantenerse organizados y celebrar sus logros en la gestión documental.
+
+* **🟢 Reducción de Errores en Gestión Documental**<br>
+
+     KapakID minimizará los errores en la gestión documental al automatizar el registro de documentos y ofrecer notificaciones precisas en el dashboard principal. Esto permitirá a los usuarios evitar equivocaciones costosas y mantener registros precisos con menos esfuerzo.
+
+#### 1.2.2.3. Lean UX Hypothesis Statements
+
+Creemos que digitalizar y centralizar todos los documentos personales y tarjetas en KapakID facilitará la vida diaria de los usuarios al reducir la dependencia de llevar documentos físicos.
+
+Sabremos que esto es cierto cuando los usuarios reporten un uso reducido de su billetera física para trámites o pagos cotidianos en el primer mes de uso.
+___
+Creemos que las notificaciones automatizadas sobre vencimientos de documentos y saldos bajos ayudarán a los usuarios a mantenerse proactivos y a evitar inconvenientes o estrés por no tener sus documentos al día.
+
+Sabremos que esto es cierto cuando el 90% de los usuarios que reciban una notificación de vencimiento inicien el trámite de renovación directamente desde la app, y cuando el uso de la función de recarga aumente un 15% tras las alertas de saldo bajo.
+___
+Creemos que la función de modo offline proporcionará un valor esencial y aumentará la confianza del usuario, asegurando que siempre tengan acceso a sus documentos verificados, incluso sin conexión a internet.
+
+Sabremos que esto es cierto cuando al menos el 20% de los usuarios acceda a la app en modo offline en un periodo de 30 días, y cuando los comentarios sobre la seguridad y la conveniencia de esta función sean consistentemente positivos.
+___
+Creemos que el plan premium con soporte para múltiples perfiles motivará a los usuarios a suscribirse, ya que les permitirá administrar de forma eficiente los documentos de sus hijos y otros miembros de la familia.
+
+Sabremos que esto es cierto cuando al menos el 10% de los usuarios que usen la prueba gratuita del plan premium decidan pagar por la suscripción en el primer mes.
+___
+Creemos que una interfaz de usuario intuitiva y los tutoriales interactivos permitirán a usuarios con poca familiaridad tecnológica adoptar la app y completar tareas clave como el registro de documentos y los trámites sin necesitar soporte técnico directo.
+
+Sabremos que esto es cierto cuando el 85% de los usuarios nuevos completen su perfil y registren al menos tres documentos personales en la primera semana sin abrir un ticket de soporte.
+___
+Creemos que la integración con entidades gubernamentales para la renovación de documentos y el acceso a servicios como el pago de impuestos o multas facilitará la adopción masiva, ya que los usuarios verán la app como una plataforma oficial y confiable para realizar trámites importantes.
+
+Sabremos que esto es cierto cuando al menos el 25% de los usuarios que hayan registrado un documento con fecha de vencimiento próxima intenten iniciar el proceso de renovación a través de la app.
+___
+Creemos que la capacidad de pagar deudas y servicios básicos (como la recarga de teléfono) directamente desde KapakID aumentará la frecuencia de uso diario y posicionará a la app como una herramienta esencial para la gestión financiera personal.
+
+Sabremos que esto es cierto cuando el 40% de los usuarios que tengan tarjetas bancarias registradas realicen al menos una transacción de pago o recarga en un periodo de 30 días.
+
+#### 1.2.2.4. Lean UX Canvas
+
+![Lean UX Canvas](<resources/Cap-1/LeanUX/Lean UX Canvas.png>)
 
 ### 1.3. Segmentos objetivo
+En KapakID, tenemos dos segmentos objetivos principales que se benefician de las funcionalidades de nuestra aplicación:
 
+* **Estudiantes Universitarios (18–29)**
+
+  Este segmento busca la conveniencia y eficiencia. Su principal problema es la necesidad de llevar múltiples tarjetas (universidad, transporte, débito), lo que aumenta el riesgo de pérdida. KapakID les permite centralizar todo en su celular para hacer consultas de saldo y recargas al instante, simplificando su rutina diaria y reduciendo el riesgo.
+
+* **Padres/Madres o Tutores (25–45)**
+
+  Este grupo se enfoca en la organización y la seguridad familiar. Su dolor es la gestión dispersa de los documentos de sus hijos, desde carnés escolares hasta certificados de vacunas. KapakID resuelve esto con su función premium de perfiles múltiples, que les permite centralizar de forma segura toda la información familiar en un solo lugar, brindándoles control total y tranquilidad.
 ---
 
 ## Capítulo II: Requirements Development and Software Solution Design
 
-### 2.1. Competidores
-#### 2.1.1. Análisis competitivo
-#### 2.1.2. Estrategias y tácticas frente a competidores
+## 2.1 Competidores
+
+
+### ¿Por qué llevar a cabo este análisis?
+
+El análisis de competidores es un paso esencial para el desarrollo estratégico de **KapakID**, ya que permite:
+
+- **Identificar el panorama competitivo actual**: conocer qué aplicaciones ofrecen servicios similares (billeteras digitales, apps de identidad, apps de transporte) y cómo se posicionan en el mercado.
+- **Detectar fortalezas y debilidades de la competencia**: entender qué hacen bien y en qué fallan, para aprovechar oportunidades y evitar errores.
+- **Definir nuestra propuesta de valor diferencial**: garantizar que **KapakID** no sea “una app más”, sino una solución única que combine lo mejor de las demás y agregue funcionalidades innovadoras.
+- **Optimizar la estrategia de marketing y producto**: orientar esfuerzos hacia segmentos desatendidos y necesidades no cubiertas por los competidores.
+- **Reducir riesgos y anticipar amenazas**: prever cambios regulatorios, tendencias tecnológicas y movimientos de la competencia que puedan impactar el proyecto.
+
+
+---
+
+### 2.1.1 Análisis competitivo (Comparativa)
+
+**¿Por qué llevar a cabo este análisis?**  
+El análisis competitivo de **KapakID** permite entender el panorama actual de billeteras digitales e identidades electrónicas en Perú, identificar qué hacen bien los competidores y en qué fallan, y posicionar a KapakID como una solución integral que combina pagos, identidad y gestión de documentos.
+
+---
+
+| **Aspecto** | **KapakID** | **Yape** | **Plin** | **IDPerú (RENIEC)** | **Google Wallet** |
+|-------------|-------------|----------|----------|----------------------|-------------------|
+| **Perfil** |||||  
+| **Overview** | Plataforma digital que integra identidad, pagos, transporte y gestión de documentos. | Billetera digital bancaria popular en Perú. | Billetera digital interoperable entre bancos. | Plataforma estatal de identidad digital. | Billetera digital global de Google. | 
+| **Ventaja competitiva / Valor ofrecido** | Centralización de documentos + pagos + alertas + transporte en una sola app. | Confianza y popularidad entre usuarios peruanos. | Interoperabilidad bancaria amplia. | Identidad digital oficial. | Integración global en dispositivos Android. |
+| **Nivel de Marketing** ||||| 
+| **Mercado objetivo** | Estudiantes, familias y ciudadanos que requieren gestionar trámites, transporte y pagos en Perú. | Jóvenes y adultos bancarizados en Perú. | Usuarios de banca digital en Perú. | Ciudadanos peruanos que requieren autenticación oficial. | Usuarios globales de Android interesados en pagos digitales. |
+| **Estrategias de marketing** | Diferenciación por seguridad, centralización y adaptación local (Metropolitano, Línea 1, SUNEDU, CONADIS). Campañas digitales y alianzas institucionales. | Marketing masivo, respaldo bancario. | Posicionamiento en interoperabilidad y simplicidad. | Difusión estatal y obligatoriedad en trámites oficiales. | Estrategia global en Google Pay y servicios Android. |
+| **Perfil de Producto** |||||  
+| **Productos & Servicios** | Identidad digital, pagos, recargas de transporte, alertas inteligentes, asistente de trámites. | Pagos y transferencias. | Pagos y transferencias entre bancos. | Autenticación y certificados digitales. | Pagos digitales y almacenamiento de tarjetas. |
+| **Precios & Costos** | Modelo freemium: básico gratis, premium con alertas avanzadas y perfiles múltiples. | Gratis para usuarios. | Gratis para usuarios. | Gratis para ciudadanos (respaldado por el Estado). | Gratis, requiere dispositivos Android. |
+| **Canales de distribución (Web/Móvil)** | App móvil (Android/iOS) con integración a servicios locales. | App móvil Android/iOS. | App móvil Android/iOS. | Plataforma digital oficial, apps de gobierno. | App móvil preinstalada en Android. |
+| **Análisis SWOT** |||||  
+| **Fortalezas** | Centralización total de documentos, alertas inteligentes, perfiles múltiples, modo offline, asistente de trámites. | Popularidad masiva, confianza en respaldo bancario. | Interoperabilidad bancaria, simplicidad. | Respaldo oficial del Estado, obligatoriedad en trámites. | Integración global y masiva en Android. |
+| **Debilidades** | Requiere generar confianza inicial en usuarios para almacenar documentos sensibles. | No gestiona documentos ni transporte. | No maneja alertas ni documentos. | No cubre pagos ni transporte. | No adaptado al contexto peruano, sin enfoque en trámites locales. |
+| **Oportunidades** | Creciente digitalización de trámites en Perú, necesidad de integración transporte + pagos + identidad. | Crecer en funcionalidades más allá de pagos. | Mejorar experiencia de usuario e incluir servicios adicionales. | Ampliar servicios digitales más allá de identidad. | Expandirse en mercados emergentes con servicios locales. |
+| **Amenazas** | Competidores bancarios consolidados, desconfianza en gestión digital de documentos sensibles. | Aparición de apps más completas en Perú. | Nuevos competidores fintech más versátiles. | Baja adopción si usuarios prefieren soluciones privadas. | Regulaciones locales que limiten su alcance. |
+
+---
+
+### **¿Por qué KapakID es superior?**
+- **Integra lo mejor de todos los competidores**: pagos (como Yape/Plin), identidad segura (como IDPerú), y almacenamiento de tarjetas (como Google Wallet).
+- **Agrega valor único**: centralización de documentos, alertas inteligentes, perfiles múltiples, modo offline y asistentes de trámites.
+- **Diseñada para el contexto peruano**: compatible con Metropolitano, Línea 1, SUNEDU y CONADIS.
+
+
+---
+
+### 2.1.2 Estrategias y tácticas frente a competidores
+
+**Estrategias:**
+- Diferenciación por **centralización y seguridad** (cifrado, biometría).
+- Experiencia **adaptada al contexto peruano** (Metropolitano, Línea 1, SUNEDU, CONADIS).
+- Cumplimiento **Ley 29733** para generar confianza.
+
+**Tácticas:**
+- **Alianzas** con universidades y colectivos de transporte.
+- **Campañas digitales**: “Olvídate de cargar documentos físicos, usa KapakID”.
+- **Modelo freemium**: básico gratis, premium con alertas avanzadas y perfiles múltiples.
+
+---
 
 ### 2.2. Entrevistas
 #### 2.2.1. Diseño de entrevistas
