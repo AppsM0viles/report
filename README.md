@@ -914,8 +914,33 @@ Esta capa proporciona las implementaciones técnicas concretas para las interfac
 ![Component Diagram Documents](<resources/Cap-2/Components Diagrams/ComponentDiagram-dark.png>)
 
 - **2.6.1.6. Bounded Context Software Architecture Code Level Diagrams**
-    - 2.6.x.6.1. Bounded Context Domain Layer Class Diagrams
-    - 2.6.x.6.2. Bounded Context Database Design Diagram
+    - 2.6.1.6.1. Bounded Context Domain Layer Class Diagrams
+        - El diagrama de clases de la capa de dominio representa el núcleo lógico del Bounded Context de Documents. En este nivel, la estructura se centra exclusivamente en las reglas de negocio y los modelos conceptuales, permaneciendo agnóstica a cualquier tecnología de persistencia o infraestructura externa. En este diagrama se pueden identificar los siguientes elementos clave:
+
+            * <strong>DocumentRecord (Aggregate Root):</strong> Actúa como la puerta de entrada para todas las operaciones del contexto. Es el encargado de mantener la integridad y consistencia entre la información del documento y su estado de sincronización local.
+
+            * <strong>Entidades (Entities):</strong> Se definen Document, que encapsula los atributos dinámicos del archivo (estado y URL), y DocumentCache, que es fundamental para la estrategia móvil de KapakID, ya que gestiona la disponibilidad del documento sin conexión a internet.
+
+            * <strong>Objetos de Valor (Value Objects):</strong> Se utilizan para representar atributos inmutables que definen características del dominio, como DocumentStatus (para el flujo de validación), DocumentType (para categorizar carnets, DNI o tarjetas) y FileUrl.
+
+            * <strong>DocumentRepository (Interface):</strong> Se incluye la interfaz del repositorio, la cual define el contrato para la persistencia del agregado, permitiendo que la capa de dominio se comunique con la infraestructura mediante la inversión de dependencias.
+            
+            <br>
+
+    ![Class Diagram Documents](<resources/Cap-2/DiagramsClass/Documents/Documents Class Diagram.jpeg>)
+
+    - 2.6.1.6.2. Bounded Context Database Design Diagram
+        - El diseño de la base de datos para el contexto de Documents ha sido proyectado para soportar tanto la integridad de la información en la nube como la eficiencia en el acceso local desde dispositivos móviles. El esquema sigue una estructura normalizada que facilita el seguimiento del ciclo de vida de cada documento cargado por el usuario. El diagrama se compone de las siguientes tablas principales:
+
+            * <strong>Tabla documents:</strong> Es la entidad central de persistencia. Almacena la metadata crítica, incluyendo el user_id para la trazabilidad, el tipo de documento y el estado actual del proceso de verificación. Esta tabla sirve como la "fuente de verdad" para el perfil digital del usuario.
+
+            * <strong>Tabla document_caches:</strong> Diseñada específicamente para optimizar la experiencia móvil. Registra la ubicación física de los archivos en el almacenamiento interno del smartphone (local_path) y marca si el documento está listo para ser visualizado en modo offline, además de registrar la fecha de la última sincronización.
+
+            * <strong>Tabla external_validations:</strong> Funciona como un historial de auditoría e integración. Cada vez que KapakID interactúa con sistemas externos (como RENIEC o SUNEDU), se registra el resultado de la validación, el proveedor consultado y la respuesta obtenida. Esto permite una trazabilidad completa en caso de errores de verificación o auditorías de seguridad.
+            
+            <br>
+
+    ![Database Design Diagram Documents](<resources/Cap-2/DiagramsClass/Documents/Documents DatabaseDiagramClass.jpeg>)
 
 ---
 
