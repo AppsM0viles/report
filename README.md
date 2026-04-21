@@ -141,7 +141,7 @@ static string[] Integrantes() {
 **> 🧑‍💻 <strong>Raul Hiroshi Tasayco Osorio**</strong>
    <div align='center'>
 
-   <img src="resources/Cap-1/Members/Image_raul_tasayco.jpeg" alt="imagen Raul" width="100" align='right'>
+   <img src="resources/cap-1/Members/Image_raul_tasayco.jpeg" alt="imagen Raul" width="100" align='right'>
 
    ~~~txt
    Soy un estudiante de Ingeniería de Software de la Universidad Peruana de Ciencias Aplicadas (UPC),
