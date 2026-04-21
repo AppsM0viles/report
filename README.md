@@ -910,6 +910,9 @@ Esta capa proporciona las implementaciones técnicas concretas para las interfac
 | External Service | CloudStorageService       | Integración con un proveedor de almacenamiento en la nube (ej. AWS S3, Firebase Storage) para alojar y recuperar los archivos de manera segura. |
 
 - **2.6.1.5. Bounded Context Software Architecture Component Level Diagrams**
+
+![Component Diagram Documents](<resources/Cap-2/Components Diagrams/ComponentDiagram-dark.png>)
+
 - **2.6.1.6. Bounded Context Software Architecture Code Level Diagrams**
     - 2.6.x.6.1. Bounded Context Domain Layer Class Diagrams
     - 2.6.x.6.2. Bounded Context Database Design Diagram
