@@ -825,7 +825,19 @@ El análisis de las tareas de estudiantes universitarios y madres de familia mue
 #### 2.4.3. Product Backlog
 
 ### 2.5. Strategic-Level Domain-Driven Design
+
+En esta sección se describe el enfoque utilizado para la toma de decisiones estratégicas en el desarrollo de la aplicación móvil KapakID, aplicando los principios de Domain-Driven Design (DDD). El propósito central fue reconocer y delimitar los límites naturales del dominio enfocado en la gestión personal de documentos e identidad digital, dividiendo la solución en Bounded Contexts.
+
+Para esta descomposición, el equipo hizo uso de herramientas colaborativas como Event Storming, que permitió representar de manera visual y dinámica los flujos de eventos, comandos y actores del dominio, tales como estudiantes universitarios y padres de familia; y el Bounded Context Canvas, mediante el cual se definieron los aspectos clave de cada contexto, tales como objetivos, modelos, responsabilidades y sus interacciones con otros.
+
+Este enfoque estratégico no solo favoreció una organización más clara y coherente de la arquitectura móvil, sino que también facilitó la alineación de las decisiones técnicas con las metas del negocio, optimizando la comunicación técnica y funcional entre los distintos participantes del proyecto.
+
 #### 2.5.1. EventStorming
+
+En esta sección se expone el proceso de EventStorming aplicado como técnica de exploración del dominio de KapakID, cuyo objetivo fue identificar los eventos más relevantes del sistema y comprender cómo estos se relacionan con los actores y las reglas de negocio. La dinámica permitió representar de manera visual y secuencial los hechos clave, como la validación de documentos oficiales, recargas de transporte y envío de notificaciones de vencimiento.
+
+Asimismo, se mapearon los comandos desde la interfaz de la aplicación móvil que originan dichos eventos, facilitando las conversaciones entre los participantes y generando un entendimiento común sobre el comportamiento esperado. Este enfoque posibilitó construir una visión compartida del ecosistema digital, sentando las bases para etapas posteriores de modelado más detallado y la delimitación de responsabilidades en contextos como Identity, Documents, Transport y Notifications.
+
 - **2.5.1.1. Candidate Context Discovery**
 - **2.5.1.2. Domain Message Flows Modeling**
 - **2.5.1.3. Bounded Context Canvases**
@@ -845,6 +857,64 @@ El análisis de las tareas de estudiantes universitarios y madres de familia mue
 - **2.6.x.6. Bounded Context Software Architecture Code Level Diagrams**
     - 2.6.x.6.1. Bounded Context Domain Layer Class Diagrams
     - 2.6.x.6.2. Bounded Context Database Design Diagram
+---
+### 2.6. Tactical-Level Domain-Driven Design
+#### 2.6.1. Bounded Context: <Documents>
+
+Este Bounded Context es responsable de la gestión integral de los documentos de identidad y universitarios del usuario dentro de la aplicación móvil KapakID. Su enfoque principal radica en el almacenamiento seguro, la verificación de los archivos y, crucialmente para el entorno móvil, la gestión de la caché y persistencia local para garantizar la disponibilidad de los documentos en modo offline.
+
+- **2.6.1.1. Domain Layer**
+
+La capa de dominio contiene el núcleo del negocio y las reglas fundamentales para la gestión de documentos. Aquí se definen las entidades, objetos de valor y raíces de agregación sin depender de ninguna tecnología de persistencia o framework externo.
+
+| Tipo              | Nombre                | Descripción |
+|-------------------|-----------------------|-------------|
+| Entity            | Document              | Representa el archivo físico o digital subido por el usuario (ej. carnet universitario, DNI) y su metadata base. |
+| Entity            | DocumentCache         | Representa el estado de almacenamiento local del documento en el dispositivo móvil para habilitar el soporte offline. |
+| Value Object      | DocumentId            | Identificador único e inmutable del documento. |
+| Value Object      | DocumentStatus        | Define el estado de verificación del documento (ej. Pending, Verified, Rejected, Expired). |
+| Value Object      | FileUrl               | Ruta o enlace de acceso seguro donde se aloja el archivo físico en la nube o en el almacenamiento local. |
+| Aggregate Root    | DocumentRecord        | Entidad principal que agrupa el Document y su DocumentCache, asegurando la consistencia entre el estado en la nube y el estado en el dispositivo. |
+
+- **2.6.1.2. Interface Layer**
+
+Esta capa actúa como el punto de entrada a la lógica de la aplicación. En el contexto de la aplicación móvil y su conexión con el backend, gestiona cómo se reciben las peticiones (ej. desde las pantallas de UI) y cómo se devuelven los datos mediante el uso de DTOs (Data Transfer Objects).
+
+| Componente       | Nombre                      | Descripción |
+|------------------|-----------------------------|-------------|
+| Controller / API | DocumentController          | Expone los endpoints RESTful para subir, actualizar, consultar y sincronizar los documentos del usuario. |
+| DTO              | DocumentUploadResource      | Objeto que transporta los datos necesarios desde la aplicación móvil para registrar un nuevo documento. |
+| DTO              | DocumentResponseResource    | Objeto que devuelve la información consolidada de un documento, formateada para ser consumida por la interfaz de usuario. |
+| DTO              | CacheSyncResource           | Transporta los metadatos necesarios para validar si la caché local de la aplicación móvil está desactualizada respecto al servidor. |
+
+- **2.6.1.3. Application Layer**
+
+La capa de aplicación orquesta los casos de uso del sistema. No contiene reglas de negocio, sino que coordina tareas, delegando el trabajo a los objetos de dominio y a los servicios de infraestructura mediante comandos y consultas (CQRS).
+
+| Componente          | Nombre                        | Descripción |
+|---------------------|-------------------------------|-------------|
+| Command             | UploadDocumentCommand         | Comando que encapsula la intención de subir un nuevo documento para su validación. |
+| Command             | SyncDocumentCacheCommand      | Comando ejecutado por la app móvil para descargar y guardar un documento localmente y permitir su lectura offline. |
+| Query               | GetDocumentByIdQuery          | Consulta para recuperar los detalles de un documento específico. |
+| Application Service | DocumentCommandService        | Orquesta el flujo de operaciones transaccionales de escritura, como la subida, actualización de estado o eliminación de un documento. |
+| Application Service | DocumentQueryService          | Coordina las operaciones de lectura, obteniendo los datos solicitados de forma optimizada. |
+
+- **2.6.1.4. Infrastructure Layer**
+
+Esta capa proporciona las implementaciones técnicas concretas para las interfaces definidas en el dominio. Se encarga de la persistencia de datos (tanto en la nube como en el móvil) y la comunicación con servicios externos.
+
+| Componente       | Nombre                    | Descripción |
+|------------------|---------------------------|-------------|
+| Repository       | DocumentRepository        | Implementación de la persistencia de la metadata de los documentos, comunicándose con la base de datos principal (ej. PostgreSQL o MySQL). |
+| Repository       | LocalCacheRepository      | Gestión de la persistencia local en el dispositivo móvil (utilizando tecnologías como Room para bases de datos SQLite) para brindar el soporte offline. |
+| External Service | CloudStorageService       | Integración con un proveedor de almacenamiento en la nube (ej. AWS S3, Firebase Storage) para alojar y recuperar los archivos de manera segura. |
+
+- **2.6.1.5. Bounded Context Software Architecture Component Level Diagrams**
+- **2.6.1.6. Bounded Context Software Architecture Code Level Diagrams**
+    - 2.6.x.6.1. Bounded Context Domain Layer Class Diagrams
+    - 2.6.x.6.2. Bounded Context Database Design Diagram
+
+---
 
 ---
 
