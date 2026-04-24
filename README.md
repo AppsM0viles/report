@@ -174,15 +174,25 @@ static string[] Integrantes() {
    </div>
 
    <!--TODO: integrante 4 -->
-**> 🧑‍💻<strong>INTEGRANTE 4**</strong>
+**> 🧑‍💻<strong>Ysaac Ligorio Villanueva Andrade**</strong>
    <div align='center'>
 
-   <img src="" alt="imagen integrante 4" width="100" align='right'>
+   <img src="resources/cap-1/Members/perfil-ysaac.png" alt="imagen integrante 4" width="100" align='right'>
   
-
    ~~~txt
-  
+   Soy estudiante del 7mo ciclo de la carrera de Ingeniería de Software en la UPC. 
+
+    Durante estos años en la universidad y ahora enfocado en el desarrollo del ecosistema KapakID, he podido ganar experiencia práctica en varias tecnologías y formas de trabajo:
+      🔵Backend & APIs: Java con Spring Boot
+      🔵Arquitectura: Domain-Driven Design (DDD) y Structurizr
+      🔵Bases de Datos: PostgreSQL y SQLite (para caché local)
+      🔵Frontend Móvil: [Flutter / Kotlin / Swift]
+
+    Como parte del equipo, me gusta ser proactivo y enfocarme en que la arquitectura que diseñamos no se quede solo en papel, sino que funcione bien y de forma ordenada en el código.
+
+    Mis expectativas para el curso de Aplicaciones Móviles son altas. Más allá de solo programar, quiero aprender a resolver los retos reales del entorno móvil, como el manejo de datos sin internet (modo offline) y lograr que la migración de nuestra plataforma web sea un éxito.
    ~~~
+
 
    </div>
    <!--TODO: integrante 5 -->
@@ -840,6 +850,31 @@ Asimismo, se mapearon los comandos desde la interfaz de la aplicación móvil qu
 
 - **2.5.1.1. Candidate Context Discovery**
 - **2.5.1.2. Domain Message Flows Modeling**
+
+Los Domain Message Flows modelan las interacciones entre los diferentes bounded contexts, mostrando cómo se comunican entre sí mediante comandos, eventos y consultas. A continuación, se muestran los flujos de mensaje para los escenarios clave del negocio:
+
+  * **Subir y verificar documento:** En este flujo se muestra la interacción del bounded context Documents al momento en que un usuario registra un documento oficial para su validación.
+
+  ![alt text](<resources/Cap-2/Flows Modeling/Documents.png>)
+
+  * **Acceso y registro a la plataforma:** En este flujo se muestra la interacción del bounded context Identity al momento en que un usuario crea su cuenta y accede a la aplicación móvil.
+
+  ![alt text](<resources/Cap-2/Flows Modeling/Identity.png>)
+
+  * **Vincular tarjeta de transporte:** En este flujo se muestra la interacción del bounded context Transport al momento en que un usuario registra una tarjeta (ej. Metropolitano) para consultar sus saldos.
+
+  ![alt text](<resources/Cap-2/Flows Modeling/Transport.png>)
+
+  Adicionalmente, se presentan flujos de escenarios relevantes para los usuarios y el sistema, pero en los que no se produce interacción compleja entre distintos bounded contexts:
+
+  * **Envío de alertas:** En este flujo se muestra el proceso mediante el cual el sistema despacha alertas al usuario, modelado en el bounded context Notifications.
+
+ ![alt text](<resources/Cap-2/Flows Modeling/Notifications.png>)
+
+  * **Registro de auditoría:** En este flujo se modela el proceso mediante el cual el sistema guarda un registro inmutable de acciones críticas, modelado en el bounded context Compliance.
+
+![alt text](<resources/Cap-2/Flows Modeling/Compliance.png>)
+
 ### 2.5.1.3. Bounded Context Canvases
 
 Para mejorar la organización del dominio y facilitar una comunicación consistente, se elaboraron Bounded Context Canvases para cada subdominio. Estos canvases delimitan claramente las responsabilidades, establecen el lenguaje ubicuo y los modelos clave, y describen los puntos de integración y los flujos de mensajes entre contextos. Los diagramas que siguen consolidan estas decisiones y sirvieron como guía para alinear la arquitectura, las interfaces y la evolución del sistema.
@@ -869,6 +904,48 @@ Responsable de garantizar que todas las operaciones cumplan con las normativas l
 
 ![Bounded Context Canvas - Compliance](resources/Cap-2/BoundedContextCanvas/ComplianceBC.jpg)
 #### 2.5.2. Context Mapping
+En esta sección se explica el proceso de elaboración de los context maps de **KapakID**. Asimismo, se permite la visualización de las relaciones estructurales entre Bounded Contexts, junto a los patrones de relaciones establecidos en Domain Driven Design (DDD), como Anti-corruption Layer (ACL), Customer/Supplier, Shared Kernel y Conformist.
+
+Posterior al debate grupal para la contextualización del proyecto de identidad digital y transporte, nos hemos proyectado los siguientes Bounded Contexts:
+* **Identity and Access Management (IAM)**
+* **User Profiles (UP)**
+* **Digital Identity & Documents (DID)**
+* **Payments & Subscriptions (PAS)**
+* **Transport & NFC Management (TNM)**
+* **Notifications (NTF)**
+
+#### **Relaciones Detalladas:**
+
+**User Profiles (UP) - Identity and Access Management (IAM)**
+En la presente imagen se puede identificar la relación entre **User Profiles** e **Identity and Access Management (IAM)**, los cuales están enfocados en lógicas similares y comparten un subconjunto del modelo de dominio común para evitar la duplicación de código. Se utiliza el patrón **Shared Kernel** para la entidad "Usuario", la cual comparte lógica de credenciales y segmentación básica de clientes.
+
+![UP - IAM Relationship](resources/Cap-2/ContextMapping/context-mapping-up-iam.png)
+
+**Identity and Access Management (IAM) - Payments & Subscriptions (PAS)**
+En la presente imagen se puede identificar la relación entre **IAM** y **Payments & Subscriptions (PAS)**, enfocada en la comunicación por medio de un **ACL (Anti-corruption Layer)** hacia el contexto de pagos por el uso de **Stripe** como servicio externo. Este se comunica mediante **OHS** y **PL**, lo que permite la validación de suscripciones sin comprometer la seguridad del sistema.
+
+![IAM - PAS Relationship](resources/Cap-2/ContextMapping/context-mapping-iam-pas.png)
+
+**Payments & Subscriptions (PAS) - Transport & NFC Management (TNM)**
+En la presente imagen se puede identificar la relación entre **PAS** y **Transport & NFC Management (TNM)** por medio del patrón **Customer / Supplier**. El Bounded Context de transporte actúa bajo la influencia de pagos, ya que la activación de saldos en tarjetas NFC genera una dependencia directa de la validación exitosa de la transacción.
+
+![PAS - TNM Relationship](resources/Cap-2/ContextMapping/context-mapping-pas-tnm.png)
+
+**Digital Identity & Documents (DID) - User Profiles (UP)**
+En la presente imagen se puede identificar el patrón **Partnership** debido al trabajo coordinado entre estos dos contextos. **Digital Identity** se encarga de la gestión de validación legal, mientras que **User Profiles** se actualiza constantemente con el estatus de "Verificado" para permitir el acceso a servicios de transporte con tarifa preferencial.
+
+![DID - UP Relationship](resources/Cap-2/ContextMapping/context-mapping-did-up.png)
+
+**Digital Identity & Documents (DID) - Notifications (NTF)**
+En la presente imagen se puede identificar el patrón **Conformista**, de manera que el downstream (**Notifications**) adopta el modelo del upstream (**DID**) tal cual. Las alertas de validación o vencimiento de documentos son dependientes de la lógica de negocio de los certificados digitales.
+
+![DID - NTF Relationship](resources/Cap-2/ContextMapping/context-mapping-did-ntf.png)
+
+#### **Final Context Map**
+Posteriormente, se presenta el mapa de contextos final de **KapakID**, integrando todas las relaciones y patrones mencionados anteriormente para ofrecer una visión global de la arquitectura del sistema.
+
+![Final Context Map](resources/Cap-2/ContextMapping/final-context-map.png)
+
 #### 2.5.3. Software Architecture
 - **2.5.3.1. Software Architecture Context Level Diagrams**
 - **2.5.3.2. Software Architecture Container Level Diagrams**
