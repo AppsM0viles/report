@@ -852,7 +852,29 @@ En esta sección se expone el proceso de EventStorming aplicado como técnica de
 
 Asimismo, se mapearon los comandos desde la interfaz de la aplicación móvil que originan dichos eventos, facilitando las conversaciones entre los participantes y generando un entendimiento común sobre el comportamiento esperado. Este enfoque posibilitó construir una visión compartida del ecosistema digital, sentando las bases para etapas posteriores de modelado más detallado y la delimitación de responsabilidades en contextos como Identity, Documents, Transport y Notifications.
 
-- **2.5.1.1. Candidate Context Discovery**
+**2.5.1.1. Candidate Context Discovery**
+
+A partir del análisis temporal y lógico de los eventos de dominio obtenidos en la sesión de EventStorming, el equipo procedió a agrupar los comportamientos y procesos de negocio que presentaban una alta cohesión. El objetivo de esta fase fue descubrir los límites naturales (Candidate Contexts) dentro del ecosistema de KapakID, garantizando que cada módulo tenga una responsabilidad única y una baja dependencia funcional con los demás.
+
+El análisis de la línea de tiempo de los eventos, comandos, actores y políticas dio como resultado la identificación de los siguientes contextos candidatos:
+
+Identity Context:
+Se derivó del análisis del flujo de inicio del usuario. Al identificar comandos como Registrar Cuenta KapakID y eventos resultantes como Cuenta Registrada, se hizo evidente la necesidad de un límite que gestione exclusivamente la autenticación, los perfiles de los actores principales (Estudiante y Padre de Familia) y el control de acceso a la plataforma móvil.
+
+Documents Context:
+Surgió como el núcleo central del dominio. La agrupación de comandos como Subir Carnet Universitario y agregados como DocumentRecord definió este contexto. Se delimitó aquí toda la lógica de validación oficial, encapsulando las políticas que exigen que todo documento subido sea contrastado contra sistemas externos (como SUNEDU o RENIEC), y gestionando los eventos de Documento Subido a Caché y Carnet Verificado/Rechazado.
+
+Transport Context:
+El análisis reveló un subdominio transaccional claramente separado de la gestión documental pura. Los comandos de Vincular Tarjeta Metropolitano y Recargar Saldo de Hijo agruparon las necesidades de movilidad urbana. Este contexto encapsula las integraciones financieras y operativas con sistemas externos como la ATU y Entidades Bancarias, gestionando eventos críticos como Tarjeta Transporte Vinculada y Saldo de Transporte Incrementado.
+
+Notifications Context:
+Se descubrió como un contexto de soporte a partir de las políticas reactivas del sistema. Por ejemplo, la política "Cuando la cuenta se registra, se debe enviar un correo de bienvenida" demostró que el envío de mensajes (comandos como Enviar Correo y eventos como Correo Enviado) no debe residir en el módulo de Identidad, sino en un servicio centralizado que escuche eventos de distintos módulos y despache notificaciones (Push, Email) de forma asíncrona.
+
+Compliance Context:
+Este contexto emergió al analizar el comportamiento de la aplicación en entornos de baja conectividad. A partir del comando Abrir App Offline y la interacción con el agregado DocumentCache, se identificó la política de registrar accesos para cuando la conexión regrese. Esto definió un límite enfocado en la auditoría y el cumplimiento normativo (generando eventos como Acceso Offline Auditado), separando la trazabilidad legal de la funcionalidad principal de la aplicación.
+
+Esta agrupación inicial en Candidate Contexts proporcionó una arquitectura base robusta, alineada estrechamente con el Ubiquitous Language y los flujos de valor reales de los usuarios de KapakID.
+  
 - **2.5.1.2. Domain Message Flows Modeling**
 
 Los Domain Message Flows modelan las interacciones entre los diferentes bounded contexts, mostrando cómo se comunican entre sí mediante comandos, eventos y consultas. A continuación, se muestran los flujos de mensaje para los escenarios clave del negocio:
