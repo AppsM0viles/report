@@ -1254,7 +1254,73 @@ El Bounded Context de Transport es el encargado de gestionar la integración de 
 
   ![alt text](resources/Cap-2/DiagramsClass/Documents/DiagramaDataBase_BC_Transportation.jpeg)
 
-#### 2.6.4. Bounded Context: <>
+#### 2.6.4. Bounded Context: Identity and Access Management (IAM)
+
+Este Bounded Context es el núcleo de seguridad de KapakID. Es responsable de la autenticación, autorización y la gestión de los perfiles de los usuarios (Estudiantes Universitarios y Padres/Tutores). Administra el ciclo de vida de las credenciales, emite y valida tokens JWT, y garantiza que cada interacción en la plataforma esté debidamente autorizada y registrada.
+
+##### 2.6.4.1. Domain Layer
+
+La capa de dominio encapsula las reglas fundamentales de seguridad y acceso al ecosistema de KapakID, garantizando la inmutabilidad de la identidad y la gestión de roles sin depender de frameworks externos.
+
+| Tipo | Nombre | Descripción |
+| :--- | :--- | :--- |
+| **Aggregate Root** | `UserAccount` | Entidad raíz que centraliza la información del usuario, sus roles y sus credenciales activas. |
+| **Entity** | `Session` | Representa una sesión activa de un usuario en un dispositivo, gestionando su ciclo de vida y caducidad. |
+| **Value Object** | `UserId` | Identificador único e inmutable del usuario en todo el ecosistema KapakID. |
+| **Value Object** | `Credentials` | Encapsula la lógica de la contraseña cifrada (hash) garantizando que nunca se exponga en texto claro. |
+| **Value Object** | `UserRole` | Define el nivel de acceso y el segmento del usuario (ej. Student, Parent, Admin). |
+| **Value Object** | `EmailAddress` | Encapsula la validación de formato del correo electrónico y asegura que sea único. |
+
+##### 2.6.4.2. Interface Layer
+
+Esta capa actúa como el puerto de entrada para las peticiones de los dispositivos cliente (aplicación móvil o web), exponiendo los endpoints seguros para el registro y el acceso.
+
+| Componente | Nombre | Descripción |
+| :--- | :--- | :--- |
+| **Controller** | `AuthController` | Expone endpoints REST para iniciar sesión (`/auth/login`), registrarse y renovar tokens. |
+| **Controller** | `UserProfileController` | Expone endpoints para consultar y editar la información básica del perfil. |
+| **DTO** | `LoginRequestResource` | Objeto que transporta las credenciales ingresadas por el usuario desde la interfaz. |
+| **DTO** | `AuthResponseResource` | Objeto de respuesta que incluye el Token JWT y los datos básicos de la sesión autorizada. |
+
+##### 2.6.4.3. Application Layer
+
+La capa de aplicación coordina las acciones de seguridad, validando reglas mediante servicios de dominio y emitiendo eventos de integración cuando un usuario se registra o inicia sesión.
+
+| Componente | Nombre | Descripción |
+| :--- | :--- | :--- |
+| **Command** | `RegisterUserCommand` | Comando que encapsula los datos y la intención de crear una nueva cuenta en la plataforma. |
+| **Command** | `AuthenticateUserCommand` | Comando que orquesta la verificación de credenciales y la generación de la sesión. |
+| **Query** | `GetUserProfileQuery` | Consulta diseñada para retornar la información del perfil del usuario logueado. |
+| **Application Service** | `IdentityCommandService` | Coordina la lógica transaccional de escritura, incluyendo el hash de contraseñas y el guardado en base de datos. |
+
+##### 2.6.4.4. Infrastructure Layer
+
+Proporciona las implementaciones técnicas concretas para el almacenamiento seguro de usuarios y la generación criptográfica de tokens.
+
+| Componente | Nombre | Descripción |
+| :--- | :--- | :--- |
+| **Repository** | `UserRepository` | Implementación de persistencia para guardar y consultar usuarios en la base de datos PostgreSQL. |
+| **Infra Service** | `JwtTokenProvider` | Implementación técnica encargada de firmar, emitir y validar la vigencia de los tokens JWT. |
+| **Infra Service** | `PasswordHasher` | Componente de seguridad encargado de encriptar las contraseñas utilizando algoritmos fuertes (ej. BCrypt). |
+
+##### 2.6.4.5. Bounded Context Software Architecture Component Level Diagrams
+
+Este diagrama ilustra la arquitectura interna del microservicio de Identidad. El flujo comienza en el `AuthController`, que recibe peticiones del API Gateway. El `IdentityCommandService` procesa estas solicitudes apoyándose en el `PasswordHasher` para verificar credenciales y en el `JwtTokenProvider` para emitir el acceso. Finalmente, los datos se consultan y guardan a través del `UserRepository`.
+
+![Component Diagram IAM](<resources/Cap-2/BoundedContextIAM/BC-IAM_Component.png>)
+
+##### 2.6.4.6. Bounded Context Software Architecture Code Level Diagrams
+###### 2.6.4.6.1. Bounded Context Domain Layer Class Diagrams
+
+El diagrama de clases de la capa de dominio sitúa a `UserAccount` como la raíz de agregación. Esta entidad gestiona instancias de sus Value Objects correspondientes (`Credentials`, `UserRole`, `EmailAddress`). Esta separación garantiza que atributos críticos como la contraseña estén encapsulados y aislados de modificaciones accidentales desde otras partes del código.
+
+![Class Diagram IAM](<resources/Cap-2/DiagramsClass/BoundedContextIAM/BC-IAM_ClassDiagram.png>)
+
+###### 2.6.4.6.2. Bounded Context Database Design Diagram
+
+A nivel físico, la base de datos para IAM se mantiene estrictamente separada para evitar fugas de información. La tabla `users` contiene la información central e inmutable de autenticación (correo, password_hash, rol). Además, se incluye una tabla `user_sessions` para la gestión activa de tokens (permitiendo invalidar sesiones o implementar *refresh tokens*) y registrar los últimos accesos por motivos de seguridad y auditoría.
+
+![Database Diagram IAM](<resources/Cap-2/DiagramsClass/BoundedContextIAM/BC-IAM_DatabaseDesign.png>)
 
 #### 2.6.5. Bounded Context Compliance: <Compliance>
 
