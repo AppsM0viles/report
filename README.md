@@ -124,7 +124,7 @@ static string[] Integrantes() {
 <h3>1.1.2. Perfiles de los integrantes del grupo</h3>
 <div align='center'>
    <!--TODO: integrante 1 -->
-  > 🧑‍💻 <strong>INTEGRANTE 1</strong> 
+  > 🧑‍💻 <strong>Fabricio Samir Vega Coronado</strong> 
    
 
    <div align='center'>
