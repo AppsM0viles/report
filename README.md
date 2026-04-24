@@ -36,14 +36,12 @@ static string[] Integrantes() {
 ## Registro de Versiones del Informe
 
 | Versión | Fecha        | Autor              | Descripción |
-|:--------|:-------------|:-------------------| :--- |
-| 1.0     | [20/04/2026] | [Raul Tasayco]     | Se adjuntó segmentos objetivos, diseño de entrevistas, registro de entrevistas, User Stories, Software Architecture y Bounded Context Resource. |
-| 1.1     | [21/04/2026] | [Fabrizio Quiroz]  | Se elaboró Lean UX Hypothesis Statements, User personas, Empathy Mapping, User Stories, Bounded Context IAM y Profiles, y Bounded Context Canvases. |
-| 1.2     | [22/04/2026] | [Fabricio Vega]    | Se redactó analisis competitivo, User Stories, Ubiquitous Language, Product Backlog, Software Architecture Deployment Diagrams y Bounded Context Planning y Monitoring. |
-| 1.3     | [23/04/2026] | [Ysaac Villanueva] | Se redactó Lean UX Problem Statements y Assumptions, User Stories, Context Mappin, As-Is y To-Be Scenario Mapping y Bounded Context Analytics y Subscriptions. |
-| 1.4     | [24/04/2026] | [Rafael Tasayco]   | Se adjuntó Lean UX Canvas, competidores, registro de entrevistas, Impact Mapping, User Stories, Event Storming y Bounded Context Resource. |
-
-
+| :---    | :---         | :---               | :---        |
+| 1.0     | [20/04/2026] | [Raul Tasayco]     | Inclusión de los segmentos objetivo, planificación y registro de las entrevistas, historias de usuario, diseño de la arquitectura de software y el *Bounded Context* de Resource. |
+| 1.1     | [21/04/2026] | [Fabrizio Quiroz]  | Creación de las declaraciones de hipótesis *Lean UX*, perfiles de usuario (*User Personas*), mapas de empatía, historias de usuario, *Bounded Context Canvases* y los *Bounded Contexts* de IAM y Profiles. |
+| 1.2     | [22/04/2026] | [Fabricio Vega]    | Desarrollo del análisis de la competencia, historias de usuario, lenguaje ubicuo, *Product Backlog*, diagramas de despliegue arquitectónico y los *Bounded Contexts* de Planning y Monitoring. |
+| 1.3     | [23/04/2026] | [Ysaac Villanueva] | Redacción de los *Problem Statements* y *Assumptions* de *Lean UX*, historias de usuario, *Context Mapping*, mapeo de escenarios *As-Is/To-Be* y los *Bounded Contexts* de Analytics y Subscriptions. |
+| 1.4     | [24/04/2026] | [Rafael Tasayco]   | Integración del *Lean UX Canvas*, evaluación de competidores, evidencia de entrevistas, *Impact Mapping*, historias de usuario, dinámica de *Event Storming* y el *Bounded Context* de Resource. |
 ## Project Report Collaboration Insights
 
 La redacción y estructuración del presente *Project Report* se llevó a cabo de manera colaborativa y asíncrona utilizando un repositorio centralizado en GitHub. A continuación, se detalla la evidencia de participación del equipo correspondiente al primer gran hito de entrega (TB1), alineado con el Registro de Versiones del documento.
