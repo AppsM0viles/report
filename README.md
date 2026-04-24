@@ -35,13 +35,61 @@ static string[] Integrantes() {
 
 ## Registro de Versiones del Informe
 
-| Versión | Fecha | Autor | Descripción |
-| :--- | :--- | :--- | :--- |
-| 1.0 | [Fecha] | [Nombre] | Creación del documento y estructura inicial. |
+| Versión | Fecha        | Autor              | Descripción |
+|:--------|:-------------|:-------------------| :--- |
+| 1.0     | [20/04/2026] | [Raul Tasayco]     | Se adjuntó segmentos objetivos, diseño de entrevistas, registro de entrevistas, User Stories, Software Architecture y Bounded Context Resource. |
+| 1.1     | [21/04/2026] | [Fabrizio Quiroz]  | Se elaboró Lean UX Hypothesis Statements, User personas, Empathy Mapping, User Stories, Bounded Context IAM y Profiles, y Bounded Context Canvases. |
+| 1.2     | [22/04/2026] | [Fabricio Vega]    | Se redactó analisis competitivo, User Stories, Ubiquitous Language, Product Backlog, Software Architecture Deployment Diagrams y Bounded Context Planning y Monitoring. |
+| 1.3     | [23/04/2026] | [Ysaac Villanueva] | Se redactó Lean UX Problem Statements y Assumptions, User Stories, Context Mappin, As-Is y To-Be Scenario Mapping y Bounded Context Analytics y Subscriptions. |
+| 1.4     | [24/04/2026] | [Rafael Tasayco]   | Se adjuntó Lean UX Canvas, competidores, registro de entrevistas, Impact Mapping, User Stories, Event Storming y Bounded Context Resource. |
+
 
 ## Project Report Collaboration Insights
 
-[Enlace o descripción de la colaboración del equipo, métricas de commits, etc.]
+La redacción y estructuración del presente *Project Report* se llevó a cabo de manera colaborativa y asíncrona utilizando un repositorio centralizado en GitHub. A continuación, se detalla la evidencia de participación del equipo correspondiente al primer gran hito de entrega (TB1), alineado con el Registro de Versiones del documento.
+
+* **Repositorio del Informe:** [Inserta aquí tu link de GitHub]
+* **Total de commits registrados (TB1):** 85
+* **Metodología de versionado:** Se utilizaron ramas temáticas (`feature/chapter-1`, `docs/architecture`, etc.) y se aplicó el estándar de *Conventional Commits* para mantener un historial limpio y comprensible. Se realizaron revisiones mediante *Pull Requests* para asegurar la calidad de la redacción.
+
+### Autores Contribuyentes
+* Fabricio Samir Vega Coronado
+* Raul Hiroshi Tasayco Osorio
+* Rafael Augusto Tasayco Almonacid
+* Ysaac Ligorio Villanueva Andrade
+* Fabrizio Javier Quiroz Zambrano
+
+---
+
+### Hito TB1 - Fundamentos y Diseño de Arquitectura (Semanas 1 - 4)
+
+Durante esta fase inicial, el equipo se enfocó en asentar las bases del producto y diseñar la arquitectura técnica de KapakID. Los entregables consolidados en este hito incluyeron:
+
+* **Estructura base:** Creación de la carátula, registro de versiones y la tabla de contenidos.
+* **Capítulo I (Presentación):** Definición del perfil de la startup (F1nTrack), la propuesta de valor de KapakID, los perfiles del equipo y la delimitación de los segmentos objetivo (estudiantes y padres de familia).
+* **Capítulo II (Requirements & Software Design):** * Análisis exhaustivo de competidores y ejecución de entrevistas de validación.
+    * Elaboración del Needfinding (User Personas, Task Matrix, Journey Mapping).
+    * Diseño a Nivel Estratégico y Táctico utilizando *Domain-Driven Design (DDD)*, incluyendo el Bounded Context Canvas, Context Mapping y diagramas C4 (Contexto, Contenedores, Componentes y Base de Datos) para los contextos clave como Identity (IAM) y Documents.
+
+### Distribución de Esfuerzos (Commits)
+
+La carga de trabajo se distribuyó de manera equitativa, logrando aportes sustanciales de cada integrante en sus respectivas áreas asignadas (investigación, redacción técnica y diagramación):
+
+* **Fabricio Samir Vega Coronado:** 2 commits
+* **Raul Hiroshi Tasayco Osorio:** 18 commits
+* **Rafael Augusto Tasayco Almonacid:** 5 commits
+* **Ysaac Ligorio Villanueva Andrade:** 3 commits
+* **Fabrizio Javier Quiroz Zambrano:** 11 commits
+
+**Total de commits en la fase TB1:** 39
+
+### Evidencia Gráfica (GitHub Insights)
+
+A continuación, se adjuntan las capturas del panel de *Insights / Contributors* de nuestro repositorio en GitHub, las cuales respaldan el trabajo colaborativo del equipo durante este hito:
+
+![Evidencia de Commits Globales](resources/cap-1/INSIGHTS/AV1/GlobalInsightsAV1.png)
+
+![Evidencia de Contribuciones por Integrante](resources/cap-1/INSIGHTS/AV1/InsightsAV1.png)
 
 ---
 
@@ -681,27 +729,6 @@ El análisis competitivo de **KapakID** permite entender el panorama actual de b
 
 ---
 
-| Campo         | Información |
-|---------------|-------------|
-| Entrevistado 2 |    Daniel Paolo Ita Rojas         |
-| Edad          |     21        |
-| Distrito      |          Villa Maria del Triunfo   |
-| Foto          | ![Foto entrevistado 5](<resources/Cap-2/registro de entrevistas/Imagen-entrevistaPaolo.png>) |
-| Timing        | [Ver grabación](https://drive.google.com/file/d/16iohQr01hyAhS6zoUO3Td08Vxon0hDhe/view?usp=sharing) |
-
-
----
-
-| Campo         | Información |
-|---------------|-------------|
-| Entrevistado 2 |     Jose Rodrigo Rodriguez     |
-| Edad          |   20      |
-| Distrito      |      Villa Maria del Triunfo    |
-| Foto          | ![Foto entrevistado 6](<resources/Cap-2/registro de entrevistas/Imagen-entrevistaJose.png>) |
-| Timing        | [Ver grabación](https://drive.google.com/file/d/1NJMvMY5To5xtlis-if2pwjwBhdjVMOpi/view?usp=sharing) |
-
----
-
 ### **2.2.3. Análisis de entrevistas**
 
 **Segmento 1: Jóvenes universitarios usuarios de transporte y documentos digitales**
@@ -754,87 +781,6 @@ El análisis competitivo de **KapakID** permite entender el panorama actual de b
     * **Gestión Multi-perfil:** Ofrecer en la versión Premium la posibilidad de administrar documentos de terceros (hijos/familiares).
     * **Dashboard Centralizado:** Crear una interfaz de usuario que priorice la visualización rápida de alertas, recargas y documentos pendientes.
 
-
-
-#### **Entrevistado 4: **
-  * **Perfil**
-    *  
-
-  * **Insights clave**
-    *  
-    * 
-    *   
-
-  * **Problemas y frustraciones**
-    *  
-    * 
-    * 
-
-  * **Necesidades**
-   
-    * 
-  
-    * 
-   
-    * 
-    
-    * 
-  
-    * 
-   
-
-  * **Oportunidades para KapakID**
-    
-    * 
-    
-    * 
-    
-    * 
-    
-    * 
-    
-    * 
-
-**Segmento 2: Padres/Madres o Tutores**
-
-  * **Perfil**
-    *  
-
-  * **Insights clave**
-    *  
-    * 
-    *   
-
-  * **Problemas y frustraciones**
-    *  
-    * 
-    * 
-
-  * **Necesidades**
-   
-    * 
-  
-    * 
-   
-    * 
-    
-    * 
-  
-    * 
-   
-
-  * **Oportunidades para KapakID**
-    
-    * 
-    
-    * 
-    
-    * 
-    
-    * 
-    
-    * 
-    
 
 ## 2.3. Needfinding
 ### 2.3.1. User Personas
@@ -940,6 +886,7 @@ Este lenguaje ubicuo debe ser utilizado de forma consistente por todos los miemb
 #### 2.4.1. User Stories
 
 **Tabla de Epics**
+
 | Epic ID | Título                       | Descripción                                                                 |
 |---------|------------------------------|-----------------------------------------------------------------------------|
 | E1      | Gestión de Usuarios y Perfiles | Administración de usuarios, autenticación y creación de múltiples perfiles familiares. |
@@ -1049,25 +996,25 @@ Los Domain Message Flows modelan las interacciones entre los diferentes bounded 
 
   * **Subir y verificar documento:** En este flujo se muestra la interacción del bounded context Documents al momento en que un usuario registra un documento oficial para su validación.
 
-  ![alt text](<resources/Cap-2/Flows Modeling/Documents.png>)
+  ![alt text](resources/Cap-2/Flows Modeling/Documents.png)
 
   * **Acceso y registro a la plataforma:** En este flujo se muestra la interacción del bounded context Identity al momento en que un usuario crea su cuenta y accede a la aplicación móvil.
 
-  ![alt text](<resources/Cap-2/Flows Modeling/Identity.png>)
+  ![alt text](resources/Cap-2/Flows Modeling/Identity.png)
 
   * **Vincular tarjeta de transporte:** En este flujo se muestra la interacción del bounded context Transport al momento en que un usuario registra una tarjeta (ej. Metropolitano) para consultar sus saldos.
 
-  ![alt text](<resources/Cap-2/Flows Modeling/Transport.png>)
+  ![alt text](resources/Cap-2/Flows Modeling/Transport.png)
 
   Adicionalmente, se presentan flujos de escenarios relevantes para los usuarios y el sistema, pero en los que no se produce interacción compleja entre distintos bounded contexts:
 
   * **Envío de alertas:** En este flujo se muestra el proceso mediante el cual el sistema despacha alertas al usuario, modelado en el bounded context Notifications.
 
- ![alt text](<resources/Cap-2/Flows Modeling/Notifications.png>)
+ ![alt text](resources/Cap-2/Flows Modeling/Notifications.png)
 
   * **Registro de auditoría:** En este flujo se modela el proceso mediante el cual el sistema guarda un registro inmutable de acciones críticas, modelado en el bounded context Compliance.
 
-![alt text](<resources/Cap-2/Flows Modeling/Compliance.png>)
+![alt text](resources/Cap-2/Flows Modeling/Compliance.png)
 
 ### 2.5.1.3. Bounded Context Canvases
 
@@ -1235,7 +1182,7 @@ Esta capa proporciona las implementaciones técnicas concretas para las interfac
 
 - **2.6.1.5. Bounded Context Software Architecture Component Level Diagrams**
 
-![Component Diagram Documents](<resources/Cap-2/Components Diagrams/ComponentDiagram-dark.png>)
+![Component Diagram Documents](resources/Cap-2/Components Diagrams/ComponentDiagram-dark.png)
 
 - **2.6.1.6. Bounded Context Software Architecture Code Level Diagrams**
     - 2.6.1.6.1. Bounded Context Domain Layer Class Diagrams
@@ -1251,7 +1198,7 @@ Esta capa proporciona las implementaciones técnicas concretas para las interfac
             
             <br>
 
-    ![Class Diagram Documents](<resources/Cap-2/DiagramsClass/Documents/Documents Class Diagram.jpeg>)
+    ![Class Diagram Documents](resources/Cap-2/DiagramsClass/Documents/Documents Class Diagram.jpeg)
 
     - 2.6.1.6.2. Bounded Context Database Design Diagram
         - El diseño de la base de datos para el contexto de Documents ha sido proyectado para soportar tanto la integridad de la información en la nube como la eficiencia en el acceso local desde dispositivos móviles. El esquema sigue una estructura normalizada que facilita el seguimiento del ciclo de vida de cada documento cargado por el usuario. El diagrama se compone de las siguientes tablas principales:
@@ -1264,7 +1211,7 @@ Esta capa proporciona las implementaciones técnicas concretas para las interfac
             
             <br>
 
-    ![Database Design Diagram Documents](<resources/Cap-2/DiagramsClass/Documents/Documents DatabaseDiagramClass.jpeg>)
+    ![Database Design Diagram Documents](resources/Cap-2/DiagramsClass/Documents/Documents DatabaseDiagramClass.jpeg)
 
 ---
 
@@ -1321,19 +1268,19 @@ Se encarga de la comunicación con los proveedores externos de mensajería y la 
 
 Este diagrama de nivel de componentes detalla la estructura interna del microservicio de Notificaciones. Al tratarse de un sistema con enfoque móvil, este componente se encarga de recibir los tokens generados por los dispositivos (iOS/Android) y orquestar el envío de alertas utilizando servicios externos especializados en mensajería Push y correo electrónico.
 
-![Component Diagram Documents](<resources/Cap-2/Components Diagrams/ComponentDiagram_NotificationsBC-dark.png>)
+![Component Diagram Documents](resources/Cap-2/Components Diagrams/ComponentDiagram_NotificationsBC-dark.png)
 
 ##### 2.6.2.6. Bounded Context Software Architecture Code Level Diagrams
 ###### 2.6.2.6.1. Bounded Context Domain Layer Class Diagrams
 El diagrama de clases para el contexto de Notifications modela la relación entre los dispositivos móviles y los mensajes. El NotificationRecord actúa como Aggregate Root garantizando que no se envíen notificaciones a dispositivos no registrados. Se destaca la entidad UserDevice, que es crítica en el desarrollo móvil para almacenar el identificador de notificaciones push (Device Token). Además, se incluyen los Value Objects que tipifican el estado del envío (NotificationStatus) y el canal (NotificationType).
 
-![Class Diagram Documents](<resources/Cap-2/DiagramsClass/Documents/NotificationsBC.jpeg>)
+![Class Diagram Documents](resources/Cap-2/DiagramsClass/Documents/NotificationsBC.jpeg)
     
 ###### 2.6.3.6.2. Bounded Context Database Design Diagram
 
 El diseño de base de datos para este contexto es altamente transaccional y optimizado para lecturas rápidas, dado que la bandeja de notificaciones se consulta constantemente desde la app móvil. La tabla user_devices es el núcleo de la integración móvil, almacenando los tokens de Firebase/APNs. La tabla notifications funciona como el historial inmutable de alertas, mientras que notification_templates permite estandarizar los mensajes recurrentes (ej. "Su documento [Documento] ha sido validado con éxito").
 
-![Class Diagram Documents](<resources/Cap-2/DiagramsClass/Documents/NotificationsDB.jpeg>)
+![Class Diagram Documents](resources/Cap-2/DiagramsClass/Documents/NotificationsDB.jpeg)
 
 
 #### 2.6.3. Bounded Context Transportation: <Transportation>
@@ -1399,7 +1346,7 @@ El Bounded Context de Transport es el encargado de gestionar la integración de 
 
   - El Payment Gateway Adapter para procesar los cobros de las recargas con las entidades bancarias.
 
-![alt text](<resources/Cap-2/Components Diagrams/BC_Transportation.jpeg>)
+![alt text](resources/Cap-2/Components Diagrams/BC_Transportation.jpeg)
 
 ##### 2.6.3.6. Bounded Context Software Architecture Code Level Diagrams
 ###### 2.6.3.6.1. Bounded Context Domain Layer Class Diagrams
@@ -1470,20 +1417,20 @@ Proporciona las implementaciones técnicas concretas para el almacenamiento segu
 
 Este diagrama ilustra la arquitectura interna del microservicio de Identidad. El flujo comienza en el `AuthController`, que recibe peticiones del API Gateway. El `IdentityCommandService` procesa estas solicitudes apoyándose en el `PasswordHasher` para verificar credenciales y en el `JwtTokenProvider` para emitir el acceso. Finalmente, los datos se consultan y guardan a través del `UserRepository`.
 
-![Component Diagram IAM](<resources/Cap-2/BoundedContextIAM/BC-IAM_Component.png>)
+![Component Diagram IAM](resources/Cap-2/BoundedContextIAM/BC-IAM_Component.png)
 
 ##### 2.6.4.6. Bounded Context Software Architecture Code Level Diagrams
 ###### 2.6.4.6.1. Bounded Context Domain Layer Class Diagrams
 
 El diagrama de clases de la capa de dominio sitúa a `UserAccount` como la raíz de agregación. Esta entidad gestiona instancias de sus Value Objects correspondientes (`Credentials`, `UserRole`, `EmailAddress`). Esta separación garantiza que atributos críticos como la contraseña estén encapsulados y aislados de modificaciones accidentales desde otras partes del código.
 
-![Class Diagram IAM](<resources/Cap-2/BoundedContextIAM/BC-IAM_ClassDiagram.png>)
+![Class Diagram IAM](resources/Cap-2/BoundedContextIAM/BC-IAM_ClassDiagram.png)
 
 ###### 2.6.4.6.2. Bounded Context Database Design Diagram
 
 A nivel físico, la base de datos para IAM se mantiene estrictamente separada para evitar fugas de información. La tabla `users` contiene la información central e inmutable de autenticación (correo, password_hash, rol). Además, se incluye una tabla `user_sessions` para la gestión activa de tokens (permitiendo invalidar sesiones o implementar *refresh tokens*) y registrar los últimos accesos por motivos de seguridad y auditoría.
 
-![Database Diagram IAM](<resources/Cap-2/BoundedContextIAM/BC-IAM_DatabaseDesign.png>)
+![Database Diagram IAM](resources/Cap-2/BoundedContextIAM/BC-IAM_DatabaseDesign.png)
 
 #### 2.6.5. Bounded Context Compliance: <Compliance>
 
@@ -1536,7 +1483,7 @@ Implementa la persistencia con un enfoque en la seguridad extrema, configurando 
 
 Este diagrama de componentes ilustra la estructura interna del contenedor Compliance Service. La interacción es dual: recibe peticiones síncronas (HTTP) para gestionar términos legales desde la app, y consume eventos asíncronos (AMQP) desde un Message Broker para registrar auditorías sin bloquear las transacciones de otros módulos.
 
-![alt text](<resources/Cap-2/Components Diagrams/BC_Compliance.png>)
+![alt text](resources/Cap-2/Components Diagrams/BC_Compliance.png)
 
 ##### 2.6.5.6. Bounded Context Software Architecture Code Level Diagrams
 
