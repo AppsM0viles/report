@@ -840,7 +840,34 @@ Asimismo, se mapearon los comandos desde la interfaz de la aplicación móvil qu
 
 - **2.5.1.1. Candidate Context Discovery**
 - **2.5.1.2. Domain Message Flows Modeling**
-- **2.5.1.3. Bounded Context Canvases**
+### 2.5.1.3. Bounded Context Canvases
+
+Para mejorar la organización del dominio y facilitar una comunicación consistente, se elaboraron Bounded Context Canvases para cada subdominio. Estos canvases delimitan claramente las responsabilidades, establecen el lenguaje ubicuo y los modelos clave, y describen los puntos de integración y los flujos de mensajes entre contextos. Los diagramas que siguen consolidan estas decisiones y sirvieron como guía para alinear la arquitectura, las interfaces y la evolución del sistema.
+
+#### Identity (Identidad y Accesos)
+Este Bounded Context gestiona la autenticación, autorización y asignación de roles. Emite y valida tokens JWT, administra el ciclo de vida de las credenciales y publica eventos hacia otros contextos para garantizar un acceso controlado y seguro a nivel de toda la plataforma.
+
+![Bounded Context Canvas - Identity](resources/Cap-2/BoundedContextCanvas/IdentityBC.jpg)
+
+#### Documents (Gestión Documental)
+Contexto encargado del ciclo de vida de los documentos digitales (DNI, carné universitario, pasaportes). Maneja la carga segura, el almacenamiento de metadatos, la validación de autenticidad y la orquestación de la caché local para permitir el acceso offline.
+
+![Bounded Context Canvas - Documents](resources/Cap-2/BoundedContextCanvas/DocumentsBC.jpg)
+
+#### Transport (Transporte y Recargas)
+Abarca la gestión de las tarjetas de transporte urbano (Metropolitano, Línea 1) y la ejecución de recargas. Funciona como un integrador entre la aplicación móvil y los sistemas de transporte o pasarelas de pago externas.
+
+![Bounded Context Canvas - Transport](resources/Cap-2/BoundedContextCanvas/TransportBC.jpg)
+
+#### Notifications (Notificaciones y Alertas)
+Se encarga de gestionar y despachar todas las comunicaciones hacia los usuarios. Centraliza el envío de alertas push y correos electrónicos sobre saldos bajos, vencimientos de documentos y confirmaciones de trámites.
+
+![Bounded Context Canvas - Notifications](resources/Cap-2/BoundedContextCanvas/NotificationsBC.jpg)
+
+#### Compliance (Cumplimiento Normativo y Auditoría)
+Responsable de garantizar que todas las operaciones cumplan con las normativas legales de privacidad (Ley 29733). Registra de forma inmutable las acciones críticas y gestiona el consentimiento del usuario sobre el manejo de sus datos.
+
+![Bounded Context Canvas - Compliance](resources/Cap-2/BoundedContextCanvas/ComplianceBC.jpg)
 #### 2.5.2. Context Mapping
 #### 2.5.3. Software Architecture
 - **2.5.3.1. Software Architecture Context Level Diagrams**
