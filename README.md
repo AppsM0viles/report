@@ -700,9 +700,61 @@ El análisis competitivo de **KapakID** permite entender el panorama actual de b
 
 ---
 
-#### 2.2.3. Análisis de entrevistas
-**Segmento 1: Jóvenes universitarios usuarios de transporte y documentos digitales (Hany Pareja Berocal)**
+### **2.2.3. Análisis de entrevistas**
 
+**Segmento 1: Jóvenes universitarios usuarios de transporte y documentos digitales**
+
+#### **Entrevistado 1: Sebastian Delgado (Enfoque en Eficiencia de Procesos)**
+* **Perfil**
+    * Sebastian, estudiante de 21 años residente de San Borja. Su rutina diaria implica el uso constante de DNI, carné universitario, tarjeta del Metropolitano y tarjeta de débito para movilización y consumo en tiendas.
+* **Insights clave**
+    * La mayor fricción en el transporte urbano no es el traslado, sino la recarga física; las colas en estaciones y las fallas técnicas en los módulos de recarga generan una pérdida de tiempo crítica.
+    * Existe una disposición real de pago por una suscripción premium (entre 10 y 15 soles mensuales) si la plataforma garantiza la eliminación de trámites físicos y colas.
+* **Problemas y frustraciones**
+    * Incomodidad y sobrecosto al tener que pagar pasajes en efectivo en transporte informal por olvido de la tarjeta física.
+    * Estrés e incertidumbre por no conocer con exactitud los requisitos de renovación de documentos estatales (RENIEC/SUNEDU), los cuales percibe como cambiantes.
+* **Necesidades**
+    * Un sistema de recarga de transporte 100% digital que elimine la dependencia del efectivo y los módulos de estación.
+    * Alertas proactivas de saldo bajo (con un umbral de 5 soles) y de vencimiento de documentos con un mes de anticipación.
+* **Oportunidades para KapakID**
+    * **Recarga Digital Integrada:** Implementar la recarga directa de tarjetas de transporte para optimizar el tiempo del estudiante.
+    * **Asistente de Trámites:** Incluir un checklist interactivo que guíe al usuario paso a paso en procesos de renovación documental.
+
+#### **Entrevistado 2: Jose Rodrigo Rodriguez (Enfoque en Seguridad y Disponibilidad)**
+* **Perfil**
+    * Jose Rodrigo, de 21 años, vive en Villa María del Triunfo. Depende de documentos físicos para controles de identidad y acceso a beneficios universitarios durante sus traslados.
+* **Insights clave**
+    * La seguridad es el factor decisivo para la adopción; el usuario exige medidas como biometría (huella) o PIN y cifrado de datos para confiar información sensible a la app.
+    * El acceso offline es considerado "imprescindible" debido a la inestabilidad de la señal de datos en ciertos puntos de la ciudad.
+* **Problemas y frustraciones**
+    * La pérdida de documentos físicos (como el carné universitario) conlleva procesos de reposición tediosos que pueden demorar hasta una semana.
+    * Tedio generalizado ante la necesidad de sacar citas presenciales y hacer colas para trámites de identificación básica.
+* **Necesidades**
+    * Garantía de privacidad mediante el cifrado de datos para evitar el acceso no autorizado en caso de robo o pérdida del smartphone.
+    * Disponibilidad constante de copias digitales verificadas que sirvan como respaldo inmediato ante la ausencia del documento físico.
+* **Oportunidades para KapakID**
+    * **Bóveda Biométrica:** Implementar seguridad de nivel bancario para el acceso a la carpeta de documentos digitales.
+    * **Soporte Offline:** Desarrollar una arquitectura de caché local que permita visualizar documentos críticos sin conexión a internet.
+
+#### **Entrevistado 3: Daniel Paolo Ita Rojas (Enfoque en Gestión Organizacional)**
+* **Perfil**
+    * Daniel Paolo, de 22 años y residente de Villa María del Triunfo. Muestra un perfil orientado a la planificación y organización tanto personal como de su entorno cercano.
+* **Insights clave**
+    * La gestión documental se extiende más allá del individuo; la capacidad de administrar documentos de hijos o dependientes (vacunas, documentos escolares) es una funcionalidad de alto valor.
+    * El historial de trámites y pagos es vital para mantener un control ordenado de las responsabilidades administrativas anuales.
+* **Problemas y frustraciones**
+    * Desorientación en los pasos a seguir para completar un trámite, lo que genera retrasos y olvido de requisitos.
+    * Falta de un sistema centralizado que permita ver, en una sola pantalla, el estado de todos los documentos y saldos disponibles.
+* **Necesidades**
+    * Funcionalidad de perfiles múltiples que permita separar la documentación personal de la familiar de forma clara y accesible.
+    * Notificaciones push directas que actúen como recordatorios preventivos de fechas límite de pago o renovación.
+* **Oportunidades para KapakID**
+    * **Gestión Multi-perfil:** Ofrecer en la versión Premium la posibilidad de administrar documentos de terceros (hijos/familiares).
+    * **Dashboard Centralizado:** Crear una interfaz de usuario que priorice la visualización rápida de alertas, recargas y documentos pendientes.
+
+
+
+#### **Entrevistado 4: **
   * **Perfil**
     *  
 
