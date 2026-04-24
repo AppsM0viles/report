@@ -947,7 +947,38 @@ Posteriormente, se presenta el mapa de contextos final de **KapakID**, integrand
 #### 2.5.3. Software Architecture
 - **2.5.3.1. Software Architecture Context Level Diagrams**
 - **2.5.3.2. Software Architecture Container Level Diagrams**
-- **2.5.3.3. Software Architecture Deployment Diagrams**
+### 2.5.3.3. Software Architecture Deployment Diagrams
+
+A continuación, se presenta el diagrama de despliegue para el sistema **KapakID**, el cual ilustra la topología de la infraestructura de hardware y software donde se ejecutarán los componentes del sistema.
+
+Este diagrama visualiza la distribución física de la plataforma, detallando la interacción entre las aplicaciones cliente, los servicios de backend alojados en la nube, la capa de persistencia de datos y la integración con servicios de terceros fundamentales para el negocio. El principal objetivo de este modelo es proporcionar al equipo de desarrollo y operaciones una visión clara de la arquitectura de red, los protocolos de comunicación y la estrategia de alojamiento (Cloud Hosting) para facilitar el despliegue continuo, el mantenimiento y la escalabilidad del sistema.
+
+![Software Architecture Deployment Diagram](resources/Cap-2/SoftwareArchitecture/DeploymentDiagram.png)
+
+#### Descripción de los Nodos de Despliegue
+
+La arquitectura se divide en cuatro entornos físicos/virtuales principales:
+
+**1. Client Devices (Dispositivos del Usuario)**
+Representa los entornos finales desde donde los usuarios interactúan con KapakID.
+* **Smartphone (iOS / Android):** Dispositivos móviles donde se ejecuta la *KapakID Mobile App* (desarrollada en Flutter/Kotlin). Se comunica directamente con la API en la nube a través de peticiones **REST / HTTPS**.
+* **Computadora Personal:** Equipos de escritorio o laptops donde el usuario utiliza un navegador web estándar (*Web Browser*) para acceder a la plataforma mediante protocolo seguro **HTTPS**.
+
+**2. Frontend Hosting (CDN / PaaS)**
+Entorno en la nube (proveedores como **Vercel o Netlify**) optimizado para el alojamiento y la distribución rápida de contenido estático global.
+* Aloja la **KapakID Web App**, la cual está construida como una *Single Page Application (SPA)* utilizando **Vue.js**. Desde aquí, la aplicación web realiza llamadas asíncronas (**REST / HTTPS**) hacia el servidor backend.
+
+**3. Backend Cloud Environment (PaaS - Railway)**
+Es el núcleo de procesamiento y almacenamiento de la plataforma, desplegado de manera ágil utilizando la infraestructura como servicio de **Railway**. Se compone de dos nodos fuertemente cohesionados:
+* **Application Server:** Un contenedor Docker que encapsula el entorno de ejecución (JVM) para la **KapakID API REST** (construida con Spring Boot). Este nodo centraliza la lógica de negocio y enruta las solicitudes.
+* **Database Server:** Una instancia de base de datos gestionada (Managed DB) de **PostgreSQL**, encargada de persistir metadatos de documentos, información de usuarios e historial de pagos. La comunicación entre la API y la base de datos se realiza de forma interna y encriptada mediante **JDBC / TLS**.
+
+**4. Third-Party Services (Servicios Externos)**
+Representa el ecosistema de APIs e integraciones de terceros que KapakID consume para externalizar responsabilidades críticas, conectándose siempre mediante **API / HTTPS**:
+* **Firebase Cloud Messaging (Push):** Motor encargado de despachar notificaciones push a los smartphones (ej. alertas de vencimiento).
+* **Firebase Storage / AWS S3 (Media):** Buckets de almacenamiento en la nube donde se guardan físicamente los documentos subidos por el usuario de forma segura.
+* **ATU / Pasarelas de Pagos (Finanzas):** Entidades financieras y de transporte con las que se interactúa para validar saldos y procesar recargas.
+* **RENIEC / SUNEDU (Identidad):** Entidades gubernamentales peruanas consultadas para validar la autenticidad de los documentos (DNI, carné universitario) ingresados a la plataforma.
 
 ### 2.6. Tactical-Level Domain-Driven Design
 #### 2.6.x. Bounded Context: <Nombre del Bounded Context>
