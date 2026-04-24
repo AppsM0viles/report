@@ -122,14 +122,35 @@ A continuación, se adjuntan las capturas del panel de *Insights / Contributors*
 ## Student Outcome
 *(Ver anexo A)*
 
-| Criterio específico | Acciones realizadas (TB1, TP1, TB2, TF1) | Conclusión |
+| Criterio específico | Acciones realizadas (AV1, TP1, TB2, TF1) | Conclusión |
 |---|---|---|
-| **Trabaja en equipo para proporcionar liderazgo en forma conjunta** | **Fabricio Vega** – TB1:** Alineó investigación, diseñó lineamientos visuales y arquitectura de información. <br> **TP1:** <br> **TF1:**  <br><br> **Raúl Tasayco – TB1:** Organizó repositorios, fechas y tareas. <br> **TP1:**  <br> **TB2:**  <br> **TF1:**  <br><br> **Ysaac Ligorio – TB1:** Gestionó SDCM/SCM, control de versiones y despliegues. <br> **TP1:**  <br> **TB2:**  <br> **TF1:** <br><br> **Rafael Tasayco – TB1:**  <br> **TP1:**  <br> **TB2:**  <br> **TF1:**  <br><br> **Fabrizio Quiroz – TB1:** Fortaleció el trabajo colaborativo. <br> **TP1:**  <br> **TB2:**  <br> **TF1:**  | **El equipo mantuvo un liderazgo distribuido y coordinado durante todas las entregas. En TF1 se consolidó un liderazgo maduro, logrando integrar diseño, Front-End, Back-End y documentación en un producto final cohesionado.** |
-| **Crea un entorno colaborativo e inclusivo, establece metas, planifica tareas y cumple objetivos** | **Fabricio Vega – TB1:** Definió metas claras y prioridades. <br> **TP1:**  <br> **TB2:**  <br> **TF1:**  <br><br> **Raúl – TB1:** Planificó tareas por semanas y definió segmentos. <br> **TP1:**  <br> **TB2:** <br> **TF1:**  <br><br> **Ysaac Ligorio – TB1:**  <br> **TP1:**  <br> **TB2:**  <br> **TF1:**  <br><br> **Rafael Tasayco – TB1:** Participó en definición estratégica del producto. <br> **TP1:**  <br> **TB2:**  <br> **TF1:**  <br><br> **Fabrizio – TB1:** Revisó entregables intermedios. <br> **TP1:** <br> **TB2:**  <br> **TF1:**  | **El equipo demostró una colaboración sólida y creciente, alcanzando un entorno altamente organizado. En TF1 lograron la planificación y ejecución completa del ciclo de vida, cumpliendo objetivos y dejando el producto integrado, documentado y listo para presentación final.** |
+| **Trabaja en equipo para proporcionar liderazgo en forma conjunta** | **Fabricio Vega – AV1:** Alineó investigación, diseñó lineamientos visuales y arquitectura de información. <br> **TP1:** <br> **TF1:** <br><br> **Raúl Tasayco – AV1:** Organizó repositorios, fechas y tareas. <br> **TP1:** <br> **TB2:** <br> **TF1:** <br><br> **Ysaac Ligorio – AV1:** Gestionó SDCM/SCM, control de versiones y despliegues. <br> **TP1:** <br> **TB2:** <br> **TF1:** <br><br> **Rafael Tasayco – AV1:** Lideró el análisis de requerimientos funcionales y la propuesta de valor. <br> **TP1:** <br> **TB2:** <br> **TF1:** <br><br> **Fabrizio Quiroz – AV1:** Fortaleció el trabajo colaborativo y la integración de módulos documentales. <br> **TP1:** <br> **TB2:** <br> **TF1:** | **El equipo mantuvo un liderazgo distribuido y coordinado durante todas las entregas. En AV1 se consolidó un liderazgo maduro, logrando integrar diseño, Front-End, Back-End y documentación en un producto final cohesionado.** |
+| **Crea un entorno colaborativo e inclusivo, establece metas, planifica tareas y cumple objetivos** | **Fabricio Vega – AV1:** Definió metas claras y prioridades del MVP. <br> **TP1:** <br> **TB2:** <br> **TF1:** <br><br> **Raúl – AV1:** Planificó tareas por semanas y definió segmentos de mercado. <br> **TP1:** <br> **TB2:** <br> **TF1:** <br><br> **Ysaac Ligorio – AV1:** Estableció el entorno de trabajo en GitHub y políticas de contribución. <br> **TP1:** <br> **TB2:** <br> **TF1:** <br><br> **Rafael Tasayco – AV1:** Participó en definición estratégica del producto y casos de uso. <br> **TP1:** <br> **TB2:** <br> **TF1:** <br><br> **Fabrizio – AV1:** Revisó entregables intermedios y aseguró la calidad de los reportes. <br> **TP1:** <br> **TB2:** <br> **TF1:** | **El equipo demostró una colaboración sólida y creciente, alcanzando un entorno altamente organizado. En AV1 lograron la planificación y ejecución completa del ciclo de vida, cumpliendo objetivos y dejando el producto integrado, documentado y listo para presentación final.** |
 
 
 ## Objetivos SMART
-[Descripción de los objetivos]
+
+He diseñado estos objetivos, en donde cada estudiante se compromete con actividades especificas en el desarrollo de el proyecto:
+
+- Raúl Tasayco:
+
+    Finalizar la arquitectura de datos y el sistema de navegación de la aplicación para el término del Sprint 3, logrando que el 100% de los flujos de usuario sean consistentes con los lineamientos visuales establecidos.
+
+- Ysaac Villanueva:
+
+    Reducir el tiempo de integración de código en un 20% mediante la optimización del backlog en Jira y la asignación eficiente de tareas, cumpliendo con todos los hitos del cronograma antes de la entrega final.
+
+- Fabricio Vega:
+
+    Configurar y mantener el repositorio de GitHub con una tasa de éxito del 100% en los despliegues de las ramas 'main' y 'develop', asegurando que no existan conflictos de código críticos durante la integración final.
+
+- Rafael Tasayco:
+
+    Definir y validar el 100% de los criterios de aceptación para las funcionalidades de búsqueda de huariques y reseñas, garantizando que el producto cumpla con los requerimientos técnicos exigidos en la rúbrica.
+
+- Fabrizio Quiroz:
+
+    Completar la revisión y control de calidad de todos los entregables del reporte final en un plazo de 48 horas antes de cada subida, asegurando que la documentación técnica esté libre de errores ortográficos y de formato.
 
 ## Capítulo I: Presentación
 
