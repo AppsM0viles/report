@@ -1256,7 +1256,72 @@ El Bounded Context de Transport es el encargado de gestionar la integración de 
 
 #### 2.6.4. Bounded Context: <>
 
-#### 2.6.5. Bounded Context: <>
+#### 2.6.5. Bounded Context Compliance: <Compliance>
+
+El Bounded Context de Compliance es el motor de auditoría y gobernanza de KapakID. Su propósito exclusivo es garantizar que todas las transacciones críticas, el acceso a documentos oficiales y las recargas de saldo cumplan con las regulaciones de la Ley de Protección de Datos Personales. Este contexto opera principalmente en segundo plano, guardando un registro inmutable (append-only) de las actividades y gestionando el ciclo de vida del consentimiento del usuario sobre sus datos personales desde la aplicación móvil.
+
+##### 2.6.5.1. Domain Layer
+
+La capa de dominio de Compliance está diseñada bajo el principio de inmutabilidad. Una vez que un evento de auditoría se crea, las reglas de negocio prohíben estrictamente su modificación o eliminación, garantizando la integridad legal del ecosistema.
+
+| Tipo | Nombre | Descripción |
+| :--- | :--- | :--- |
+| **Aggregate Root** | `AuditRecord` | Entidad central inmutable que registra una acción crítica ejecutada en el sistema. |
+| **Aggregate Root** | `UserConsent` | Gestiona las aceptaciones legales del usuario (ej. Términos y Condiciones, Políticas de Privacidad). |
+| **Value Object** | `ActionType` | Define la categoría del evento auditado (ej. DOCUMENT_VIEW, CARD_LINKED, LOGIN_ATTEMPT). |
+| **Value Object** | `IpAddress` | Dirección de red desde donde se ejecutó la acción. |
+| **Value Object** | `DeviceInfo` | Metadatos del smartphone (ej. iOS 16.4, iPhone 13) útiles para rastreo de accesos o posibles fraudes. |
+| **Value Object** | `PolicyVersion` | Identificador de la versión exacta del documento legal que el usuario aceptó en un momento dado. |
+
+##### 2.6.5.2. Interface Layer
+
+Esta capa recibe peticiones síncronas desde la app móvil, pero también expone interfaces asíncronas para capturar acciones de otros microservicios sin afectar el rendimiento de la aplicación.
+
+| Componente | Nombre | Descripción |
+| :--- | :--- | :--- |
+| **Controller** | `ConsentController` | Endpoints REST para que la app móvil consulte y actualice los consentimientos legales del usuario. |
+| **Event Listener** | `AuditMessageConsumer` | Escucha eventos asíncronos (vía RabbitMQ o Kafka) provenientes de Documents o Transport para registrarlos sin latencia. |
+| **DTO** | `AcceptPolicyRequest` | Datos enviados desde el móvil cuando el usuario hace clic en "Aceptar términos". |
+
+##### 2.6.5.3. Application Layer
+
+Orquesta el registro seguro de los eventos y la consulta de reportes de auditoría en caso de requerimientos legales o de soporte técnico.
+
+| Componente | Nombre | Descripción |
+| :--- | :--- | :--- |
+| **Command** | `LogAuditActionCommand` | Comando interno para persistir un nuevo registro inmutable en el libro mayor de auditoría. |
+| **Command** | `RecordConsentCommand` | Comando para registrar o actualizar la aceptación de una política legal por parte del usuario. |
+| **Query** | `GetAuditTrailQuery` | Consulta restringida (generalmente para backoffice) para ver el historial de acciones críticas de una cuenta. |
+| **Application Service** | `ComplianceCommandService` | Valida y ejecuta las reglas de inmutabilidad antes de persistir los datos de auditoría o consentimiento. |
+
+##### 2.6.5.4. Infrastructure Layer
+
+Implementa la persistencia con un enfoque en la seguridad extrema, configurando repositorios para rechazar modificaciones estructurales.
+
+| Componente | Nombre | Descripción |
+| :--- | :--- | :--- |
+| **Repository** | `AuditRecordRepository` | Implementación de acceso a datos configurada para operaciones exclusivamente de inserción (INSERT-ONLY). |
+| **Repository** | `ConsentRepository` | Persistencia del estado legal del usuario en la base de datos relacional. |
+
+##### 2.6.5.5. Bounded Context Software Architecture Component Level Diagrams
+
+Este diagrama de componentes ilustra la estructura interna del contenedor Compliance Service. La interacción es dual: recibe peticiones síncronas (HTTP) para gestionar términos legales desde la app, y consume eventos asíncronos (AMQP) desde un Message Broker para registrar auditorías sin bloquear las transacciones de otros módulos.
+
+![alt text](<resources/Cap-2/Components Diagrams/BC_Compliance.png>)
+
+##### 2.6.5.6. Bounded Context Software Architecture Code Level Diagrams
+
+###### 2.6.5.6.1. Bounded Context Domain Layer Class Diagrams
+
+El diagrama de clases para Compliance destaca por la estricta ausencia de métodos mutadores (Setters) en AuditRecord. Se utilizan Value Objects detallados (DeviceInfo, IpAddress, ActionType) para capturar el contexto técnico de los dispositivos móviles, asegurando que la auditoría sea rica y trazable.
+
+![alt text](resources/Cap-2/DiagramsClass/Documents/DiagramaClases_BC_Compliance.png)
+
+###### 2.6.5.6.2. Bounded Context Database Design Diagram
+
+El diseño físico separa el historial de acciones (audit_logs) de la gestión legal (user_consents). audit_logs es una tabla aplanada diseñada para lecturas rápidas y operaciones exclusivas de inserción (Write-Once), mientras que user_consents se relaciona con legal_policies para llevar el control de qué versión de los términos aceptó el usuario.
+
+![alt text](resources/Cap-2/DiagramsClass/Documents/DiagramaDataBase_BC_Compliance.png)
 
 ## Capítulo III: Solution UI/UX Design
 
