@@ -637,33 +637,33 @@ El análisis competitivo de **KapakID** permite entender el panorama actual de b
 
 #### Entrevistas a estudiantes universitarios
 
-| Campo         | Información |
-|---------------|-------------|
-| Entrevistado 1| (nombre 1)  |
-| Edad          | (edad 1)    |
-| Distrito      | (distrito)  |
-| Foto          | ![Foto entrevistado 1](resources/Cap-2/) |
-| Timing        | [Ver grabación]() |
+| Campo         | Información                                                                                         |
+|---------------|-----------------------------------------------------------------------------------------------------|
+| Entrevistado 1| Sebastian Delgado                                                                                   |
+| Edad          | 21 años                                                                                             |
+| Distrito      | San Borja                                                                                           |
+| Foto          | ![Foto entrevistado 1](resources/Cap-2/Interviews/InterviewSebastianDelgado.png)                    |
+| Timing        | [Ver grabación](https://drive.google.com/file/d/1L56VeFgJNXZNlBG1SJi8R2q2ly_IwkGr/view?usp=sharing) |
 ---
 
 
-| Campo         | Información |
-|---------------|-------------|
-| Entrevistado 2| (nombre 2)  |
-| Edad          | (edad 2)    |
-| Distrito      | (distrito)  |
-| Foto          | ![Foto entrevistado 2](resources/Cap-2/) |
-| Timing        | [Ver grabación]() |
+| Campo         | Información                                                                                         |
+|---------------|-----------------------------------------------------------------------------------------------------|
+| Entrevistado 2 | Jose Rodrigo Rodriguez                                                                              |
+| Edad          | 21                                                                                                  |
+| Distrito      | Villa Maria del Triunfo                                                                             |
+| Foto          | ![Foto entrevistado 2](resources/Cap-2/Interviews/InterviewJoseRodrigo.png)                         |
+| Timing        | [Ver grabación](https://drive.google.com/file/d/1NJMvMY5To5xtlis-if2pwjwBhdjVMOpi/view?usp=sharing) |
 
 ---
 
-| Campo         | Información |
-|---------------|-------------|
-| Entrevistado 3| (nombre 3)  |
-| Edad          | (edad 3)    |
-| Distrito      | (distrito)  |
-| Foto          | ![Foto entrevistado 3](resources/Cap-2/) |
-| Timing        | [Ver grabación]() |
+| Campo          | Información                                                                                         |
+|----------------|-----------------------------------------------------------------------------------------------------|
+| Entrevistado 3 | Daniel Paolo Ita Rojas                                                                              |
+| Edad           | 22                                                                                                  |
+| Distrito       | Villa Maria del Triunfo                                                                             |
+| Foto           | ![Foto entrevistado 3](resources/Cap-2/Interviews/InterviewPaoloIta.png)                            |
+| Timing         | [Ver grabación](https://drive.google.com/file/d/16iohQr01hyAhS6zoUO3Td08Vxon0hDhe/view?usp=sharing) |
 
 ---
 
