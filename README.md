@@ -129,9 +129,15 @@ static string[] Integrantes() {
 
    <div align='center'>
      
-   <img src="" alt="imagen integrante 1" width="100" align='right'>
+   <img src="resources/cap-1/Members/fabricio-fra.jpeg" alt="imagen integrante 1" width="100" align='right'>
 
    ~~~txt
+
+   Estudiante de 7mo ciclo de Ingeniería de Software en la Universidad Peruana de Ciencias Aplicadas (UPC), con interés en el desarrollo backend y la arquitectura de sistemas escalables. Me enfoco en construir soluciones eficientes, aplicando buenas prácticas como Clean Code, principios SOLID y metodologías ágiles.
+
+Tengo experiencia académica y proyectos personales trabajando con tecnologías como Java, Python y JavaScript, así como frameworks modernos. He participado en el desarrollo de aplicaciones web y APIs REST, integrando bases de datos relacionales y no relacionales.
+
+Actualmente, busco oportunidades para seguir creciendo profesionalmente, aportando valor en equipos de desarrollo y enfrentando retos técnicos reales.
    
    ~~~
 
