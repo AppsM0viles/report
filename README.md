@@ -1314,13 +1314,13 @@ Este diagrama ilustra la arquitectura interna del microservicio de Identidad. El
 
 El diagrama de clases de la capa de dominio sitúa a `UserAccount` como la raíz de agregación. Esta entidad gestiona instancias de sus Value Objects correspondientes (`Credentials`, `UserRole`, `EmailAddress`). Esta separación garantiza que atributos críticos como la contraseña estén encapsulados y aislados de modificaciones accidentales desde otras partes del código.
 
-![Class Diagram IAM](<resources/Cap-2/DiagramsClass/BoundedContextIAM/BC-IAM_ClassDiagram.png>)
+![Class Diagram IAM](<resources/Cap-2/BoundedContextIAM/BC-IAM_ClassDiagram.png>)
 
 ###### 2.6.4.6.2. Bounded Context Database Design Diagram
 
 A nivel físico, la base de datos para IAM se mantiene estrictamente separada para evitar fugas de información. La tabla `users` contiene la información central e inmutable de autenticación (correo, password_hash, rol). Además, se incluye una tabla `user_sessions` para la gestión activa de tokens (permitiendo invalidar sesiones o implementar *refresh tokens*) y registrar los últimos accesos por motivos de seguridad y auditoría.
 
-![Database Diagram IAM](<resources/Cap-2/DiagramsClass/BoundedContextIAM/BC-IAM_DatabaseDesign.png>)
+![Database Diagram IAM](<resources/Cap-2/BoundedContextIAM/BC-IAM_DatabaseDesign.png>)
 
 #### 2.6.5. Bounded Context Compliance: <Compliance>
 
