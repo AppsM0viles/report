@@ -1142,7 +1142,12 @@ Posteriormente, se presenta el mapa de contextos final de **KapakID**, integrand
 
 #### 2.5.3. Software Architecture
 - **2.5.3.1. Software Architecture Context Level Diagrams**
+
+
+![Software Architecture Context Level Diagrams](resources/Cap-2/Structurizr/ContainerDiagram-dark.jpeg)
 - **2.5.3.2. Software Architecture Container Level Diagrams**
+
+![Software Architecture Container Level Diagrams](resources/Cap-2/Structurizr/ContainerDiagram-dark.jpeg)
 ### 2.5.3.3. Software Architecture Deployment Diagrams
 
 A continuación, se presenta el diagrama de despliegue para el sistema **KapakID**, el cual ilustra la topología de la infraestructura de hardware y software donde se ejecutarán los componentes del sistema.
