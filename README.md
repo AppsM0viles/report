@@ -76,6 +76,12 @@ static string[] Integrantes() {
 ## Student Outcome
 *(Ver anexo A)*
 
+| Criterio específico | Acciones realizadas (TB1, TP1, TB2, TF1) | Conclusión |
+|---|---|---|
+| **Trabaja en equipo para proporcionar liderazgo en forma conjunta** | **Fabricio Vega** – TB1:** Alineó investigación, diseñó lineamientos visuales y arquitectura de información. <br> **TP1:** <br> **TF1:**  <br><br> **Raúl Tasayco – TB1:** Organizó repositorios, fechas y tareas. <br> **TP1:**  <br> **TB2:**  <br> **TF1:**  <br><br> **Ysaac Ligorio – TB1:** Gestionó SDCM/SCM, control de versiones y despliegues. <br> **TP1:**  <br> **TB2:**  <br> **TF1:** <br><br> **Rafael Tasayco – TB1:**  <br> **TP1:**  <br> **TB2:**  <br> **TF1:**  <br><br> **Fabrizio Quiroz – TB1:** Fortaleció el trabajo colaborativo. <br> **TP1:**  <br> **TB2:**  <br> **TF1:**  | **El equipo mantuvo un liderazgo distribuido y coordinado durante todas las entregas. En TF1 se consolidó un liderazgo maduro, logrando integrar diseño, Front-End, Back-End y documentación en un producto final cohesionado.** |
+| **Crea un entorno colaborativo e inclusivo, establece metas, planifica tareas y cumple objetivos** | **Fabricio Vega – TB1:** Definió metas claras y prioridades. <br> **TP1:**  <br> **TB2:**  <br> **TF1:**  <br><br> **Raúl – TB1:** Planificó tareas por semanas y definió segmentos. <br> **TP1:**  <br> **TB2:** <br> **TF1:**  <br><br> **Ysaac Ligorio – TB1:**  <br> **TP1:**  <br> **TB2:**  <br> **TF1:**  <br><br> **Rafael Tasayco – TB1:** Participó en definición estratégica del producto. <br> **TP1:**  <br> **TB2:**  <br> **TF1:**  <br><br> **Fabrizio – TB1:** Revisó entregables intermedios. <br> **TP1:** <br> **TB2:**  <br> **TF1:**  | **El equipo demostró una colaboración sólida y creciente, alcanzando un entorno altamente organizado. En TF1 lograron la planificación y ejecución completa del ciclo de vida, cumpliendo objetivos y dejando el producto integrado, documentado y listo para presentación final.** |
+
+
 ## Objetivos SMART
 [Descripción de los objetivos]
 
@@ -124,15 +130,18 @@ static string[] Integrantes() {
 <h3>1.1.2. Perfiles de los integrantes del grupo</h3>
 <div align='center'>
    <!--TODO: integrante 1 -->
-  > 🧑‍💻 <strong>INTEGRANTE 1</strong> 
+  > 🧑‍💻 <strong>Fabricio Samir Vega Coronado</strong> 
    
 
    <div align='center'>
      
-   <img src="" alt="imagen integrante 1" width="100" align='right'>
+   <img src="resources/cap-1/Members/fabricio-fra.jpeg" alt="imagen integrante 1" width="100" align='right'>
 
    ~~~txt
-   
+
+   Estudiante de 7mo ciclo de Ingeniería de Software en la Universidad Peruana de Ciencias Aplicadas (UPC), con interés en el desarrollo backend y la arquitectura de aplicaciones escalables. Me enfoco en construir soluciones eficientes, aplicando buenas prácticas como Clean Code, principios SOLID y metodologías ágiles.
+
+    Tengo experiencia académica y proyectos personales trabajando con tecnologías como Java, Python y JavaScript, así como frameworks modernos. He participado en el desarrollo de aplicaciones web y APIs REST, integrando bases de datos relacionales y no relacionales.
    ~~~
 
    </div>
@@ -161,28 +170,36 @@ static string[] Integrantes() {
    </div>
 
    <!--TODO: integrante 3 -->
-**> 🧑‍💻 <strong>INTEGRANTE 3**</strong>
+**> 🧑‍💻 <strong>Rafael Augusto Tasayco Almonacid**</strong>
    <div align='center'>
-
-   <img src="" alt="imagen integrante 3" width="100" align='right'>
+   <img src="https://github.com/user-attachments/assets/7e445bab-1aff-40f3-8064-559af7db3432" alt="imagen integrante 3" width="100" align='right'>  
 
    ~~~txt
-   
-
+Soy estudiante de la carrera de Ingeniería de Software y actualmente estoy cursando el sexto ciclo de mi carrera universitaria. Entre mis hobbies se encuentran jugar básquet, disfrutar de los videojuegos y escuchar música en mis momentos libres.
+Cuando culmine mis estudios, me encantaría especializarme y concentrarme en el campo de la ciberseguridad, un área que me apasiona y en la que deseo desarrollarme profesionalmente.
    ~~~
-
    </div>
 
    <!--TODO: integrante 4 -->
-**> 🧑‍💻<strong>INTEGRANTE 4**</strong>
+**> 🧑‍💻<strong>Ysaac Ligorio Villanueva Andrade**</strong>
    <div align='center'>
 
-   <img src="" alt="imagen integrante 4" width="100" align='right'>
+   <img src="resources/cap-1/Members/perfil-ysaac.png" alt="imagen integrante 4" width="100" align='right'>
   
-
    ~~~txt
-  
+   Soy estudiante del 7mo ciclo de la carrera de Ingeniería de Software en la UPC. 
+
+    Durante estos años en la universidad y ahora enfocado en el desarrollo del ecosistema KapakID, he podido ganar experiencia práctica en varias tecnologías y formas de trabajo:
+      🔵Backend & APIs: Java con Spring Boot
+      🔵Arquitectura: Domain-Driven Design (DDD) y Structurizr
+      🔵Bases de Datos: PostgreSQL y SQLite (para caché local)
+      🔵Frontend Móvil: [Flutter / Kotlin / Swift]
+
+    Como parte del equipo, me gusta ser proactivo y enfocarme en que la arquitectura que diseñamos no se quede solo en papel, sino que funcione bien y de forma ordenada en el código.
+
+    Mis expectativas para el curso de Aplicaciones Móviles son altas. Más allá de solo programar, quiero aprender a resolver los retos reales del entorno móvil, como el manejo de datos sin internet (modo offline) y lograr que la migración de nuestra plataforma web sea un éxito.
    ~~~
+
 
    </div>
    <!--TODO: integrante 5 -->
@@ -190,7 +207,7 @@ static string[] Integrantes() {
 **> 🧑‍💻 Fabrizio Javier Quiroz Zambrano (U202213406)**
    <div align='center'>
 
-   <img src="resources/Cap-1/Members/Fabrizio1.jpg" alt="imagen Raul" width="100" align='right'>
+   <img src="resources/cap-1/Members/Fabrizio1.jpg" alt="imagen Raul" width="100" align='right'>
 
    ~~~txt
     Actualmente curso el sexto ciclo de Ingeniería de Software en la Universidad Peruana de Ciencias Aplicadas (UPC), donde he venido desarrollando una sólida base técnica y una visión crítica
@@ -623,72 +640,123 @@ El análisis competitivo de **KapakID** permite entender el panorama actual de b
 
 #### Entrevistas a estudiantes universitarios
 
-| Campo         | Información |
-|---------------|-------------|
-| Entrevistado 1| (nombre 1)  |
-| Edad          | (edad 1)    |
-| Distrito      | (distrito)  |
-| Foto          | ![Foto entrevistado 1](resources/Cap-2/) |
-| Timing        | [Ver grabación]() |
+| Campo         | Información                                                                                         |
+|---------------|-----------------------------------------------------------------------------------------------------|
+| Entrevistado 1| Sebastian Delgado                                                                                   |
+| Edad          | 21 años                                                                                             |
+| Distrito      | San Borja                                                                                           |
+| Foto          | ![Foto entrevistado 1](resources/Cap-2/Interviews/InterviewSebastianDelgado.png)                    |
+| Timing        | [Ver grabación](https://drive.google.com/file/d/1L56VeFgJNXZNlBG1SJi8R2q2ly_IwkGr/view?usp=sharing) |
 ---
 
 
-| Campo         | Información |
-|---------------|-------------|
-| Entrevistado 2| (nombre 2)  |
-| Edad          | (edad 2)    |
-| Distrito      | (distrito)  |
-| Foto          | ![Foto entrevistado 2](resources/Cap-2/) |
-| Timing        | [Ver grabación]() |
+| Campo         | Información                                                                                         |
+|---------------|-----------------------------------------------------------------------------------------------------|
+| Entrevistado 2 | Jose Rodrigo Rodriguez                                                                              |
+| Edad          | 21                                                                                                  |
+| Distrito      | Villa Maria del Triunfo                                                                             |
+| Foto          | ![Foto entrevistado 2](resources/Cap-2/Interviews/InterviewJoseRodrigo.png)                         |
+| Timing        | [Ver grabación](https://drive.google.com/file/d/1NJMvMY5To5xtlis-if2pwjwBhdjVMOpi/view?usp=sharing) |
 
 ---
 
-| Campo         | Información |
-|---------------|-------------|
-| Entrevistado 3| (nombre 3)  |
-| Edad          | (edad 3)    |
-| Distrito      | (distrito)  |
-| Foto          | ![Foto entrevistado 3](resources/Cap-2/) |
-| Timing        | [Ver grabación]() |
+| Campo          | Información                                                                                         |
+|----------------|-----------------------------------------------------------------------------------------------------|
+| Entrevistado 3 | Daniel Paolo Ita Rojas                                                                              |
+| Edad           | 22                                                                                                  |
+| Distrito       | Villa Maria del Triunfo                                                                             |
+| Foto           | ![Foto entrevistado 3](resources/Cap-2/Interviews/InterviewPaoloIta.png)                            |
+| Timing         | [Ver grabación](https://drive.google.com/file/d/16iohQr01hyAhS6zoUO3Td08Vxon0hDhe/view?usp=sharing) |
 
 ---
 
 #### Entrevistas a padres/madres o tutores
-
 | Campo         | Información |
 |---------------|-------------|
-| Entrevistado 4| (nombre 4)  |
-| Edad          | (edad 4)    |
-| Distrito      | (distrito)  |
-| Foto          | ![Foto entrevistado 4](resources/Cap-2/) |
-| Timing        | [Ver grabación]() |
+| Entrevistado 1 |  Freddy Jesus Torre Valverde    |
+| Edad          | 35            |
+| Distrito      | Surco         |
+| Foto          | ![Foto entrevistado 4](<https://github.com/F1nTrack/report/blob/main/resources/Cap-2/registro%20de%20entrevistas/imagen-freddy.png>) |
+| Timing        | [Ver grabación](https://youtu.be/LSnkTj_Xj1Q) |
 
 ---
 
 | Campo         | Información |
 |---------------|-------------|
-| Entrevistado 5| (nombre 5)  |
-| Edad          | (edad 5)    |
-| Distrito      | (distrito)  |
-| Foto          | ![Foto entrevistado 5](resources/Cap-2/) |
-| Timing        | [Ver grabación]() |
+| Entrevistado 2 |    Daniel Paolo Ita Rojas         |
+| Edad          |     21        |
+| Distrito      |          Villa Maria del Triunfo   |
+| Foto          | ![Foto entrevistado 5](<resources/Cap-2/registro de entrevistas/Imagen-entrevistaPaolo.png>) |
+| Timing        | [Ver grabación](https://drive.google.com/file/d/16iohQr01hyAhS6zoUO3Td08Vxon0hDhe/view?usp=sharing) |
 
 
 ---
 
 | Campo         | Información |
 |---------------|-------------|
-| Entrevistado 6| (nombre 6)  |
-| Edad          | (edad 6)    |
-| Distrito      | (distrito)  |
-| Foto          | ![Foto entrevistado 6](resources/Cap-2/) |
-| Timing        | [Ver grabación]() |
+| Entrevistado 2 |     Jose Rodrigo Rodriguez     |
+| Edad          |   20      |
+| Distrito      |      Villa Maria del Triunfo    |
+| Foto          | ![Foto entrevistado 6](<resources/Cap-2/registro de entrevistas/Imagen-entrevistaJose.png>) |
+| Timing        | [Ver grabación](https://drive.google.com/file/d/1NJMvMY5To5xtlis-if2pwjwBhdjVMOpi/view?usp=sharing) |
 
 ---
 
-#### 2.2.3. Análisis de entrevistas
-**Segmento 1: Jóvenes universitarios usuarios de transporte y documentos digitales (Hany Pareja Berocal)**
+### **2.2.3. Análisis de entrevistas**
 
+**Segmento 1: Jóvenes universitarios usuarios de transporte y documentos digitales**
+
+#### **Entrevistado 1: Sebastian Delgado (Enfoque en Eficiencia de Procesos)**
+* **Perfil**
+    * Sebastian, estudiante de 21 años residente de San Borja. Su rutina diaria implica el uso constante de DNI, carné universitario, tarjeta del Metropolitano y tarjeta de débito para movilización y consumo en tiendas.
+* **Insights clave**
+    * La mayor fricción en el transporte urbano no es el traslado, sino la recarga física; las colas en estaciones y las fallas técnicas en los módulos de recarga generan una pérdida de tiempo crítica.
+    * Existe una disposición real de pago por una suscripción premium (entre 10 y 15 soles mensuales) si la plataforma garantiza la eliminación de trámites físicos y colas.
+* **Problemas y frustraciones**
+    * Incomodidad y sobrecosto al tener que pagar pasajes en efectivo en transporte informal por olvido de la tarjeta física.
+    * Estrés e incertidumbre por no conocer con exactitud los requisitos de renovación de documentos estatales (RENIEC/SUNEDU), los cuales percibe como cambiantes.
+* **Necesidades**
+    * Un sistema de recarga de transporte 100% digital que elimine la dependencia del efectivo y los módulos de estación.
+    * Alertas proactivas de saldo bajo (con un umbral de 5 soles) y de vencimiento de documentos con un mes de anticipación.
+* **Oportunidades para KapakID**
+    * **Recarga Digital Integrada:** Implementar la recarga directa de tarjetas de transporte para optimizar el tiempo del estudiante.
+    * **Asistente de Trámites:** Incluir un checklist interactivo que guíe al usuario paso a paso en procesos de renovación documental.
+
+#### **Entrevistado 2: Jose Rodrigo Rodriguez (Enfoque en Seguridad y Disponibilidad)**
+* **Perfil**
+    * Jose Rodrigo, de 21 años, vive en Villa María del Triunfo. Depende de documentos físicos para controles de identidad y acceso a beneficios universitarios durante sus traslados.
+* **Insights clave**
+    * La seguridad es el factor decisivo para la adopción; el usuario exige medidas como biometría (huella) o PIN y cifrado de datos para confiar información sensible a la app.
+    * El acceso offline es considerado "imprescindible" debido a la inestabilidad de la señal de datos en ciertos puntos de la ciudad.
+* **Problemas y frustraciones**
+    * La pérdida de documentos físicos (como el carné universitario) conlleva procesos de reposición tediosos que pueden demorar hasta una semana.
+    * Tedio generalizado ante la necesidad de sacar citas presenciales y hacer colas para trámites de identificación básica.
+* **Necesidades**
+    * Garantía de privacidad mediante el cifrado de datos para evitar el acceso no autorizado en caso de robo o pérdida del smartphone.
+    * Disponibilidad constante de copias digitales verificadas que sirvan como respaldo inmediato ante la ausencia del documento físico.
+* **Oportunidades para KapakID**
+    * **Bóveda Biométrica:** Implementar seguridad de nivel bancario para el acceso a la carpeta de documentos digitales.
+    * **Soporte Offline:** Desarrollar una arquitectura de caché local que permita visualizar documentos críticos sin conexión a internet.
+
+#### **Entrevistado 3: Daniel Paolo Ita Rojas (Enfoque en Gestión Organizacional)**
+* **Perfil**
+    * Daniel Paolo, de 22 años y residente de Villa María del Triunfo. Muestra un perfil orientado a la planificación y organización tanto personal como de su entorno cercano.
+* **Insights clave**
+    * La gestión documental se extiende más allá del individuo; la capacidad de administrar documentos de hijos o dependientes (vacunas, documentos escolares) es una funcionalidad de alto valor.
+    * El historial de trámites y pagos es vital para mantener un control ordenado de las responsabilidades administrativas anuales.
+* **Problemas y frustraciones**
+    * Desorientación en los pasos a seguir para completar un trámite, lo que genera retrasos y olvido de requisitos.
+    * Falta de un sistema centralizado que permita ver, en una sola pantalla, el estado de todos los documentos y saldos disponibles.
+* **Necesidades**
+    * Funcionalidad de perfiles múltiples que permita separar la documentación personal de la familiar de forma clara y accesible.
+    * Notificaciones push directas que actúen como recordatorios preventivos de fechas límite de pago o renovación.
+* **Oportunidades para KapakID**
+    * **Gestión Multi-perfil:** Ofrecer en la versión Premium la posibilidad de administrar documentos de terceros (hijos/familiares).
+    * **Dashboard Centralizado:** Crear una interfaz de usuario que priorice la visualización rápida de alertas, recargas y documentos pendientes.
+
+
+
+#### **Entrevistado 4: **
   * **Perfil**
     *  
 
@@ -817,12 +885,124 @@ El análisis de las tareas de estudiantes universitarios y madres de familia mue
 <td><img src="resources/Cap-2/Needfinding/User Journey Mapping Madre de Familia.png" ></td>
 
 #### 2.3.5. Big Picture EventStorming
+
+<td>
+  <img src="resources/Cap-2/EventStorming/Big Picture EventStorming.png"
+       alt="Big Picture EventStorming">
+</td>
+
 #### 2.3.6. Ubiquitous Language
+
+En esta sección se presenta el glosario de términos y conceptos contemplados por el Bussiness  Domain.
+Los términos están definidos en inglés (con su equivalente en español entre paréntesis) y su definición en español.  
+Este lenguaje ubicuo debe ser utilizado de forma consistente por todos los miembros del equipo.
+
+---
+
+### Identity & Documents (Identidad y Documentos)
+- **National ID (DNI – Documento Nacional de Identidad):** Documento oficial de identidad emitido por RENIEC, utilizado para acreditar identidad en Perú.  
+- **Passport (Pasaporte):** Documento emitido por la autoridad competente que permite viajar al extranjero.  
+- **Driver’s License (Licencia de Conducir):** Documento emitido por el MTC que autoriza a una persona a conducir vehículos.  
+- **University ID (Carné Universitario):** Documento emitido por SUNEDU o universidades, utilizado para identificar a estudiantes en Perú.  
+- **Disability ID (Carné CONADIS):** Documento oficial que acredita a una persona con discapacidad en Perú.  
+- **Digital Document (Documento Digital):** Versión electrónica y certificada de un documento físico almacenado en KapakID.  
+
+### Transportation & Cards (Transporte y Tarjetas)
+- **Metro Card (Tarjeta del Tren):** Tarjeta recargable utilizada para acceder al Tren Electrico de Lima.  
+- **Metropolitano Card (Tarjeta del Metropolitano):** Tarjeta recargable utilizada en el sistema de transporte público Metropolitano de Lima.  
+- **Transport Balance (Saldo de Transporte):** Monto disponible en tarjetas de transporte registrado en KapakID.  
+- **Top-Up (Recarga):** Acción de añadir saldo a una tarjeta de transporte o celular desde KapakID.  
+
+### Payments & Transactions (Pagos y Transacciones)
+- **Debt Payment (Pago de Deuda):** Transacción realizada para cancelar obligaciones pendientes como servicios, multas o préstamos.  
+- **Phone Top-Up (Recarga Telefónica):** Proceso de añadir saldo a un número de celular desde KapakID.  
+- **Transaction History (Historial de Transacciones):** Registro detallado de recargas, pagos y movimientos financieros realizados en la app.  
+- **Service Renewal (Renovación de Documento/Servicio):** Trámite para actualizar o extender la vigencia de un documento desde KapakID.  
+
+### Governance & Voting (Gobernanza y Votaciones)
+- **Presidential Election (Elección Presidencial):** Proceso electoral nacional para elegir al Presidente del Perú, habilitado en KapakID mediante identificación única.  
+- **Municipal Election (Elección Municipal):** Proceso electoral local para elegir alcaldes y autoridades municipales.  
+- **Digital Vote (Voto Digital):** Emisión de voto certificado y único a través de KapakID utilizando la identidad verificada del usuario.  
+
+### Notifications & Alerts (Notificaciones y Alertas)
+- **Low Balance Alert (Alerta de Saldo Bajo):** Notificación enviada al usuario cuando el saldo de una tarjeta de transporte o celular es insuficiente.  
+- **Expiration Alert (Alerta de Vencimiento):** Notificación enviada cuando un documento o tarjeta está próximo a caducar.  
+- **Reminder (Recordatorio):** Aviso programado para acciones importantes como renovaciones, votaciones o recargas.  
+
+### Access & Profiles (Acceso y Perfiles)
+- **Offline Mode (Modo Offline):** Acceso limitado a documentos previamente verificados cuando no hay conexión a internet.  
+- **Verified Document (Documento Verificado):** Documento validado oficialmente en la app para uso legal y seguro.  
+- **User Profile (Perfil de Usuario):** Identidad principal del dueño de la cuenta en KapakID.  
+- **Family Profile (Perfil Familiar):** Espacio dentro de la app que permite administrar documentos de hijos u otros dependientes.  
+
 
 ### 2.4. Requirements specification
 #### 2.4.1. User Stories
+
+**Tabla de Epics**
+| Epic ID | Título                       | Descripción                                                                 |
+|---------|------------------------------|-----------------------------------------------------------------------------|
+| E1      | Gestión de Usuarios y Perfiles | Administración de usuarios, autenticación y creación de múltiples perfiles familiares. |
+| E2      | Gestión de Documentos Digitales | Registro, validación, visualización y renovación de documentos oficiales en la app. |
+| E3      | Pagos y Recargas             | Recarga de tarjetas de transporte y celulares, pagos de deudas y registro de historial de transacciones. |
+| E4      | Votaciones Digitales         | Emisión de votos únicos y seguros en procesos electorales mediante identificación digital. |
+| E5      | Notificaciones y Alertas     | Envío de recordatorios y notificaciones sobre saldos bajos y vencimiento de documentos. |
+| E6      | Acceso Offline               | Permitir acceso limitado a documentos previamente verificados sin conexión a internet. |
+| E7      | Landing Page Informativa     | Presentar la propuesta de valor de KapakID, funcionalidades clave, guías de descarga y contacto. |
+| E8      | API REST Backend             | Servicios técnicos para manejar autenticación, gestión de documentos, pagos y notificaciones. |
+
+**Tabla de US**
+
+| US ID | Título                     | Descripción | Criterios de Aceptación (Gherkin) | Epic Relacionada |
+|-------|-----------------------------|-------------|----------------------------------|------------------|
+| US1   | Registro de usuario         | Como **usuario**, quiero registrarme con mi correo o celular para crear mi cuenta en KapakID. | **Scenario 1:**<br>Given un usuario no registrado <br>When ingresa sus datos válidos <br>Then el sistema crea la cuenta y confirma el registro.<br><br>**Scenario 2:**<br>Given un usuario intenta registrarse <br>When ingresa datos inválidos o incompletos <br>Then el sistema rechaza el registro y muestra el motivo. | E1 |
+| US2   | Creación de perfiles familiares | Como **usuario**, quiero agregar perfiles de mis hijos para administrar sus documentos desde mi cuenta. | **Scenario 1:**<br>Given un usuario autenticado <br>When agrega un nuevo perfil familiar <br>Then el sistema registra el perfil vinculado a la cuenta.<br><br>**Scenario 2:**<br>Given un usuario intenta crear un perfil <br>When excede el límite permitido <br>Then el sistema rechaza la acción con un mensaje. | E1 |
+| US3   | Registro de documentos      | Como **usuario**, quiero registrar mi DNI, pasaporte y otros documentos para tenerlos disponibles en la app. | **Scenario 1:**<br>Given un usuario autenticado <br>When registra un documento válido <br>Then el sistema almacena el documento digitalmente.<br><br>**Scenario 2:**<br>Given un usuario ingresa un documento inválido <br>When intenta registrarlo <br>Then el sistema rechaza la operación con justificación. | E2 |
+| US4   | Renovación de documentos    | Como **usuario**, quiero renovar mis documentos vencidos desde la app para evitar trámites presenciales. | **Scenario 1:**<br>Given un documento próximo a vencer <br>When el usuario solicita renovación <br>Then el sistema envía la solicitud a la entidad correspondiente.<br><br>**Scenario 2:**<br>Given un documento ya vencido <br>When el usuario intenta renovarlo <br>Then el sistema informa si la renovación aún es posible. | E2 |
+| US5   | Recarga de transporte       | Como **usuario**, quiero recargar mi tarjeta del Metropolitano para no quedarme sin saldo. | **Scenario 1:**<br>Given un usuario autenticado <br>When selecciona una tarjeta válida y monto de recarga <br>Then el sistema procesa el pago y actualiza el saldo.<br><br>**Scenario 2:**<br>Given una tarjeta inválida <br>When el usuario intenta recargar <br>Then el sistema rechaza la operación. | E3 |
+| US6   | Pago de deudas              | Como **usuario**, quiero pagar mis deudas de servicios o multas desde la app para evitar filas. | **Scenario 1:**<br>Given un usuario autenticado <br>When selecciona una deuda pendiente <br>Then el sistema procesa el pago y registra la operación.<br><br>**Scenario 2:**<br>Given un pago realizado <br>When el usuario consulta el historial <br>Then el sistema muestra el registro de pago exitoso. | E3 |
+| US7   | Registro de transacciones          | Como **usuario**, quiero registrar los movimientos de los documentos que he realizado desde la aplicacion. | **Scenario 1:**<br>Given un usuario autenticado <br>When ingresa para revisar sus movimientos <br>Then el sistema le muestra los movimientos registrados de sus documentos.<br><br>**Scenario 2:**<br>Given un usuario autenticado <br>When accede a un documento vencido <br>Then el sistema le alerta que el documento vencio | E3 |
+| US8   | Voto digital único          | Como **ciudadano**, quiero emitir mi voto en elecciones mediante KapakID para participar de manera segura. | **Scenario 1:**<br>Given un ciudadano autenticado <br>When emite su voto en el proceso electoral vigente <br>Then el sistema registra el voto de forma cifrada.<br><br>**Scenario 2:**<br>Given un ciudadano ya votó <br>When intenta hacerlo nuevamente <br>Then el sistema rechaza el intento.<br><br> **Scenario 3:** Given un cuidadano votante <br> When intenta votar con un Documento de Identidad Vencido <br> Then el sistema rechaza la solicitd y le informa que su documento vencio| E4 |
+| US9   | Alerta de vencimiento       | Como **usuario**, quiero recibir una notificación cuando mis documentos estén próximos a vencer. | **Scenario 1:**<br>Given un documento con 30 días antes de su vencimiento <br>When el sistema procesa la verificación <br>Then envía una alerta al usuario.<br><br>**Scenario 2:**<br>Given un documento vencido <br>When el sistema detecta la fecha caducada <br>Then notifica al usuario inmediatamente. | E5 |
+| US10   | Notificacion de Tramite       | Como **usuario**, quiero recibir una notificación cuando se haya cumplido una solicitu de tramite. | **Scenario 1:**<br>Given un documento puede ser recogido <br>When el sistema procesa la verificación <br>Then envía una alerta al usuario.<br><br>**Scenario 2:**<br>Given un documento nuevo <br>When el sistema detecta la generacion del documento <br>Then notifica al usuario inmediatamente. | E5 |
+| US11   | Acceso a documentos offline | Como **usuario**, quiero acceder a mis documentos verificados incluso sin conexión a internet. | **Scenario 1:**<br>Given un usuario autenticado previamente <br>When no tiene conexión <br>Then el sistema permite visualizar documentos validados.<br><br>**Scenario 2:**<br>Given un usuario sin conexión <br>When intenta realizar una recarga <br>Then el sistema informa que la función no está disponible. | E6 |
+| US12  | Información de funcionalidades | Como **visitante**, quiero ver en la landing page las funcionalidades principales de KapakID para entender sus beneficios. | **Scenario 1:**<br>Given un visitante accede a la landing <br>When navega a la sección de funcionalidades <br>Then visualiza la lista con descripciones claras.<br><br>**Scenario 2:**<br>Given un visitante explora la página <br>When busca información de seguridad <br>Then encuentra detalles sobre la protección de datos. | E7 |
+| US13  | Visualizar términos y políticas | Como **visitante**, quiero acceder fácilmente a los **términos legales y políticas de privacidad** desde la landing page para conocer las condiciones de uso. | **Scenario 1:**<br>Given un visitante accede a la landing <br>When hace click en “Términos y Políticas” en el footer <br>Then se abre una página con los documentos legales.<br><br> **Scenario 2:**<br>Given un visitante accede a la landing <br>When hace scroll hasta el final <br>Then encuentra enlaces visibles a términos legales y políticas de privacidad.<br><br> | E7 |
+| US14  | Visualizar reseñas de usuarios  | Como **visitante**, quiero ver **reseñas de usuarios satisfechos (casos de éxito)** en la landing page para confiar en la calidad del servicio ofrecido.       | **Scenario 1:**<br>Given un visitante accede a la landing <br>When navega por la sección de testimonios <br>Then visualiza un carrusel con reseñas de usuarios reales.<br><br> **Scenario 2:**<br>Given un visitante accede a la landing <br>When da click en “Ver más casos de éxito” <br>Then se redirecciona a una página con testimonios ampliados.<br><br> | E7 |
+| US15  | Acceso a la app          | Como **visitante**, quiero encontrar enlaces de acceso de KapakID en la landing page para acceder a la aplicación. | **Scenario 1:**<br>Given un visitante no registrado accede a la landing <br>When hace click en registrate <br>Then redirecciona al signin.<br><br> **Scenario 2:**<br>Given un visitante registrado accede a la landing <br>When hace click en ingresa <br>Then redirecciona al login.<br><br> | E7 |
+| US16  | API de autenticación        | Como **developer**, quiero consumir un endpoint de autenticación para validar credenciales de usuarios. | **Scenario 1:**<br>Given un request con credenciales válidas <br>When se envía al endpoint de login <br>Then el sistema responde con un token válido.<br><br>**Scenario 2:**<br>Given un request con credenciales inválidas <br>When se procesa en el backend <br>Then el sistema devuelve un error 401 Unauthorized. | E8 |
+| US17  | API de documentos           | Como **developer**, quiero consumir un endpoint para registrar y consultar documentos de un usuario. | **Scenario 1:**<br>Given un request válido con documento y metadatos <br>When se envía al endpoint correspondiente <br>Then el sistema responde confirmando el registro.<br><br>**Scenario 2:**<br>Given un request de consulta con un ID de documento válido <br>When se procesa en el backend <br>Then el sistema devuelve la información del documento. | E8 |
+
 #### 2.4.2. Impact Mapping
+
+<td><img src="resources/Cap-2/Impact_Mapping/Impact_Mapping.png" alt="Impact Mapping" ></td>
+
 #### 2.4.3. Product Backlog
+
+| Order | US ID | Título | Descripción | Story Points |
+|-------|-------|--------|-------------|--------------|
+| 1 | US12 | Información de funcionalidades | Como **visitante**, quiero ver en la landing page las funcionalidades principales de KapakID para entender sus beneficios. | 3 |
+| 2 | US13 | Acceso a la app | Como **visitante**, quiero encontrar enlaces de acceso de KapakID en la landing page para acceder a la aplicación. | 2 |
+| 3 | US13 | Visualizar términos y políticas | Como **visitante**, quiero acceder fácilmente a los **términos legales y políticas de privacidad** desde la landing page para conocer las condiciones de uso. | 2 |
+| 4 | US14 | Visualizar reseñas de usuarios | Como **visitante**, quiero ver **reseñas de usuarios satisfechos (casos de éxito)** en la landing page para confiar en la calidad del servicio ofrecido. | 3 |
+| 5 | US1 | Registro de usuario | Como **usuario**, quiero registrarme con mi correo o celular para crear mi cuenta en KapakID. | 5 |
+| 6 | US2 | Creación de perfiles familiares | Como **usuario**, quiero agregar perfiles de mis hijos para administrar sus documentos desde mi cuenta. | 4 |
+| 7 | US3 | Registro de documentos | Como **usuario**, quiero registrar mi DNI, pasaporte y otros documentos para tenerlos disponibles en la app. | 5 |
+| 8 | US4 | Renovación de documentos | Como **usuario**, quiero renovar mis documentos vencidos desde la app para evitar trámites presenciales. | 3 |
+| 9 | US5 | Recarga de transporte | Como **usuario**, quiero recargar mi tarjeta del Metropolitano para no quedarme sin saldo. | 4 |
+| 10 | US6 | Pago de deudas | Como **usuario**, quiero pagar mis deudas de servicios o multas desde la app para evitar filas. | 3 |
+| 11 | US7 | Registro de transacciones | Como **usuario**, quiero registrar los movimientos de los documentos que he realizado desde la aplicación. | 4 |
+| 12 | US8 | Voto digital único | Como **ciudadano**, quiero emitir mi voto en elecciones mediante KapakID para participar de manera segura. | 5 |
+| 13 | US9 | Alerta de vencimiento | Como **usuario**, quiero recibir una notificación cuando mis documentos estén próximos a vencer. | 2 |
+| 14 | US10 | Notificación de trámite | Como **usuario**, quiero recibir una notificación cuando se haya cumplido una solicitud de trámite. | 2 |
+| 15 | US11 | Acceso a documentos offline | Como **usuario**, quiero acceder a mis documentos verificados incluso sin conexión a internet. | 3 |
+| 16 | US16 | API de autenticación | Como **developer**, quiero consumir un endpoint de autenticación para validar credenciales de usuarios. | 3 |
+| 17 | US17 | API de documentos | Como **developer**, quiero consumir un endpoint para registrar y consultar documentos de un usuario. | 4 |
+
+En el siguiente apartado se mostrara el product Backlog generado en Jira, que ayudara al equipo durante el desarrollo de este proyecto
+
+ <td><img src="resources/Cap-2/Impact_Mapping/Product_Backlog.png" alt="Product Backlog" ></td>
+
 
 ### 2.5. Strategic-Level Domain-Driven Design
 
@@ -838,14 +1018,163 @@ En esta sección se expone el proceso de EventStorming aplicado como técnica de
 
 Asimismo, se mapearon los comandos desde la interfaz de la aplicación móvil que originan dichos eventos, facilitando las conversaciones entre los participantes y generando un entendimiento común sobre el comportamiento esperado. Este enfoque posibilitó construir una visión compartida del ecosistema digital, sentando las bases para etapas posteriores de modelado más detallado y la delimitación de responsabilidades en contextos como Identity, Documents, Transport y Notifications.
 
-- **2.5.1.1. Candidate Context Discovery**
+<td><img src="resources/Cap-2/EventStorming/EVENT STORMING F1NTRACK.jpg" ></td>
+
+**2.5.1.1. Candidate Context Discovery**
+
+A partir del análisis temporal y lógico de los eventos de dominio obtenidos en la sesión de EventStorming, el equipo procedió a agrupar los comportamientos y procesos de negocio que presentaban una alta cohesión. El objetivo de esta fase fue descubrir los límites naturales (Candidate Contexts) dentro del ecosistema de KapakID, garantizando que cada módulo tenga una responsabilidad única y una baja dependencia funcional con los demás.
+
+El análisis de la línea de tiempo de los eventos, comandos, actores y políticas dio como resultado la identificación de los siguientes contextos candidatos:
+
+Identity Context:
+Se derivó del análisis del flujo de inicio del usuario. Al identificar comandos como Registrar Cuenta KapakID y eventos resultantes como Cuenta Registrada, se hizo evidente la necesidad de un límite que gestione exclusivamente la autenticación, los perfiles de los actores principales (Estudiante y Padre de Familia) y el control de acceso a la plataforma móvil.
+
+Documents Context:
+Surgió como el núcleo central del dominio. La agrupación de comandos como Subir Carnet Universitario y agregados como DocumentRecord definió este contexto. Se delimitó aquí toda la lógica de validación oficial, encapsulando las políticas que exigen que todo documento subido sea contrastado contra sistemas externos (como SUNEDU o RENIEC), y gestionando los eventos de Documento Subido a Caché y Carnet Verificado/Rechazado.
+
+Transport Context:
+El análisis reveló un subdominio transaccional claramente separado de la gestión documental pura. Los comandos de Vincular Tarjeta Metropolitano y Recargar Saldo de Hijo agruparon las necesidades de movilidad urbana. Este contexto encapsula las integraciones financieras y operativas con sistemas externos como la ATU y Entidades Bancarias, gestionando eventos críticos como Tarjeta Transporte Vinculada y Saldo de Transporte Incrementado.
+
+Notifications Context:
+Se descubrió como un contexto de soporte a partir de las políticas reactivas del sistema. Por ejemplo, la política "Cuando la cuenta se registra, se debe enviar un correo de bienvenida" demostró que el envío de mensajes (comandos como Enviar Correo y eventos como Correo Enviado) no debe residir en el módulo de Identidad, sino en un servicio centralizado que escuche eventos de distintos módulos y despache notificaciones (Push, Email) de forma asíncrona.
+
+Compliance Context:
+Este contexto emergió al analizar el comportamiento de la aplicación en entornos de baja conectividad. A partir del comando Abrir App Offline y la interacción con el agregado DocumentCache, se identificó la política de registrar accesos para cuando la conexión regrese. Esto definió un límite enfocado en la auditoría y el cumplimiento normativo (generando eventos como Acceso Offline Auditado), separando la trazabilidad legal de la funcionalidad principal de la aplicación.
+
+Esta agrupación inicial en Candidate Contexts proporcionó una arquitectura base robusta, alineada estrechamente con el Ubiquitous Language y los flujos de valor reales de los usuarios de KapakID.
+  
 - **2.5.1.2. Domain Message Flows Modeling**
-- **2.5.1.3. Bounded Context Canvases**
+
+Los Domain Message Flows modelan las interacciones entre los diferentes bounded contexts, mostrando cómo se comunican entre sí mediante comandos, eventos y consultas. A continuación, se muestran los flujos de mensaje para los escenarios clave del negocio:
+
+  * **Subir y verificar documento:** En este flujo se muestra la interacción del bounded context Documents al momento en que un usuario registra un documento oficial para su validación.
+
+  ![alt text](<resources/Cap-2/Flows Modeling/Documents.png>)
+
+  * **Acceso y registro a la plataforma:** En este flujo se muestra la interacción del bounded context Identity al momento en que un usuario crea su cuenta y accede a la aplicación móvil.
+
+  ![alt text](<resources/Cap-2/Flows Modeling/Identity.png>)
+
+  * **Vincular tarjeta de transporte:** En este flujo se muestra la interacción del bounded context Transport al momento en que un usuario registra una tarjeta (ej. Metropolitano) para consultar sus saldos.
+
+  ![alt text](<resources/Cap-2/Flows Modeling/Transport.png>)
+
+  Adicionalmente, se presentan flujos de escenarios relevantes para los usuarios y el sistema, pero en los que no se produce interacción compleja entre distintos bounded contexts:
+
+  * **Envío de alertas:** En este flujo se muestra el proceso mediante el cual el sistema despacha alertas al usuario, modelado en el bounded context Notifications.
+
+ ![alt text](<resources/Cap-2/Flows Modeling/Notifications.png>)
+
+  * **Registro de auditoría:** En este flujo se modela el proceso mediante el cual el sistema guarda un registro inmutable de acciones críticas, modelado en el bounded context Compliance.
+
+![alt text](<resources/Cap-2/Flows Modeling/Compliance.png>)
+
+### 2.5.1.3. Bounded Context Canvases
+
+Para mejorar la organización del dominio y facilitar una comunicación consistente, se elaboraron Bounded Context Canvases para cada subdominio. Estos canvases delimitan claramente las responsabilidades, establecen el lenguaje ubicuo y los modelos clave, y describen los puntos de integración y los flujos de mensajes entre contextos. Los diagramas que siguen consolidan estas decisiones y sirvieron como guía para alinear la arquitectura, las interfaces y la evolución del sistema.
+
+#### Identity (Identidad y Accesos)
+Este Bounded Context gestiona la autenticación, autorización y asignación de roles. Emite y valida tokens JWT, administra el ciclo de vida de las credenciales y publica eventos hacia otros contextos para garantizar un acceso controlado y seguro a nivel de toda la plataforma.
+
+![Bounded Context Canvas - Identity](resources/Cap-2/BoundedContextCanvas/IdentityBC.jpg)
+
+#### Documents (Gestión Documental)
+Contexto encargado del ciclo de vida de los documentos digitales (DNI, carné universitario, pasaportes). Maneja la carga segura, el almacenamiento de metadatos, la validación de autenticidad y la orquestación de la caché local para permitir el acceso offline.
+
+![Bounded Context Canvas - Documents](resources/Cap-2/BoundedContextCanvas/DocumentsBC.jpg)
+
+#### Transport (Transporte y Recargas)
+Abarca la gestión de las tarjetas de transporte urbano (Metropolitano, Línea 1) y la ejecución de recargas. Funciona como un integrador entre la aplicación móvil y los sistemas de transporte o pasarelas de pago externas.
+
+![Bounded Context Canvas - Transport](resources/Cap-2/BoundedContextCanvas/TransportBC.jpg)
+
+#### Notifications (Notificaciones y Alertas)
+Se encarga de gestionar y despachar todas las comunicaciones hacia los usuarios. Centraliza el envío de alertas push y correos electrónicos sobre saldos bajos, vencimientos de documentos y confirmaciones de trámites.
+
+![Bounded Context Canvas - Notifications](resources/Cap-2/BoundedContextCanvas/NotificationsBC.jpg)
+
+#### Compliance (Cumplimiento Normativo y Auditoría)
+Responsable de garantizar que todas las operaciones cumplan con las normativas legales de privacidad (Ley 29733). Registra de forma inmutable las acciones críticas y gestiona el consentimiento del usuario sobre el manejo de sus datos.
+
+![Bounded Context Canvas - Compliance](resources/Cap-2/BoundedContextCanvas/ComplianceBC.jpg)
 #### 2.5.2. Context Mapping
+En esta sección se explica el proceso de elaboración de los context maps de **KapakID**. Asimismo, se permite la visualización de las relaciones estructurales entre Bounded Contexts, junto a los patrones de relaciones establecidos en Domain Driven Design (DDD), como Anti-corruption Layer (ACL), Customer/Supplier, Shared Kernel y Conformist.
+
+Posterior al debate grupal para la contextualización del proyecto de identidad digital y transporte, nos hemos proyectado los siguientes Bounded Contexts:
+* **Identity and Access Management (IAM)**
+* **User Profiles (UP)**
+* **Digital Identity & Documents (DID)**
+* **Payments & Subscriptions (PAS)**
+* **Transport & NFC Management (TNM)**
+* **Notifications (NTF)**
+
+#### **Relaciones Detalladas:**
+
+**User Profiles (UP) - Identity and Access Management (IAM)**
+En la presente imagen se puede identificar la relación entre **User Profiles** e **Identity and Access Management (IAM)**, los cuales están enfocados en lógicas similares y comparten un subconjunto del modelo de dominio común para evitar la duplicación de código. Se utiliza el patrón **Shared Kernel** para la entidad "Usuario", la cual comparte lógica de credenciales y segmentación básica de clientes.
+
+![UP - IAM Relationship](resources/Cap-2/ContextMapping/context-mapping-up-iam.png)
+
+**Identity and Access Management (IAM) - Payments & Subscriptions (PAS)**
+En la presente imagen se puede identificar la relación entre **IAM** y **Payments & Subscriptions (PAS)**, enfocada en la comunicación por medio de un **ACL (Anti-corruption Layer)** hacia el contexto de pagos por el uso de **Stripe** como servicio externo. Este se comunica mediante **OHS** y **PL**, lo que permite la validación de suscripciones sin comprometer la seguridad del sistema.
+
+![IAM - PAS Relationship](resources/Cap-2/ContextMapping/context-mapping-iam-pas.png)
+
+**Payments & Subscriptions (PAS) - Transport & NFC Management (TNM)**
+En la presente imagen se puede identificar la relación entre **PAS** y **Transport & NFC Management (TNM)** por medio del patrón **Customer / Supplier**. El Bounded Context de transporte actúa bajo la influencia de pagos, ya que la activación de saldos en tarjetas NFC genera una dependencia directa de la validación exitosa de la transacción.
+
+![PAS - TNM Relationship](resources/Cap-2/ContextMapping/context-mapping-pas-tnm.png)
+
+**Digital Identity & Documents (DID) - User Profiles (UP)**
+En la presente imagen se puede identificar el patrón **Partnership** debido al trabajo coordinado entre estos dos contextos. **Digital Identity** se encarga de la gestión de validación legal, mientras que **User Profiles** se actualiza constantemente con el estatus de "Verificado" para permitir el acceso a servicios de transporte con tarifa preferencial.
+
+![DID - UP Relationship](resources/Cap-2/ContextMapping/context-mapping-did-up.png)
+
+**Digital Identity & Documents (DID) - Notifications (NTF)**
+En la presente imagen se puede identificar el patrón **Conformista**, de manera que el downstream (**Notifications**) adopta el modelo del upstream (**DID**) tal cual. Las alertas de validación o vencimiento de documentos son dependientes de la lógica de negocio de los certificados digitales.
+
+![DID - NTF Relationship](resources/Cap-2/ContextMapping/context-mapping-did-ntf.png)
+
+#### **Final Context Map**
+Posteriormente, se presenta el mapa de contextos final de **KapakID**, integrando todas las relaciones y patrones mencionados anteriormente para ofrecer una visión global de la arquitectura del sistema.
+
+![Final Context Map](resources/Cap-2/ContextMapping/final-context-map.png)
+
 #### 2.5.3. Software Architecture
 - **2.5.3.1. Software Architecture Context Level Diagrams**
 - **2.5.3.2. Software Architecture Container Level Diagrams**
-- **2.5.3.3. Software Architecture Deployment Diagrams**
+### 2.5.3.3. Software Architecture Deployment Diagrams
+
+A continuación, se presenta el diagrama de despliegue para el sistema **KapakID**, el cual ilustra la topología de la infraestructura de hardware y software donde se ejecutarán los componentes del sistema.
+
+Este diagrama visualiza la distribución física de la plataforma, detallando la interacción entre las aplicaciones cliente, los servicios de backend alojados en la nube, la capa de persistencia de datos y la integración con servicios de terceros fundamentales para el negocio. El principal objetivo de este modelo es proporcionar al equipo de desarrollo y operaciones una visión clara de la arquitectura de red, los protocolos de comunicación y la estrategia de alojamiento (Cloud Hosting) para facilitar el despliegue continuo, el mantenimiento y la escalabilidad del sistema.
+
+![Software Architecture Deployment Diagram](resources/Cap-2/SoftwareArchitecture/DeploymentDiagram.png)
+
+#### Descripción de los Nodos de Despliegue
+
+La arquitectura se divide en cuatro entornos físicos/virtuales principales:
+
+**1. Client Devices (Dispositivos del Usuario)**
+Representa los entornos finales desde donde los usuarios interactúan con KapakID.
+* **Smartphone (iOS / Android):** Dispositivos móviles donde se ejecuta la *KapakID Mobile App* (desarrollada en Flutter/Kotlin). Se comunica directamente con la API en la nube a través de peticiones **REST / HTTPS**.
+* **Computadora Personal:** Equipos de escritorio o laptops donde el usuario utiliza un navegador web estándar (*Web Browser*) para acceder a la plataforma mediante protocolo seguro **HTTPS**.
+
+**2. Frontend Hosting (CDN / PaaS)**
+Entorno en la nube (proveedores como **Vercel o Netlify**) optimizado para el alojamiento y la distribución rápida de contenido estático global.
+* Aloja la **KapakID Web App**, la cual está construida como una *Single Page Application (SPA)* utilizando **Vue.js**. Desde aquí, la aplicación web realiza llamadas asíncronas (**REST / HTTPS**) hacia el servidor backend.
+
+**3. Backend Cloud Environment (PaaS - Railway)**
+Es el núcleo de procesamiento y almacenamiento de la plataforma, desplegado de manera ágil utilizando la infraestructura como servicio de **Railway**. Se compone de dos nodos fuertemente cohesionados:
+* **Application Server:** Un contenedor Docker que encapsula el entorno de ejecución (JVM) para la **KapakID API REST** (construida con Spring Boot). Este nodo centraliza la lógica de negocio y enruta las solicitudes.
+* **Database Server:** Una instancia de base de datos gestionada (Managed DB) de **PostgreSQL**, encargada de persistir metadatos de documentos, información de usuarios e historial de pagos. La comunicación entre la API y la base de datos se realiza de forma interna y encriptada mediante **JDBC / TLS**.
+
+**4. Third-Party Services (Servicios Externos)**
+Representa el ecosistema de APIs e integraciones de terceros que KapakID consume para externalizar responsabilidades críticas, conectándose siempre mediante **API / HTTPS**:
+* **Firebase Cloud Messaging (Push):** Motor encargado de despachar notificaciones push a los smartphones (ej. alertas de vencimiento).
+* **Firebase Storage / AWS S3 (Media):** Buckets de almacenamiento en la nube donde se guardan físicamente los documentos subidos por el usuario de forma segura.
+* **ATU / Pasarelas de Pagos (Finanzas):** Entidades financieras y de transporte con las que se interactúa para validar saldos y procesar recargas.
+* **RENIEC / SUNEDU (Identidad):** Entidades gubernamentales peruanas consultadas para validar la autenticidad de los documentos (DNI, carné universitario) ingresados a la plataforma.
 
 ### 2.6. Tactical-Level Domain-Driven Design
 #### 2.6.x. Bounded Context: <Nombre del Bounded Context>
@@ -945,6 +1274,288 @@ Esta capa proporciona las implementaciones técnicas concretas para las interfac
 ---
 
 ---
+#### 2.6.2. Bounded Context Notifications: <Notifications>
+
+Este Bounded Context es responsable de centralizar y gestionar todas las comunicaciones salientes hacia los usuarios de KapakID. En el ecosistema móvil, su rol principal es la administración de los tokens de dispositivos (para enviar notificaciones Push) y el registro del historial de alertas sobre vencimiento de documentos, validaciones de identidad y saldos de transporte.
+
+##### 2.6.2.1. Domain Layer
+
+La capa de dominio encapsula las reglas de negocio sobre cómo, cuándo y a quién se envían los mensajes, asegurando que la estructura de la notificación sea válida antes de intentar su despacho.
+
+| Tipo | Nombre | Descripción |
+| :--- | :--- | :--- |
+| **Entity** | `Notification` | Representa el mensaje en sí (título, cuerpo, fecha de creación) y su estado de lectura. |
+| **Entity** | `UserDevice` | Representa el dispositivo móvil del usuario, almacenando el token necesario para recibir notificaciones Push. |
+| **Value Object** | `NotificationId` | Identificador único de la notificación. |
+| **Value Object** | `NotificationType` | Define el canal de entrega (ej. PUSH, EMAIL, SMS). |
+| **Value Object** | `NotificationStatus` | Define el estado de la entrega (ej. PENDING, SENT, FAILED, READ). |
+| **Aggregate Root** | `NotificationRecord` | Entidad raíz que asocia el dispositivo del usuario con el historial de notificaciones que se le han enviado. |
+
+##### 2.6.2.2. Interface Layer
+
+Esta capa maneja las peticiones que llegan desde la aplicación móvil KapakID, principalmente para registrar el dispositivo para alertas Push y consultar el buzón de notificaciones.
+
+| Componente | Nombre | Descripción |
+| :--- | :--- | :--- |
+| **Controller / API** | `NotificationController` | Expone endpoints REST para registrar tokens de dispositivos y obtener el historial de alertas. |
+| **DTO** | `DeviceTokenResource` | Objeto que recibe el token generado por el sistema operativo móvil (FCM/APNs) al iniciar sesión. |
+| **DTO** | `NotificationInboxResource` | Objeto que devuelve la lista de notificaciones formateada para la bandeja de entrada de la app. |
+
+##### 2.6.2.3. Application Layer
+
+Orquesta los flujos de comunicación. Recibe comandos desde otros Bounded Contexts (ej. cuando Documents avisa que un DNI fue rechazado) y coordina el envío.
+
+| Componente | Nombre | Descripción |
+| :--- | :--- | :--- |
+| **Command** | `RegisterDeviceCommand` | Comando que indica la intención de vincular un token Push a un usuario. |
+| **Command** | `DispatchNotificationCommand` | Comando interno para construir y encolar un mensaje para su envío. |
+| **Query** | `GetUnreadNotificationsQuery` | Consulta para cargar la burbuja roja de notificaciones no leídas en la app móvil. |
+| **Application Service** | `NotificationCommandService` | Orquesta el guardado del mensaje y delega el envío físico a la infraestructura. |
+
+##### 2.6.2.4. Infrastructure Layer
+
+Se encarga de la comunicación con los proveedores externos de mensajería y la base de datos de historial.
+
+| Componente | Nombre | Descripción |
+| :--- | :--- | :--- |
+| **Repository** | `NotificationRepository` | Implementación para guardar el historial de mensajes en la base de datos PostgreSQL. |
+| **External Service** | `FirebaseMessagingAdapter` | Integración con Firebase Cloud Messaging (FCM) para disparar las notificaciones Push nativas a iOS y Android. |
+| **External Service** | `EmailServiceAdapter` | Integración con servicios SMTP (ej. SendGrid o AWS SES) para enviar correos formales. |
+
+##### 2.6.2.5. Bounded Context Software Architecture Component Level Diagrams
+
+Este diagrama de nivel de componentes detalla la estructura interna del microservicio de Notificaciones. Al tratarse de un sistema con enfoque móvil, este componente se encarga de recibir los tokens generados por los dispositivos (iOS/Android) y orquestar el envío de alertas utilizando servicios externos especializados en mensajería Push y correo electrónico.
+
+![Component Diagram Documents](<resources/Cap-2/Components Diagrams/ComponentDiagram_NotificationsBC-dark.png>)
+
+##### 2.6.2.6. Bounded Context Software Architecture Code Level Diagrams
+###### 2.6.2.6.1. Bounded Context Domain Layer Class Diagrams
+El diagrama de clases para el contexto de Notifications modela la relación entre los dispositivos móviles y los mensajes. El NotificationRecord actúa como Aggregate Root garantizando que no se envíen notificaciones a dispositivos no registrados. Se destaca la entidad UserDevice, que es crítica en el desarrollo móvil para almacenar el identificador de notificaciones push (Device Token). Además, se incluyen los Value Objects que tipifican el estado del envío (NotificationStatus) y el canal (NotificationType).
+
+![Class Diagram Documents](<resources/Cap-2/DiagramsClass/Documents/NotificationsBC.jpeg>)
+    
+###### 2.6.3.6.2. Bounded Context Database Design Diagram
+
+El diseño de base de datos para este contexto es altamente transaccional y optimizado para lecturas rápidas, dado que la bandeja de notificaciones se consulta constantemente desde la app móvil. La tabla user_devices es el núcleo de la integración móvil, almacenando los tokens de Firebase/APNs. La tabla notifications funciona como el historial inmutable de alertas, mientras que notification_templates permite estandarizar los mensajes recurrentes (ej. "Su documento [Documento] ha sido validado con éxito").
+
+![Class Diagram Documents](<resources/Cap-2/DiagramsClass/Documents/NotificationsDB.jpeg>)
+
+
+#### 2.6.3. Bounded Context Transportation: <Transportation>
+
+El Bounded Context de Transport es el encargado de gestionar la integración de KapakID con los sistemas de movilidad urbana y servicios financieros. Su responsabilidad principal es permitir que el usuario (Estudiante o Padre de Familia) vincule sus tarjetas físicas (Metropolitano, Lima Pass, carnets universitarios con chip) al ecosistema móvil, consulte saldos en tiempo real y ejecute recargas seguras mediante pasarelas de pago.
+
+##### 2.6.3.1. Domain Layer
+
+  La capa de dominio contiene la lógica pura del negocio de transporte y finanzas personales, asegurando la integridad de los saldos y la validez de las tarjetas antes de cualquier operación.
+
+
+| Tipo | Nombre | Descripción |
+| :--- | :--- | :--- |
+| **Aggregate Root** | `TransportCard` | Entidad raíz que representa la tarjeta vinculada; controla el acceso al saldo y las transacciones. |
+| **Entity** | `CardBalance` | Representa el saldo monetario disponible, gestionando las reglas de actualización y moneda. |
+| **Entity** | `TransitTransaction` | Registro inmutable de cada evento (consumo de pasaje o recarga de saldo). |
+| **Value Object** | `CardId` | Identificador único interno generado por KapakID para la gestión de la tarjeta. |
+| **Value Object** | `CardNumber` | Representación segura y validada del número físico de la tarjeta. |
+| **Value Object** | `MoneyAmount` | Encapsula el valor numérico y el tipo de moneda (PEN) para evitar errores de precisión. |
+| **Value Object** | `CardType` | Define si la tarjeta es universitaria, general, de transporte o bancaria. |
+
+##### 2.6.3.2. Interface Layer
+
+  Gestiona la comunicación entre la aplicación móvil y el backend, transformando los datos de la interfaz en comandos y consultas procesables.
+
+| Componente | Nombre | Descripción |
+| :--- | :--- | :--- |
+| **Controller** | `TransportCardController` | Endpoints para el registro, listado y desvinculación de tarjetas. |
+| **Controller** | `BalanceController` | Endpoints para la consulta de saldos y ejecución de procesos de recarga. |
+| **DTO** | `LinkCardRequest` | Datos enviados por el móvil para asociar una nueva tarjeta (número y tipo). |
+| **DTO** | `BalanceResponse` | Datos formateados que devuelven el saldo y la última fecha de sincronización al usuario. |
+##### 2.6.3.3. Application Layer
+
+  Orquesta los casos de uso específicos del transporte, como la validación externa de saldos y la coordinación de pagos bancarios.
+
+| Componente | Nombre | Descripción |
+| :--- | :--- | :--- |
+| **Command** | `RegisterCardCommand` | Procesa la solicitud inicial de vinculación de una tarjeta al perfil. |
+| **Command** | `ProcessTopUpCommand` | Coordina el flujo de pago con el banco y la posterior actualización del saldo en la tarjeta. |
+| **Query** | `FetchCardDetailsQuery` | Obtiene la información completa y el historial de una tarjeta específica. |
+| **Application Service** | `TransportCommandService` | Maneja la lógica transaccional de escritura para tarjetas y saldos. |
+
+##### 2.6.3.4. Infrastructure Layer
+
+  Implementa la comunicación técnica con los sistemas externos y la persistencia de datos en la base de datos central.
+
+| Componente | Nombre | Descripción |
+| :--- | :--- | :--- |
+| **Repository** | `TransportCardRepository` | Implementación JPA/Hibernate para persistir las tarjetas y transacciones. |
+| **Adapter** | `AtuApiAdapter` | Cliente técnico que se conecta a los servicios de la ATU para validar saldos reales. |
+| **Adapter** | `BankPaymentAdapter` | Adaptador para la integración con pasarelas de pago (Niubiz/Izipay) para recargas. |
+
+
+##### 2.6.3.5. Bounded Context Software Architecture Component Level Diagrams
+  
+  Este diagrama de componentes ilustra la estructura interna del contenedor Transport Service. La interacción comienza en el Transport Controller, que recibe las peticiones desde la aplicación móvil a través del API Gateway.
+
+  La lógica central es orquestada por el Transport Application Service, el cual coordina el flujo de las operaciones apoyándose en tres pilares:
+
+  - El Transport Repository para persistir los saldos en la base de datos.
+
+  - El ATU Integration Adapter para consultar el estado real de la tarjeta en el sistema del Metropolitano.
+
+  - El Payment Gateway Adapter para procesar los cobros de las recargas con las entidades bancarias.
+
+![alt text](<resources/Cap-2/Components Diagrams/BC_Transportation.jpeg>)
+
+##### 2.6.3.6. Bounded Context Software Architecture Code Level Diagrams
+###### 2.6.3.6.1. Bounded Context Domain Layer Class Diagrams
+    
+  El diagrama de clases de dominio ha sido diseñado siguiendo los principios tácticos de DDD, centrando la lógica en el Aggregate Root TransportCard. A diferencia de un modelo tradicional, aquí las conexiones representan propiedad y límites de consistencia: las entidades CardBalance y TransitTransaction son gestionadas exclusivamente por la raíz, garantizando que el saldo nunca se modifique sin un registro transaccional previo.
+
+  Se han implementado Value Objects como MoneyAmount y CardNumber para encapsular lógica de validación y formato (como el enmascaramiento por seguridad), asegurando que los objetos de dominio sean "ricos" en comportamiento y no simples contenedores de datos.
+
+  ![alt text](resources/Cap-2/DiagramsClass/Documents/DiagramaClases_BC_Transportation.jpeg)
+###### 2.6.3.6.2. Bounded Context Database Design Diagram
+    
+  El diseño físico de la base de datos refleja la estructura del dominio, garantizando la integridad referencial y la trazabilidad financiera. La tabla principal transport_cards actúa como el eje central, mientras que card_balances permite un acceso rápido al saldo actual sin necesidad de recalcular todo el historial.
+
+  La tabla transit_transactions funciona como un libro mayor (ledger) inmutable, registrando cada recarga y consumo con su respectivo código de referencia bancaria o de transporte, lo cual es vital para la resolución de disputas y auditoría de cumplimiento (Compliance).
+
+  ![alt text](resources/Cap-2/DiagramsClass/Documents/DiagramaDataBase_BC_Transportation.jpeg)
+
+#### 2.6.4. Bounded Context: Identity and Access Management (IAM)
+
+Este Bounded Context es el núcleo de seguridad de KapakID. Es responsable de la autenticación, autorización y la gestión de los perfiles de los usuarios (Estudiantes Universitarios y Padres/Tutores). Administra el ciclo de vida de las credenciales, emite y valida tokens JWT, y garantiza que cada interacción en la plataforma esté debidamente autorizada y registrada.
+
+##### 2.6.4.1. Domain Layer
+
+La capa de dominio encapsula las reglas fundamentales de seguridad y acceso al ecosistema de KapakID, garantizando la inmutabilidad de la identidad y la gestión de roles sin depender de frameworks externos.
+
+| Tipo | Nombre | Descripción |
+| :--- | :--- | :--- |
+| **Aggregate Root** | `UserAccount` | Entidad raíz que centraliza la información del usuario, sus roles y sus credenciales activas. |
+| **Entity** | `Session` | Representa una sesión activa de un usuario en un dispositivo, gestionando su ciclo de vida y caducidad. |
+| **Value Object** | `UserId` | Identificador único e inmutable del usuario en todo el ecosistema KapakID. |
+| **Value Object** | `Credentials` | Encapsula la lógica de la contraseña cifrada (hash) garantizando que nunca se exponga en texto claro. |
+| **Value Object** | `UserRole` | Define el nivel de acceso y el segmento del usuario (ej. Student, Parent, Admin). |
+| **Value Object** | `EmailAddress` | Encapsula la validación de formato del correo electrónico y asegura que sea único. |
+
+##### 2.6.4.2. Interface Layer
+
+Esta capa actúa como el puerto de entrada para las peticiones de los dispositivos cliente (aplicación móvil o web), exponiendo los endpoints seguros para el registro y el acceso.
+
+| Componente | Nombre | Descripción |
+| :--- | :--- | :--- |
+| **Controller** | `AuthController` | Expone endpoints REST para iniciar sesión (`/auth/login`), registrarse y renovar tokens. |
+| **Controller** | `UserProfileController` | Expone endpoints para consultar y editar la información básica del perfil. |
+| **DTO** | `LoginRequestResource` | Objeto que transporta las credenciales ingresadas por el usuario desde la interfaz. |
+| **DTO** | `AuthResponseResource` | Objeto de respuesta que incluye el Token JWT y los datos básicos de la sesión autorizada. |
+
+##### 2.6.4.3. Application Layer
+
+La capa de aplicación coordina las acciones de seguridad, validando reglas mediante servicios de dominio y emitiendo eventos de integración cuando un usuario se registra o inicia sesión.
+
+| Componente | Nombre | Descripción |
+| :--- | :--- | :--- |
+| **Command** | `RegisterUserCommand` | Comando que encapsula los datos y la intención de crear una nueva cuenta en la plataforma. |
+| **Command** | `AuthenticateUserCommand` | Comando que orquesta la verificación de credenciales y la generación de la sesión. |
+| **Query** | `GetUserProfileQuery` | Consulta diseñada para retornar la información del perfil del usuario logueado. |
+| **Application Service** | `IdentityCommandService` | Coordina la lógica transaccional de escritura, incluyendo el hash de contraseñas y el guardado en base de datos. |
+
+##### 2.6.4.4. Infrastructure Layer
+
+Proporciona las implementaciones técnicas concretas para el almacenamiento seguro de usuarios y la generación criptográfica de tokens.
+
+| Componente | Nombre | Descripción |
+| :--- | :--- | :--- |
+| **Repository** | `UserRepository` | Implementación de persistencia para guardar y consultar usuarios en la base de datos PostgreSQL. |
+| **Infra Service** | `JwtTokenProvider` | Implementación técnica encargada de firmar, emitir y validar la vigencia de los tokens JWT. |
+| **Infra Service** | `PasswordHasher` | Componente de seguridad encargado de encriptar las contraseñas utilizando algoritmos fuertes (ej. BCrypt). |
+
+##### 2.6.4.5. Bounded Context Software Architecture Component Level Diagrams
+
+Este diagrama ilustra la arquitectura interna del microservicio de Identidad. El flujo comienza en el `AuthController`, que recibe peticiones del API Gateway. El `IdentityCommandService` procesa estas solicitudes apoyándose en el `PasswordHasher` para verificar credenciales y en el `JwtTokenProvider` para emitir el acceso. Finalmente, los datos se consultan y guardan a través del `UserRepository`.
+
+![Component Diagram IAM](<resources/Cap-2/BoundedContextIAM/BC-IAM_Component.png>)
+
+##### 2.6.4.6. Bounded Context Software Architecture Code Level Diagrams
+###### 2.6.4.6.1. Bounded Context Domain Layer Class Diagrams
+
+El diagrama de clases de la capa de dominio sitúa a `UserAccount` como la raíz de agregación. Esta entidad gestiona instancias de sus Value Objects correspondientes (`Credentials`, `UserRole`, `EmailAddress`). Esta separación garantiza que atributos críticos como la contraseña estén encapsulados y aislados de modificaciones accidentales desde otras partes del código.
+
+![Class Diagram IAM](<resources/Cap-2/BoundedContextIAM/BC-IAM_ClassDiagram.png>)
+
+###### 2.6.4.6.2. Bounded Context Database Design Diagram
+
+A nivel físico, la base de datos para IAM se mantiene estrictamente separada para evitar fugas de información. La tabla `users` contiene la información central e inmutable de autenticación (correo, password_hash, rol). Además, se incluye una tabla `user_sessions` para la gestión activa de tokens (permitiendo invalidar sesiones o implementar *refresh tokens*) y registrar los últimos accesos por motivos de seguridad y auditoría.
+
+![Database Diagram IAM](<resources/Cap-2/BoundedContextIAM/BC-IAM_DatabaseDesign.png>)
+
+#### 2.6.5. Bounded Context Compliance: <Compliance>
+
+El Bounded Context de Compliance es el motor de auditoría y gobernanza de KapakID. Su propósito exclusivo es garantizar que todas las transacciones críticas, el acceso a documentos oficiales y las recargas de saldo cumplan con las regulaciones de la Ley de Protección de Datos Personales. Este contexto opera principalmente en segundo plano, guardando un registro inmutable (append-only) de las actividades y gestionando el ciclo de vida del consentimiento del usuario sobre sus datos personales desde la aplicación móvil.
+
+##### 2.6.5.1. Domain Layer
+
+La capa de dominio de Compliance está diseñada bajo el principio de inmutabilidad. Una vez que un evento de auditoría se crea, las reglas de negocio prohíben estrictamente su modificación o eliminación, garantizando la integridad legal del ecosistema.
+
+| Tipo | Nombre | Descripción |
+| :--- | :--- | :--- |
+| **Aggregate Root** | `AuditRecord` | Entidad central inmutable que registra una acción crítica ejecutada en el sistema. |
+| **Aggregate Root** | `UserConsent` | Gestiona las aceptaciones legales del usuario (ej. Términos y Condiciones, Políticas de Privacidad). |
+| **Value Object** | `ActionType` | Define la categoría del evento auditado (ej. DOCUMENT_VIEW, CARD_LINKED, LOGIN_ATTEMPT). |
+| **Value Object** | `IpAddress` | Dirección de red desde donde se ejecutó la acción. |
+| **Value Object** | `DeviceInfo` | Metadatos del smartphone (ej. iOS 16.4, iPhone 13) útiles para rastreo de accesos o posibles fraudes. |
+| **Value Object** | `PolicyVersion` | Identificador de la versión exacta del documento legal que el usuario aceptó en un momento dado. |
+
+##### 2.6.5.2. Interface Layer
+
+Esta capa recibe peticiones síncronas desde la app móvil, pero también expone interfaces asíncronas para capturar acciones de otros microservicios sin afectar el rendimiento de la aplicación.
+
+| Componente | Nombre | Descripción |
+| :--- | :--- | :--- |
+| **Controller** | `ConsentController` | Endpoints REST para que la app móvil consulte y actualice los consentimientos legales del usuario. |
+| **Event Listener** | `AuditMessageConsumer` | Escucha eventos asíncronos (vía RabbitMQ o Kafka) provenientes de Documents o Transport para registrarlos sin latencia. |
+| **DTO** | `AcceptPolicyRequest` | Datos enviados desde el móvil cuando el usuario hace clic en "Aceptar términos". |
+
+##### 2.6.5.3. Application Layer
+
+Orquesta el registro seguro de los eventos y la consulta de reportes de auditoría en caso de requerimientos legales o de soporte técnico.
+
+| Componente | Nombre | Descripción |
+| :--- | :--- | :--- |
+| **Command** | `LogAuditActionCommand` | Comando interno para persistir un nuevo registro inmutable en el libro mayor de auditoría. |
+| **Command** | `RecordConsentCommand` | Comando para registrar o actualizar la aceptación de una política legal por parte del usuario. |
+| **Query** | `GetAuditTrailQuery` | Consulta restringida (generalmente para backoffice) para ver el historial de acciones críticas de una cuenta. |
+| **Application Service** | `ComplianceCommandService` | Valida y ejecuta las reglas de inmutabilidad antes de persistir los datos de auditoría o consentimiento. |
+
+##### 2.6.5.4. Infrastructure Layer
+
+Implementa la persistencia con un enfoque en la seguridad extrema, configurando repositorios para rechazar modificaciones estructurales.
+
+| Componente | Nombre | Descripción |
+| :--- | :--- | :--- |
+| **Repository** | `AuditRecordRepository` | Implementación de acceso a datos configurada para operaciones exclusivamente de inserción (INSERT-ONLY). |
+| **Repository** | `ConsentRepository` | Persistencia del estado legal del usuario en la base de datos relacional. |
+
+##### 2.6.5.5. Bounded Context Software Architecture Component Level Diagrams
+
+Este diagrama de componentes ilustra la estructura interna del contenedor Compliance Service. La interacción es dual: recibe peticiones síncronas (HTTP) para gestionar términos legales desde la app, y consume eventos asíncronos (AMQP) desde un Message Broker para registrar auditorías sin bloquear las transacciones de otros módulos.
+
+![alt text](<resources/Cap-2/Components Diagrams/BC_Compliance.png>)
+
+##### 2.6.5.6. Bounded Context Software Architecture Code Level Diagrams
+
+###### 2.6.5.6.1. Bounded Context Domain Layer Class Diagrams
+
+El diagrama de clases para Compliance destaca por la estricta ausencia de métodos mutadores (Setters) en AuditRecord. Se utilizan Value Objects detallados (DeviceInfo, IpAddress, ActionType) para capturar el contexto técnico de los dispositivos móviles, asegurando que la auditoría sea rica y trazable.
+
+![alt text](resources/Cap-2/DiagramsClass/Documents/DiagramaClases_BC_Compliance.png)
+
+###### 2.6.5.6.2. Bounded Context Database Design Diagram
+
+El diseño físico separa el historial de acciones (audit_logs) de la gestión legal (user_consents). audit_logs es una tabla aplanada diseñada para lecturas rápidas y operaciones exclusivas de inserción (Write-Once), mientras que user_consents se relaciona con legal_policies para llevar el control de qué versión de los términos aceptó el usuario.
+
+![alt text](resources/Cap-2/DiagramsClass/Documents/DiagramaDataBase_BC_Compliance.png)
 
 ## Capítulo III: Solution UI/UX Design
 
