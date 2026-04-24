@@ -190,7 +190,7 @@ static string[] Integrantes() {
 **> 🧑‍💻 Fabrizio Javier Quiroz Zambrano (U202213406)**
    <div align='center'>
 
-   <img src="resources/Cap-1/Members/Fabrizio1.jpg" alt="imagen Raul" width="100" align='right'>
+   <img src="resources/cap-1/Members/Fabrizio1.jpg" alt="imagen Raul" width="100" align='right'>
 
    ~~~txt
     Actualmente curso el sexto ciclo de Ingeniería de Software en la Universidad Peruana de Ciencias Aplicadas (UPC), donde he venido desarrollando una sólida base técnica y una visión crítica
