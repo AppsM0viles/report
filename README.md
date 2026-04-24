@@ -945,6 +945,91 @@ Esta capa proporciona las implementaciones técnicas concretas para las interfac
 ---
 
 ---
+#### 2.6.2. Bounded Context: <>
+
+#### 2.6.3. Bounded Context Transportation: <Transportation>
+
+El Bounded Context de Transport es el encargado de gestionar la integración de KapakID con los sistemas de movilidad urbana y servicios financieros. Su responsabilidad principal es permitir que el usuario (Estudiante o Padre de Familia) vincule sus tarjetas físicas (Metropolitano, Lima Pass, carnets universitarios con chip) al ecosistema móvil, consulte saldos en tiempo real y ejecute recargas seguras mediante pasarelas de pago.
+
+##### 2.6.3.1. Domain Layer
+
+  La capa de dominio contiene la lógica pura del negocio de transporte y finanzas personales, asegurando la integridad de los saldos y la validez de las tarjetas antes de cualquier operación.
+
+
+| Tipo | Nombre | Descripción |
+| :--- | :--- | :--- |
+| **Aggregate Root** | `TransportCard` | Entidad raíz que representa la tarjeta vinculada; controla el acceso al saldo y las transacciones. |
+| **Entity** | `CardBalance` | Representa el saldo monetario disponible, gestionando las reglas de actualización y moneda. |
+| **Entity** | `TransitTransaction` | Registro inmutable de cada evento (consumo de pasaje o recarga de saldo). |
+| **Value Object** | `CardId` | Identificador único interno generado por KapakID para la gestión de la tarjeta. |
+| **Value Object** | `CardNumber` | Representación segura y validada del número físico de la tarjeta. |
+| **Value Object** | `MoneyAmount` | Encapsula el valor numérico y el tipo de moneda (PEN) para evitar errores de precisión. |
+| **Value Object** | `CardType` | Define si la tarjeta es universitaria, general, de transporte o bancaria. |
+
+##### 2.6.3.2. Interface Layer
+
+  Gestiona la comunicación entre la aplicación móvil y el backend, transformando los datos de la interfaz en comandos y consultas procesables.
+
+| Componente | Nombre | Descripción |
+| :--- | :--- | :--- |
+| **Controller** | `TransportCardController` | Endpoints para el registro, listado y desvinculación de tarjetas. |
+| **Controller** | `BalanceController` | Endpoints para la consulta de saldos y ejecución de procesos de recarga. |
+| **DTO** | `LinkCardRequest` | Datos enviados por el móvil para asociar una nueva tarjeta (número y tipo). |
+| **DTO** | `BalanceResponse` | Datos formateados que devuelven el saldo y la última fecha de sincronización al usuario. |
+##### 2.6.3.3. Application Layer
+
+  Orquesta los casos de uso específicos del transporte, como la validación externa de saldos y la coordinación de pagos bancarios.
+
+| Componente | Nombre | Descripción |
+| :--- | :--- | :--- |
+| **Command** | `RegisterCardCommand` | Procesa la solicitud inicial de vinculación de una tarjeta al perfil. |
+| **Command** | `ProcessTopUpCommand` | Coordina el flujo de pago con el banco y la posterior actualización del saldo en la tarjeta. |
+| **Query** | `FetchCardDetailsQuery` | Obtiene la información completa y el historial de una tarjeta específica. |
+| **Application Service** | `TransportCommandService` | Maneja la lógica transaccional de escritura para tarjetas y saldos. |
+
+##### 2.6.3.4. Infrastructure Layer
+
+  Implementa la comunicación técnica con los sistemas externos y la persistencia de datos en la base de datos central.
+
+| Componente | Nombre | Descripción |
+| :--- | :--- | :--- |
+| **Repository** | `TransportCardRepository` | Implementación JPA/Hibernate para persistir las tarjetas y transacciones. |
+| **Adapter** | `AtuApiAdapter` | Cliente técnico que se conecta a los servicios de la ATU para validar saldos reales. |
+| **Adapter** | `BankPaymentAdapter` | Adaptador para la integración con pasarelas de pago (Niubiz/Izipay) para recargas. |
+
+##### 2.6.3.5. Bounded Context Software Architecture Component Level Diagrams
+  
+  Este diagrama de componentes ilustra la estructura interna del contenedor Transport Service. La interacción comienza en el Transport Controller, que recibe las peticiones desde la aplicación móvil a través del API Gateway.
+
+  La lógica central es orquestada por el Transport Application Service, el cual coordina el flujo de las operaciones apoyándose en tres pilares:
+
+  - El Transport Repository para persistir los saldos en la base de datos.
+
+  - El ATU Integration Adapter para consultar el estado real de la tarjeta en el sistema del Metropolitano.
+
+  - El Payment Gateway Adapter para procesar los cobros de las recargas con las entidades bancarias.
+
+![alt text](<resources/Cap-2/Components Diagrams/BC_Transportation.jpeg>)
+
+##### 2.6.3.6. Bounded Context Software Architecture Code Level Diagrams
+###### 2.6.3.6.1. Bounded Context Domain Layer Class Diagrams
+    
+  El diagrama de clases de dominio ha sido diseñado siguiendo los principios tácticos de DDD, centrando la lógica en el Aggregate Root TransportCard. A diferencia de un modelo tradicional, aquí las conexiones representan propiedad y límites de consistencia: las entidades CardBalance y TransitTransaction son gestionadas exclusivamente por la raíz, garantizando que el saldo nunca se modifique sin un registro transaccional previo.
+
+  Se han implementado Value Objects como MoneyAmount y CardNumber para encapsular lógica de validación y formato (como el enmascaramiento por seguridad), asegurando que los objetos de dominio sean "ricos" en comportamiento y no simples contenedores de datos.
+
+  ![alt text](resources/Cap-2/DiagramsClass/Documents/DiagramaClases_BC_Transportation.jpeg)
+###### 2.6.3.6.2. Bounded Context Database Design Diagram
+    
+  El diseño físico de la base de datos refleja la estructura del dominio, garantizando la integridad referencial y la trazabilidad financiera. La tabla principal transport_cards actúa como el eje central, mientras que card_balances permite un acceso rápido al saldo actual sin necesidad de recalcular todo el historial.
+
+  La tabla transit_transactions funciona como un libro mayor (ledger) inmutable, registrando cada recarga y consumo con su respectivo código de referencia bancaria o de transporte, lo cual es vital para la resolución de disputas y auditoría de cumplimiento (Compliance).
+
+  ![alt text](resources/Cap-2/DiagramsClass/Documents/DiagramaDataBase_BC_Transportation.jpeg)
+
+#### 2.6.4. Bounded Context: <>
+
+#### 2.6.5. Bounded Context: <>
 
 ## Capítulo III: Solution UI/UX Design
 
