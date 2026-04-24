@@ -1608,6 +1608,20 @@ El diseño físico separa el historial de acciones (audit_logs) de la gestión l
 
 ## Conclusiones y recomendaciones
 
+**Conclusiones:**
+
+1. A través de las entrevistas y el proceso de *Needfinding*, se comprobó empíricamente que tanto los estudiantes universitarios como los padres de familia enfrentan fricciones significativas en la gestión de documentos físicos y recargas de transporte. KapakID resuelve una necesidad real al unificar identidad digital, pagos y alertas en una sola plataforma, lo que reduce la carga mental y el riesgo de pérdida para el usuario.
+2. La adopción rigurosa de *Domain-Driven Design* (DDD), tanto a nivel estratégico como táctico, permitió descomponer la complejidad del sistema en cinco *Bounded Contexts* altamente cohesivos (*Identity*, *Documents*, *Transport*, *Notifications* y *Compliance*). Esta separación garantiza que el ecosistema pueda escalar y evolucionar de manera independiente, facilitando futuras integraciones funcionales.
+3. El diseño del sistema priorizó soluciones técnicas alineadas a los *pain points* del usuario. La implementación de una base de datos local (*LocalCacheRepository*) para el "Modo Offline" y el cifrado de datos en el contexto de *Compliance* abordan directamente las principales preocupaciones reveladas en el *Lean UX Process*: la disponibilidad sin conexión a internet y la seguridad de la información confidencial.
+4. El modelo de negocio *freemium*, respaldado por la funcionalidad "Premium" de perfiles múltiples (dirigida a padres de familia), demuestra viabilidad financiera y un claro entendimiento de la segmentación del mercado, promoviendo la adopción masiva mediante herramientas gratuitas (recargas y alertas básicas) y monetizando funciones avanzadas de gestión familiar.
+
+**Recomendaciones:**
+
+1. Dado que el *Bounded Context* de *Transport* y *Documents* dependen fuertemente de entidades externas (ATU, RENIEC, SUNEDU, pasarelas de pago), se recomienda implementar un enfoque de despliegue por fases. Se debe comenzar con simuladores de API (*Mock APIs*) para pruebas internas, antes de transicionar a entornos de *sandbox* y finalmente a producción, mitigando riesgos operativos.
+2. Al manejar documentos de identidad y datos sensibles de menores (mediante perfiles familiares), es imperativo someter la aplicación a pruebas de penetración (*pentesting*) periódicas. Asimismo, el módulo de *Compliance* debe mantenerse actualizado frente a cualquier modificación en la Ley N° 29733 (Ley de Protección de Datos Personales) para salvaguardar la confianza del usuario.
+3. Si bien el segmento de estudiantes (18-29 años) presenta alta destreza digital, el segmento de padres/tutores (25-45 años) requiere una curva de aprendizaje mínima. Se recomienda iterar continuamente los *Wireframes* y realizar pruebas de usabilidad (*A/B testing*) específicamente en los flujos de creación de perfiles múltiples y vinculación de tarjetas bancarias.
+4. Para acelerar el crecimiento de la base de usuarios en las primeras etapas de lanzamiento, se recomienda enfocar los esfuerzos de marketing en establecer alianzas directas con centros de estudiantes universitarios y consorcios de transporte, utilizando la *Landing Page* para captar *leads* y retroalimentación de *early adopters*.
+
 ## Video App Validation
 - [Video About the product](#)
 - [Video About the team](#)
@@ -1615,5 +1629,13 @@ El diseño físico separa el historial de acciones (audit_logs) de la gestión l
 ## Glosario
 
 ## Bibliografía
+
+* Congreso de la República del Perú. (2011). *Ley N° 29733, Ley de Protección de Datos Personales*. Diario Oficial El Peruano. Recuperado de la plataforma digital única del Estado Peruano.
+* Evans, E. (2003). *Domain-Driven Design: Tackling Complexity in the Heart of Software*. Addison-Wesley Professional.
+* Gothelf, J., & Seiden, J. (2016). *Lean UX: Designing Great Products with Agile Teams* (2.ª ed.). O'Reilly Media.
+* Knapp, J., Zeratsky, J., & Kowitz, B. (2016). *Sprint: How to Solve Big Problems and Test New Ideas in Just Five Days*. Simon & Schuster.
+* Spring Framework Contributors. (2024). *Spring Boot Reference Documentation*. Spring.io. https://docs.spring.io/spring-boot/docs/current/reference/html/
+* Vernon, V. (2013). *Implementing Domain-Driven Design*. Addison-Wesley Professional.
+* Vue.js Core Team. (2024). *Vue.js: The Progressive JavaScript Framework*. Vuejs.org. https://vuejs.org/guide/introduction.html
 
 ## Anexos
