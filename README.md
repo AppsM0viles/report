@@ -161,16 +161,14 @@ static string[] Integrantes() {
    </div>
 
    <!--TODO: integrante 3 -->
-**> 🧑‍💻 <strong>INTEGRANTE 3**</strong>
+**> 🧑‍💻 <strong>Rafael Augusto Tasayco Almonacid**</strong>
    <div align='center'>
-
-   <img src="" alt="imagen integrante 3" width="100" align='right'>
+   <img src="https://github.com/user-attachments/assets/7e445bab-1aff-40f3-8064-559af7db3432" alt="imagen integrante 3" width="100" align='right'>  
 
    ~~~txt
-   
-
+Soy estudiante de la carrera de Ingeniería de Software y actualmente estoy cursando el sexto ciclo de mi carrera universitaria. Entre mis hobbies se encuentran jugar básquet, disfrutar de los videojuegos y escuchar música en mis momentos libres.
+Cuando culmine mis estudios, me encantaría especializarme y concentrarme en el campo de la ciberseguridad, un área que me apasiona y en la que deseo desarrollarme profesionalmente.
    ~~~
-
    </div>
 
    <!--TODO: integrante 4 -->
