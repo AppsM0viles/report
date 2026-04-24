@@ -945,7 +945,72 @@ Esta capa proporciona las implementaciones técnicas concretas para las interfac
 ---
 
 ---
-#### 2.6.2. Bounded Context: <>
+#### 2.6.2. Bounded Context Notifications: <Notifications>
+
+Este Bounded Context es responsable de centralizar y gestionar todas las comunicaciones salientes hacia los usuarios de KapakID. En el ecosistema móvil, su rol principal es la administración de los tokens de dispositivos (para enviar notificaciones Push) y el registro del historial de alertas sobre vencimiento de documentos, validaciones de identidad y saldos de transporte.
+
+##### 2.6.2.1. Domain Layer
+
+La capa de dominio encapsula las reglas de negocio sobre cómo, cuándo y a quién se envían los mensajes, asegurando que la estructura de la notificación sea válida antes de intentar su despacho.
+
+| Tipo | Nombre | Descripción |
+| :--- | :--- | :--- |
+| **Entity** | `Notification` | Representa el mensaje en sí (título, cuerpo, fecha de creación) y su estado de lectura. |
+| **Entity** | `UserDevice` | Representa el dispositivo móvil del usuario, almacenando el token necesario para recibir notificaciones Push. |
+| **Value Object** | `NotificationId` | Identificador único de la notificación. |
+| **Value Object** | `NotificationType` | Define el canal de entrega (ej. PUSH, EMAIL, SMS). |
+| **Value Object** | `NotificationStatus` | Define el estado de la entrega (ej. PENDING, SENT, FAILED, READ). |
+| **Aggregate Root** | `NotificationRecord` | Entidad raíz que asocia el dispositivo del usuario con el historial de notificaciones que se le han enviado. |
+
+##### 2.6.2.2. Interface Layer
+
+Esta capa maneja las peticiones que llegan desde la aplicación móvil KapakID, principalmente para registrar el dispositivo para alertas Push y consultar el buzón de notificaciones.
+
+| Componente | Nombre | Descripción |
+| :--- | :--- | :--- |
+| **Controller / API** | `NotificationController` | Expone endpoints REST para registrar tokens de dispositivos y obtener el historial de alertas. |
+| **DTO** | `DeviceTokenResource` | Objeto que recibe el token generado por el sistema operativo móvil (FCM/APNs) al iniciar sesión. |
+| **DTO** | `NotificationInboxResource` | Objeto que devuelve la lista de notificaciones formateada para la bandeja de entrada de la app. |
+
+##### 2.6.2.3. Application Layer
+
+Orquesta los flujos de comunicación. Recibe comandos desde otros Bounded Contexts (ej. cuando Documents avisa que un DNI fue rechazado) y coordina el envío.
+
+| Componente | Nombre | Descripción |
+| :--- | :--- | :--- |
+| **Command** | `RegisterDeviceCommand` | Comando que indica la intención de vincular un token Push a un usuario. |
+| **Command** | `DispatchNotificationCommand` | Comando interno para construir y encolar un mensaje para su envío. |
+| **Query** | `GetUnreadNotificationsQuery` | Consulta para cargar la burbuja roja de notificaciones no leídas en la app móvil. |
+| **Application Service** | `NotificationCommandService` | Orquesta el guardado del mensaje y delega el envío físico a la infraestructura. |
+
+##### 2.6.2.4. Infrastructure Layer
+
+Se encarga de la comunicación con los proveedores externos de mensajería y la base de datos de historial.
+
+| Componente | Nombre | Descripción |
+| :--- | :--- | :--- |
+| **Repository** | `NotificationRepository` | Implementación para guardar el historial de mensajes en la base de datos PostgreSQL. |
+| **External Service** | `FirebaseMessagingAdapter` | Integración con Firebase Cloud Messaging (FCM) para disparar las notificaciones Push nativas a iOS y Android. |
+| **External Service** | `EmailServiceAdapter` | Integración con servicios SMTP (ej. SendGrid o AWS SES) para enviar correos formales. |
+
+##### 2.6.2.5. Bounded Context Software Architecture Component Level Diagrams
+
+Este diagrama de nivel de componentes detalla la estructura interna del microservicio de Notificaciones. Al tratarse de un sistema con enfoque móvil, este componente se encarga de recibir los tokens generados por los dispositivos (iOS/Android) y orquestar el envío de alertas utilizando servicios externos especializados en mensajería Push y correo electrónico.
+
+![Component Diagram Documents](<resources/Cap-2/Components Diagrams/ComponentDiagram_NotificationsBC-dark.png>)
+
+##### 2.6.2.6. Bounded Context Software Architecture Code Level Diagrams
+###### 2.6.2.6.1. Bounded Context Domain Layer Class Diagrams
+El diagrama de clases para el contexto de Notifications modela la relación entre los dispositivos móviles y los mensajes. El NotificationRecord actúa como Aggregate Root garantizando que no se envíen notificaciones a dispositivos no registrados. Se destaca la entidad UserDevice, que es crítica en el desarrollo móvil para almacenar el identificador de notificaciones push (Device Token). Además, se incluyen los Value Objects que tipifican el estado del envío (NotificationStatus) y el canal (NotificationType).
+
+![Class Diagram Documents](<resources/Cap-2/DiagramsClass/Documents/NotificationsBC.jpeg>)
+    
+###### 2.6.3.6.2. Bounded Context Database Design Diagram
+
+El diseño de base de datos para este contexto es altamente transaccional y optimizado para lecturas rápidas, dado que la bandeja de notificaciones se consulta constantemente desde la app móvil. La tabla user_devices es el núcleo de la integración móvil, almacenando los tokens de Firebase/APNs. La tabla notifications funciona como el historial inmutable de alertas, mientras que notification_templates permite estandarizar los mensajes recurrentes (ej. "Su documento [Documento] ha sido validado con éxito").
+
+![Class Diagram Documents](<resources/Cap-2/DiagramsClass/Documents/NotificationsDB.jpeg>)
+
 
 #### 2.6.3. Bounded Context Transportation: <Transportation>
 
@@ -996,6 +1061,7 @@ El Bounded Context de Transport es el encargado de gestionar la integración de 
 | **Repository** | `TransportCardRepository` | Implementación JPA/Hibernate para persistir las tarjetas y transacciones. |
 | **Adapter** | `AtuApiAdapter` | Cliente técnico que se conecta a los servicios de la ATU para validar saldos reales. |
 | **Adapter** | `BankPaymentAdapter` | Adaptador para la integración con pasarelas de pago (Niubiz/Izipay) para recargas. |
+
 
 ##### 2.6.3.5. Bounded Context Software Architecture Component Level Diagrams
   
