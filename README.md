@@ -44,21 +44,6 @@ static string[] Integrantes() {
 | 1.4     | [24/04/2026] | [Rafael Tasayco]   | Integración del *Lean UX Canvas*, evaluación de competidores, evidencia de entrevistas, *Impact Mapping*, historias de usuario, dinámica de *Event Storming* y el *Bounded Context* de Resource. |
 ## Project Report Collaboration Insights
 
-La redacción y estructuración del presente *Project Report* se llevó a cabo de manera colaborativa y asíncrona utilizando un repositorio centralizado en GitHub. A continuación, se detalla la evidencia de participación del equipo correspondiente al primer gran hito de entrega (TB1), alineado con el Registro de Versiones del documento.
-
-* **Repositorio del Informe:** [Inserta aquí tu link de GitHub]
-* **Total de commits registrados (TB1):** 85
-* **Metodología de versionado:** Se utilizaron ramas temáticas (`feature/chapter-1`, `docs/architecture`, etc.) y se aplicó el estándar de *Conventional Commits* para mantener un historial limpio y comprensible. Se realizaron revisiones mediante *Pull Requests* para asegurar la calidad de la redacción.
-
-### Autores Contribuyentes
-* Fabricio Samir Vega Coronado
-* Raul Hiroshi Tasayco Osorio
-* Rafael Augusto Tasayco Almonacid
-* Ysaac Ligorio Villanueva Andrade
-* Fabrizio Javier Quiroz Zambrano
-
----
-
 ### Hito TB1 - Fundamentos y Diseño de Arquitectura (Semanas 1 - 4)
 
 Durante esta fase inicial, el equipo se enfocó en asentar las bases del producto y diseñar la arquitectura técnica de KapakID. Los entregables consolidados en este hito incluyeron:
