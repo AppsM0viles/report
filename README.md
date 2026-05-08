@@ -1540,7 +1540,7 @@ En esta sección se detalla el *Wireflow* de la aplicación, el cual ilustra la 
 
 Se evidencian las rutas críticas: el acceso seguro mediante biometría, la transición fluida entre el dashboard y los documentos detallados, y el flujo completo de pagos desde la selección de monto hasta la confirmación en el historial.
 
-![Wireflow KapakID](resources/Cap-3/MobileUX-UI/MobileWireflow.png)
+![Wireflow KapakID](resources/Cap-3/MobileUX-UI/MobileWireFlow.png)
 
 **3.1.4.3. Mobile Applications Mock-ups**
 
