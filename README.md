@@ -1560,7 +1560,7 @@ Este diagrama abstracto permite visualizar las condicionales lógicas (como la v
 
 En esta etapa final de diseño, se ha desarrollado un prototipo interactivo de alta fidelidad. El prototipado permite validar la usabilidad, la navegación y la experiencia de usuario (UX) en un entorno simulado de dispositivo móvil antes de iniciar la fase de codificación.
 
-El prototipo permite interactuar con los botones de navegación, simular una recarga de transporte y verificar la visualización dinámica de los documentos de identidad.
+El prototipo permite interactuar con los botones de navegación y verificar la visualización dinámica de los documentos de identidad.
 
 * **Enlace al prototipo interactivo:** https://app.uizard.io/p/4340c887
 ---
