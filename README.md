@@ -1518,12 +1518,51 @@ El diseño físico separa el historial de acciones (audit_logs) de la gestión l
 - **3.1.3.1. Landing Page Wireframe**
 - **3.1.3.2. Landing Page Mock-up**
 #### 3.1.4. Mobile Applications UX/UI Design
-- **3.1.4.1. Mobile Applications Wireframes**
-- **3.1.4.2. Mobile Applications Wireflow Diagrams**
-- **3.1.4.3. Mobile Applications Mock-ups**
-- **3.1.4.4. Mobile Applications User Flow Diagrams**
-- **3.1.4.5. Mobile Applications Prototyping**
 
+**3.1.4.1. Mobile Applications Wireframes**
+
+En esta sección se presentan los *wireframes* de baja fidelidad de la aplicación móvil KapakID. El objetivo de estos esquemas estructurales es definir la jerarquía visual y la disposición de los componentes de la interfaz, omitiendo colores y tipografías para centrar el enfoque estrictamente en la usabilidad y la arquitectura de la información. Se han diagramado las ocho vistas que componen el ecosistema completo del MVP:
+
+* **Inicio de Sesión:** Define la estructura del acceso seguro y la autenticación biométrica.
+* **Dashboard:** Centraliza la visualización de documentos digitales y el resumen de saldos de transporte.
+* **Recarga:** Estructura los campos de selección de montos y pasarela de pago para el Metropolitano y Línea 1.
+* **Notificaciones:** Organiza el listado de alertas del sistema, como vencimientos de documentos o saldos bajos.
+* **Detalle de DNI:** Vista expandida de alta legibilidad para la presentación del documento ante autoridades.
+* **Carné Universitario:** Módulo específico para la validación del medio pasaje y datos académicos.
+* **Perfil de Usuario:** Gestión de cuenta, seguridad y acceso a funciones familiares premium.
+* **Historial de Recargas:** Registro cronológico de transacciones para el control de gastos del usuario.
+
+![Wireframes KapakID](resources/Cap-3/MobileUX-UI/MobileWireframes.png)
+
+**3.1.4.2. Mobile Applications Wireflow Diagrams**
+
+En esta sección se detalla el *Wireflow* de la aplicación, el cual ilustra la navegación del usuario entre las vistas principales de KapakID. A diferencia de un diagrama de flujo puramente lógico, este modelo utiliza las representaciones estructurales de las interfaces para mostrar exactamente qué interacciones en la pantalla desencadenan los cambios de estado en el sistema.
+
+Se evidencian las rutas críticas: el acceso seguro mediante biometría, la transición fluida entre el dashboard y los documentos detallados, y el flujo completo de pagos desde la selección de monto hasta la confirmación en el historial.
+
+![Wireflow KapakID](resources/Cap-3/MobileUX-UI/MobileWireflow.png)
+
+**3.1.4.3. Mobile Applications Mock-ups**
+
+A continuación, se exhiben los *mock-ups* de alta fidelidad que representan la interfaz de usuario (UI) final de KapakID. En esta etapa se ha aplicado el *UI Kit* corporativo, integrando la paleta cromática (azul y blanco), tipografía moderna e ilustraciones vectoriales personalizadas. El diseño resultante refleja un entorno minimalista y moderno, enfocado en transmitir la seguridad y confianza que exige una plataforma de identidad digital y transacciones financieras.
+
+![Mock-ups KapakID](resources/Cap-3/MobileUX-UI/MobileMockUps.png)
+
+**3.1.4.4. Mobile Applications User Flow Diagrams**
+
+En este apartado se presenta el diagrama de flujo de usuario (*User Flow*), el cual mapea la ruta lógica y las decisiones que toma el actor para completar objetivos críticos dentro del sistema. Abarca desde la autenticación hasta la gestión de documentos y la validación de pagos exitosos o fallidos.
+
+Este diagrama abstracto permite visualizar las condicionales lógicas (como la validación de la sesión o el estado de aprobación de una transacción) independientemente de la interfaz gráfica. Esto asegura que tanto el "camino feliz" (*Happy Path*) como el manejo de excepciones estén contemplados antes de la implementación del software.
+
+![User Flow KapakID](resources/Cap-3/MobileUX-UI/UserFlow.png)
+
+**3.1.4.5. Mobile Applications Prototyping**
+
+En esta etapa final de diseño, se ha desarrollado un prototipo interactivo de alta fidelidad. El prototipado permite validar la usabilidad, la navegación y la experiencia de usuario (UX) en un entorno simulado de dispositivo móvil antes de iniciar la fase de codificación.
+
+El prototipo permite interactuar con los botones de navegación, simular una recarga de transporte y verificar la visualización dinámica de los documentos de identidad.
+
+* **Enlace al prototipo interactivo:** [Insertar enlace de Uizard/Figma aquí]
 ---
 
 ## Capítulo IV: Product Implementation & Validation
