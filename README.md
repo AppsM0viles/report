@@ -1974,11 +1974,95 @@ Esta sección detalla los pasos necesarios para desplegar satisfactoriamente los
 - Cada nueva versión para prueba se publica y gestiona mediante la plataforma de distribución elegida (Firebase / Play Console / App Store Connect).
 
 
+
+
 ### 4.2. Landing Page & Mobile Application Implementation
+
 #### 4.2.1. Sprint n
-- **4.2.1.1. Sprint Planning n**
-- **4.2.1.2. Sprint Backlog n**
+
+<p><strong> Despliegue de la Landing Page – KapakID</strong><br>
+La landing page de KapakID ha sido desarrollada con <strong>HTML5, CSS3 y JavaScript puro</strong>, siguiendo un diseño responsive y accesible. Se ha desplegado utilizando <strong>GitHub Pages</strong> por su integración nativa con el repositorio y su facilidad para actualizaciones continuas.</p>
+
+<p><strong>Pasos realizados:</strong><br>
+1. Se creó un repositorio público en GitHub (<code>F1nTrack/kapakid-landing</code>).<br>
+2. El archivo <code>index.html</code> se colocó en la raíz del repositorio.<br>
+3. En la configuración del repositorio (<code>Settings > Pages</code>), se seleccionó la rama <code>main</code> y la carpeta <code>/ (root)</code>.<br>
+4. Se guardó la configuración y GitHub Pages generó automáticamente la URL pública.<br>
+5. Cada <code>push</code> a la rama <code>main</code> actualiza la página en menos de un minuto.<br>
+<br>
+<strong>A continuación se muestran capturas del proceso y del resultado final:</strong>
+</p>
+
+<img src="resources/cap-4/pages_settings_kapakid.jpg" alt="Configuración GitHub Pages" width="100%" style="margin-bottom: 15px;">
+<img src="resources/cap-4/KapakID_Landing_page.png" alt="Landing page desplegada" width="100%">
+
+<hr>
+
+- **4.2.1.1. Sprint Planning 1**
+
+<table border="1" cellpadding="8" cellspacing="0" width="100%" style="border-collapse: collapse; margin-bottom: 20px;">
+  <tbody>
+    <tr><th style="background-color:#f2f2f2; text-align:left">Sprint #</th><td colspan="3">Sprint 1</td></tr>
+    <tr><th style="background-color:#f2f2f2; text-align:left" colspan="4">Sprint Planning Background</th></tr>
+    <tr><th style="background-color:#f2f2f2; text-align:left">Date</th><td colspan="3">2026-04-20</td></tr>
+    <tr><th style="background-color:#f2f2f2; text-align:left">Time</th><td colspan="3">07:00 pm (GMT-5)</td></tr>
+    <tr><th style="background-color:#f2f2f2; text-align:left">Location</th><td colspan="3">Modalidad remota mediante la plataforma Discord</td></tr>
+    <tr><th style="background-color:#f2f2f2; text-align:left">Prepared By</th><td colspan="3">Villanueva Andrade, Ysaac Ligorio</td></tr>
+    <tr><th style="background-color:#f2f2f2; text-align:left">Attendees (to planning meeting)</th><td colspan="3">Villanueva Andrade, Ysaac Ligorio / Tasayco Osorio, Raul Hiroshi / Vega Coronado, Fabricio Samir / Tasayco Almonacid, Rafael Augusto / Quiroz Zambrano, Fabrizio Javier</td></tr>
+    <tr><th style="background-color:#f2f2f2; text-align:left">Sprint 0 Review Summary</th><td colspan="3">Al ser el primer sprint, no existe sprint anterior.</td></tr>
+    <tr><th style="background-color:#f2f2f2; text-align:left">Sprint 0 Retrospective Summary</th><td colspan="3">No aplica para el sprint inicial.</td></tr>
+    <tr><th style="background-color:#f2f2f2; text-align:left" colspan="4">Sprint Goal &amp; User Stories</th></tr>
+    <tr><th style="background-color:#f2f2f2; text-align:left">Sprint 1 Goal</th><td colspan="3">Our focus is on <strong>presenting KapakID's value proposition through a functional landing page, enabling basic user authentication (sign-up and login), and allowing users to register and view their first official document (DNI) from the mobile app</strong>. <br><br> We believe it delivers <strong>clear understanding of the product benefits to visitors, a secure first interaction with the platform, and a tangible digital document management experience</strong> to <strong>students and parents</strong>. <br><br> This will be confirmed when: (1) the landing page is publicly accessible and includes sections for features, testimonials, and legal terms; (2) a user can successfully register and log in from the Android app; (3) a user can upload a DNI photo and see it listed in the app; (4) the backend endpoints for authentication and document upload are documented via Swagger.</td></tr>
+    <tr><th style="background-color:#f2f2f2; text-align:left">Sprint 1 Velocity</th><td colspan="3">21 (Story Points)</td></tr>
+    <tr><th style="background-color:#f2f2f2; text-align:left">Sum of Story Points</th><td colspan="3">21</td></tr>
+  </tbody>
+</table>
+
+
+- **4.2.1.2. Sprint Backlog 1**
+
+<p>El objetivo principal de este primer sprint es <strong>sentar las bases funcionales del ecosistema KapakID</strong>: landing page informativa, backend con autenticación y registro de documentos, y las primeras pantallas móviles para que el usuario pueda registrarse y subir su DNI. Se priorizan las funcionalidades de onboarding y gestión documental básica.</p>
+
+<table border="1" cellpadding="8" cellspacing="0" width="100%" style="border-collapse: collapse; margin-bottom: 20px;">
+  <thead>
+    <tr><th style="background-color:#f2f2f2" colspan="2">User Story</th><th style="background-color:#f2f2f2" colspan="6">Work-item / Task</th></tr>
+    <tr><th style="background-color:#f2f2f2">Id</th><th style="background-color:#f2f2f2">Title</th><th style="background-color:#f2f2f2">Id</th><th style="background-color:#f2f2f2">Title</th><th style="background-color:#f2f2f2">Description</th><th style="background-color:#f2f2f2">Estimation (Hours)</th><th style="background-color:#f2f2f2">Assigned To</th><th style="background-color:#f2f2f2">Status</th></tr>
+  </thead>
+  <tbody>
+    <tr><td rowspan="2">US12</td><td rowspan="2">Información de funcionalidades</td><td>T1</td><td>Diseñar sección "Funcionalidades" en landing</td><td>Crear sección que describa las capacidades de KapakID (guardar DNI, recargas, alertas) con íconos y texto claro, según el diseño de UX.</td><td>2</td><td>Raúl Tasayco</td><td>To-do</td></tr>
+    <tr><td>T2</td><td>Agregar sección "Beneficios" dirigida a estudiantes y padres</td><td>Explicar ventajas para cada segmento objetivo, usando el tono de comunicación definido.</td><td>1</td><td>Raúl Tasayco</td><td>To-do</td></tr>
+    <tr><td rowspan="2">US13</td><td rowspan="2">Acceso a la app y términos</td><td>T3</td><td>Implementar botones "Registrarse" e "Iniciar sesión" en landing</td><td>Enlaces que redirijan a las rutas correspondientes (por ahora a secciones estáticas de la app).</td><td>1</td><td>Fabricio Vega</td><td>To-do</td></tr>
+    <tr><td>T4</td><td>Crear página estática de "Términos y Políticas"</td><td>Contenido legal accesible desde el footer de la landing page.</td><td>2</td><td>Fabricio Vega</td><td>To-do</td></tr>
+    <tr><td>US14</td><td>Reseñas de usuarios</td><td>T5</td><td>Agregar carrusel de testimonios mock</td><td>Mostrar reseñas simuladas de casos de éxito para generar confianza en los visitantes.</td><td>2</td><td>Ysaac Villanueva</td><td>To-do</td></tr>
+    <tr><td rowspan="2">US1</td><td rowspan="2">Registro de usuario</td><td>T6</td><td>Implementar endpoint POST /api/auth/signup</td><td>Backend: registrar usuario con correo y contraseña, almacenar en MongoDB con hash de contraseña.</td><td>3</td><td>Rafael Tasayco</td><td>To-do</td></tr>
+    <tr><td>T7</td><td>Crear pantalla de registro en app Android</td><td>Formulario con validaciones (email, contraseña) y llamado al endpoint de signup.</td><td>3</td><td>Rafael Tasayco</td><td>To-do</td></tr>
+    <tr><td rowspan="2">US3</td><td rowspan="2">Registro de documentos</td><td>T8</td><td>Implementar endpoint POST /api/documents</td><td>Backend: recibir imagen y metadatos del DNI, almacenar referencia en MongoDB y archivo en cloud (mock local por ahora).</td><td>3</td><td>Fabrizio Quiroz</td><td>To-do</td></tr>
+    <tr><td>T9</td><td>Crear pantalla de registro de DNI en app Android</td><td>Interfaz para subir foto del DNI, previsualización y envío al backend.</td><td>3</td><td>Fabrizio Quiroz</td><td>To-do</td></tr>
+    <tr><td>US16</td><td>API de autenticación (developer)</td><td>T10</td><td>Documentar endpoints de autenticación con Swagger</td><td>Generar documentación OpenAPI para /signup y /login.</td><td>1</td><td>Fabrizio Quiroz</td><td>To-do</td></tr>
+  </tbody>
+</table>
+
+<p><strong>Total Story Points del Sprint:</strong> 21<br>
+<strong>Horas estimadas totales:</strong> 21</p>
+
 - **4.2.1.3. Development Evidence for Sprint Review**
+
+<p>Durante el Sprint 1 se completó la implementación inicial de la landing page. El backend y la aplicación móvil se encuentran en fase de planificación y se desarrollarán en sprints posteriores. A continuación se presentan los commits realizados en el repositorio de la landing page.</p>
+
+<p><strong>Landing Page</strong></p>
+<table border="1" cellpadding="8" cellspacing="0" width="100%" style="border-collapse: collapse; margin-bottom: 20px;">
+  <thead>
+    <tr><th>Repository</th><th>Branch</th><th>Commit Id</th><th>Commit Message</th><th>Commit Message Body</th><th>Committed on (Date)</th></tr>
+  </thead>
+  <tbody>
+    <tr><td>F1nTrack/kapakid-landing</td><td>main</td><td>299e7ed0dbc4a3addf586bef243722f023102bc3</td><td>Initial commit</td><td>Primer commit del repositorio, estructura inicial.</td><td>11/05/2026</td></tr>
+    <tr><td>F1nTrack/kapakid-landing</td><td>main</td><td>619e7a83b228fd48abe51425eee635fc98df6ede</td><td>feat: landingpage complete</td><td>Implementación completa de la landing page con todas las secciones (hero, funcionalidades, beneficios, términos, etc.).</td><td>11/05/2026</td></tr>
+  </tbody>
+</table>
+
+<p><strong>Nota:</strong> Los commits correspondientes al backend y a la aplicación móvil se registrarán una vez que esos componentes comiencen su desarrollo en los sprints 2 y 3.</p>
+
+
 - **4.2.1.4. Testing Suite Evidence for Sprint Review**
 - **4.2.1.5. Execution Evidence for Sprint Review**
 - **4.2.1.6. Services Documentation Evidence for Sprint Review**
