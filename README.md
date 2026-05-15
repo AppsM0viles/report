@@ -2514,10 +2514,112 @@ La landing page de KapakID ha sido desarrollada con <strong>HTML5, CSS3 y JavaSc
     </tr>  
   </tbody>
 </table>
+
+
 - **4.2.1.5. Execution Evidence for Sprint Review**
+
+  
 - **4.2.1.6. Services Documentation Evidence for Sprint Review**
+
+  <p>Durante el Sprint 1, el desarrollo se centró exclusivamente en la <strong>Landing Page</strong> de KapakID. Los servicios web (backend) y la documentación asociada (OpenAPI/Swagger) se encuentran en fase de planificación y serán implementados en el <strong>Sprint 2</strong>, una vez que se inicie el desarrollo del backend con Spring Boot y MySQL.</p>
+
+<p>No obstante, se ha definido la estructura inicial de los endpoints que se documentarán en el siguiente sprint, basada en las User Stories del Product Backlog:</p>
+
+<ul>
+  <li><strong>Autenticación:</strong> <code>POST /api/auth/signup</code>, <code>POST /api/auth/login</code> (US1, US16)</li>
+  <li><strong>Gestión de documentos:</strong> <code>POST /api/documents</code>, <code>GET /api/documents/{id}</code> (US3, US17)</li>
+  <li><strong>Perfiles y preferencias:</strong> <code>GET /api/profile</code>, <code>PUT /api/profile</code> (US2)</li>
+  <li><strong>Transporte y recargas:</strong> <code>POST /api/topup</code>, <code>GET /api/balance</code> (US5)</li>
+  <li><strong>Notificaciones:</strong> <code>GET /api/notifications</code>, <code>POST /api/notifications/register-token</code> (US9, US10)</li>
+</ul>
+
+<p>La documentación oficial se generará utilizando <strong>Swagger/OpenAPI</strong> y estará disponible en el endpoint <code>/swagger-ui.html</code> una vez que el backend esté desplegado en Railway.</p>
+
+<p><strong>Repositorio de backend (planificado):</strong> <a href="https://github.com/F1nTrack/kapakid-backend">https://github.com/F1nTrack/kapakid-backend</a> (aún sin commits).</p>
+
+<p><strong>Nota:</strong> Los commits relacionados con documentación de servicios se agregarán en el Sprint 2, cuando el backend comience su desarrollo.</p>
+
+
 - **4.2.1.7. Software Deployment Evidence for Sprint Review**
+
+  <p>Durante el Sprint 1, se realizó el despliegue exitoso de la <strong>Landing Page</strong> de KapakID utilizando <strong>GitHub Pages</strong>. A continuación se detallan los pasos ejecutados y las evidencias correspondientes. El backend y la aplicación móvil se desplegarán en sprints posteriores.</p>
+
+<h6>Despliegue de la Landing Page</h6>
+
+<ol>
+  <li><strong>Creación del repositorio:</strong> Se creó el repositorio público <code>F1nTrack/kapakid-landing</code> en GitHub.</li>
+  <li><strong>Estructura del proyecto:</strong> El archivo <code>index.html</code> se ubicó en la raíz del repositorio, junto con las carpetas <code>css/</code>, <code>js/</code> y <code>assets/</code>.</li>
+  <li><strong>Configuración de GitHub Pages:</strong>
+    <ul>
+      <li>Se accedió a <code>Settings &gt; Pages</code>.</li>
+      <li>En <strong>Branch</strong>, se seleccionó la rama <code>main</code> y la carpeta <code>/ (root)</code>.</li>
+      <li>Se guardó la configuración.</li>
+    </ul>
+  </li>
+  <li><strong>Generación de la URL pública:</strong> GitHub Pages generó automáticamente la URL: <a href="https://f1ntrack.github.io/kapakid-landing/">https://f1ntrack.github.io/kapakid-landing/</a>.</li>
+  <li><strong>Actualizaciones continuas:</strong> Cada <code>push</code> a la rama <code>main</code> actualiza la página en menos de un minuto.</li>
+</ol>
+
+<p><strong>Capturas de pantalla del proceso y resultado:</strong></p>
+<img src="resources/cap-4/pages_settings_kapakid.jpg" alt="Configuración GitHub Pages" width="100%" style="margin-bottom: 15px;">
+<img src="resources/cap-4/KapakID_Landing_page.png" alt="Landing page desplegada" width="100%">
+
+<h6>Despliegue planificado para el Sprint 2</h6>
+<ul>
+  <li><strong>Backend (Spring Boot + MySQL):</strong> Se desplegará en <strong>Railway</strong> usando contenedores Docker. Se configurarán variables de entorno para la conexión a la base de datos.</li>
+  <li><strong>Aplicación móvil (Android):</strong> Se generará el APK y se distribuirá mediante <strong>Firebase App Distribution</strong> para pruebas internas.</li>
+</ul>
+
+<p><strong>Nota:</strong> Las evidencias de despliegue del backend y la app móvil se incluirán en los sprints 2 y 3 respectivamente.</p>
+
+
 - **4.2.1.8. Team Collaboration Insights during Sprint**
+
+<p>Durante el <strong>Sprint 1</strong>, el equipo de F1nTrack trabajó de manera colaborativa en la planificación, diseño y desarrollo inicial de KapakID. A continuación se presentan los analíticos de colaboración basados en los commits reales y la distribución de tareas.</p>
+
+<h6>Landing Page (repositorio kapakid-landing)</h6>
+<p><strong>Commits realizados:</strong> 2 (ambos por Fabricio Vega)</p>
+<table border="1" cellpadding="8" cellspacing="0" width="100%" style="border-collapse: collapse; margin-bottom: 20px;">
+  <thead>
+    <tr><th>Autor</th><th>Commits</th><th>% del total</th></tr>
+  </thead>
+  <tbody>
+    <tr><td>Fabricio Vega (Fabricio1v)</td><td>2</td><td>100%</td></tr>
+  </tbody>
+</table>
+
+<p><strong>Participación en el Sprint:</strong> Aunque los commits de código fueron realizados por un solo integrante, todo el equipo participó en las siguientes actividades colaborativas:</p>
+<ul>
+  <li><strong>Sprint Planning:</strong> Asistieron los 5 integrantes (Ysaac Villanueva, Raúl Tasayco, Fabricio Vega, Rafael Tasayco, Fabrizio Quiroz). Se definió el Sprint Goal y se seleccionaron las User Stories del Product Backlog.</li>
+  <li><strong>Diseño UI/UX:</strong> Elaboración de wireframes, mock-ups y guías de estilo en Figma/Uizard (participación de Raúl y Fabricio).</li>
+  <li><strong>Documentación del informe:</strong> Todos los miembros contribuyeron al archivo <code>README.md</code> con las secciones de Capítulo I, II, III y IV (evidenciado en el historial de commits del repositorio del informe).</li>
+  <li><strong>Pruebas de aceptación:</strong> Se añadieron 10 archivos Gherkin (AT01 a AT10) por parte de Fabrizio Quiroz en el repositorio de pruebas.</li>
+</ul>
+
+<h6>Analíticos de colaboración (repositorio del informe)</h6>
+<p>Según los <strong>GitHub Insights</strong> del repositorio del informe (<code>F1nTrack/report</code>), los commits se distribuyeron de la siguiente manera:</p>
+<table border="1" cellpadding="8" cellspacing="0" width="100%" style="border-collapse: collapse; margin-bottom: 20px;">
+  <thead>
+    <tr><th>Integrante</th><th>Commits</th></tr>
+  </thead>
+  <tbody>
+    <tr><td>Fabricio Vega</td><td>2</td></tr>
+    <tr><td>Raúl Tasayco</td><td>18</td></tr>
+    <tr><td>Rafael Tasayco</td><td>5</td></tr>
+    <tr><td>Ysaac Villanueva</td><td>3</td></tr>
+    <tr><td>Fabrizio Quiroz</td><td>11</td></tr>
+    <tr style="background-color:#f2f2f2"><td><strong>Total</strong></td><td><strong>39</strong></td></tr>
+  </tbody>
+</table>
+
+<p><strong>Interpretación:</strong> El equipo mostró una colaboración activa en la documentación y planificación, con una distribución equitativa de responsabilidades. La implementación de código (landing page) fue liderada por Fabricio Vega, mientras que los demás miembros se enfocaron en la redacción técnica, diseño de arquitectura y pruebas. Esta dinámica refleja un trabajo coordinado y alineado con las fortalezas individuales.</p>
+
+<p><strong>Captura de GitHub Insights (contribuciones):</strong></p>
+<img src="resources/cap-1/INSIGHTS/AV1/GlobalInsightsAV1.png" alt="Insights globales" width="100%" style="margin-bottom: 15px;">
+<img src="resources/cap-1/INSIGHTS/AV1/InsightsAV1.png" alt="Contribuciones por integrante" width="100%">
+
+<p><strong>Observaciones para próximos sprints:</strong> Se recomienda que en el Sprint 2 se distribuya el desarrollo del backend entre varios miembros (Java/Spring Boot) y la app móvil (Kotlin/Android) para aumentar la velocidad de entrega y la cohesión del equipo.</p>
+
 
 ### 4.3. Validation Interviews
 
