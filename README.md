@@ -2343,7 +2343,7 @@ Esta sección detalla los pasos necesarios para desplegar satisfactoriamente los
 
 ### 4.2. Landing Page & Mobile Application Implementation
 
-#### 4.2.1. Sprint n
+#### 4.2.1. Sprint 1
 
 <p><strong> Despliegue de la Landing Page – KapakID</strong><br>
 La landing page de KapakID ha sido desarrollada con <strong>HTML5, CSS3 y JavaScript puro</strong>, siguiendo un diseño responsive y accesible. Se ha desplegado utilizando <strong>GitHub Pages</strong> por su integración nativa con el repositorio y su facilidad para actualizaciones continuas.</p>
@@ -2363,7 +2363,7 @@ La landing page de KapakID ha sido desarrollada con <strong>HTML5, CSS3 y JavaSc
 
 <hr>
 
-- **4.2.1.1. Sprint Planning 1**
+**4.2.1.1. Sprint Planning 1**
 
 <table border="1" cellpadding="8" cellspacing="0" width="100%" style="border-collapse: collapse; margin-bottom: 20px;">
   <tbody>
@@ -2384,7 +2384,7 @@ La landing page de KapakID ha sido desarrollada con <strong>HTML5, CSS3 y JavaSc
 </table>
 
 
-- **4.2.1.2. Sprint Backlog 1**
+**4.2.1.2. Sprint Backlog 1**
 
 <p>El objetivo principal de este primer sprint es <strong>sentar las bases funcionales del ecosistema KapakID</strong>: landing page informativa, backend con autenticación y registro de documentos, y las primeras pantallas móviles para que el usuario pueda registrarse y subir su DNI. Se priorizan las funcionalidades de onboarding y gestión documental básica.</p>
 
@@ -2410,7 +2410,7 @@ La landing page de KapakID ha sido desarrollada con <strong>HTML5, CSS3 y JavaSc
 <p><strong>Total Story Points del Sprint:</strong> 21<br>
 <strong>Horas estimadas totales:</strong> 21</p>
 
-- **4.2.1.3. Development Evidence for Sprint Review**
+**4.2.1.3. Development Evidence for Sprint Review**
 
 <p>Durante el Sprint 1 se completó la implementación inicial de la landing page. El backend y la aplicación móvil se encuentran en fase de planificación y se desarrollarán en sprints posteriores. A continuación se presentan los commits realizados en el repositorio de la landing page.</p>
 
@@ -2427,8 +2427,7 @@ La landing page de KapakID ha sido desarrollada con <strong>HTML5, CSS3 y JavaSc
 
 <p><strong>Nota:</strong> Los commits correspondientes al backend y a la aplicación móvil se registrarán una vez que esos componentes comiencen su desarrollo en los sprints 2 y 3.</p>
 
-
-- **4.2.1.4. Testing Suite Evidence for Sprint Review**
+**4.2.1.4. Testing Suite Evidence for Sprint Review**
    A continuación, se presenta la evidencia de los commits relacionados con los Acceptance Tests automatizados del sprint, alojados en el repositorio KapakID-AcceptanceTests. Cada archivo corresponde a un Feature File Gherkin que cubre escenarios de pruebas de aceptación para los diferentes Bounded Contexts
 
   <table>
@@ -2515,8 +2514,7 @@ La landing page de KapakID ha sido desarrollada con <strong>HTML5, CSS3 y JavaSc
   </tbody>
 </table>
 
-
-- **4.2.1.5. Execution Evidence for Sprint Review**
+**4.2.1.5. Execution Evidence for Sprint Review**
     A continuación se presenta el detalle de los tres productos desarrollados durante el Sprint 1: Landing Page, Backend y Aplicación Móvil. Cada sección incluye una descripción del alcance funcional entregado en esta primera iteración.
 
 #### Landing Page
@@ -2587,7 +2585,7 @@ La landing page de KapakID ha sido desarrollada con <strong>HTML5, CSS3 y JavaSc
 - **Solicitar Ayuda (Formulario de Soporte)** → `POST /api/Support/tickets`
 
   
-- **4.2.1.6. Services Documentation Evidence for Sprint Review**
+**4.2.1.6. Services Documentation Evidence for Sprint Review**
 
   <p>Durante el Sprint 1, el desarrollo se centró exclusivamente en la <strong>Landing Page</strong> de KapakID. Los servicios web (backend) y la documentación asociada (OpenAPI/Swagger) se encuentran en fase de planificación y serán implementados en el <strong>Sprint 2</strong>, una vez que se inicie el desarrollo del backend con Spring Boot y MySQL.</p>
 
@@ -2607,8 +2605,7 @@ La landing page de KapakID ha sido desarrollada con <strong>HTML5, CSS3 y JavaSc
 
 <p><strong>Nota:</strong> Los commits relacionados con documentación de servicios se agregarán en el Sprint 2, cuando el backend comience su desarrollo.</p>
 
-
-- **4.2.1.7. Software Deployment Evidence for Sprint Review**
+**4.2.1.7. Software Deployment Evidence for Sprint Review**
 
   <p>Durante el Sprint 1, se realizó el despliegue exitoso de la <strong>Landing Page</strong> de KapakID utilizando <strong>GitHub Pages</strong>. A continuación se detallan los pasos ejecutados y las evidencias correspondientes. El backend y la aplicación móvil se desplegarán en sprints posteriores.</p>
 
@@ -2641,7 +2638,7 @@ La landing page de KapakID ha sido desarrollada con <strong>HTML5, CSS3 y JavaSc
 <p><strong>Nota:</strong> Las evidencias de despliegue del backend y la app móvil se incluirán en los sprints 2 y 3 respectivamente.</p>
 
 
-- **4.2.1.8. Team Collaboration Insights during Sprint**
+**4.2.1.8. Team Collaboration Insights during Sprint**
 
 <p>Durante el <strong>Sprint 1</strong>, el equipo de F1nTrack trabajó de manera colaborativa en la planificación, diseño y desarrollo inicial de KapakID. A continuación se presentan los analíticos de colaboración basados en los commits reales y la distribución de tareas.</p>
 
