@@ -2432,9 +2432,121 @@ La landing page de KapakID ha sido desarrollada con <strong>HTML5, CSS3 y JavaSc
 - **4.2.1.8. Team Collaboration Insights during Sprint**
 
 ### 4.3. Validation Interviews
+
 #### 4.3.1. Diseño de Entrevistas
+
+**Objetivo.** Validar con usuarios reales la propuesta de KapakID en los flujos críticos: registro y acceso, gestión de documentos, recargas/pagos, movilidad (tarjetas/transportes) y notificaciones; midiendo claridad, facilidad de uso, tiempos y percepción de valor.
+
+**Segmentos objetivo**
+- **S1 – Estudiantes universitarios** (16–25): uso frecuente de trámites/credenciales, movilidad y recargas.
+- **S2 – Padres/madres o tutores**: registro/seguimiento de dependientes, pagos y notificaciones.
+
+**Metodología**
+- Guion semiestructurado (10–15 min por participante).
+- Escenarios con tareas guiadas (pensamiento en voz alta).
+- Captura de pantalla y métricas (tiempo por tarea, errores, SUS breve).
+
+### User goals (tareas críticas por rol)
+
+#### User Goal: Registrarse y elegir suscripción/plan (S1, S2)
+El usuario elige su tipo (estudiante / tutor). El formulario muestra campos dinámicos según el rol. Tras confirmación de email, selecciona plan (Free/Plus) y medio de pago. Con el pago confirmado, accede a las herramientas de su plan.
+
+#### User Goal: Iniciar sesión (S1, S2)
+Ingreso con email/contraseña. Ante error, se muestran mensajes claros y opción “¿Olvidaste tu contraseña?”. Acceso al dashboard según plan/rol.
+
+#### User Goal: Editar su perfil (S1, S2)
+Desde “Perfil”, el usuario actualiza datos (identidad, contacto, preferencias de notificación/idioma). Validaciones y feedback inmediato.
+
+#### User Goal: Gestionar documentos (registrar, editar, visualizar) (S1, S2)
+Desde “Documentos”, registra nuevas credenciales (DNI/pasaporte/licencias), edita metadatos, visualiza estatus y descarga comprobantes. Búsqueda y paginación.
+
+#### User Goal: Pagos y recargas (S1, S2)
+Desde “Pagos/Recargas”, selecciona servicio (transporte/móvil), ingresa monto y confirma. Recibe comprobante y notificación.
+
+#### User Goal: Transporte y tarjetas (S1)
+Gestiona tarjeta de transporte, ve saldo y movimientos. Puede hacer recarga y consultar historial.
+
+#### User Goal: Notificaciones y alertas (S1, S2)
+Configuración de preferencias (email/app). Recibe avisos de vencimiento y estados de trámite. Centro de notificaciones con filtros.
+
+---
+
+
 #### 4.3.2. Registro de Entrevistas
+
+### Entrevistas a estudiantes universitarios (S1)
+
+<table border="1">
+  <tr><th>Campo</th><th>Información</th></tr>
+  <tr><td>Entrevistado 1</td><td>A01 – Estudiante</td></tr>
+  <tr>
+    <td><img src="resources/Cap-1/SSInterview1.png" alt="A01 Estudiante"></td>
+    <td>
+      Percibe registro y login como claros; valora notificaciones de vencimiento. Califica la navegación con 4/5. Sugiere botón visible para “recuperar contraseña” en login y mayor detalle en planes.
+    </td>
+  </tr>
+  <tr>
+    <td>Timing: 00:05–04:10</td>
+    <td><a href="https://drive.google.com/file/d/1L56VeFgJNXZNlBG1SJi8R2q2ly_IwkGr/view?usp=sharing">Ver grabación</a></td>
+  </tr>
+</table>
+
+<table border="1">
+  <tr><th>Campo</th><th>Información</th></tr>
+  <tr><td>Entrevistado 2</td><td>A02 – Estudiante</td></tr>
+  <tr>
+    <td><img src="resources/Cap-1/SSSANTI.png" alt="A02 Estudiante"></td>
+    <td>
+      Encuentra útil la centralización de documentos; 5/5 en utilidad de alertas. Pide resaltar mejor “Agregar documento” y un flujo guiado para la primera recarga.
+    </td>
+  </tr>
+  <tr>
+    <td>Timing: 04:10–08:40</td>
+    <td><a href="https://upcedupe-my.sharepoint.com/:v:/g/personal/u202319698_upc_edu_pe/Ea0to8pDhttOhst0CPbOsT4B6GESisWNpC92K_xX7bteNA?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0NvcHkifX0&e=5T1kLL">Ver grabación</a></td>
+  </tr>
+</table>
+
+---
+
 #### 4.3.3. Evaluaciones según heurísticas
+
+### Web Application a evaluar
+**KapakID** – Plataforma web para gestión de documentos, pagos/recargas, movilidad y notificaciones.  
+**Meta:** Identificar problemas de usabilidad y priorizarlos con la *Lista Heurística de Nielsen*.
+
+### Escala de Severidad
+| Nivel | Descripción |
+|------:|-------------|
+| 1 | Superficial: fácil de superar o poco frecuente. |
+| 2 | Menor: ocurre un poco más o cuesta superarlo. Prioridad baja. |
+| 3 | Mayor: frecuente o bloqueante parcial. Prioridad alta. |
+| 4 | Muy grave: impide continuar. Debe corregirse antes del lanzamiento. |
+
+### Problemas Identificados – Landing Page
+| # | Problema | Severidad | Heurística |
+|---:|----------|:--------:|------------|
+| 1 | Falta sección “About the product” con propuesta de valor clara | 3 | Correspondencia con el mundo real |
+| 2 | Botones “Iniciar sesión / Registrarme” no redirigen a formularios | 3 | Visibilidad del estado / estándares |
+| 3 | Iconografía ambigua para secciones clave | 2 | Estética y diseño minimalista |
+| 4 | Planes poco específicos (beneficios/limitaciones) | 3 | Arquitectura de información |
+| 5 | Formulario “Contáctanos” sin feedback ni envío | 4 | Visibilidad del estado |
+| 6 | Inconsistencias de tamaño/jerarquía en botones | 2 | Consistencia y estándares |
+| 7 | Logo sin comportamiento para volver a inicio | 2 | Correspondencia con el mundo real |
+| 8 | Ausencia de internacionalización funcional | 3 | Flexibilidad y eficiencia |
+
+**Recomendaciones clave**: incorporar sección “About”, corregir rutas de CTA, normalizar iconografía y botones, especificar planes con comparativas, operar el formulario de contacto con feedback, habilitar i18n.
+
+### Problemas Identificados – Web Application
+| # | Problema | Severidad | Heurística |
+|---:|----------|:--------:|------------|
+| 1 | Falta “¿Olvidaste tu contraseña?” en login | 3 | Prevención de errores |
+| 2 | Gestión de perfil limitada (sin editar/eliminar cuenta) | 3 | Flexibilidad y control del usuario |
+| 3 | Rutas no configuradas para módulos (404 en flujo) | 3 | Consistencia y estándares |
+| 4 | Registro de documentos/recargas intermitente | 4 | Eficiencia y corrección |
+| 5 | Falta de estados vacíos y guías en primeras tareas | 2 | Visibilidad del estado |
+
+**Recomendaciones clave**: añadir recuperación de contraseña; habilitar edición/eliminación de cuenta; revisar enrutado; pruebas de flujo (documentos/recargas); estados vacíos con guías.
+
 
 ---
 
