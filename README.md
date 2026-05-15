@@ -1506,17 +1506,379 @@ El diseño físico separa el historial de acciones (audit_logs) de la gestión l
 ## Capítulo III: Solution UI/UX Design
 
 ### 3.1. Product design
+
+En este capítulo se describen las directrices de diseño del producto KapakID, estableciendo lineamientos visuales y de interacción que garanticen una experiencia de usuario coherente, accesible y adaptada al contexto peruano.
+El objetivo es asegurar la consistencia estética y funcional en todas las plataformas (web y móvil), respetando tanto estándares internacionales de diseño como particularidades culturales y normativas locales.
+
 #### 3.1.1. Style Guidelines
+
+Las guías de estilo definen la identidad visual del producto, determinando los principios básicos de tipografía, color, iconografía, componentes y usabilidad.
+Estas directrices buscan un equilibrio entre modernidad, simplicidad y confianza, elementos clave para una aplicación que gestiona documentos y pagos sensibles.
+
 - **3.1.1.1. General Style Guidelines**
+
+#### Branding
+
+El nombre **KapakID** proviene del término quechua *Qhapaq*, que significa **importante o principal**.  
+Esta raíz cultural refuerza la esencia de la aplicación: ser una identidad digital central, segura y confiable para las personas.  
+
+La marca proyecta tres valores fundamentales:
+
+- **Seguridad**: protección de datos y confianza.  
+- **Centralidad**: ser el eje principal de la identidad digital del usuario.  
+- **Cultura**: rescatar lo importante (*Qhapaq*) como base de la modernidad.  
+
+El logo combina un **escudo** como símbolo de protección, con un sistema de **nodos inspirados en los quipus**, que representan la unión de distintos servicios (documentos, movilidad, transacciones y validaciones).  
+Esta integración transmite innovación tecnológica con un fuerte vínculo a la herencia cultural andina.  
+
+
+<td><img src="resources/cap-4/Logo KapakID Moderno.png" alt="Logo KapakID Moderno"></td>
+
+
+#### Paleta de Colores – KapakID
+
+Los colores refuerzan los valores de **confianza, identidad cultural, seguridad y accesibilidad**.  
+Se dividen en institucionales, de acción, alerta, neutrales y de acento cultural.  
+
+<td><img src="resources/cap-4/Colors.png" alt="Paleta de Colores KapakID"></td>
+
+**Colores institucionales**  
+- Azul Escudo #0A3557: principal. Seguridad, headers, botones primarios.  
+- Celeste Andino `#2D9CDB`: frescura, innovación, fondos alternativos.  
+
+**Acción positiva**  
+- Verde Conexión #17877D: validación, éxito, checkmarks.  
+- Verde Andes #27AE60: energía, accesibilidad.  
+
+**Alertas**  
+- Rojo Señal #E85B46: errores críticos.  
+- Naranja Inti #F2994A: advertencias preventivas.  
+
+**Neutrales**  
+- Blanco Nevado #F9FAFB: fondo principal.  
+- Gris Claro #E5E7EB: fondos secundarios.  
+- Gris Neutro #6B7280: textos secundarios, íconos inactivos.  
+- Gris Oscuro #374151: textos principales.  
+
+**Acento cultural**  
+- Amarillo Inti #F2C94C: energía, resaltes, microinteracciones.  
+- Lila Qhapaq #9B51E0: innovación, modernidad.  
+
+#### Tipografía – KapakID
+
+La tipografía es un eje central en la identidad visual. Se busca un estilo **moderno, claro y altamente legible** en dispositivos móviles y entornos digitales.  
+
+<td><img src="./resources/cap-4/Diseño Tipográfico.png" alt="Diseño Tipográfico"></td>
+
+**Fuentes principales**  
+- **Poppins Bold** → títulos y encabezados.  
+- **Poppins Medium** → subtítulos y secundarios.  
+- **Roboto Regular** → párrafos y formularios.  
+- **Roboto Mono** → datos técnicos, validaciones, códigos.  
+<td><img src="./resources/cap-4/Fuentes y Tipografías.png" alt="Fuentes y Tipografías"></td>
+
+**Escala tipográfica**  
+- H1: 32–36 px, Poppins Bold, Azul Escudo.  
+- H2: 24–28 px, Poppins Medium, Gris Oscuro.  
+- H3: 18–22 px, Poppins Medium, Gris Neutro.  
+- Texto cuerpo: 14–16 px, Roboto Regular.  
+- Texto técnico: 12–14 px, Roboto Mono.  
+- Texto ayuda: 12–14 px, Roboto Regular Gris Claro.  
+<td><img src="./resources/cap-4/Tipográfica.png" alt="Ejemplo Tipográfico"></td>
+
+**Line-height y espaciado**  
+- Encabezados: 110%.  
+- Texto principal: 140–150%.  
+- Texto técnico: 130%.  
+#### Iconografía
+
+La iconografía aporta **claridad, simplicidad y accesibilidad** en la navegación.  
+
+<td><img src="./resources/cap-4/Iconografía.png" alt="Iconografía KapakID"></td>
+
+- Estilo outline minimalista, 2 px.  
+- Esquinas redondeadas, coherentes con botones y tarjetas.  
+- Colores según estado:  
+  - Azul Escudo → íconos principales.  
+  - Verde Conexión → validaciones.  
+  - Rojo Señal → errores.  
+  - Gris Neutro → inactivos.  
+- Ejemplos: documentos, identidad, transporte, pagos, validaciones.  
+- Todos los íconos deben tener etiquetas accesibles (`alt` / `aria-label`).  
+
+#### Jerarquía Visual
+La jerarquía organiza la información de forma clara y priorizada:  
+- **Títulos principales (H1):** Azul Escudo, 32–36 px.  
+- **Subtítulos (H2–H3):** Gris Neutro, 18–28 px.  
+- **Texto principal:** Roboto Regular, 14–16 px, Gris Oscuro.  
+- **Botón primario:** Azul Escudo, texto blanco.  
+- **Botón secundario:** Verde Conexión o Gris Neutro.  
+- **Acciones críticas:** Rojo Señal + ícono de advertencia.  
+
+- **3.1.1.1. General Style Guidelines**
+
+#### Branding
+
+El nombre **KapakID** proviene del término quechua *Qhapaq*, que significa **importante o principal**.  
+Esta raíz cultural refuerza la esencia de la aplicación: ser una identidad digital central, segura y confiable para las personas.  
+
+La marca proyecta tres valores fundamentales:
+
+- **Seguridad**: protección de datos y confianza.  
+- **Centralidad**: ser el eje principal de la identidad digital del usuario.  
+- **Cultura**: rescatar lo importante (*Qhapaq*) como base de la modernidad.  
+
+El logo combina un **escudo** como símbolo de protección, con un sistema de **nodos inspirados en los quipus**, que representan la unión de distintos servicios (documentos, movilidad, transacciones y validaciones).  
+Esta integración transmite innovación tecnológica con un fuerte vínculo a la herencia cultural andina.  
+
+<td><img src="./resources/cap-4/Logo KapakID Moderno.png" alt="Logo KapakID Moderno"></td>
+
+
+#### Paleta de Colores – KapakID
+
+Los colores refuerzan los valores de **confianza, identidad cultural, seguridad y accesibilidad**.  
+Se dividen en institucionales, de acción, alerta, neutrales y de acento cultural.  
+
+<td><img src="./resources/cap-4/Colors.png" alt="Paleta de Colores KapakID"></td>
+
+**Colores institucionales**  
+- Azul Escudo #0A3557: principal. Seguridad, headers, botones primarios.  
+- Celeste Andino `#2D9CDB`: frescura, innovación, fondos alternativos.  
+
+**Acción positiva**  
+- Verde Conexión #17877D: validación, éxito, checkmarks.  
+- Verde Andes #27AE60: energía, accesibilidad.  
+
+**Alertas**  
+- Rojo Señal #E85B46: errores críticos.  
+- Naranja Inti #F2994A: advertencias preventivas.  
+
+**Neutrales**  
+- Blanco Nevado #F9FAFB: fondo principal.  
+- Gris Claro #E5E7EB: fondos secundarios.  
+- Gris Neutro #6B7280: textos secundarios, íconos inactivos.  
+- Gris Oscuro #374151: textos principales.  
+
+**Acento cultural**  
+- Amarillo Inti #F2C94C: energía, resaltes, microinteracciones.  
+- Lila Qhapaq #9B51E0: innovación, modernidad.  
+
+#### Tipografía – KapakID
+
+La tipografía es un eje central en la identidad visual. Se busca un estilo **moderno, claro y altamente legible** en dispositivos móviles y entornos digitales.  
+
+<td><img src="./resources/cap-4/Diseño Tipográfico.png" alt="Diseño Tipográfico"></td>
+
+**Fuentes principales**  
+- **Poppins Bold** → títulos y encabezados.  
+- **Poppins Medium** → subtítulos y secundarios.  
+- **Roboto Regular** → párrafos y formularios.  
+- **Roboto Mono** → datos técnicos, validaciones, códigos.  
+<td><img src="./resources/cap-4/Fuentes y Tipografías.png" alt="Fuentes y Tipografías"></td>
+
+**Escala tipográfica**  
+- H1: 32–36 px, Poppins Bold, Azul Escudo.  
+- H2: 24–28 px, Poppins Medium, Gris Oscuro.  
+- H3: 18–22 px, Poppins Medium, Gris Neutro.  
+- Texto cuerpo: 14–16 px, Roboto Regular.  
+- Texto técnico: 12–14 px, Roboto Mono.  
+- Texto ayuda: 12–14 px, Roboto Regular Gris Claro.  
+<td><img src="./resources/cap-4/Tipográfica.png" alt="Ejemplo Tipográfico"></td>
+
+**Line-height y espaciado**  
+- Encabezados: 110%.  
+- Texto principal: 140–150%.  
+- Texto técnico: 130%.  
+#### Iconografía
+
+La iconografía aporta **claridad, simplicidad y accesibilidad** en la navegación.  
+
+<td><img src="./resources/cap-4/Iconografía.png" alt="Iconografía KapakID"></td>
+
+- Estilo outline minimalista, 2 px.  
+- Esquinas redondeadas, coherentes con botones y tarjetas.  
+- Colores según estado:  
+  - Azul Escudo → íconos principales.  
+  - Verde Conexión → validaciones.  
+  - Rojo Señal → errores.  
+  - Gris Neutro → inactivos.  
+- Ejemplos: documentos, identidad, transporte, pagos, validaciones.  
+- Todos los íconos deben tener etiquetas accesibles (`alt` / `aria-label`).  
+
+#### Jerarquía Visual
+La jerarquía organiza la información de forma clara y priorizada:  
+- **Títulos principales (H1):** Azul Escudo, 32–36 px.  
+- **Subtítulos (H2–H3):** Gris Neutro, 18–28 px.  
+- **Texto principal:** Roboto Regular, 14–16 px, Gris Oscuro.  
+- **Botón primario:** Azul Escudo, texto blanco.  
+- **Botón secundario:** Verde Conexión o Gris Neutro.  
+- **Acciones críticas:** Rojo Señal + ícono de advertencia.  
+
+
 #### 3.1.2. Information Architecture
 - **3.1.2.1. Organization Systems**
+
+#### Landing Page e Inicio de la Aplicación
+- **Tipo de organización:** Jerárquica.  
+- La landing page destacará: beneficios, funcionalidades principales (documentos, pagos, transporte y alertas) y testimonios.  
+- En la pantalla de inicio se priorizan accesos rápidos al DNI digital, saldos, pagos pendientes y alertas urgentes.  
+
+#### Gestión de Documentos y Pagos
+- **Tipo de organización:** Secuencial.  
+- Flujos: registro → validación → confirmación.  
+- Reduce errores y refuerza la seguridad.  
+
+#### Módulos de Transporte y Movilidad
+- **Tipo de organización:** Matricial.  
+- Acceso a recargas, historial de viajes y tarjetas vinculadas.  
+- Exploración flexible por saldo, fecha o tipo de transporte.  
+
+#### Alertas y Notificaciones
+- **Esquema de categorización:** Por tópicos.  
+- Categorías: seguridad, transporte, pagos, documentos.  
+- Permite priorizar atención de forma inmediata.  
+
+#### Historial de Transacciones y Actividades
+- **Esquema de categorización:** Cronológico.  
+- Pagos, recargas y validaciones ordenados por fecha.  
+- Registro confiable y auditable.  
+
+#### Contenido Personalizado por Perfil de Usuario
+- **Esquema de categorización:** Según audiencia.  
+- **Estudiantes:** Recargas rápidas, gestión de carné universitario, beneficios educativos.  
+- **Familias:** Perfiles familiares para pagos y documentos de dependientes.  
+- **Ciudadanos generales:** Validación de identidad, pagos de servicios básicos, transporte.  
+
+#### Búsqueda de Documentos y Servicios
+- **Esquema de categorización:** Alfabético.  
+- Localización rápida de documentos y servicios.  
+
 - **3.1.2.2. Labelling Systems**
+
+#### Landing Page
+- **Home/Inicio:** Propuesta de valor de KapakID.  
+- **Features/Características:** Funciones clave (identidad digital, pagos, transporte).  
+- **Benefits/Beneficios:** Seguridad, rapidez, confianza y centralización.  
+- **Testimonials/Testimonios:** Experiencias de usuarios.  
+- **About/Acerca de:** Equipo desarrollador y propósito de KapakID (*Qhapaq = importante*).  
+- **Contact/Contacto:** Soporte, redes sociales, correo.  
+
+#### Web Application
+- **Home/Inicio:** Accesos rápidos a DNI digital, saldo, pagos pendientes y alertas.  
+- **Perfil:** Gestión de información personal, documentos, métodos de pago y preferencias.  
+- **Documentos:** DNI, pasaporte, carné universitario, brevete.  
+- **Pagos:** Servicios, transporte y recargas. Incluye historial.  
+- **Transporte:** Tarjetas vinculadas, historial de viajes, saldos y recargas.  
+- **Búsqueda:** Localización de documentos o servicios.  
+- **Favoritos:** Acceso a elementos prioritarios.  
+- **Alertas/Notificaciones:** Vencimientos, saldos bajos, pagos pendientes.  
+- **Soporte:** FAQs, guías y contacto con atención al cliente.  
+  
+
 - **3.1.2.3. SEO Tags and Meta Tags**
+
+– KapakID  
+
+#### Landing Page  
+Title: Texto visible en la parte superior del navegador y en los resultados de búsqueda.  
+
+```html
+<title>KapakID – Tu identidad y pagos digitales seguros en un solo lugar</title>
+-Codificación de caracteres:
+<meta charset="utf-8">
+-Description: Breve descripción de la aplicación.
+<meta name="description" content="KapakID es tu plataforma digital segura para gestionar tu identidad, documentos y pagos en un solo lugar."/>
+
+-Key Words: Palabras clave relacionadas con la app.
+<meta name="keywords" content="identidad digital, billetera electrónica, pagos seguros, transporte, documentos digitales, Perú"/>
+
+Author & Copyright:
+
+<meta name="author" content="KapakID Team"/>
+<meta name="copyright" content="Copyright KapakID Team" />
+
+-Web Application
+-Title:
+<title>KapakID</title>
+-Description
+<meta name="description" content="KapakID – Plataforma oficial para gestionar tu identidad digital, documentos y pagos de forma segura."/>
+
+-Key Words:
+<meta name="keywords" content="KapakID, identidad digital, pagos, transporte, documentos, seguridad, conectividad"/>
+-Author & Copyright:
+<meta name="author" content="KapakID Team"/>
+<meta name="copyright" content="Copyright KapakID Team" />
+
+```
+
 - **3.1.2.4. Searching Systems**
+
+
+- **Barra de búsqueda general:**  
+  Ubicada en la parte superior derecha de la plataforma web y dentro del menú principal de la app.  
+  Permitirá acceder rápidamente a recursos como: validación de documentos, historial de pagos, transporte, billetera digital y servicios vinculados.  
+
+- **Sugerencias automáticas (autocompletado):**  
+  El sistema mostrará resultados predictivos mientras el usuario escribe, basados en documentos registrados (DNI, brevete, carnés), transacciones recientes y accesos frecuentes.  
+
+- **Filtros de búsqueda:**  
+  Se ofrecerán filtros que permitan refinar la búsqueda según:  
+  - Categorías: Identidad, Pagos, Transporte, Beneficios Sociales.  
+  - Contenido: Documentos, Transacciones, Validaciones, Recibos.  
+  - Estado: Activo, Expirado, Pendiente de validación.  
+
+- **Filtros avanzados:**  
+  Opciones adicionales como:  
+  - Recientes / Más antiguos.  
+  - Monto de transacción.  
+  - Tipo de pago (tarjeta, QR, billetera digital).  
+  - Institución asociada (RENIEC, bancos, transporte).  
+---
+
 - **3.1.2.5. Navigation Systems**
+
+
+#### Landing Page  
+La navegación en la landing page estará orientada a generar confianza y facilitar el registro.  
+Se implementará un menú superior con enlaces visibles hacia:  
+
+- **Inicio:** Presentación general de KapakID.  
+- **Características:** Explicación de las principales funciones (identidad digital, pagos, transporte).  
+- **Beneficios:** Cómo mejora la vida del usuario en seguridad, accesibilidad y rapidez.  
+- **Testimonios:** Opiniones de usuarios reales y casos de uso.  
+- **Acerca de:** Información del equipo y visión de KapakID.  
+- **Contacto:** Formulario y canales de atención.  
+
+
+#### Web Application  
+
+Dentro de la **aplicación web**, la navegación se centrará en un **dashboard central**, accesible tras el inicio de sesión.  
+
+- **Dashboard principal:**  
+  Vista general con accesos rápidos a identidad, billetera digital, transporte y notificaciones prioritarias.  
+
+- **Panel lateral de navegación (sidebar):**  
+  - **Perfil:** Información personal, configuración y preferencias.  
+  - **Documentos:** Gestión y validación de DNI, brevete, carnés, etc.  
+  - **Pagos:** Métodos de pago, recargas, historial de transacciones y comprobantes.  
+  - **Transporte:** Tickets, pasajes electrónicos y servicios de movilidad urbana.  
+  - **Historial:** Registro cronológico de actividades, transacciones y validaciones.  
+  - **Notificaciones:** Alertas de vencimiento, confirmaciones y actualizaciones del sistema.  
+  - **Soporte / Ayuda:** FAQs, chat en línea y contacto directo con asistencia.  
+
+- **Consistencia visual:** El logotipo en la parte superior del sidebar permitirá volver al **dashboard principal**.  
+- **Acciones rápidas:** Atajos destacados en el dashboard (ej. “Validar documento”, “Recargar saldo”, “Comprar pasaje”) para reducir clics y mejorar eficiencia.  
+
+
 #### 3.1.3. Landing Page UI Design
 - **3.1.3.1. Landing Page Wireframe**
+
+<img src="./resources/cap-4/Wireframe Landing.png" alt="Wireframe Landing">
+
 - **3.1.3.2. Landing Page Mock-up**
+
+<img src="./resources/cap-4/MockUpKapakID.png" alt="Wireframe Landing">
+
 #### 3.1.4. Mobile Applications UX/UI Design
 
 **3.1.4.1. Mobile Applications Wireframes**
