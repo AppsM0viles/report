@@ -2211,7 +2211,7 @@ En esta sección se detallan los estándares de codificación y las convenciones
 - Uso de `const` constructors donde sea posible para optimización.
 - Organización de código por features/módulos.
 
-#### Backend (Java + Spring Boot + MongoDB)
+#### Backend (Java + Spring Boot + MySQL)
 
 ##### Convenciones generales:
 
@@ -2227,26 +2227,29 @@ En esta sección se detallan los estándares de codificación y las convenciones
 - **Clases**: `PascalCase` (ej. `UserService`, `UserController`).
 - **Endpoints REST**: `kebab-case` (ej. `/api/user-profile`).
 - **Paquetes**: Todo en minúsculas y separados por punto (ej. `com.restock.backend.service`).
-- **Colecciones MongoDB**: `snake_case` en plural (ej. `users`, `product_items`).
+- **Colecciones MySQL**: `snake_case` en plural (ej. `users`, `product_items`).
 - **Variables**: `camelCase` (ej. `userRepository`).
 - **Constantes**: `UPPER_SNAKE_CASE` (ej. `MAX_USERS`).
 
-#### Database (MongoDB – NoSQL)
+#### Database (MySQL – Relational)
 
 ##### Convenciones generales:
 
-- **Formato**: Documentos en JSON.
-- **Indentación**: 2 espacios para JSON.
+- **Motor de Almacenamiento**: InnoDB para garantizar soporte de transacciones ACID y claves foráneas.
+- **Formato y Codificación**: `utf8mb4` junto con `utf8mb4_unicode_ci` para soportar todos los caracteres especiales y emoticonos de forma nativa.
 - **Estilo de modelado**:
-  - Documentos denormalizados (referencias mínimas).
-  - Uso de `ObjectId` como clave primaria.
+  - Modelo estrictamente relacional y normalizado (mínimo 3FN para operaciones transaccionales).
+  - Uso de Claves Primarias (`PK`) subrogadas auto-incrementales o UUIDs según el contexto estratégico.
+  - Definición explícita de restricciones de integridad referencial (`FOREIGN KEY`) con políticas de borrado/actualización controladas (`ON DELETE RESTRICT`).
 
 ##### Nomenclatura:
 
-- **Colecciones**: plural, `snake_case` (ej. `users`, `order_items`).
-- **Campos**: `camelCase` (ej. `userName`, `createdAt`).
-- **Índices**: nombrados con campos concatenados en `snake_case` (ej. `user_name_index`).
-
+- **Tablas**: nombres en plural y utilizando `snake_case` (ej. `users`, `transport_cards`, `transit_transactions`).
+- **Columnas**: nombres en singular y utilizando `snake_case` (ej. `user_id`, `card_number`, `created_at`).
+- **Claves Primarias (PK)**: la columna identificadora principal de cada tabla se nombrará simplemente `id` o combinando el nombre de la entidad en singular seguido de `_id` (ej. `user_id`).
+- **Claves Foráneas (FK)**: nombre de la tabla referenciada en singular seguido del sufijo `_id` (ej. `user_id` en la tabla `transport_cards`).
+- **Índices (INDEX)**: nombrados con el prefijo `idx_` seguido del nombre de la tabla y las columnas involucradas (ej. `idx_users_email`).
+- **Restricciones Únicas (UNIQUE)**: nombradas con el prefijo `uq_` seguido del nombre de la tabla y la columna (ej. `uq_users_dni`).
 
 #### 4.1.4. Software Deployment Configuration
 
@@ -2288,13 +2291,13 @@ Esta sección detalla los pasos necesarios para desplegar satisfactoriamente los
 - El enlace de descarga puede ser compartido con los testers a través de correo electrónico, Google Drive o mediante un acceso en la Landing Page.
 - Cada nueva versión de la aplicación para testeo se publica y gestiona mediante la plataforma Firebase, facilitando la retroalimentación y el control de versiones.
 
-#### Backend - Java + MongoDB
+#### Backend - Java + MySQL
 
 **Tecnología Base:**
 
 - Framework: Spring Boot
 - Lenguaje: Java 21
-- Base de datos: MongoDB
+- Base de datos: MySQL
 - Contenedorización: Docker
 - Hosting: Railway o servicio equivalente
 
@@ -2308,7 +2311,7 @@ Esta sección detalla los pasos necesarios para desplegar satisfactoriamente los
 - El despliegue es automático: cada push a la rama principal activa la reconstrucción y publicación en el servicio de hosting, sin necesidad de configurar pipelines de CI/CD adicionales.
 - La aplicación móvil consume la API pública del backend utilizando HTTP para acceder a los servicios.
 - El proveedor de hosting detecta automáticamente el Dockerfile y construye la imagen en cada actualización del repositorio.
-- La base de datos MongoDB se configura mediante variables de entorno (por ejemplo, `MONGO_URI`), las cuales se gestionan en el panel de administración del hosting y nunca se almacenan en el código fuente.
+- La base de datos MySQL se configura mediante variables de entorno (por ejemplo, `MySQL_URI`), las cuales se gestionan en el panel de administración del hosting y nunca se almacenan en el código fuente.
 
 
 #### Aplicación Móvil (Dart + Flutter)
@@ -2396,9 +2399,9 @@ La landing page de KapakID ha sido desarrollada con <strong>HTML5, CSS3 y JavaSc
     <tr><td rowspan="2">US13</td><td rowspan="2">Acceso a la app y términos</td><td>T3</td><td>Implementar botones "Registrarse" e "Iniciar sesión" en landing</td><td>Enlaces que redirijan a las rutas correspondientes (por ahora a secciones estáticas de la app).</td><td>1</td><td>Fabricio Vega</td><td>To-do</td></tr>
     <tr><td>T4</td><td>Crear página estática de "Términos y Políticas"</td><td>Contenido legal accesible desde el footer de la landing page.</td><td>2</td><td>Fabricio Vega</td><td>To-do</td></tr>
     <tr><td>US14</td><td>Reseñas de usuarios</td><td>T5</td><td>Agregar carrusel de testimonios mock</td><td>Mostrar reseñas simuladas de casos de éxito para generar confianza en los visitantes.</td><td>2</td><td>Ysaac Villanueva</td><td>To-do</td></tr>
-    <tr><td rowspan="2">US1</td><td rowspan="2">Registro de usuario</td><td>T6</td><td>Implementar endpoint POST /api/auth/signup</td><td>Backend: registrar usuario con correo y contraseña, almacenar en MongoDB con hash de contraseña.</td><td>3</td><td>Rafael Tasayco</td><td>To-do</td></tr>
+    <tr><td rowspan="2">US1</td><td rowspan="2">Registro de usuario</td><td>T6</td><td>Implementar endpoint POST /api/auth/signup</td><td>Backend: registrar usuario con correo y contraseña, almacenar en MySQL con hash de contraseña.</td><td>3</td><td>Rafael Tasayco</td><td>To-do</td></tr>
     <tr><td>T7</td><td>Crear pantalla de registro en app Android</td><td>Formulario con validaciones (email, contraseña) y llamado al endpoint de signup.</td><td>3</td><td>Rafael Tasayco</td><td>To-do</td></tr>
-    <tr><td rowspan="2">US3</td><td rowspan="2">Registro de documentos</td><td>T8</td><td>Implementar endpoint POST /api/documents</td><td>Backend: recibir imagen y metadatos del DNI, almacenar referencia en MongoDB y archivo en cloud (mock local por ahora).</td><td>3</td><td>Fabrizio Quiroz</td><td>To-do</td></tr>
+    <tr><td rowspan="2">US3</td><td rowspan="2">Registro de documentos</td><td>T8</td><td>Implementar endpoint POST /api/documents</td><td>Backend: recibir imagen y metadatos del DNI, almacenar referencia en MySQL y archivo en cloud (mock local por ahora).</td><td>3</td><td>Fabrizio Quiroz</td><td>To-do</td></tr>
     <tr><td>T9</td><td>Crear pantalla de registro de DNI en app Android</td><td>Interfaz para subir foto del DNI, previsualización y envío al backend.</td><td>3</td><td>Fabrizio Quiroz</td><td>To-do</td></tr>
     <tr><td>US16</td><td>API de autenticación (developer)</td><td>T10</td><td>Documentar endpoints de autenticación con Swagger</td><td>Generar documentación OpenAPI para /signup y /login.</td><td>1</td><td>Fabrizio Quiroz</td><td>To-do</td></tr>
   </tbody>
