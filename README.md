@@ -2517,6 +2517,74 @@ La landing page de KapakID ha sido desarrollada con <strong>HTML5, CSS3 y JavaSc
 
 
 - **4.2.1.5. Execution Evidence for Sprint Review**
+    A continuación se presenta el detalle de los tres productos desarrollados durante el Sprint 1: Landing Page, Backend y Aplicación Móvil. Cada sección incluye una descripción del alcance funcional entregado en esta primera iteración.
+
+#### Landing Page
+
+**Alcance entregado (Sprint 1)**
+
+- Landing Page desplegada y accesible públicamente mediante GitHub Pages.
+- Contenido explicativo sobre la propuesta de valor de KapakID: gestión unificada de documentos de identidad, carnets universitarios y tarjetas de transporte, orientada a estudiantes y padres de familia.
+- Secciones principales implementadas: Hero con el valor diferencial, Funcionalidades clave (Soporte Offline, Validaciones Oficiales, Gestión de Transporte), CTA (Call to Action) para registro/descarga de la app, y pie de página de contacto.
+- Diseño responsivo básico (desktop ↔ mobile) y coherencia visual con la identidad gráfica del ecosistema KapakID.
+
+#### Backend (API) — Estado: ~70%
+
+**Alcance entregado (Sprint 1)**
+
+- Implementación de los controladores y endpoints *core* para soportar la lógica transaccional de la plataforma móvil, abarcando los Bounded Contexts de Identity, Documents, Payments, Notifications y Support.
+- Arquitectura basada en CQRS (usando MediatR), asegurando la separación de comandos y consultas.
+- Documentación e interfaz de prueba mediante Swagger lista para su consumo.
+- Validaciones funcionales y reglas de negocio básicas aplicadas a los endpoints principales (autenticación, registro de usuarios, validación de montos de pagos y flujos de creación documental).
+
+**Endpoints destacados implementados**
+
+- **Autenticación e Identidad (`AuthController`)**
+  - `POST /api/Auth/register`
+  - `POST /api/Auth/login`
+- **Gestión Documental (`DocumentsController`)**
+  - `POST /api/Documents`
+- **Transporte y Pagos (`PaymentsController`)**
+  - `POST /api/Payments`
+  - `GET /api/Payments/user/{userId}`
+- **Comunicaciones (`NotificationsController`)**
+  - `POST /api/Notifications`
+  - `GET /api/Notifications/{id}` *(Stub inicializado)*
+- **Soporte Técnico (`SupportController`)**
+  - `POST /api/Support/tickets`
+  - `GET /api/Support/tickets/{id}` *(Stub inicializado)*
+
+#### Aplicación Móvil (KapakID App — Android/iOS) — Pantallas integradas
+
+**Alcance entregado (Sprint 1)**
+
+- Desarrollo e integración de las **pantallas core** del flujo del Estudiante y Padre de Familia, abarcando navegación principal, billetera digital y listados.
+- Conexión parcial con el backend (API Gateway) para validación de acceso y operaciones de lectura/escritura de documentos y recargas.
+- Implementación de validaciones visuales y estados de interfaz (pantallas de carga, estados vacíos cuando no hay documentos o historial, y manejo de errores).
+
+**Pantallas incluidas (Flujos Principales)**
+
+1. **Identity — Autenticación y Registro**
+   - Pantalla de Login y Sign-up adaptada para roles (Estudiante/Padre).
+   - Manejo de tokens en caché local (consume `POST /api/Auth/login`).
+2. **Dashboard / Inicio**
+   - Vista resumen que unifica el estado del último documento verificado y el saldo actual de la tarjeta de transporte principal.
+3. **Documents — Billetera Digital**
+   - Lista de documentos digitalizados disponibles (DNI, Carnet Universitario).
+   - Modal/Formulario para la carga de nuevos documentos (consume `POST /api/Documents`).
+   - Estados visuales de verificación (Pendiente, Verificado, Rechazado).
+4. **Transport & Payments — Historial y Recargas**
+   - Pantalla con el listado de transacciones o recargas previas (consume `GET /api/Payments/user/{userId}`).
+   - Pantalla de "Estado vacío" si el usuario recién creado no tiene historial.
+   - Interfaz para registrar una nueva recarga (consume `POST /api/Payments`).
+
+**Mapeo rápido: Pantallas → Endpoints del Backend**
+
+- **Login / Registro (Pantalla)** → `POST /api/Auth/login`, `POST /api/Auth/register`
+- **Subir documento (Modal)** → `POST /api/Documents`
+- **Historial de Recargas (Lista)** → `GET /api/Payments/user/{userId}`
+- **Efectuar Pago/Recarga (Formulario)** → `POST /api/Payments`
+- **Solicitar Ayuda (Formulario de Soporte)** → `POST /api/Support/tickets`
 
   
 - **4.2.1.6. Services Documentation Evidence for Sprint Review**
