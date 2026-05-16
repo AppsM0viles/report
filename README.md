@@ -193,7 +193,7 @@ He diseñado estos objetivos, en donde cada estudiante se compromete con activid
 
    Estudiante de 7mo ciclo de Ingeniería de Software en la Universidad Peruana de Ciencias Aplicadas (UPC), con interés en el desarrollo backend y la arquitectura de aplicaciones escalables. Me enfoco en construir soluciones eficientes, aplicando buenas prácticas como Clean Code, principios SOLID y metodologías ágiles.
 
-    Tengo experiencia académica y proyectos personales trabajando con tecnologías como Java, Python y JavaScript, así como frameworks modernos. He participado en el desarrollo de aplicaciones web y APIs REST, integrando bases de datos relacionales y no relacionales.
+    Tengo experiencia académica y proyectos personales trabajando con tecnologías como C#, Python y JavaScript, así como frameworks modernos. He participado en el desarrollo de aplicaciones web y APIs REST, integrando bases de datos relacionales y no relacionales.
    ~~~
 
    </div>
@@ -242,9 +242,9 @@ Cuando culmine mis estudios, me encantaría especializarme y concentrarme en el 
    Soy estudiante del 7mo ciclo de la carrera de Ingeniería de Software en la UPC. 
 
     Durante estos años en la universidad y ahora enfocado en el desarrollo del ecosistema KapakID, he podido ganar experiencia práctica en varias tecnologías y formas de trabajo:
-      🔵Backend & APIs: Java con Spring Boot
+      🔵Backend & APIs: C#
       🔵Arquitectura: Domain-Driven Design (DDD) y Structurizr
-      🔵Bases de Datos: PostgreSQL y SQLite (para caché local)
+      🔵Bases de Datos: MySQL
       🔵Frontend Móvil: [Flutter / Kotlin / Swift]
 
     Como parte del equipo, me gusta ser proactivo y enfocarme en que la arquitectura que diseñamos no se quede solo en papel, sino que funcione bien y de forma ordenada en el código.
@@ -1122,7 +1122,7 @@ Entorno en la nube (proveedores como **Vercel o Netlify**) optimizado para el al
 
 **3. Backend Cloud Environment (PaaS - Railway)**
 Es el núcleo de procesamiento y almacenamiento de la plataforma, desplegado de manera ágil utilizando la infraestructura como servicio de **Railway**. Se compone de dos nodos fuertemente cohesionados:
-* **Application Server:** Un contenedor Docker que encapsula el entorno de ejecución (JVM) para la **KapakID API REST** (construida con Spring Boot). Este nodo centraliza la lógica de negocio y enruta las solicitudes.
+* **Application Server:** Un contenedor Docker que encapsula el entorno de ejecución (JVM) para la **KapakID API REST** (construida con C#). Este nodo centraliza la lógica de negocio y enruta las solicitudes.
 * **Database Server:** Una instancia de base de datos gestionada (Managed DB) de **PostgreSQL**, encargada de persistir metadatos de documentos, información de usuarios e historial de pagos. La comunicación entre la API y la base de datos se realiza de forma interna y encriptada mediante **JDBC / TLS**.
 
 **4. Third-Party Services (Servicios Externos)**
@@ -1940,7 +1940,7 @@ A continuación, se listan las herramientas y estándares adoptados por el equip
 | Requirements Management | Gherkin Conventions                                    | Escritura legible de requisitos con formato Given/When/Then.   | [https://cucumber.io/docs/gherkin/](https://cucumber.io/docs/gherkin/)                                                                   |
 | Product UX/UI Design    | Uizard                                                    | Prototipos y diseño responsive.                               | SaaS –[https://uizard.io/](https://uizard.io/)                                                                                            |
 | Frontend Dev            | Kotlin, Flutter, Dart                                  | Construcción del frontend del sistema.                        | https://kotlinlang.org/ / https://flutter.dev/   /   https://dart.dev/                                                               |
-| Backend Dev             | Java + Spring Boot                                     | Lógica de negocio y servicios REST.                           | [https://spring.io/projects/spring-boot](https://spring.io/projects/spring-boot)                                                         |
+| Backend Dev             | C#                                     | Lógica de negocio y servicios REST.                           |                                         |
 | IDE                     | IntelliJ IDEA + Android Studio                         | Desarrollo, depuración y pruebas.                             | [https://www.jetbrains.com/idea](https://www.jetbrains.com/idea) / [https://www.jetbrains.com/webstorm](https://www.jetbrains.com/webstorm) |
 | Code Standards          | Google Java Style Guide, Google TypeScript Style Guide | Mantener un código consistente y legible.                     | [https://google.github.io/styleguide](https://google.github.io/styleguide)                                                               |
 | Version Control         | Git + GitHub                                           | Gestión colaborativa del código fuente.                      | SaaS –[https://github.com](https://github.com)                                                                                          |
@@ -1969,18 +1969,13 @@ A continuación, se listan las herramientas y estándares adoptados por el equip
 - **Variables JS**: `camelCase` (ej. `userName`)
 - **Funciones JS**: `camelCase` (ej. `handleClick()`)
 
-#### Backend (Java + Spring Boot)
+#### Backend (C#)
 
 ##### Convenciones generales:
 
 - **Idioma**: Código y documentación interna en **inglés**.
 - **Indentación**: 4 espacios.
-- **Formato de archivos**: `.java`
-
-##### Estilo de código adoptado:
-
-- [Google Java Style Guide](https://google.github.io/styleguide/javaguide.html)
-- [Spring Boot Features &amp; Best Practices](https://docs.spring.io/spring-boot/docs/current/reference/html/features.html)
+- **Formato de archivos**: `.cs`
 
 ##### Nomenclatura:
 
@@ -2211,16 +2206,14 @@ En esta sección se detallan los estándares de codificación y las convenciones
 - Uso de `const` constructors donde sea posible para optimización.
 - Organización de código por features/módulos.
 
-#### Backend (Java + Spring Boot + MySQL)
+#### Backend (C# + MySQL)
 
 ##### Convenciones generales:
 
 - **Idioma**: Código y documentación interna en **inglés**.
 - **Indentación**: 4 espacios.
-- **Formato de archivos**: `.java`
-- **Estilo de código adoptado**:
-  - [Google Java Style Guide](https://google.github.io/styleguide/javaguide.html)
-  - [Spring Boot Best Practices](https://docs.spring.io/spring-boot/docs/current/reference/html/best-practices.html)
+- **Formato de archivos**: `.cs`
+
 
 ##### Nomenclatura:
 
@@ -2291,12 +2284,11 @@ Esta sección detalla los pasos necesarios para desplegar satisfactoriamente los
 - El enlace de descarga puede ser compartido con los testers a través de correo electrónico, Google Drive o mediante un acceso en la Landing Page.
 - Cada nueva versión de la aplicación para testeo se publica y gestiona mediante la plataforma Firebase, facilitando la retroalimentación y el control de versiones.
 
-#### Backend - Java + MySQL
+#### Backend - C# + MySQL
 
 **Tecnología Base:**
-
-- Framework: Spring Boot
-- Lenguaje: Java 21
+ 
+- Lenguaje: C#
 - Base de datos: MySQL
 - Contenedorización: Docker
 - Hosting: Railway o servicio equivalente
@@ -2587,7 +2579,7 @@ La landing page de KapakID ha sido desarrollada con <strong>HTML5, CSS3 y JavaSc
   
 **4.2.1.6. Services Documentation Evidence for Sprint Review**
 
-  <p>Durante el Sprint 1, el desarrollo se centró exclusivamente en la <strong>Landing Page</strong> de KapakID. Los servicios web (backend) y la documentación asociada (OpenAPI/Swagger) se encuentran en fase de planificación y serán implementados en el <strong>Sprint 2</strong>, una vez que se inicie el desarrollo del backend con Spring Boot y MySQL.</p>
+  <p>Durante el Sprint 1, el desarrollo se centró exclusivamente en la <strong>Landing Page</strong> de KapakID. Los servicios web (backend) y la documentación asociada (OpenAPI/Swagger) se encuentran en fase de planificación y serán implementados en el <strong>Sprint 2</strong>, una vez que se inicie el desarrollo del backend con C# y MySQL.</p>
 
 <p>No obstante, se ha definido la estructura inicial de los endpoints que se documentarán en el siguiente sprint, basada en las User Stories del Product Backlog:</p>
 
@@ -2607,7 +2599,7 @@ La landing page de KapakID ha sido desarrollada con <strong>HTML5, CSS3 y JavaSc
 
 **4.2.1.7. Software Deployment Evidence for Sprint Review**
 
-  <p>Durante el Sprint 1, se realizó el despliegue exitoso de la <strong>Landing Page</strong> de KapakID utilizando <strong>GitHub Pages</strong>. A continuación se detallan los pasos ejecutados y las evidencias correspondientes. El backend y la aplicación móvil se desplegarán en sprints posteriores.</p>
+  <p>Durante el Sprint 1, se realizó el despliegue exitoso de la Landing Page y el BackEnd de KapakID utilizando GitHub Pages y render respectivamente. A continuación se detallan los pasos ejecutados y las evidencias correspondientes. La aplicación móvil se desplegará en sprints posteriores.</p>
 
 <h6>Despliegue de la Landing Page</h6>
 
@@ -2629,13 +2621,29 @@ La landing page de KapakID ha sido desarrollada con <strong>HTML5, CSS3 y JavaSc
 <img src="resources/cap-4/pages_settings_kapakid.jpg" alt="Configuración GitHub Pages" width="100%" style="margin-bottom: 15px;">
 <img src="resources/cap-4/KapakID_Landing_page.png" alt="Landing page desplegada" width="100%">
 
+<h6>Despliegue del backend</h6>
+<ul>
+  <li><strong>Backend (C# + MySQL):</strong> Se desplegará en <strong>Render</strong> usando contenedores Docker. Se configurarán variables de entorno para la conexión a la base de datos, utilizando MySQL (la base de datos a sido desplegada en Aiven).</li>
+  <li><strong>Generación de la URL pública:</strong> Render generó automáticamente la URL: <a href="https://backend-kapakid.onrender.com/swagger/index.html">https://backend-kapakid.onrender.com/swagger/index.html</a>.</li>
+</ul>
+
+Capturas de pantalla del proceso y resultado:
+
+- Backend:
+![alt text](resources/cap-4/DespliguesBack-Evidencia/BackendDeploy.png)
+![alt text](resources/cap-4/DespliguesBack-Evidencia/LOGS_BACKEND.png)
+- Base de Datos:
+![alt text](resources/cap-4/DespliguesBack-Evidencia/DespliegueDB.png)
+![alt text](resources/cap-4/DespliguesBack-Evidencia/LOBSDB.png)
+- Demostracion de los endpoints usando Swagger:
+![alt text](resources/cap-4/DespliguesBack-Evidencia/SwaggerBackend.png)
 <h6>Despliegue planificado para el Sprint 2</h6>
 <ul>
-  <li><strong>Backend (Spring Boot + MySQL):</strong> Se desplegará en <strong>Railway</strong> usando contenedores Docker. Se configurarán variables de entorno para la conexión a la base de datos.</li>
+
   <li><strong>Aplicación móvil (Android):</strong> Se generará el APK y se distribuirá mediante <strong>Firebase App Distribution</strong> para pruebas internas.</li>
 </ul>
 
-<p><strong>Nota:</strong> Las evidencias de despliegue del backend y la app móvil se incluirán en los sprints 2 y 3 respectivamente.</p>
+<p><strong>Nota:</strong> Las evidencias de despliegue de la app móvil se incluirán en los sprints 2.</p>
 
 
 **4.2.1.8. Team Collaboration Insights during Sprint**
@@ -2683,7 +2691,7 @@ La landing page de KapakID ha sido desarrollada con <strong>HTML5, CSS3 y JavaSc
 <img src="resources/cap-1/INSIGHTS/AV1/GlobalInsightsAV1.png" alt="Insights globales" width="100%" style="margin-bottom: 15px;">
 <img src="resources/cap-1/INSIGHTS/AV1/InsightsAV1.png" alt="Contribuciones por integrante" width="100%">
 
-<p><strong>Observaciones para próximos sprints:</strong> Se recomienda que en el Sprint 2 se distribuya el desarrollo del backend entre varios miembros (Java/Spring Boot) y la app móvil (Kotlin/Android) para aumentar la velocidad de entrega y la cohesión del equipo.</p>
+<p><strong>Observaciones para próximos sprints:</strong> Se recomienda que en el Sprint 2 se distribuya el desarrollo del backend entre varios miembros (C#) y la app móvil (Kotlin/Android) para aumentar la velocidad de entrega y la cohesión del equipo.</p>
 
 
 ### 4.3. Validation Interviews
