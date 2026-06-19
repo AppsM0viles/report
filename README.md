@@ -8,7 +8,7 @@
 
 ### Universidad Peruana de Ciencias Aplicadas ♨️
 
-🧑‍💻 Ingeniería de software - 2026-01
+🧑‍💻 Ingeniería de software - 2026-10
 
 **Sección:** 3690
 
@@ -94,8 +94,43 @@ A continuación, se adjuntan las capturas del panel de *Insights / Contributors*
     - [3.1. Product design](#31-product-design)
 - [Capítulo IV: Product Implementation & Validation](#capítulo-iv-product-implementation--validation)
     - [4.1. Software Configuration Management](#41-software-configuration-management)
+        - [4.1.1 Software Development Environment Configuration](#411-software-development-environment-configuration)
+        - [4.1.2 Source Code Management](#412-source-code-management)
+        - [4.1.3 Source Code Style Guide & Conventions](#413-source-code-style-guide--conventions)
+        - [4.1.4 Software Deployment Configuration](#414-software-deployment-configuration)
     - [4.2. Landing Page & Mobile Application Implementation](#42-landing-page--mobile-application-implementation)
+        - [4.2.1 Sprint 1](#421-sprint-1)
+            - [4.2.1.1 Sprint Planning 1](#4211-sprint-planning-1)
+            - [4.2.1.2 Sprint Backlog 1](#4212-sprint-backlog-1)
+            - [4.2.1.3 Development Evidence for Sprint Review](#4213-development-evidence-for-sprint-review)
+            - [4.2.1.4 Testing Suite Evidence for Sprint Review](#4214-testing-suite-evidence-for-sprint-review)
+            - [4.2.1.5 Execution Evidence for Sprint Review](#4215-execution-evidence-for-sprint-review)
+            - [4.2.1.6 Services Documentation Evidence for Sprint Review](#4216-services-documentation-evidence-for-sprint-review)
+            - [4.2.1.7 Software Deployment Evidence for Sprint Review](#4217-software-deployment-evidence-for-sprint-review)
+            - [4.2.1.8 Team Collaboration Insights during Sprint](#4218-team-collaboration-insights-during-sprint)
+        - [4.2.2 Sprint 2](#422-sprint-2)
+            - [4.2.2.1 Sprint Planning 2](#4221-sprint-planning-2)
+            - [4.2.2.2 Sprint Backlog 2](#4222-sprint-backlog-2)
+            - [4.2.2.3 Development Evidence for Sprint Review](#4223-development-evidence-for-sprint-review)
+            - [4.2.2.4 Testing Suite Evidence for Sprint Review](#4224-testing-suite-evidence-for-sprint-review)
+            - [4.2.2.5 Execution Evidence for Sprint Review](#4225-execution-evidence-for-sprint-review)
+            - [4.2.2.6 Services Documentation Evidence for Sprint Review](#4226-services-documentation-evidence-for-sprint-review)
+            - [4.2.2.7 Software Deployment Evidence for Sprint Review](#4227-software-deployment-evidence-for-sprint-review)
+            - [4.2.2.8 Team Collaboration Insights during Sprint](#4228-team-collaboration-insights-during-sprint)
+        - [4.2.3 Sprint 3](#423-sprint-3)
+            - [4.2.3.1 Sprint Planning 3](#4231-sprint-planning-3)
+            - [4.2.3.2 Sprint Backlog 3](#4232-sprint-backlog-3)
+            - [4.2.3.3 Development Evidence for Sprint Review](#4233-development-evidence-for-sprint-review)
+            - [4.2.3.4 Testing Suite Evidence for Sprint Review](#4234-testing-suite-evidence-for-sprint-review)
+            - [4.2.3.5 Execution Evidence for Sprint Review](#4235-execution-evidence-for-sprint-review)
+            - [4.2.3.5 Execution Evidence for Sprint Review](#4235-execution-evidence-for-sprint-review)
+            - [4.2.3.6 Services Documentation Evidence for Sprint Review](#4236-services-documentation-evidence-for-sprint-review)
+            - [4.2.3.7 Software Deployment Evidence for Sprint Review](#4237-software-deployment-evidence-for-sprint-review)
+            - [4.2.3.8 Team Collaboration Insights during Sprint](#4238-team-collaboration-insights-during-sprint)
     - [4.3. Validation Interviews](#43-validation-interviews)
+        - [4.3.1 Diseño de Entrevistas](#431-diseño-de-entrevistas)
+        - [4.3.2 Registro de Entrevistas](#432-registro-de-entrevistas)
+        - [4.3.3 Evaluaciones según heurísticas](#433-evaluaciones-según-heurísticas)
 - [Conclusiones y Recomendaciones](#conclusiones-y-recomendaciones)
 - [Video App Validation](#video-app-validation)
 - [Glosario](#glosario)
@@ -115,27 +150,29 @@ A continuación, se adjuntan las capturas del panel de *Insights / Contributors*
 
 ## Objetivos SMART
 
-He diseñado estos objetivos, en donde cada estudiante se compromete con actividades especificas en el desarrollo de el proyecto:
+
 
 - Raúl Tasayco:
 
-    Finalizar la arquitectura de datos y el sistema de navegación de la aplicación para el término del Sprint 3, logrando que el 100% de los flujos de usuario sean consistentes con los lineamientos visuales establecidos.
+    Especializarme en el desarrollo de interfaces de usuario modernas y de alto rendimiento, logrando el dominio avanzado de frameworks como Angular y Vue a través de la publicación de tres proyectos personales optimizados en buenas prácticas de maquetación y rendimiento web en el próximo año.
 
 - Ysaac Villanueva:
 
-    Reducir el tiempo de integración de código en un 20% mediante la optimización del backlog en Jira y la asignación eficiente de tareas, cumpliendo con todos los hitos del cronograma antes de la entrega final.
+    Desarrollar competencias avanzadas como Arquitecto de Software, enfocándome en el diseño técnico estratégico a través de metodologías como Domain-Driven Design (DDD), logrando liderar técnicamente la conceptualización de un ecosistema digital y su correcto mapeo modular en código antes de finalizar el próximo año académico.
 
 - Fabricio Vega:
 
-    Configurar y mantener el repositorio de GitHub con una tasa de éxito del 100% en los despliegues de las ramas 'main' y 'develop', asegurando que no existan conflictos de código críticos durante la integración final.
+    Consolidar mi perfil como desarrollador Backend escalable mediante el dominio y aplicación avanzada de principios SOLID y Clean Code en entornos de producción, logrando diseñar e implementar al menos dos APIs REST robustas utilizando arquitecturas limpias y tecnologías en la nube al término de los próximos 6 meses.
 
 - Rafael Tasayco:
 
-    Definir y validar el 100% de los criterios de aceptación para las funcionalidades de búsqueda de huariques y reseñas, garantizando que el producto cumpla con los requerimientos técnicos exigidos en la rúbrica.
+    Desarrollar una sólida base técnica en seguridad de la información, enfocándome en la obtención de una certificación reconocida en la industria (como CompTIA Security+ o equivalente) en un plazo no mayor a 12 meses tras culminar el ciclo académico, orientando mi carrera profesional hacia el campo de la ciberseguridad.
 
 - Fabrizio Quiroz:
 
-    Completar la revisión y control de calidad de todos los entregables del reporte final en un plazo de 48 horas antes de cada subida, asegurando que la documentación técnica esté libre de errores ortográficos y de formato.
+    Construir un perfil competitivo como desarrollador Fullstack con enfoque centrado en las personas, logrando dominar herramientas modernas de frontend (Vue) y backend (SQL/Python) para conceptualizar, programar y desplegar de forma autónoma una aplicación web funcional y escalable en los próximos 8 meses.
+
+<div style="page-break-after: always;"></div>
 
 ## Capítulo I: Presentación
 
@@ -300,29 +337,17 @@ Cuando culmine mis estudios, me encantaría especializarme y concentrarme en el 
   <ul>
     <li>
       <strong>WHAT (QUÉ):</strong>  
-      El problema principal es la <strong>dificultad para gestionar documentos personales y empresariales</strong>.  
-      Muchos usuarios no tienen un sistema ordenado para guardar DNI, contratos, certificados o 
-      recibos, lo que ocasiona pérdidas de información, duplicidad de archivos y retrasos en 
-      procesos administrativos.
+      El problema principal es la dificultad para gestionar documentos personales y empresariales. Muchos usuarios no tienen un sistema ordenado para guardar DNI, contratos o certificados, ocasionando retrasos administrativos. En el contexto peruano, los ciudadanos pierden múltiples horas al año debido a la burocracia y la falta de interoperabilidad digital en las instituciones públicas (Presidencia del Consejo de Ministros [PCM], 2025).
     </li>
     <br>
     <li>
       <strong>WHEN (CUÁNDO):</strong>  
-      Este problema ocurre <strong>de manera frecuente</strong>, especialmente en situaciones críticas:  
-      - Renovación de documentos o trámites legales.  
-      - Acceso a información en emergencias.  
-      - Fechas de vencimiento de contratos, pólizas o servicios.  
-      La falta de organización se hace evidente justo cuando más se necesita la información.
+      Este problema ocurre de manera frecuente, especialmente en situaciones críticas como la renovación de documentos o el acceso a información en emergencias. De acuerdo con reportes de atención al ciudadano, los procesos de renovación presencial e identificación concentran los mayores picos de insatisfacción por demoras (Defensoría del Pueblo, 2024).
     </li>
     <br>
     <li>
       <strong>WHERE (DÓNDE):</strong>  
-      El problema se da en distintos <strong>ámbitos</strong>:  
-      - En el <em>personal</em>, cuando alguien requiere documentos médicos, escolares o financieros.  
-      - En el <em>profesional</em>, entre estudiantes y trabajadores que deben presentar certificados o 
-        contratos.  
-      - En el <em>empresarial</em>, en micro y pequeñas empresas que no cuentan con sistemas digitales 
-        para organizar facturas, permisos o documentación interna.
+      El problema se da en el ámbito personal y profesional en Perú. Específicamente en Lima Metropolitana, el cuello de botella se traslada a los sistemas de transporte masivo, donde los usuarios experimentan largas colas cotidianas únicamente para la recarga física de tarjetas (Autoridad de Transporte Urbano para Lima y Callao [ATU], 2025).
     </li>
     <br>
     <li>
@@ -336,12 +361,7 @@ Cuando culmine mis estudios, me encantaría especializarme y concentrarme en el 
     <br>
     <li>
       <strong>WHY (POR QUÉ):</strong>  
-      Porque actualmente <strong>no existen herramientas accesibles, seguras y fáciles de usar</strong> 
-      que permitan gestionar documentos de manera integral.  
-      Las soluciones disponibles suelen ser:  
-      - Limitadas a almacenamiento básico en la nube sin organización avanzada.  
-      - Costosas para usuarios comunes o pequeñas empresas.  
-      - Poco personalizables para distintos tipos de documentos y recordatorios de vencimiento.
+      Porque actualmente no existen herramientas accesibles y adaptadas localmente. Las soluciones disponibles en el mercado no se alinean con las entidades reguladoras de certificación nacional ni respetan de forma estricta los marcos normativos de derechos digitales locales, estipulados en la Ley N° 29733 (Ley de Protección de Datos Personales).
     </li>
     <br>
     <li>
@@ -355,11 +375,7 @@ Cuando culmine mis estudios, me encantaría especializarme y concentrarme en el 
     <br>
     <li>
       <strong>HOW MUCH (CUÁNTO):</strong>  
-      Actualmente, contratar un gestor documental empresarial o servicios especializados supone un 
-      <strong>costo elevado</strong>, inaccesible para la mayoría.  
-      KapakID busca ofrecer una solución <strong>económica, accesible y escalable</strong>, con planes 
-      gratuitos para funciones básicas y opciones premium de bajo costo para usuarios con mayores 
-      necesidades.
+      Contratar un gestor documental empresarial supone un costo prohibitivo. Adicionalmente, el costo de oportunidad del tiempo perdido por un ciudadano promedio de Lima haciendo filas físicas para recargar pasajes o validar carnés universitarios impacta directamente en su productividad académica y laboral, estimándose en pérdidas económicas millonarias a nivel macro (Instituto Peruano de Economía [IPE], 2024).
     </li>
   </ul>
 </article>
@@ -586,6 +602,8 @@ En KapakID, tenemos dos segmentos objetivos principales que se benefician de las
 
   Este grupo se enfoca en la organización y la seguridad familiar. Su dolor es la gestión dispersa de los documentos de sus hijos, desde carnés escolares hasta certificados de vacunas. KapakID resuelve esto con su función premium de perfiles múltiples, que les permite centralizar de forma segura toda la información familiar en un solo lugar, brindándoles control total y tranquilidad.
 ---
+
+<div style="page-break-after: always;"></div>
 
 ## Capítulo II: Requirements Development and Software Solution Design
 
@@ -1518,6 +1536,8 @@ El diseño físico separa el historial de acciones (audit_logs) de la gestión l
 
 ![alt text](resources/Cap-2/DiagramsClass/Documents/DiagramaDataBase_BC_Compliance.png)
 
+<div style="page-break-after: always;"></div>
+
 ## Capítulo III: Solution UI/UX Design
 
 ### 3.1. Product design
@@ -1942,11 +1962,12 @@ El prototipo permite interactuar con los botones de navegación y verificar la v
 * **Enlace al prototipo interactivo:** https://app.uizard.io/p/4340c887
 ---
 
+<div style="page-break-after: always;"></div>
+
 ## Capítulo IV: Product Implementation & Validation
 
 ### 4.1. Software Configuration Management
-#### 4.1.1. Software Development Environment Configuration
-
+#### 4.1.1 Software Development Environment Configuration
 A continuación, se listan las herramientas y estándares adoptados por el equipo para el desarrollo colaborativo del sistema:
 
 | Actividad               | Herramienta / Guía                                    | Propósito                                                     | Tipo de acceso / Ruta                                                                                                                 |
@@ -2350,7 +2371,7 @@ Esta sección detalla los pasos necesarios para desplegar satisfactoriamente los
 
 ### 4.2. Landing Page & Mobile Application Implementation
 
-#### 4.2.1. Sprint 1
+#### 4.2.1 Sprint 1
 
 <p><strong> Despliegue de la Landing Page – KapakID</strong><br>
 La landing page de KapakID ha sido desarrollada con <strong>HTML5, CSS3 y JavaScript puro</strong>, siguiendo un diseño responsive y accesible. Se ha desplegado utilizando <strong>GitHub Pages</strong> por su integración nativa con el repositorio y su facilidad para actualizaciones continuas.</p>
@@ -2370,7 +2391,7 @@ La landing page de KapakID ha sido desarrollada con <strong>HTML5, CSS3 y JavaSc
 
 <hr>
 
-**4.2.1.1. Sprint Planning 1**
+#### 4.2.1.1 Sprint Planning 1
 
 <table border="1" cellpadding="8" cellspacing="0" width="100%" style="border-collapse: collapse; margin-bottom: 20px;">
   <tbody>
@@ -2391,7 +2412,7 @@ La landing page de KapakID ha sido desarrollada con <strong>HTML5, CSS3 y JavaSc
 </table>
 
 
-**4.2.1.2. Sprint Backlog 1**
+#### 4.2.1.2 Sprint Backlog 1
 
 <p>El objetivo principal de este primer sprint es <strong>sentar las bases funcionales del ecosistema KapakID</strong>: landing page informativa, backend con autenticación y registro de documentos, y las primeras pantallas móviles para que el usuario pueda registrarse y subir su DNI. Se priorizan las funcionalidades de onboarding y gestión documental básica.</p>
 
@@ -2417,7 +2438,7 @@ La landing page de KapakID ha sido desarrollada con <strong>HTML5, CSS3 y JavaSc
 <p><strong>Total Story Points del Sprint:</strong> 21<br>
 <strong>Horas estimadas totales:</strong> 21</p>
 
-**4.2.1.3. Development Evidence for Sprint Review**
+#### 4.2.1.3 Development Evidence for Sprint Review
 
 <p>Durante el Sprint 1 se completó la implementación inicial de la landing page. El backend y la aplicación móvil se encuentran en fase de planificación y se desarrollarán en sprints posteriores. A continuación se presentan los commits realizados en el repositorio de la landing page.</p>
 
@@ -2434,7 +2455,7 @@ La landing page de KapakID ha sido desarrollada con <strong>HTML5, CSS3 y JavaSc
 
 <p><strong>Nota:</strong> Los commits correspondientes al backend y a la aplicación móvil se registrarán una vez que esos componentes comiencen su desarrollo en los sprints 2 y 3.</p>
 
-**4.2.1.4. Testing Suite Evidence for Sprint Review**
+#### 4.2.1.4. Testing Suite Evidence for Sprint Review
    A continuación, se presenta la evidencia de los commits relacionados con los Acceptance Tests automatizados del sprint, alojados en el repositorio KapakID-AcceptanceTests. Cada archivo corresponde a un Feature File Gherkin que cubre escenarios de pruebas de aceptación para los diferentes Bounded Contexts
 
   <table>
@@ -2521,8 +2542,8 @@ La landing page de KapakID ha sido desarrollada con <strong>HTML5, CSS3 y JavaSc
   </tbody>
 </table>
 
-**4.2.1.5. Execution Evidence for Sprint Review**
-    A continuación se presenta el detalle de los tres productos desarrollados durante el Sprint 1: Landing Page, Backend y Aplicación Móvil. Cada sección incluye una descripción del alcance funcional entregado en esta primera iteración.
+#### 4.2.1.5 Execution Evidence for Sprint Review
+  A continuación se presenta el detalle de los tres productos desarrollados durante el Sprint 1: Landing Page, Backend y Aplicación Móvil. Cada sección incluye una descripción del alcance funcional entregado en esta primera iteración.
 
 #### Landing Page
 
@@ -2592,7 +2613,7 @@ La landing page de KapakID ha sido desarrollada con <strong>HTML5, CSS3 y JavaSc
 - **Solicitar Ayuda (Formulario de Soporte)** → `POST /api/Support/tickets`
 
   
-**4.2.1.6. Services Documentation Evidence for Sprint Review**
+#### 4.2.1.6 Services Documentation Evidence for Sprint Review
 
   <p>Durante el Sprint 1, el desarrollo se centró exclusivamente en la <strong>Landing Page</strong> de KapakID. Los servicios web (backend) y la documentación asociada (OpenAPI/Swagger) se encuentran en fase de planificación y serán implementados en el <strong>Sprint 2</strong>, una vez que se inicie el desarrollo del backend con C# y MySQL.</p>
 
@@ -2612,7 +2633,7 @@ La landing page de KapakID ha sido desarrollada con <strong>HTML5, CSS3 y JavaSc
 
 <p><strong>Nota:</strong> Los commits relacionados con documentación de servicios se agregarán en el Sprint 2, cuando el backend comience su desarrollo.</p>
 
-**4.2.1.7. Software Deployment Evidence for Sprint Review**
+#### 4.2.1.7 Software Deployment Evidence for Sprint Review
 
   <p>Durante el Sprint 1, se realizó el despliegue exitoso de la Landing Page y el BackEnd de KapakID utilizando GitHub Pages y render respectivamente. A continuación se detallan los pasos ejecutados y las evidencias correspondientes. La aplicación móvil se desplegará en sprints posteriores.</p>
 
@@ -2661,7 +2682,7 @@ Capturas de pantalla del proceso y resultado:
 <p><strong>Nota:</strong> Las evidencias de despliegue de la app móvil se incluirán en los sprints 2.</p>
 
 
-**4.2.1.8. Team Collaboration Insights during Sprint**
+#### 4.2.1.8 Team Collaboration Insights during Sprint
 
 <p>Durante el <strong>Sprint 1</strong>, el equipo de F1nTrack trabajó de manera colaborativa en la planificación, diseño y desarrollo inicial de KapakID. A continuación se presentan los analíticos de colaboración basados en los commits reales y la distribución de tareas.</p>
 
@@ -2709,9 +2730,47 @@ Capturas de pantalla del proceso y resultado:
 <p><strong>Observaciones para próximos sprints:</strong> Se recomienda que en el Sprint 2 se distribuya el desarrollo del backend entre varios miembros (C#) y la app móvil (Kotlin/Android) para aumentar la velocidad de entrega y la cohesión del equipo.</p>
 
 
-### 4.3. Validation Interviews
+### 4.2.2 Sprint 2
 
-#### 4.3.1. Diseño de Entrevistas
+#### 4.2.2.1 Sprint Planning 2
+
+#### 4.2.2.2 Sprint Backlog 2
+
+#### 4.2.2.3 Development Evidence for Sprint Review
+
+#### 4.2.2.4 Testing Suite Evidence for Sprint Review
+
+#### 4.2.2.5 Execution Evidence for Sprint Review
+
+#### 4.2.2.6 Services Documentation Evidence for Sprint Review
+
+#### 4.2.2.7 Software Deployment Evidence for Sprint Review
+
+#### 4.2.2.8 Team Collaboration Insights during Sprint
+
+### 4.2.3 Sprint 3
+
+#### 4.2.3.1 Sprint Planning 3
+
+#### 4.2.3.2 Sprint Backlog 3
+
+#### 4.2.3.3 Development Evidence for Sprint Review
+
+#### 4.2.3.4 Testing Suite Evidence for Sprint Review
+
+#### 4.2.3.5 Execution Evidence for Sprint Review
+
+#### 4.2.3.6 Services Documentation Evidence for Sprint Review
+
+#### 4.2.3.7 Software Deployment Evidence for Sprint Review
+
+#### 4.2.3.8 Team Collaboration Insights during Sprint
+
+
+
+### 4.3 Validation Interviews
+
+#### 4.3.1 Diseño de Entrevistas
 
 **Objetivo.** Validar con usuarios reales la propuesta de KapakID en los flujos críticos: registro y acceso, gestión de documentos, recargas/pagos, movilidad (tarjetas/transportes) y notificaciones; midiendo claridad, facilidad de uso, tiempos y percepción de valor.
 
@@ -2750,7 +2809,7 @@ Configuración de preferencias (email/app). Recibe avisos de vencimiento y estad
 ---
 
 
-#### 4.3.2. Registro de Entrevistas
+#### 4.3.2 Registro de Entrevistas
 
 ### Entrevistas a estudiantes universitarios (S1)
 
@@ -2786,7 +2845,7 @@ Configuración de preferencias (email/app). Recibe avisos de vencimiento y estad
 
 ---
 
-#### 4.3.3. Evaluaciones según heurísticas
+#### 4.3.3 Evaluaciones según heurísticas
 
 ### Web Application a evaluar
 **KapakID** – Plataforma web para gestión de documentos, pagos/recargas, movilidad y notificaciones.  
@@ -2852,10 +2911,14 @@ Configuración de preferencias (email/app). Recibe avisos de vencimiento y estad
 
 ## Bibliografía
 
+* Autoridad de Transporte Urbano para Lima y Callao [ATU]. (2025). Estudio sobre los tiempos de espera y demandas de recargas en los sistemas de transporte masivo de Lima Metropolitana. Ministerio de Transportes y Comunicaciones.
 * Congreso de la República del Perú. (2011). *Ley N° 29733, Ley de Protección de Datos Personales*. Diario Oficial El Peruano. Recuperado de la plataforma digital única del Estado Peruano.
+* Defensoría del Pueblo. (2024). Informe Defensorial N° 192: El estado de los servicios públicos presenciales y la insatisfacción ciudadana en la tramitación de documentos de identidad. Despacho Defensorial.
 * Evans, E. (2003). *Domain-Driven Design: Tackling Complexity in the Heart of Software*. Addison-Wesley Professional.
 * Gothelf, J., & Seiden, J. (2016). *Lean UX: Designing Great Products with Agile Teams* (2.ª ed.). O'Reilly Media.
+* Instituto Peruano de Economía [IPE]. (2024). El costo de la congestión y las colas: Impacto de la pérdida de tiempo en la productividad del ciudadano limeño. Boletín de Coyuntura Económica.
 * Knapp, J., Zeratsky, J., & Kowitz, B. (2016). *Sprint: How to Solve Big Problems and Test New Ideas in Just Five Days*. Simon & Schuster.
+* Presidencia del Consejo de Ministros [PCM]. (2025). Estrategia Nacional de Transformación Digital: Avances en la interoperabilidad del Estado y reducción de la burocracia. Secretaría de Gobierno y Transformación Digital.
 * Spring Framework Contributors. (2024). *Spring Boot Reference Documentation*. Spring.io. https://docs.spring.io/spring-boot/docs/current/reference/html/
 * Vernon, V. (2013). *Implementing Domain-Driven Design*. Addison-Wesley Professional.
 * Vue.js Core Team. (2024). *Vue.js: The Progressive JavaScript Framework*. Vuejs.org. https://vuejs.org/guide/introduction.html
