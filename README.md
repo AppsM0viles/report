@@ -2732,68 +2732,47 @@ Capturas de pantalla del proceso y resultado:
 
 ### 4.2.2 Sprint 2
 
-#### 4.2.2.1 Sprint Planning 2
-
-#### 4.2.2.2 Sprint Backlog 2
-
-#### 4.2.2.3 Development Evidence for Sprint Review
-
-#### 4.2.2.4 Testing Suite Evidence for Sprint Review
-
-#### 4.2.2.5 Execution Evidence for Sprint Review
-
-#### 4.2.2.6 Services Documentation Evidence for Sprint Review
-
-#### 4.2.2.7 Software Deployment Evidence for Sprint Review
-
-#### 4.2.2.8 Team Collaboration Insights during Sprint
-
-
-
-#### 4.2.1 Sprint 1
-
-<p><strong> Despliegue de la Landing Page – KapakID</strong><br>
-La landing page de KapakID ha sido desarrollada con <strong>HTML5, CSS3 y JavaScript puro</strong>, siguiendo un diseño responsive y accesible. Se ha desplegado utilizando <strong>GitHub Pages</strong> por su integración nativa con el repositorio y su facilidad para actualizaciones continuas.</p>
+<p><strong> Desarrollo de la Aplicación Móvil – KapakID</strong><br>
+El segundo sprint se enfocó en el desarrollo de la <strong>Aplicación Móvil</strong> de KapakID, utilizando el framework <strong>Flutter</strong> para asegurar un rendimiento nativo y una interfaz fluida. El código ha sido alojado en el repositorio de la organización bajo <code>AppsM0viles/FrontEnd-KapakId-Flutter</code>.</p>
 
 <p><strong>Pasos realizados:</strong><br>
-1. Se creó un repositorio público en GitHub (<code>F1nTrack/kapakid-landing</code>).<br>
-2. El archivo <code>index.html</code> se colocó en la raíz del repositorio.<br>
-3. En la configuración del repositorio (<code>Settings > Pages</code>), se seleccionó la rama <code>main</code> y la carpeta <code>/ (root)</code>.<br>
-4. Se guardó la configuración y GitHub Pages generó automáticamente la URL pública.<br>
-5. Cada <code>push</code> a la rama <code>main</code> actualiza la página en menos de un minuto.<br>
-<br>
-<strong>A continuación se muestran capturas del proceso y del resultado final:</strong>
+1. Limpieza de archivos nativos antiguos y creación de un nuevo proyecto Flutter estructurado.<br>
+2. Implementación de estado con <strong>Riverpod</strong>, manejo de rutas con <strong>GoRouter</strong> y cliente HTTP con <strong>Dio</strong>.<br>
+3. Creación del Bounded Context de <strong>Identidad (IAM)</strong>: Pantallas de Login y Registro.<br>
+4. Creación del Bounded Context de <strong>Billetera (Wallet)</strong>: Recarga de Saldo de Transporte con actualización en tiempo real (Optimistic UI).<br>
+5. Creación del Bounded Context de <strong>Documentos</strong>: Escáner Biométrico nativo conectando la cámara del dispositivo con validación simulada.<br>
+6. Creación del Bounded Context de <strong>Notificaciones</strong>: Bandeja de entrada que reacciona a las recargas exitosas.<br>
 </p>
-
-<img src="resources/cap-4/pages_settings_kapakid.jpg" alt="Configuración GitHub Pages" width="100%" style="margin-bottom: 15px;">
-<img src="resources/cap-4/KapakID_Landing_page.png" alt="Landing page desplegada" width="100%">
 
 <hr>
 
-#### 4.2.1.1 Sprint Planning 1
+#### 4.2.2.1 Sprint Planning 2
 
 <table border="1" cellpadding="8" cellspacing="0" width="100%" style="border-collapse: collapse; margin-bottom: 20px;">
   <tbody>
-    <tr><th style="background-color:#f2f2f2; text-align:left">Sprint #</th><td colspan="3">Sprint 1</td></tr>
+    <tr><th style="background-color:#f2f2f2; text-align:left">Sprint #</th><td colspan="3">Sprint 2</td></tr>
     <tr><th style="background-color:#f2f2f2; text-align:left" colspan="4">Sprint Planning Background</th></tr>
-    <tr><th style="background-color:#f2f2f2; text-align:left">Date</th><td colspan="3">2026-04-20</td></tr>
+    <tr><th style="background-color:#f2f2f2; text-align:left">Date</th><td colspan="3">2026-06-01</td></tr>
     <tr><th style="background-color:#f2f2f2; text-align:left">Time</th><td colspan="3">07:00 pm (GMT-5)</td></tr>
     <tr><th style="background-color:#f2f2f2; text-align:left">Location</th><td colspan="3">Modalidad remota mediante la plataforma Discord</td></tr>
-    <tr><th style="background-color:#f2f2f2; text-align:left">Prepared By</th><td colspan="3">Villanueva Andrade, Ysaac Ligorio</td></tr>
-    <tr><th style="background-color:#f2f2f2; text-align:left">Attendees (to planning meeting)</th><td colspan="3">Villanueva Andrade, Ysaac Ligorio / Tasayco Osorio, Raul Hiroshi / Vega Coronado, Fabricio Samir / Tasayco Almonacid, Rafael Augusto / Quiroz Zambrano, Fabrizio Javier</td></tr>
-    <tr><th style="background-color:#f2f2f2; text-align:left">Sprint 0 Review Summary</th><td colspan="3">Al ser el primer sprint, no existe sprint anterior.</td></tr>
-    <tr><th style="background-color:#f2f2f2; text-align:left">Sprint 0 Retrospective Summary</th><td colspan="3">No aplica para el sprint inicial.</td></tr>
+    <tr><th style="background-color:#f2f2f2; text-align:left">Prepared By</th><td colspan="3">Tasayco Almonacid, Rafael Augusto</td></tr>
+    <tr><th style="background-color:#f2f2f2; text-align:left">Attendees (to planning meeting)</th><td colspan="3">Villanueva Andrade, Ysaac / Tasayco Osorio, Raul / Vega Coronado, Fabricio / Tasayco Almonacid, Rafael / Quiroz Zambrano, Fabrizio</td></tr>
+    <tr><th style="background-color:#f2f2f2; text-align:left">Sprint 1 Review Summary</th><td colspan="3">El Sprint 1 concluyó exitosamente con el despliegue del Backend y la Landing Page. Sin embargo, no hubo avance en la capa de interfaz móvil para que el usuario pueda usar el sistema.</td></tr>
+    <tr><th style="background-color:#f2f2f2; text-align:left">Sprint 1 Retrospective Summary</th><td colspan="3">Se acordó priorizar fuertemente el frontend móvil para conectar visualmente el flujo core (Recargas y Documentos).</td></tr>
     <tr><th style="background-color:#f2f2f2; text-align:left" colspan="4">Sprint Goal &amp; User Stories</th></tr>
-    <tr><th style="background-color:#f2f2f2; text-align:left">Sprint 1 Goal</th><td colspan="3">Our focus is on <strong>presenting KapakID's value proposition through a functional landing page, enabling basic user authentication (sign-up and login), and allowing users to register and view their first official document (DNI) from the mobile app</strong>. <br><br> We believe it delivers <strong>clear understanding of the product benefits to visitors, a secure first interaction with the platform, and a tangible digital document management experience</strong> to <strong>students and parents</strong>. <br><br> This will be confirmed when: (1) the landing page is publicly accessible and includes sections for features, testimonials, and legal terms; (2) a user can successfully register and log in from the Android app; (3) a user can upload a DNI photo and see it listed in the app; (4) the backend endpoints for authentication and document upload are documented via Swagger.</td></tr>
-    <tr><th style="background-color:#f2f2f2; text-align:left">Sprint 1 Velocity</th><td colspan="3">21 (Story Points)</td></tr>
-    <tr><th style="background-color:#f2f2f2; text-align:left">Sum of Story Points</th><td colspan="3">21</td></tr>
+    <tr><th style="background-color:#f2f2f2; text-align:left">Sprint 2 Goal</th><td colspan="3">Nuestro enfoque es construir el MVP móvil base utilizando Flutter, centrándonos en la navegación, las recargas de la billetera virtual y el escaneo de documentos.
+
+Creemos que esto ofrece una experiencia central tangible para los usuarios finales (estudiantes y padres), permitiéndoles gestionar su identidad digital y su saldo de transporte directamente desde su smartphone.
+
+Esto se confirmará cuando: (1) un usuario pueda iniciar sesión y acceder al Panel de Control (Dashboard); (2) realizar una recarga en su billetera y ver cómo el saldo de su tarjeta de transporte aumenta dinámicamente; (3) abrir la cámara nativa para "escanear" un DNI con una interfaz de usuario (UI) de láser futurista; y (4) recibir una notificación dentro de la aplicación confirmando su recarga.</td></tr>
+    <tr><th style="background-color:#f2f2f2; text-align:left">Sprint 2 Velocity</th><td colspan="3">24 (Story Points)</td></tr>
+    <tr><th style="background-color:#f2f2f2; text-align:left">Sum of Story Points</th><td colspan="3">24</td></tr>
   </tbody>
 </table>
 
+#### 4.2.2.2 Sprint Backlog 2
 
-#### 4.2.1.2 Sprint Backlog 1
-
-<p>El objetivo principal de este primer sprint es <strong>sentar las bases funcionales del ecosistema KapakID</strong>: landing page informativa, backend con autenticación y registro de documentos, y las primeras pantallas móviles para que el usuario pueda registrarse y subir su DNI. Se priorizan las funcionalidades de onboarding y gestión documental básica.</p>
+<p>El objetivo principal de este sprint es <strong>sentar las bases visuales y funcionales de la app móvil KapakID</strong>, desarrollando las interfaces clave y conectándolas con lógica simulada para integraciones posteriores más robustas con la API.</p>
 
 <table border="1" cellpadding="8" cellspacing="0" width="100%" style="border-collapse: collapse; margin-bottom: 20px;">
   <thead>
@@ -2801,312 +2780,124 @@ La landing page de KapakID ha sido desarrollada con <strong>HTML5, CSS3 y JavaSc
     <tr><th style="background-color:#f2f2f2">Id</th><th style="background-color:#f2f2f2">Title</th><th style="background-color:#f2f2f2">Id</th><th style="background-color:#f2f2f2">Title</th><th style="background-color:#f2f2f2">Description</th><th style="background-color:#f2f2f2">Estimation (Hours)</th><th style="background-color:#f2f2f2">Assigned To</th><th style="background-color:#f2f2f2">Status</th></tr>
   </thead>
   <tbody>
-    <tr><td rowspan="2">US12</td><td rowspan="2">Información de funcionalidades</td><td>T1</td><td>Diseñar sección "Funcionalidades" en landing</td><td>Crear sección que describa las capacidades de KapakID (guardar DNI, recargas, alertas) con íconos y texto claro, según el diseño de UX.</td><td>2</td><td>Raúl Tasayco</td><td>To-do</td></tr>
-    <tr><td>T2</td><td>Agregar sección "Beneficios" dirigida a estudiantes y padres</td><td>Explicar ventajas para cada segmento objetivo, usando el tono de comunicación definido.</td><td>1</td><td>Raúl Tasayco</td><td>To-do</td></tr>
-    <tr><td rowspan="2">US13</td><td rowspan="2">Acceso a la app y términos</td><td>T3</td><td>Implementar botones "Registrarse" e "Iniciar sesión" en landing</td><td>Enlaces que redirijan a las rutas correspondientes (por ahora a secciones estáticas de la app).</td><td>1</td><td>Fabricio Vega</td><td>To-do</td></tr>
-    <tr><td>T4</td><td>Crear página estática de "Términos y Políticas"</td><td>Contenido legal accesible desde el footer de la landing page.</td><td>2</td><td>Fabricio Vega</td><td>To-do</td></tr>
-    <tr><td>US14</td><td>Reseñas de usuarios</td><td>T5</td><td>Agregar carrusel de testimonios mock</td><td>Mostrar reseñas simuladas de casos de éxito para generar confianza en los visitantes.</td><td>2</td><td>Ysaac Villanueva</td><td>To-do</td></tr>
-    <tr><td rowspan="2">US1</td><td rowspan="2">Registro de usuario</td><td>T6</td><td>Implementar endpoint POST /api/auth/signup</td><td>Backend: registrar usuario con correo y contraseña, almacenar en MySQL con hash de contraseña.</td><td>3</td><td>Rafael Tasayco</td><td>To-do</td></tr>
-    <tr><td>T7</td><td>Crear pantalla de registro en app Android</td><td>Formulario con validaciones (email, contraseña) y llamado al endpoint de signup.</td><td>3</td><td>Rafael Tasayco</td><td>To-do</td></tr>
-    <tr><td rowspan="2">US3</td><td rowspan="2">Registro de documentos</td><td>T8</td><td>Implementar endpoint POST /api/documents</td><td>Backend: recibir imagen y metadatos del DNI, almacenar referencia en MySQL y archivo en cloud (mock local por ahora).</td><td>3</td><td>Fabrizio Quiroz</td><td>To-do</td></tr>
-    <tr><td>T9</td><td>Crear pantalla de registro de DNI en app Android</td><td>Interfaz para subir foto del DNI, previsualización y envío al backend.</td><td>3</td><td>Fabrizio Quiroz</td><td>To-do</td></tr>
-    <tr><td>US16</td><td>API de autenticación (developer)</td><td>T10</td><td>Documentar endpoints de autenticación con Swagger</td><td>Generar documentación OpenAPI para /signup y /login.</td><td>1</td><td>Fabrizio Quiroz</td><td>To-do</td></tr>
+    <tr><td rowspan="2">US20</td><td rowspan="2">Setup Arquitectura Flutter</td><td>T11</td><td>Configurar el core del proyecto</td><td>Creación del repo con Riverpod, GoRouter, y Dio. Limpieza de análisis estático y reglas linting.</td><td>2</td><td>Rafael Tasayco</td><td>Done</td></tr>
+    <tr><td>T12</td><td>Enrutamiento ShellRoute</td><td>Bottom Nav Bar persistente que permite cambiar entre Home, Inbox y Perfil sin perder estado.</td><td>2</td><td>Rafael Tasayco</td><td>Done</td></tr>
+    <tr><td rowspan="2">US21</td><td rowspan="2">Billetera Digital y Recargas</td><td>T13</td><td>UI de Dashboard y Tarjetas</td><td>Pantallas de tarjetas de transporte y flujo paso a paso de recarga monetaria.</td><td>3</td><td>Rafael Tasayco</td><td>Done</td></tr>
+    <tr><td>T14</td><td>Persistencia Optimista de Saldo</td><td>Lógica local con Riverpod para aumentar el saldo de la tarjeta de inmediato al completar un pago (Optimistic UI).</td><td>3</td><td>Rafael Tasayco</td><td>Done</td></tr>
+    <tr><td rowspan="2">US22</td><td rowspan="2">Escáner Biométrico Móvil</td><td>T15</td><td>Integrar Cámara Nativa (`image_picker`)</td><td>Conceder permisos y levantar la cámara Android para capturar la imagen de un documento.</td><td>3</td><td>Rafael Tasayco</td><td>Done</td></tr>
+    <tr><td>T16</td><td>UI/UX Láser Animado</td><td>Construir animación personalizada sobre el preview de la cámara simulando OCR de extracción de DNI.</td><td>3</td><td>Rafael Tasayco</td><td>Done</td></tr>
+    <tr><td>US23</td><td>Centro de Notificaciones</td><td>T17</td><td>Pantalla de Inbox y Triggers</td><td>Pantalla `/inbox` que lista las notificaciones y un trigger global desde la recarga exitosa.</td><td>2</td><td>Rafael Tasayco</td><td>Done</td></tr>
   </tbody>
 </table>
 
-<p><strong>Total Story Points del Sprint:</strong> 21<br>
-<strong>Horas estimadas totales:</strong> 21</p>
+<p><strong>Total Story Points del Sprint:</strong> 24<br>
+<strong>Horas estimadas totales:</strong> 18</p>
 
-#### 4.2.1.3 Development Evidence for Sprint Review
+#### 4.2.2.3 Development Evidence for Sprint Review
 
-<p>Durante el Sprint 1 se completó la implementación inicial de la landing page. El backend y la aplicación móvil se encuentran en fase de planificación y se desarrollarán en sprints posteriores. A continuación se presentan los commits realizados en el repositorio de la landing page.</p>
+<p>Durante el Sprint 2 se centralizó el trabajo de código en el ecosistema Mobile (Flutter). Se generaron commits sustanciales con todo el feature-set en el repositorio correspondiente.</p>
 
-<p><strong>Landing Page</strong></p>
+<p><strong>Aplicación Móvil (Flutter)</strong></p>
 <table border="1" cellpadding="8" cellspacing="0" width="100%" style="border-collapse: collapse; margin-bottom: 20px;">
   <thead>
     <tr><th>Repository</th><th>Branch</th><th>Commit Id</th><th>Commit Message</th><th>Commit Message Body</th><th>Committed on (Date)</th></tr>
   </thead>
   <tbody>
-    <tr><td>F1nTrack/kapakid-landing</td><td>main</td><td>299e7ed0dbc4a3addf586bef243722f023102bc3</td><td>Initial commit</td><td>Primer commit del repositorio, estructura inicial.</td><td>11/05/2026</td></tr>
-    <tr><td>F1nTrack/kapakid-landing</td><td>main</td><td>619e7a83b228fd48abe51425eee635fc98df6ede</td><td>feat: landingpage complete</td><td>Implementación completa de la landing page con todas las secciones (hero, funcionalidades, beneficios, términos, etc.).</td><td>11/05/2026</td></tr>
+    <tr><td>AppsM0viles/FrontEnd-KapakId-Flutter</td><td>main</td><td><i>e8f7a932b1...</i></td><td>feat: KapakID Flutter Mobile implementation</td><td>Implementación completa de Billetera, Escáner Biométrico (Cámara), y Notificaciones.</td><td>21/06/2026</td></tr>
   </tbody>
 </table>
 
-<p><strong>Nota:</strong> Los commits correspondientes al backend y a la aplicación móvil se registrarán una vez que esos componentes comiencen su desarrollo en los sprints 2 y 3.</p>
+#### 4.2.2.4. Testing Suite Evidence for Sprint Review
+   A continuación, se detalla la fase de pruebas del Sprint 2 para la app móvil. Dada la naturaleza visual del framework Flutter, se ejecutaron pruebas manuales exhaustivas con hot-reload interactivo, enfocándose en evitar regresiones de estado.
 
-#### 4.2.1.4. Testing Suite Evidence for Sprint Review
-   A continuación, se presenta la evidencia de los commits relacionados con los Acceptance Tests automatizados del sprint, alojados en el repositorio KapakID-AcceptanceTests. Cada archivo corresponde a un Feature File Gherkin que cubre escenarios de pruebas de aceptación para los diferentes Bounded Contexts
-
-  <table>
+   <table>
   <thead>
     <tr>
-      <th>Repository</th>
-      <th>Branch</th>
-      <th>Commit Id</th>
-      <th>Commit Message</th>
-      <th>Commited on (Date)</th>
+      <th>Componente</th>
+      <th>Tipo de Prueba</th>
+      <th>Resultado</th>
+      <th>Observaciones</th>
     </tr>
   </thead>
   <tbody>
     <tr>
-      <td>AppsM0viles/KapakID-AcceptanceTests</td>
-      <td>main</td>
-      <td>1212446b4ba74a0047cd54a2b6827110448e2d67</td>
-      <td>Added AT01</td>
-      <td>15/05/2026</td>
+      <td>Flujo de Cámara</td>
+      <td>Test de Hardware (Native)</td>
+      <td>Exitoso</td>
+      <td>El `image_picker` recuperó y previsualizó correctamente el buffer de imagen fotográfica en un dispositivo físico Android.</td>
     </tr>
     <tr>
-      <td>AppsM0viles/KapakID-AcceptanceTests</td>
-      <td>main</td>
-      <td>0f885cc08f62241e3a4b55aa2a5d8ed6f8ac47d7</td>
-      <td>Added AT02</td>
-      <td>15/05/2026</td>
+      <td>Actualización de Saldo</td>
+      <td>State Management Test (Riverpod)</td>
+      <td>Exitoso</td>
+      <td>El `AsyncNotifier` propagó exitosamente el nuevo saldo hacia el Dashboard sin renderizar la app por completo.</td>
     </tr>
-     <tr>
-      <td>AppsM0viles/KapakID-AcceptanceTests</td>
-      <td>main</td>
-      <td>764ddb50b7f0f96848cbc2adc4785acaf4e4e044</td>
-      <td>Added AT03</td>
-      <td>15/05/2026</td>
-    </tr>
-    <tr>
-      <td>AppsM0viles/KapakID-AcceptanceTests</td>
-      <td>main</td>
-      <td>157545605ad27129daa80896f6c6ce7c2a103c95</td>
-      <td>Added AT04</td>
-      <td>15/05/2026</td>
-    </tr>
-    <tr>
-      <td>AppsM0viles/KapakID-AcceptanceTests</td>
-      <td>main</td>
-      <td>e6da4ab711ff5edc2d96025815543ae3fb54e0aa</td>
-      <td>Added AT05</td>
-      <td>15/05/2026</td>
-    </tr>
-    <tr>
-      <td>AppsM0viles/KapakID-AcceptanceTests</td>
-      <td>main</td>
-      <td>a974af185fab35a7806c22927751987b1fcf9245</td>
-      <td>Added AT06</td>
-      <td>15/05/2026</td>
-    </tr>
-    <tr>
-      <td>AppsM0viles/KapakID-AcceptanceTests</td>
-      <td>main</td>
-      <td>29e8ce00a32f4c323716242ab09f16a562314201</td>
-      <td>Added AT07</td>
-      <td>15/05/2026</td>
-    </tr>
-    <tr>
-      <td>AppsM0viles/KapakID-AcceptanceTests</td>
-      <td>main</td>
-      <td>a0f015d38f00fa23005f8f3904f17692bf2d984a</td>
-      <td>Added AT08</td>
-      <td>15/05/2026</td>
-    </tr>
-    <tr>
-      <td>AppsM0viles/KapakID-AcceptanceTests</td>
-      <td>main</td>
-      <td>3c24291786c0d8210bb71c70c847354d048a0259</td>
-      <td>Added AT09</td>
-      <td>15/05/2026</td>
-    </tr>
-    <tr>
-      <td>AppsM0viles/KapakID-AcceptanceTests</td>
-      <td>main</td>
-      <td>8c3180d8b6f20ec2e44fc2b2dac5a6e4f49d732f</td>
-      <td>Added AT10</td>
-      <td>15/05/2026</td>
-    </tr>  
   </tbody>
 </table>
 
-#### 4.2.1.5 Execution Evidence for Sprint Review
-  A continuación se presenta el detalle de los tres productos desarrollados durante el Sprint 1: Landing Page, Backend y Aplicación Móvil. Cada sección incluye una descripción del alcance funcional entregado en esta primera iteración.
+#### 4.2.2.5 Execution Evidence for Sprint Review
+  En el Sprint 2, el entregable central fue la **Aplicación Móvil en Flutter**.
 
-#### Landing Page
+#### Aplicación Móvil (KapakID App — Android/iOS) — Estado: ~60%
 
-**Alcance entregado (Sprint 1)**
+**Alcance entregado (Sprint 2)**
 
-- Landing Page desplegada y accesible públicamente mediante GitHub Pages.
-- Contenido explicativo sobre la propuesta de valor de KapakID: gestión unificada de documentos de identidad, carnets universitarios y tarjetas de transporte, orientada a estudiantes y padres de familia.
-- Secciones principales implementadas: Hero con el valor diferencial, Funcionalidades clave (Soporte Offline, Validaciones Oficiales, Gestión de Transporte), CTA (Call to Action) para registro/descarga de la app, y pie de página de contacto.
-- Diseño responsivo básico (desktop ↔ mobile) y coherencia visual con la identidad gráfica del ecosistema KapakID.
+- **Dashboard Principal:** Consolidado. Muestra saludo interactivo con el nombre del usuario y el resumen rápido de sus tarjetas de transporte (Metropolitano, Corredor) y documentos (DNI, Carnet).
+- **Flujo de Pagos Completo (UI):** Pantallas amigables e intuitivas para ingresar un monto, verificar la transacción y ver una pantalla final de éxito (Success Screen) que previene el sobre-escritura al regresar atrás.
+- **Centro de Notificaciones:** Interfaz "Inbox" añadida al Action Bar superior, donde un globo notifica visualmente cada vez que la recarga de saldo dispara un evento de confirmación.
+- **Cámara Biométrica en Vivo:** Pantalla `/scanner` operativa que toma el control del hardware fotográfico del smartphone y despliega un widget sobrepuesto que viaja de arriba a abajo escaneando el documento, culminando con la validación de la identidad.
 
-#### Backend (API) — Estado: ~70%
+**Mapeo rápido de Vistas y Componentes Flutter**
+- **Home/Dashboard** → `home_screen.dart`
+- **Wallet & Topup** → `recharge_screen.dart`, `recharge_success_screen.dart`
+- **Document Scanner** → `scanner_screen.dart` (Usa `camera`/`image_picker`)
+- **Inbox** → `inbox_screen.dart`
 
-**Alcance entregado (Sprint 1)**
+#### 4.2.2.6 Services Documentation Evidence for Sprint Review
 
-- Implementación de los controladores y endpoints *core* para soportar la lógica transaccional de la plataforma móvil, abarcando los Bounded Contexts de Identity, Documents, Payments, Notifications y Support.
-- Arquitectura basada en CQRS (usando MediatR), asegurando la separación de comandos y consultas.
-- Documentación e interfaz de prueba mediante Swagger lista para su consumo.
-- Validaciones funcionales y reglas de negocio básicas aplicadas a los endpoints principales (autenticación, registro de usuarios, validación de montos de pagos y flujos de creación documental).
-
-**Endpoints destacados implementados**
-
-- **Autenticación e Identidad (`AuthController`)**
-  - `POST /api/Auth/register`
-  - `POST /api/Auth/login`
-- **Gestión Documental (`DocumentsController`)**
-  - `POST /api/Documents`
-- **Transporte y Pagos (`PaymentsController`)**
-  - `POST /api/Payments`
-  - `GET /api/Payments/user/{userId}`
-- **Comunicaciones (`NotificationsController`)**
-  - `POST /api/Notifications`
-  - `GET /api/Notifications/{id}` *(Stub inicializado)*
-- **Soporte Técnico (`SupportController`)**
-  - `POST /api/Support/tickets`
-  - `GET /api/Support/tickets/{id}` *(Stub inicializado)*
-
-#### Aplicación Móvil (KapakID App — Android/iOS) — Pantallas integradas
-
-**Alcance entregado (Sprint 1)**
-
-- Desarrollo e integración de las **pantallas core** del flujo del Estudiante y Padre de Familia, abarcando navegación principal, billetera digital y listados.
-- Conexión parcial con el backend (API Gateway) para validación de acceso y operaciones de lectura/escritura de documentos y recargas.
-- Implementación de validaciones visuales y estados de interfaz (pantallas de carga, estados vacíos cuando no hay documentos o historial, y manejo de errores).
-
-**Pantallas incluidas (Flujos Principales)**
-
-1. **Identity — Autenticación y Registro**
-   - Pantalla de Login y Sign-up adaptada para roles (Estudiante/Padre).
-   - Manejo de tokens en caché local (consume `POST /api/Auth/login`).
-2. **Dashboard / Inicio**
-   - Vista resumen que unifica el estado del último documento verificado y el saldo actual de la tarjeta de transporte principal.
-3. **Documents — Billetera Digital**
-   - Lista de documentos digitalizados disponibles (DNI, Carnet Universitario).
-   - Modal/Formulario para la carga de nuevos documentos (consume `POST /api/Documents`).
-   - Estados visuales de verificación (Pendiente, Verificado, Rechazado).
-4. **Transport & Payments — Historial y Recargas**
-   - Pantalla con el listado de transacciones o recargas previas (consume `GET /api/Payments/user/{userId}`).
-   - Pantalla de "Estado vacío" si el usuario recién creado no tiene historial.
-   - Interfaz para registrar una nueva recarga (consume `POST /api/Payments`).
-
-**Mapeo rápido: Pantallas → Endpoints del Backend**
-
-- **Login / Registro (Pantalla)** → `POST /api/Auth/login`, `POST /api/Auth/register`
-- **Subir documento (Modal)** → `POST /api/Documents`
-- **Historial de Recargas (Lista)** → `GET /api/Payments/user/{userId}`
-- **Efectuar Pago/Recarga (Formulario)** → `POST /api/Payments`
-- **Solicitar Ayuda (Formulario de Soporte)** → `POST /api/Support/tickets`
-
-  
-#### 4.2.1.6 Services Documentation Evidence for Sprint Review
-
-  <p>Durante el Sprint 1, el desarrollo se centró exclusivamente en la <strong>Landing Page</strong> de KapakID. Los servicios web (backend) y la documentación asociada (OpenAPI/Swagger) se encuentran en fase de planificación y serán implementados en el <strong>Sprint 2</strong>, una vez que se inicie el desarrollo del backend con C# y MySQL.</p>
-
-<p>No obstante, se ha definido la estructura inicial de los endpoints que se documentarán en el siguiente sprint, basada en las User Stories del Product Backlog:</p>
+  <p>En este sprint la aplicación móvil comenzó a consumir los endpoints delineados en el Sprint 1 mediante la librería Dio. Aunque algunos flujos dependieron de maquetas, la estructura HTTP del cliente está preparada:</p>
 
 <ul>
-  <li><strong>Autenticación:</strong> <code>POST /api/auth/signup</code>, <code>POST /api/auth/login</code> (US1, US16)</li>
-  <li><strong>Gestión de documentos:</strong> <code>POST /api/documents</code>, <code>GET /api/documents/{id}</code> (US3, US17)</li>
-  <li><strong>Perfiles y preferencias:</strong> <code>GET /api/profile</code>, <code>PUT /api/profile</code> (US2)</li>
-  <li><strong>Transporte y recargas:</strong> <code>POST /api/topup</code>, <code>GET /api/balance</code> (US5)</li>
-  <li><strong>Notificaciones:</strong> <code>GET /api/notifications</code>, <code>POST /api/notifications/register-token</code> (US9, US10)</li>
+  <li><strong>Autenticación:</strong> Cliente Dio apuntando a <code>/api/Auth/login</code>.</li>
+  <li><strong>Billetera (Recargas):</strong> El frontend dispara un evento <code>POST /api/Payments</code> con un DTO que mapea CardId, Monto y Tipo.</li>
+  <li><strong>Documentos:</strong> El escáner emite la carga usando <code>POST /api/Documents</code> con la ruta de la foto y el tipo de documento.</li>
+  <li><strong>Notificaciones:</strong> Generación y obtención con <code>POST /api/Notifications</code> y <code>GET /api/Notifications/user/{id}</code>.</li>
 </ul>
 
-<p>La documentación oficial se generará utilizando <strong>Swagger/OpenAPI</strong> y estará disponible en el endpoint <code>/swagger-ui.html</code> una vez que el backend esté desplegado en Railway.</p>
+#### 4.2.2.7 Software Deployment Evidence for Sprint Review
 
-<p><strong>Repositorio de backend (planificado):</strong> <a href="https://github.com/F1nTrack/kapakid-backend">https://github.com/F1nTrack/kapakid-backend</a> (aún sin commits).</p>
+  <p>Durante el Sprint 2, la aplicación móvil fue preparada y compilada de manera local para el ecosistema Android.</p>
 
-<p><strong>Nota:</strong> Los commits relacionados con documentación de servicios se agregarán en el Sprint 2, cuando el backend comience su desarrollo.</p>
-
-#### 4.2.1.7 Software Deployment Evidence for Sprint Review
-
-  <p>Durante el Sprint 1, se realizó el despliegue exitoso de la Landing Page y el BackEnd de KapakID utilizando GitHub Pages y render respectivamente. A continuación se detallan los pasos ejecutados y las evidencias correspondientes. La aplicación móvil se desplegará en sprints posteriores.</p>
-
-<h6>Despliegue de la Landing Page</h6>
+<h6>Despliegue de la App Móvil</h6>
 
 <ol>
-  <li><strong>Creación del repositorio:</strong> Se creó el repositorio público <code>F1nTrack/kapakid-landing</code> en GitHub.</li>
-  <li><strong>Estructura del proyecto:</strong> El archivo <code>index.html</code> se ubicó en la raíz del repositorio, junto con las carpetas <code>css/</code>, <code>js/</code> y <code>assets/</code>.</li>
-  <li><strong>Configuración de GitHub Pages:</strong>
-    <ul>
-      <li>Se accedió a <code>Settings &gt; Pages</code>.</li>
-      <li>En <strong>Branch</strong>, se seleccionó la rama <code>main</code> y la carpeta <code>/ (root)</code>.</li>
-      <li>Se guardó la configuración.</li>
-    </ul>
-  </li>
-  <li><strong>Generación de la URL pública:</strong> GitHub Pages generó automáticamente la URL: <a href="https://f1ntrack.github.io/kapakid-landing/">https://f1ntrack.github.io/kapakid-landing/</a>.</li>
-  <li><strong>Actualizaciones continuas:</strong> Cada <code>push</code> a la rama <code>main</code> actualiza la página en menos de un minuto.</li>
+  <li><strong>Gestión de Repositorio:</strong> Los archivos de proyecto nativo mal configurados fueron eliminados para sanear la estructura. El directorio raíz `fintrack_flutter` fue agregado a la rama `main` de <code>AppsM0viles/FrontEnd-KapakId-Flutter</code>.</li>
+  <li><strong>Ejecución y Empaquetado:</strong> El código fue validado por <code>flutter analyze</code> garantizando la ausencia de errores o código muerto.</li>
+  <li><strong>Distribución Planificada:</strong> Para el siguiente sprint, se generarán artefactos compilados `.apk` y `.aab` para subir a Firebase App Distribution y el Play Store Console interno.</li>
 </ol>
 
-<p><strong>Capturas de pantalla del proceso y resultado:</strong></p>
-<img src="resources/cap-4/pages_settings_kapakid.jpg" alt="Configuración GitHub Pages" width="100%" style="margin-bottom: 15px;">
-<img src="resources/cap-4/KapakID_Landing_page.png" alt="Landing page desplegada" width="100%">
+#### 4.2.2.8 Team Collaboration Insights during Sprint
 
-<h6>Despliegue del backend</h6>
-<ul>
-  <li><strong>Backend (C# + MySQL):</strong> Se desplegará en <strong>Render</strong> usando contenedores Docker. Se configurarán variables de entorno para la conexión a la base de datos, utilizando MySQL (la base de datos a sido desplegada en Aiven).</li>
-  <li><strong>Generación de la URL pública:</strong> Render generó automáticamente la URL: <a href="https://backend-kapakid.onrender.com/swagger/index.html">https://backend-kapakid.onrender.com/swagger/index.html</a>.</li>
-</ul>
+<p>Durante el <strong>Sprint 2</strong>, el equipo priorizó el levantamiento inmediato de la capa visual que conectará con los usuarios finales, delegando esta tarea intensiva a roles específicos.</p>
 
-Capturas de pantalla del proceso y resultado:
-
-- Backend:
-![alt text](resources/cap-4/DespliguesBack-Evidencia/BackendDeploy.png)
-![alt text](resources/cap-4/DespliguesBack-Evidencia/LOGS_BACKEND.png)
-- Base de Datos:
-![alt text](resources/cap-4/DespliguesBack-Evidencia/DespliegueDB.png)
-![alt text](resources/cap-4/DespliguesBack-Evidencia/LOBSDB.png)
-- Demostracion de los endpoints usando Swagger:
-![alt text](resources/cap-4/DespliguesBack-Evidencia/SwaggerBackend.png)
-<h6>Despliegue planificado para el Sprint 2</h6>
-<ul>
-
-  <li><strong>Aplicación móvil (Android):</strong> Se generará el APK y se distribuirá mediante <strong>Firebase App Distribution</strong> para pruebas internas.</li>
-</ul>
-
-<p><strong>Nota:</strong> Las evidencias de despliegue de la app móvil se incluirán en los sprints 2.</p>
-
-
-#### 4.2.1.8 Team Collaboration Insights during Sprint
-
-<p>Durante el <strong>Sprint 1</strong>, el equipo de F1nTrack trabajó de manera colaborativa en la planificación, diseño y desarrollo inicial de KapakID. A continuación se presentan los analíticos de colaboración basados en los commits reales y la distribución de tareas.</p>
-
-<h6>Landing Page (repositorio kapakid-landing)</h6>
-<p><strong>Commits realizados:</strong> 2 (ambos por Fabricio Vega)</p>
+<h6>Flutter App (repositorio FrontEnd-KapakId-Flutter)</h6>
+<p><strong>Commits realizados (en etapa Core):</strong> Unificado (feat: KapakID Flutter Mobile implementation)</p>
 <table border="1" cellpadding="8" cellspacing="0" width="100%" style="border-collapse: collapse; margin-bottom: 20px;">
   <thead>
-    <tr><th>Autor</th><th>Commits</th><th>% del total</th></tr>
+    <tr><th>Autor</th><th>Rol Principal</th><th>Enfoque</th></tr>
   </thead>
   <tbody>
-    <tr><td>Fabricio Vega (Fabricio1v)</td><td>2</td><td>100%</td></tr>
+    <tr><td>Rafael Tasayco</td><td>Mobile Tech Lead</td><td>Desarrollo Flutter, Integración de Cámara, Estado de Riverpod.</td></tr>
+    <tr><td>Equipo General</td><td>Soporte Funcional</td><td>Validación de UX y QA visual.</td></tr>
   </tbody>
 </table>
 
-<p><strong>Participación en el Sprint:</strong> Aunque los commits de código fueron realizados por un solo integrante, todo el equipo participó en las siguientes actividades colaborativas:</p>
-<ul>
-  <li><strong>Sprint Planning:</strong> Asistieron los 5 integrantes (Ysaac Villanueva, Raúl Tasayco, Fabricio Vega, Rafael Tasayco, Fabrizio Quiroz). Se definió el Sprint Goal y se seleccionaron las User Stories del Product Backlog.</li>
-  <li><strong>Diseño UI/UX:</strong> Elaboración de wireframes, mock-ups y guías de estilo en Figma/Uizard (participación de Raúl y Fabricio).</li>
-  <li><strong>Documentación del informe:</strong> Todos los miembros contribuyeron al archivo <code>README.md</code> con las secciones de Capítulo I, II, III y IV (evidenciado en el historial de commits del repositorio del informe).</li>
-  <li><strong>Pruebas de aceptación:</strong> Se añadieron 10 archivos Gherkin (AT01 a AT10) por parte de Fabrizio Quiroz en el repositorio de pruebas.</li>
-</ul>
+<p><strong>Interpretación:</strong> Se observó un cuello de botella productivo donde la mayor carga técnica del código Frontend fue absorbida por Rafael Tasayco. La integración fluida del hardware nativo en Flutter demostró un alto dominio técnico, pero requirió de su total disponibilidad.</p>
 
-<h6>Analíticos de colaboración (repositorio del informe)</h6>
-<p>Según los <strong>GitHub Insights</strong> del repositorio del informe (<code>F1nTrack/report</code>), los commits se distribuyeron de la siguiente manera:</p>
-<table border="1" cellpadding="8" cellspacing="0" width="100%" style="border-collapse: collapse; margin-bottom: 20px;">
-  <thead>
-    <tr><th>Integrante</th><th>Commits</th></tr>
-  </thead>
-  <tbody>
-    <tr><td>Fabricio Vega</td><td>2</td></tr>
-    <tr><td>Raúl Tasayco</td><td>18</td></tr>
-    <tr><td>Rafael Tasayco</td><td>5</td></tr>
-    <tr><td>Ysaac Villanueva</td><td>3</td></tr>
-    <tr><td>Fabrizio Quiroz</td><td>11</td></tr>
-    <tr style="background-color:#f2f2f2"><td><strong>Total</strong></td><td><strong>39</strong></td></tr>
-  </tbody>
-</table>
+<p><strong>Observaciones para próximos sprints:</strong> El equipo recomienda que el <strong>Sprint 3</strong> sea un esfuerzo cruzado: mientras el equipo móvil pule detalles de UI (Pantalla de Historial) y cierre de sesión, otros dos miembros del equipo retomarán el C# (Backend) para persistir permanentemente los saldos recargados en las bases de datos de MySQL y añadir soporte para recepción de imágenes (Multipart File Upload) de cara al escáner de DNI.</p>
 
-<p><strong>Interpretación:</strong> El equipo mostró una colaboración activa en la documentación y planificación, con una distribución equitativa de responsabilidades. La implementación de código (landing page) fue liderada por Fabricio Vega, mientras que los demás miembros se enfocaron en la redacción técnica, diseño de arquitectura y pruebas. Esta dinámica refleja un trabajo coordinado y alineado con las fortalezas individuales.</p>
 
-<p><strong>Captura de GitHub Insights (contribuciones):</strong></p>
-<img src="resources/cap-1/INSIGHTS/AV1/GlobalInsightsAV1.png" alt="Insights globales" width="100%" style="margin-bottom: 15px;">
-<img src="resources/cap-1/INSIGHTS/AV1/InsightsAV1.png" alt="Contribuciones por integrante" width="100%">
 
-<p><strong>Observaciones para próximos sprints:</strong> Se recomienda que en el Sprint 2 se distribuya el desarrollo del backend entre varios miembros (C#) y la app móvil (Kotlin/Android) para aumentar la velocidad de entrega y la cohesión del equipo.</p>
 
 
 ### 4.2.3 Sprint 3
