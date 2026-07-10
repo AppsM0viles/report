@@ -3107,9 +3107,9 @@ Despliegue de la base de datos MySQL en Aiven
 
 Despliegue del frontend en Firebase
 
-
-
-
+![alt text](image-21.png)
+![alt text](image-22.png)
+![alt text](image-23.png)
 
 #### 4.2.3.8 Team Collaboration Insights during Sprint
 
