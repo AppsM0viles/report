@@ -3107,7 +3107,11 @@ Despliegue del frontend en Firebase
 
 #### 4.2.3.8 Team Collaboration Insights during Sprint
 
-
+![alt text](image-13.png)
+![alt text](image-14.png)
+![alt text](image-15.png)
+![alt text](image-17.png)
+![alt text](image-18.png)
 
 ### 4.3 Validation Interviews
 
