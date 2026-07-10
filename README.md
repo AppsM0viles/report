@@ -44,27 +44,6 @@ static string[] Integrantes() {
 | 1.4     | [24/04/2026] | [Rafael Tasayco]   | Integración del *Lean UX Canvas*, evaluación de competidores, evidencia de entrevistas, *Impact Mapping*, historias de usuario, dinámica de *Event Storming* y el *Bounded Context* de Resource. |
 ## Project Report Collaboration Insights
 
-### Hito TB1 - Fundamentos y Diseño de Arquitectura (Semanas 1 - 4)
-
-Durante esta fase inicial, el equipo se enfocó en asentar las bases del producto y diseñar la arquitectura técnica de KapakID. Los entregables consolidados en este hito incluyeron:
-
-* **Estructura base:** Creación de la carátula, registro de versiones y la tabla de contenidos.
-* **Capítulo I (Presentación):** Definición del perfil de la startup (F1nTrack), la propuesta de valor de KapakID, los perfiles del equipo y la delimitación de los segmentos objetivo (estudiantes y padres de familia).
-* **Capítulo II (Requirements & Software Design):** * Análisis exhaustivo de competidores y ejecución de entrevistas de validación.
-    * Elaboración del Needfinding (User Personas, Task Matrix, Journey Mapping).
-    * Diseño a Nivel Estratégico y Táctico utilizando *Domain-Driven Design (DDD)*, incluyendo el Bounded Context Canvas, Context Mapping y diagramas C4 (Contexto, Contenedores, Componentes y Base de Datos) para los contextos clave como Identity (IAM) y Documents.
-
-### Distribución de Esfuerzos (Commits)
-
-La carga de trabajo se distribuyó de manera equitativa, logrando aportes sustanciales de cada integrante en sus respectivas áreas asignadas (investigación, redacción técnica y diagramación):
-
-* **Fabricio Samir Vega Coronado:** 2 commits
-* **Raul Hiroshi Tasayco Osorio:** 18 commits
-* **Rafael Augusto Tasayco Almonacid:** 5 commits
-* **Ysaac Ligorio Villanueva Andrade:** 3 commits
-* **Fabrizio Javier Quiroz Zambrano:** 11 commits
-
-**Total de commits en la fase TB1:** 39
 
 ### Evidencia Gráfica (GitHub Insights)
 
@@ -919,6 +898,7 @@ Este lenguaje ubicuo debe ser utilizado de forma consistente por todos los miemb
 | E6      | Acceso Offline               | Permitir acceso limitado a documentos previamente verificados sin conexión a internet. |
 | E7      | Landing Page Informativa     | Presentar la propuesta de valor de KapakID, funcionalidades clave, guías de descarga y contacto. |
 | E8      | API REST Backend             | Servicios técnicos para manejar autenticación, gestión de documentos, pagos y notificaciones. |
+| E9      | Infraestructura de Aplicación Móvil | Configuración técnica base de la app móvil (navegación, arquitectura, cliente HTTP) que soporta el resto de funcionalidades. |
 
 **Tabla de US**
 
@@ -941,6 +921,11 @@ Este lenguaje ubicuo debe ser utilizado de forma consistente por todos los miemb
 | US15  | Acceso a la app          | Como **visitante**, quiero encontrar enlaces de acceso de KapakID en la landing page para acceder a la aplicación. | **Scenario 1:**<br>Given un visitante no registrado accede a la landing <br>When hace click en registrate <br>Then redirecciona al signin.<br><br> **Scenario 2:**<br>Given un visitante registrado accede a la landing <br>When hace click en ingresa <br>Then redirecciona al login.<br><br> | E7 |
 | US16  | API de autenticación        | Como **developer**, quiero consumir un endpoint de autenticación para validar credenciales de usuarios. | **Scenario 1:**<br>Given un request con credenciales válidas <br>When se envía al endpoint de login <br>Then el sistema responde con un token válido.<br><br>**Scenario 2:**<br>Given un request con credenciales inválidas <br>When se procesa en el backend <br>Then el sistema devuelve un error 401 Unauthorized. | E8 |
 | US17  | API de documentos           | Como **developer**, quiero consumir un endpoint para registrar y consultar documentos de un usuario. | **Scenario 1:**<br>Given un request válido con documento y metadatos <br>When se envía al endpoint correspondiente <br>Then el sistema responde confirmando el registro.<br><br>**Scenario 2:**<br>Given un request de consulta con un ID de documento válido <br>When se procesa en el backend <br>Then el sistema devuelve la información del documento. | E8 |
+| US18  | Setup Arquitectura Flutter | Como **developer**, quiero contar con una arquitectura base configurada en Flutter (estado, enrutamiento, cliente HTTP) para desarrollar las funcionalidades móviles de forma escalable y mantenible. | **Scenario 1:**<br>Given un nuevo módulo de la app <br>When se implementa sobre la arquitectura base <br>Then reutiliza el manejo de estado y las rutas ya configuradas sin duplicar lógica.<br><br>**Scenario 2:**<br>Given la navegación entre Home, Inbox y Perfil <br>When el usuario cambia de sección <br>Then la app mantiene el estado sin recargar la pantalla. | E9 |
+| US19  | Billetera Digital y Recargas | Como **usuario**, quiero ver mis tarjetas de transporte y recargarlas desde un flujo guiado en la app para gestionar mi saldo sin salir de KapakID. | **Scenario 1:**<br>Given un usuario autenticado con tarjetas registradas <br>When ingresa un monto válido y confirma la recarga <br>Then el sistema actualiza el saldo de la tarjeta de forma inmediata.<br><br>**Scenario 2:**<br>Given un usuario en el flujo de recarga <br>When ingresa un monto inválido <br>Then el sistema rechaza la operación y muestra el motivo. | E3 |
+| US20  | Escáner Biométrico Móvil | Como **usuario**, quiero escanear mi DNI con la cámara de mi celular para registrar mi documento sin necesidad de subir una foto manualmente. | **Scenario 1:**<br>Given un usuario autenticado en la pantalla de escaneo <br>When enfoca su DNI con la cámara <br>Then el sistema captura la imagen y muestra la animación de validación.<br><br>**Scenario 2:**<br>Given una captura de baja calidad <br>When el sistema procesa la imagen <br>Then solicita al usuario repetir el escaneo. | E2 |
+| US21  | Centro de Notificaciones | Como **usuario**, quiero ver un centro de notificaciones dentro de la app para enterarme de mis recargas exitosas y alertas del sistema. | **Scenario 1:**<br>Given una recarga exitosa <br>When se completa la transacción <br>Then el sistema genera una notificación visible en el Inbox.<br><br>**Scenario 2:**<br>Given el usuario abre el Inbox <br>When revisa sus notificaciones <br>Then estas se muestran ordenadas de más reciente a más antigua. | E5 |
+
 
 #### 2.4.2. Impact Mapping
 
@@ -2780,11 +2765,11 @@ Esto se confirmará cuando: (1) un usuario pueda iniciar sesión y acceder al Pa
     <tr><th style="background-color:#f2f2f2">Id</th><th style="background-color:#f2f2f2">Title</th><th style="background-color:#f2f2f2">Id</th><th style="background-color:#f2f2f2">Title</th><th style="background-color:#f2f2f2">Description</th><th style="background-color:#f2f2f2">Estimation (Hours)</th><th style="background-color:#f2f2f2">Assigned To</th><th style="background-color:#f2f2f2">Status</th></tr>
   </thead>
   <tbody>
-    <tr><td rowspan="2">US20</td><td rowspan="2">Setup Arquitectura Flutter</td><td>T11</td><td>Configurar el core del proyecto</td><td>Creación del repo con Riverpod, GoRouter, y Dio. Limpieza de análisis estático y reglas linting.</td><td>2</td><td>Rafael Tasayco</td><td>Done</td></tr>
+    <tr><td rowspan="2">US18</td><td rowspan="2">Setup Arquitectura Flutter</td><td>T11</td><td>Configurar el core del proyecto</td><td>Creación del repo con Riverpod, GoRouter, y Dio. Limpieza de análisis estático y reglas linting.</td><td>2</td><td>Rafael Tasayco</td><td>Done</td></tr>
     <tr><td>T12</td><td>Enrutamiento ShellRoute</td><td>Bottom Nav Bar persistente que permite cambiar entre Home, Inbox y Perfil sin perder estado.</td><td>2</td><td>Rafael Tasayco</td><td>Done</td></tr>
-    <tr><td rowspan="2">US21</td><td rowspan="2">Billetera Digital y Recargas</td><td>T13</td><td>UI de Dashboard y Tarjetas</td><td>Pantallas de tarjetas de transporte y flujo paso a paso de recarga monetaria.</td><td>3</td><td>Rafael Tasayco</td><td>Done</td></tr>
+    <tr><td rowspan="2">US19</td><td rowspan="2">Billetera Digital y Recargas</td><td>T13</td><td>UI de Dashboard y Tarjetas</td><td>Pantallas de tarjetas de transporte y flujo paso a paso de recarga monetaria.</td><td>3</td><td>Rafael Tasayco</td><td>Done</td></tr>
     <tr><td>T14</td><td>Persistencia Optimista de Saldo</td><td>Lógica local con Riverpod para aumentar el saldo de la tarjeta de inmediato al completar un pago (Optimistic UI).</td><td>3</td><td>Rafael Tasayco</td><td>Done</td></tr>
-    <tr><td rowspan="2">US22</td><td rowspan="2">Escáner Biométrico Móvil</td><td>T15</td><td>Integrar Cámara Nativa (`image_picker`)</td><td>Conceder permisos y levantar la cámara Android para capturar la imagen de un documento.</td><td>3</td><td>Rafael Tasayco</td><td>Done</td></tr>
+    <tr><td rowspan="2">US20</td><td rowspan="2">Escáner Biométrico Móvil</td><td>T15</td><td>Integrar Cámara Nativa (`image_picker`)</td><td>Conceder permisos y levantar la cámara Android para capturar la imagen de un documento.</td><td>3</td><td>Rafael Tasayco</td><td>Done</td></tr>
     <tr><td>T16</td><td>UI/UX Láser Animado</td><td>Construir animación personalizada sobre el preview de la cámara simulando OCR de extracción de DNI.</td><td>3</td><td>Rafael Tasayco</td><td>Done</td></tr>
     <tr><td>US23</td><td>Centro de Notificaciones</td><td>T17</td><td>Pantalla de Inbox y Triggers</td><td>Pantalla `/inbox` que lista las notificaciones y un trigger global desde la recarga exitosa.</td><td>2</td><td>Rafael Tasayco</td><td>Done</td></tr>
   </tbody>
@@ -2904,17 +2889,207 @@ Esto se confirmará cuando: (1) un usuario pueda iniciar sesión y acceder al Pa
 
 #### 4.2.3.1 Sprint Planning 3
 
+<table border="1" cellpadding="8" cellspacing="0" width="100%" style="border-collapse: collapse; margin-bottom: 20px;">
+  <tbody>
+    <tr><th style="background-color:#f2f2f2; text-align:left">Sprint #</th><td colspan="3">Sprint 3</td></tr>
+    <tr><th style="background-color:#f2f2f2; text-align:left" colspan="4">Sprint Planning Background</th></tr>
+    <tr><th style="background-color:#f2f2f2; text-align:left">Date</th><td colspan="3">2026-07-01</td></tr>
+    <tr><th style="background-color:#f2f2f2; text-align:left">Time</th><td colspan="3">01:00 pm (GMT-5)</td></tr>
+    <tr><th style="background-color:#f2f2f2; text-align:left">Location</th><td colspan="3">Modalidad remota, intervención auditora grupal en Discord</td></tr>
+    <tr><th style="background-color:#f2f2f2; text-align:left">Prepared By</th><td colspan="3">Vega Coronado, Fabricio Samir</td></tr>
+    <tr><th style="background-color:#f2f2f2; text-align:left">Attendees (to planning meeting)</th><td colspan="3">Villanueva Andrade, Ysaac / Tasayco Osorio, Raul / Vega Coronado, Fabricio / Tasayco Almonacid, Rafael / Quiroz Zambrano, Fabrizio</td></tr>
+    <tr><th style="background-color:#f2f2f2; text-align:left">Sprint 2 Review Summary</th><td colspan="3">El Sprint 2 concluyó exitosamente con la construcción del MVP móvil en Flutter (US18-US21): navegación, recargas de billetera (con actualización optimista de saldo) y escaneo biométrico de documentos. Sin embargo, dichas recargas y documentos no se persisten aún en una base de datos real, ya que el backend en C# no fue tocado durante este sprint.</td></tr>
+    <tr><th style="background-color:#f2f2f2; text-align:left">Sprint 2 Retrospective Summary</th><td colspan="3">Se acordó que el Sprint 3 sea un esfuerzo cruzado: el equipo de backend retoma C#/MySQL para persistir los saldos recargados (US5) y soportar la carga de imágenes (Multipart File Upload) del escáner de DNI (US17), mientras el equipo móvil implementa la Pantalla de Historial de movimientos (US7) consumiendo los datos reales del backend.</td></tr>
+    <tr><th style="background-color:#f2f2f2; text-align:left" colspan="4">Sprint Goal &amp; User Stories</th></tr>
+    <tr><th style="background-color:#f2f2f2; text-align:left">Sprint 3 Goal</th><td colspan="3">Nuestro enfoque es cerrar el ciclo de persistencia end-to-end, conectando la app móvil Flutter con el backend real en C#/MySQL, de modo que las recargas y los documentos escaneados dejen de ser simulaciones locales y se guarden de forma permanente.
+
+Creemos que esto convierte a KapakID en un producto funcional real, ya que el usuario podrá consultar en cualquier momento el registro verídico de sus recargas y documentos, sin depender de datos simulados en el dispositivo.
+
+Esto se confirmará cuando: (1) una recarga de saldo realizada desde la app (US5) se refleje en la base de datos MySQL del backend; (2) el escáner de DNI envíe la imagen capturada mediante Multipart File Upload (US17) y el backend la reciba y almacene correctamente; y (3) el usuario pueda revisar una Pantalla de Historial (US7) con sus movimientos pasados obtenidos directamente del backend.</td></tr>
+    <tr><th style="background-color:#f2f2f2; text-align:left">Sprint 3 Velocity</th><td colspan="3">9 (Story Points)</td></tr>
+    <tr><th style="background-color:#f2f2f2; text-align:left">Sum of Story Points</th><td colspan="3">9</td></tr>
+  </tbody>
+</table>
+
 #### 4.2.3.2 Sprint Backlog 3
+
+<p>El objetivo principal de este sprint es <strong>conectar la app móvil KapakID con datos reales y persistentes</strong>, retomando el backend en C# para dar soporte a las recargas y a la carga de documentos, y habilitando el registro de transacciones para el usuario final.</p>
+
+<table border="1" cellpadding="8" cellspacing="0" width="100%" style="border-collapse: collapse; margin-bottom: 20px;">
+  <thead>
+    <tr><th style="background-color:#f2f2f2" colspan="2">User Story</th><th style="background-color:#f2f2f2" colspan="6">Work-item / Task</th></tr>
+    <tr><th style="background-color:#f2f2f2">Id</th><th style="background-color:#f2f2f2">Title</th><th style="background-color:#f2f2f2">Id</th><th style="background-color:#f2f2f2">Title</th><th style="background-color:#f2f2f2">Description</th><th style="background-color:#f2f2f2">Estimation (Hours)</th><th style="background-color:#f2f2f2">Assigned To</th><th style="background-color:#f2f2f2">Status</th></tr>
+  </thead>
+  <tbody>
+    <tr><td rowspan="2">US5</td><td rowspan="2">Recarga de transporte</td><td>T18</td><td>Endpoint de Recarga en MySQL</td><td>Implementación de `POST /api/Payments` en C# para persistir el monto y actualizar el saldo real de la tarjeta en la base de datos.</td><td>3</td><td>Ysaac Villanueva</td><td>Done</td></tr>
+    <tr><td>T19</td><td>Migración EF Core — Tabla Wallet</td><td>Creación de la migración de Entity Framework Core para la entidad `Wallet` y su relación con `Card`.</td><td>2</td><td>Ysaac Villanueva</td><td>Done</td></tr>
+    <tr><td rowspan="2">US17</td><td rowspan="2">API de documentos</td><td>T20</td><td>Endpoint Multipart File Upload</td><td>Implementación de `POST /api/Documents` capaz de recibir la imagen del DNI escaneada como `multipart/form-data`.</td><td>3</td><td>Fabricio Vega</td><td>Done</td></tr>
+    <tr><td>T21</td><td>Almacenamiento de Imagen en Servidor</td><td>Guardado del archivo recibido en el filesystem del servidor y registro de su ruta en la tabla `Document`.</td><td>2</td><td>Fabricio Vega</td><td>Done</td></tr>
+    <tr><td rowspan="2">US7</td><td rowspan="2">Registro de transacciones</td><td>T22</td><td>UI de Historial de Movimientos</td><td>Pantalla `/history` en Flutter que lista las recargas y documentos registrados por el usuario en orden cronológico.</td><td>3</td><td>Rafael Tasayco</td><td>Done</td></tr>
+    <tr><td>T23</td><td>Consumo de Endpoint de Historial</td><td>Conexión vía Dio a `GET /api/Payments/user/{id}` para reemplazar los datos simulados por datos reales del backend.</td><td>3</td><td>Rafael Tasayco</td><td>Done</td></tr>
+  </tbody>
+</table>
+
+<p><strong>Total Story Points del Sprint:</strong> 9<br>
+<strong>Horas estimadas totales:</strong> 16</p>
 
 #### 4.2.3.3 Development Evidence for Sprint Review
 
+<p>Durante el Sprint 3 el trabajo de código se dividió entre dos ecosistemas: el <strong>Backend en C#</strong>, retomado para dar persistencia real a las recargas (US5) y a la carga de documentos (US17); y la <strong>Aplicación Móvil en Flutter</strong>, extendida con la Pantalla de Historial (US7) consumiendo dichos endpoints reales.</p>
+
+<p><strong>Backend (C#)</strong></p>
+<table border="1" cellpadding="8" cellspacing="0" width="100%" style="border-collapse: collapse; margin-bottom: 20px;">
+  <thead>
+    <tr><th>Repository</th><th>Branch</th><th>Commit Id</th><th>Commit Message</th><th>Commit Message Body</th><th>Committed on (Date)</th></tr>
+  </thead>
+  <tbody>
+    <tr><td>Backend/KapakId-CSharp-Api</td><td>main</td><td><i>a91cf40e2d8b7f...</i></td><td>feat: persist wallet recharges (US5)</td><td>Migración EF Core para la entidad Wallet y endpoint `POST /api/Wallet/transport-cards/{id}/recharge` con persistencia real en MySQL.</td><td>27/06/2026</td></tr>
+    <tr><td>Backend/KapakId-CSharp-Api</td><td>main</td><td><i>d4b2af731ce9...</i></td><td>feat: document upload (US17)</td><td>Endpoint `POST /api/Documents` capaz de recibir `multipart/form-data`, almacenar la imagen en el servidor y registrar su ruta, consultable vía `GET /api/Documents/user/{userId}`.</td><td>28/06/2026</td></tr>
+  </tbody>
+</table>
+
+<p><strong>Aplicación Móvil (Flutter)</strong></p>
+<table border="1" cellpadding="8" cellspacing="0" width="100%" style="border-collapse: collapse; margin-bottom: 20px;">
+  <thead>
+    <tr><th>Repository</th><th>Branch</th><th>Commit Id</th><th>Commit Message</th><th>Commit Message Body</th><th>Committed on (Date)</th></tr>
+  </thead>
+  <tbody>
+    <tr><td>AppsM0viles/FrontEnd-KapakId-Flutter</td><td>main</td><td><i>c3d1e879f47a...</i></td><td>feat: history screen consuming real backend (US7)</td><td>Implementación de la Pantalla de Historial `/history`, reemplazando los datos simulados por el consumo real de `GET /api/Wallet/transport-cards/{id}/transactions`.</td><td>30/06/2026</td></tr>
+  </tbody>
+</table>
+
 #### 4.2.3.4 Testing Suite Evidence for Sprint Review
+   A continuación, se detalla la fase de pruebas del Sprint 3, enfocada en validar la integración real entre el frontend móvil y el backend persistente, dado que fue el principal riesgo técnico del sprint.
+
+   <table>
+  <thead>
+    <tr>
+      <th>Componente</th>
+      <th>Tipo de Prueba</th>
+      <th>Resultado</th>
+      <th>Observaciones</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Endpoint de Recarga (US5)</td>
+      <td>Test de Integración (Postman)</td>
+      <td>Exitoso</td>
+      <td>El `POST /api/Wallet/transport-cards/{id}/recharge` actualizó correctamente el saldo en MySQL y el valor persistió tras cerrar y reabrir la app.</td>
+    </tr>
+    <tr>
+      <td>Carga de Documentos (US17)</td>
+      <td>Test de Integración (Multipart)</td>
+      <td>Exitoso</td>
+      <td>El `POST /api/Documents` recibió y almacenó la imagen del DNI enviada desde el escáner de la app móvil, registrando correctamente su referencia para el usuario en `GET /api/Documents/user/{userId}`.</td>
+    </tr>
+    <tr>
+      <td>Pantalla de Historial (US7)</td>
+      <td>Test Manual (Hot-reload)</td>
+      <td>Exitoso</td>
+      <td>La lista reflejó los movimientos reales obtenidos vía `GET /api/Wallet/transport-cards/{id}/transactions`, reemplazando los datos simulados del Sprint 2.</td>
+    </tr>
+    <tr>
+      <td>Consistencia de Datos</td>
+      <td>Test de Regresión</td>
+      <td>Exitoso</td>
+      <td>Se verificó que una recarga registrada desde la app apareciera de inmediato reflejada en la Pantalla de Historial sin necesidad de recargar manualmente.</td>
+    </tr>
+  </tbody>
+</table>
 
 #### 4.2.3.5 Execution Evidence for Sprint Review
 
+#### 4.2.3.5 Execution Evidence for Sprint Review
+  En el Sprint 3, el entregable central fue la <strong>persistencia real end-to-end</strong> entre la Aplicación Móvil en Flutter y el Backend en C#.
+
+#### Backend (KapakID API — C#) — Estado: ~100%
+
+**Alcance entregado (Sprint 3)**
+
+- **Persistencia de Recargas (US5):** El endpoint `POST /api/Wallet/transport-cards/{id}/recharge` deja de ser una simulación y actualiza el saldo real de la tarjeta en MySQL mediante Entity Framework Core.
+- **Carga de Documentos (US17):** El endpoint `POST /api/Documents` recibe la imagen del DNI como `multipart/form-data`, la almacena en el servidor y registra su referencia, disponible vía `GET /api/Documents/user/{userId}`.
+- **Consulta de Historial:** El endpoint `GET /api/Wallet/transport-cards/{id}/transactions` expone el registro histórico de movimientos de la tarjeta, consumido directamente por la app móvil.
+
+
+Vista de perfil de usuario
+![alt text](image-6.png)
+
+Vista de tramites y renovaciones
+
+![alt text](image-7.png)
+
+Vista de tramite iniciado
+
+![alt text](image-8.png)
+![alt text](image-9.png)
+
+Vista DNI digital con datos actualizados
+
+![alt text](image-5.png)
+
+Vista del dashboard inicial
+
+![alt text](image-4.png)
+
+Vista de Recarga exitosa con fecha y monto total recargado
+
+![alt text](image-3.png)
+
+Detalle de tarjeta de Linea1 con vista a historial
+
+![alt text](image-2.png)
+
+Detalle de tarjeta de metropolitano con vista a historial
+
+![alt text](image-1.png)
+
+Detalle de tarjeta con vista a historial
+
+![alt text](image.png)
+
+
+#### Aplicación Móvil (KapakID App — Android/iOS) — Estado: ~100%
+
+**Alcance entregado (Sprint 3)**
+
+- **Pantalla de Historial (US7):** Nueva vista `/history` que lista cronológicamente las recargas del usuario, obtenidas en tiempo real desde el backend en lugar de datos simulados (Sprint 2).
+- **Integración Real de Billetera:** El flujo de recarga construido en el Sprint 2 (Optimistic UI) ahora persiste de forma definitiva contra el backend, eliminando la dependencia de estado local únicamente.
+- **Integración Real del Escáner:** La imagen capturada por la cámara nativa ahora se envía y confirma contra el backend, cerrando el flujo de Documentos iniciado en el Sprint 2.
+
+**Mapeo rápido de Vistas y Componentes Flutter**
+- **History** → `history_screen.dart` (consume `GET /api/Wallet/transport-cards/{id}/transactions`)
+- **Wallet & Topup** → `recharge_screen.dart` (ahora conectado a `POST /api/Wallet/transport-cards/{id}/recharge`)
+- **Document Scanner** → `scanner_screen.dart` (ahora conectado a `POST /api/Documents`)
+
 #### 4.2.3.6 Services Documentation Evidence for Sprint Review
 
+  <p>En este sprint el backend en C# expuso y documentó los endpoints necesarios para dar persistencia real a las operaciones de la app móvil, dejando de depender de datos simulados:</p>
+
+<ul>
+  <li><strong>Recarga de Billetera (US5):</strong> <code>POST /api/Wallet/transport-cards/{id}/recharge</code> actualiza el saldo real de la tarjeta de transporte en MySQL.</li>
+  <li><strong>Consulta de Saldo:</strong> <code>GET /api/Wallet/transport-cards/user/{userId}</code> devuelve las tarjetas de transporte asociadas al usuario junto con su saldo actualizado.</li>
+  <li><strong>Historial de Transacciones (US7):</strong> <code>GET /api/Wallet/transport-cards/{id}/transactions</code> retorna el registro cronológico de movimientos de la tarjeta, consumido por la nueva Pantalla de Historial.</li>
+  <li><strong>Carga de Documentos (US17):</strong> <code>POST /api/Documents</code> recibe la imagen del DNI como <code>multipart/form-data</code>, y <code>GET /api/Documents/user/{userId}</code> permite consultar los documentos registrados por el usuario.</li>
+</ul>
+
 #### 4.2.3.7 Software Deployment Evidence for Sprint Review
+
+  <p>Durante el Sprint 3, tanto el backend en C# como la aplicación móvil fueron preparados para reflejar la integración real de persistencia entre ambos sistemas.</p>
+
+<h6>Despliegue del Backend (C#)</h6>
+
+<ol>
+  <li><strong>Migraciones EF Core:</strong> Se aplicaron las migraciones correspondientes a las entidades <code>Wallet</code> y <code>Document</code> sobre la base de datos MySQL, habilitando la persistencia definitiva de recargas y documentos.</li>
+</ol>
+
+<h6>Despliegue de la App Móvil (Flutter)</h6>
+
+<ol>
+  <li><strong>Actualización de Endpoints:</strong> Los clientes Dio de Billetera, Documentos e Historial fueron reapuntados de datos simulados a los endpoints reales del backend (<code>/api/Wallet/...</code>, <code>/api/Documents</code>).</li>
+  <li><strong>Distribución Planificada:</strong> Se mantiene para un sprint posterior la generación de artefactos compilados <code>.apk</code> y <code>.aab</code> para Firebase App Distribution y el Play Store Console interno.</li>
+</ol>
+
 
 #### 4.2.3.8 Team Collaboration Insights during Sprint
 
