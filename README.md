@@ -3011,6 +3011,10 @@ Evidencia dentro de github, utilizando el codigo del commit para validar
 - **Carga de Documentos (US17):** El endpoint `POST /api/Documents` recibe la imagen del DNI como `multipart/form-data`, la almacena en el servidor y registra su referencia, disponible vía `GET /api/Documents/user/{userId}`.
 - **Consulta de Historial:** El endpoint `GET /api/Wallet/transport-cards/{id}/transactions` expone el registro histórico de movimientos de la tarjeta, consumido directamente por la app móvil.
 
+Endpoints
+
+![alt text](image-19.png)
+![alt text](image-20.png)
 
 Vista de perfil de usuario
 ![alt text](image-6.png)
@@ -3094,6 +3098,8 @@ Detalle de tarjeta con vista a historial
 Despliegue del backend en Render
 
 ![alt text](image-11.png)
+
+- link de los endpoint: https://backend-kapakid-7bu6.onrender.com/swagger/index.html 
 
 Despliegue de la base de datos MySQL en Aiven
 
