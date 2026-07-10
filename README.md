@@ -2935,7 +2935,7 @@ Esto se confirmará cuando: (1) una recarga de saldo realizada desde la app (US5
 
 #### 4.2.3.3 Development Evidence for Sprint Review
 
-<p>Durante el Sprint 3 el trabajo de código se dividió entre dos ecosistemas: el <strong>Backend en C#</strong>, retomado para dar persistencia real a las recargas (US5) y a la carga de documentos (US17); y la <strong>Aplicación Móvil en Flutter</strong>, extendida con la Pantalla de Historial (US7) consumiendo dichos endpoints reales.</p>
+Evidencia dentro de github, utilizando el codigo del commit para validar
 
 <p><strong>Backend (C#)</strong></p>
 <table border="1" cellpadding="8" cellspacing="0" width="100%" style="border-collapse: collapse; margin-bottom: 20px;">
@@ -2943,8 +2943,8 @@ Esto se confirmará cuando: (1) una recarga de saldo realizada desde la app (US5
     <tr><th>Repository</th><th>Branch</th><th>Commit Id</th><th>Commit Message</th><th>Commit Message Body</th><th>Committed on (Date)</th></tr>
   </thead>
   <tbody>
-    <tr><td>Backend/KapakId-CSharp-Api</td><td>main</td><td><i>a91cf40e2d8b7f...</i></td><td>feat: persist wallet recharges (US5)</td><td>Migración EF Core para la entidad Wallet y endpoint `POST /api/Wallet/transport-cards/{id}/recharge` con persistencia real en MySQL.</td><td>27/06/2026</td></tr>
-    <tr><td>Backend/KapakId-CSharp-Api</td><td>main</td><td><i>d4b2af731ce9...</i></td><td>feat: document upload (US17)</td><td>Endpoint `POST /api/Documents` capaz de recibir `multipart/form-data`, almacenar la imagen en el servidor y registrar su ruta, consultable vía `GET /api/Documents/user/{userId}`.</td><td>28/06/2026</td></tr>
+    <tr><td>AppsM0viles/Backend-kapakid</td><td>main</td><td><i>ee0e9e3</i></td><td>update transportTransaction</td><td>Migración EF Core para la entidad Wallet y endpoint `POST /api/Wallet/transport-cards/{id}/recharge` con persistencia real en MySQL.</td><td>09/07/2026</td></tr>
+    <tr><td>AppsM0viles/Backend-kapakid</td><td>main</td><td><i>e7ce0229f0341de6d2c4e4f44c9466f2f5b5017d</i></td><td>Fix: agrega migración para AccountNumber, Cci, DebtAmount y PaymentTransactions</td><td>Implementación de la Pantalla de Historial `/history`, reemplazando los datos simulados por el consumo real de `GET /api/Wallet/transport-cards/{id}/transactions`</td><td>09/07/2026</td></tr>
   </tbody>
 </table>
 
@@ -2954,7 +2954,7 @@ Esto se confirmará cuando: (1) una recarga de saldo realizada desde la app (US5
     <tr><th>Repository</th><th>Branch</th><th>Commit Id</th><th>Commit Message</th><th>Commit Message Body</th><th>Committed on (Date)</th></tr>
   </thead>
   <tbody>
-    <tr><td>AppsM0viles/FrontEnd-KapakId-Flutter</td><td>main</td><td><i>c3d1e879f47a...</i></td><td>feat: history screen consuming real backend (US7)</td><td>Implementación de la Pantalla de Historial `/history`, reemplazando los datos simulados por el consumo real de `GET /api/Wallet/transport-cards/{id}/transactions`.</td><td>30/06/2026</td></tr>
+    <tr><td>AppsM0viles/FrontEnd-KapakId-Flutter</td><td>main</td><td><i>77f1685</i></td><td>fix: invalidate payment cards provider after recharge</td><td>Implementación de la Pantalla de Historial `/history`, reemplazando los datos simulados por el consumo real de `GET /api/Wallet/transport-cards/{id}/transactions`.</td><td>09/07/2026</td></tr>
   </tbody>
 </table>
 
@@ -3091,6 +3091,20 @@ Detalle de tarjeta con vista a historial
 </ol>
 
 
+Despliegue del backend en Render
+
+![alt text](image-11.png)
+
+Despliegue de la base de datos MySQL en Aiven
+
+![alt text](image-12.png)
+
+Despliegue del frontend en Firebase
+
+
+
+
+
 #### 4.2.3.8 Team Collaboration Insights during Sprint
 
 
@@ -3144,7 +3158,7 @@ Configuración de preferencias (email/app). Recibe avisos de vencimiento y estad
   <tr><th>Campo</th><th>Información</th></tr>
   <tr><td>Entrevistado 1</td><td>A01 – Estudiante</td></tr>
   <tr>
-    <td><img src="resources/Cap-1/SSInterview1.png" alt="A01 Estudiante"></td>
+    <td><img src="" alt="A01 Estudiante"></td>
     <td>
       Percibe registro y login como claros; valora notificaciones de vencimiento. Califica la navegación con 4/5. Sugiere botón visible para “recuperar contraseña” en login y mayor detalle en planes.
     </td>
@@ -3159,7 +3173,7 @@ Configuración de preferencias (email/app). Recibe avisos de vencimiento y estad
   <tr><th>Campo</th><th>Información</th></tr>
   <tr><td>Entrevistado 2</td><td>A02 – Estudiante</td></tr>
   <tr>
-    <td><img src="resources/Cap-1/SSSANTI.png" alt="A02 Estudiante"></td>
+    <td><img src="" alt="A02 Estudiante"></td>
     <td>
       Encuentra útil la centralización de documentos; 5/5 en utilidad de alertas. Pide resaltar mejor “Agregar documento” y un flujo guiado para la primera recarga.
     </td>
@@ -3169,48 +3183,7 @@ Configuración de preferencias (email/app). Recibe avisos de vencimiento y estad
     <td><a href="https://upcedupe-my.sharepoint.com/:v:/g/personal/u202319698_upc_edu_pe/Ea0to8pDhttOhst0CPbOsT4B6GESisWNpC92K_xX7bteNA?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0NvcHkifX0&e=5T1kLL">Ver grabación</a></td>
   </tr>
 </table>
-
----
-
-#### 4.3.3 Evaluaciones según heurísticas
-
-### Web Application a evaluar
-**KapakID** – Plataforma web para gestión de documentos, pagos/recargas, movilidad y notificaciones.  
-**Meta:** Identificar problemas de usabilidad y priorizarlos con la *Lista Heurística de Nielsen*.
-
-### Escala de Severidad
-| Nivel | Descripción |
-|------:|-------------|
-| 1 | Superficial: fácil de superar o poco frecuente. |
-| 2 | Menor: ocurre un poco más o cuesta superarlo. Prioridad baja. |
-| 3 | Mayor: frecuente o bloqueante parcial. Prioridad alta. |
-| 4 | Muy grave: impide continuar. Debe corregirse antes del lanzamiento. |
-
-### Problemas Identificados – Landing Page
-| # | Problema | Severidad | Heurística |
-|---:|----------|:--------:|------------|
-| 1 | Falta sección “About the product” con propuesta de valor clara | 3 | Correspondencia con el mundo real |
-| 2 | Botones “Iniciar sesión / Registrarme” no redirigen a formularios | 3 | Visibilidad del estado / estándares |
-| 3 | Iconografía ambigua para secciones clave | 2 | Estética y diseño minimalista |
-| 4 | Planes poco específicos (beneficios/limitaciones) | 3 | Arquitectura de información |
-| 5 | Formulario “Contáctanos” sin feedback ni envío | 4 | Visibilidad del estado |
-| 6 | Inconsistencias de tamaño/jerarquía en botones | 2 | Consistencia y estándares |
-| 7 | Logo sin comportamiento para volver a inicio | 2 | Correspondencia con el mundo real |
-| 8 | Ausencia de internacionalización funcional | 3 | Flexibilidad y eficiencia |
-
-**Recomendaciones clave**: incorporar sección “About”, corregir rutas de CTA, normalizar iconografía y botones, especificar planes con comparativas, operar el formulario de contacto con feedback, habilitar i18n.
-
-### Problemas Identificados – Web Application
-| # | Problema | Severidad | Heurística |
-|---:|----------|:--------:|------------|
-| 1 | Falta “¿Olvidaste tu contraseña?” en login | 3 | Prevención de errores |
-| 2 | Gestión de perfil limitada (sin editar/eliminar cuenta) | 3 | Flexibilidad y control del usuario |
-| 3 | Rutas no configuradas para módulos (404 en flujo) | 3 | Consistencia y estándares |
-| 4 | Registro de documentos/recargas intermitente | 4 | Eficiencia y corrección |
-| 5 | Falta de estados vacíos y guías en primeras tareas | 2 | Visibilidad del estado |
-
-**Recomendaciones clave**: añadir recuperación de contraseña; habilitar edición/eliminación de cuenta; revisar enrutado; pruebas de flujo (documentos/recargas); estados vacíos con guías.
-
+-
 
 ---
 
